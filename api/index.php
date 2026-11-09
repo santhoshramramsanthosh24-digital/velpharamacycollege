@@ -4,10 +4,24 @@
  * Vel Pharmacy College Portal & Unified Academic CMS
  */
 
-// Enable error reporting to prevent silent 502 crashes
+// Force display errors for debugging
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
+
+// Register shutdown function to catch any fatal PHP error
+register_shutdown_function(function() {
+    $error = error_get_last();
+    if ($error && in_array($error['type'], [E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR])) {
+        http_response_code(500);
+        header('Content-Type: text/html; charset=utf-8');
+        echo "<!DOCTYPE html><html><head><title>Fatal Error</title></head><body>";
+        echo "<h1>PHP Fatal Error</h1>";
+        echo "<p><strong>Message:</strong> " . htmlspecialchars($error['message']) . "</p>";
+        echo "<p><strong>File:</strong> " . htmlspecialchars($error['file']) . " on line " . $error['line'] . "</p>";
+        echo "</body></html>";
+    }
+});
 
 // Mark Vercel environment
 if (!defined('VERCEL_ENV')) {
@@ -16,7 +30,7 @@ if (!defined('VERCEL_ENV')) {
 
 // Ensure session files use writable /tmp on serverless runtime
 if (is_dir('/tmp') && is_writable('/tmp')) {
-    session_save_path('/tmp');
+    @session_save_path('/tmp');
 }
 
 // Locate project root directory
@@ -42,6 +56,7 @@ try {
     require $rootDir . '/router.php';
 } catch (\Throwable $e) {
     http_response_code(500);
+    header('Content-Type: text/html; charset=utf-8');
     echo '<!DOCTYPE html><html><head><title>System Error</title></head><body>';
     echo '<h2>Application Initialization Error</h2>';
     echo '<p>' . htmlspecialchars($e->getMessage()) . '</p>';

@@ -17,9 +17,10 @@ if (strpos($uri, '/data') === 0) {
 
 $file = __DIR__ . $uri;
 
-// If requesting an actual static file (CSS, JS, images, PDFs, etc.)
-if ($uri !== '/' && file_exists($file) && !is_dir($file)) {
-    if (php_sapi_name() === 'cli-server') {
+// If requesting an actual static file (CSS, JS, images, PDFs, etc.) - never intercept PHP scripts
+$ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+if ($uri !== '/' && $ext !== 'php' && file_exists($file) && !is_dir($file)) {
+    if (php_sapi_name() === 'cli-server' && !defined('VERCEL_ENV')) {
         return false; // serve as-is in PHP built-in server
     }
     // Stream static asset with proper MIME type in serverless/production runtimes
@@ -92,7 +93,7 @@ if (file_exists(__DIR__ . '/cms/helpers.php') && !defined('VERCEL_ENV')) {
 }
 
 // Root request or front-controller entrypoints
-if (empty($clean_slug) || $clean_slug === 'index' || $clean_slug === 'index.php' || $clean_slug === 'api/index.php') {
+if (empty($clean_slug) || $clean_slug === 'index' || $clean_slug === 'index.php' || $clean_slug === 'api' || $clean_slug === 'api/index' || $clean_slug === 'api/index.php') {
     require __DIR__ . '/index.php';
     exit;
 }
