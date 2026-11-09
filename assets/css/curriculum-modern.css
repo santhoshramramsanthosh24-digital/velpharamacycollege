@@ -1,0 +1,969 @@
+/* ==========================================================================
+   VEL PHARMACY COLLEGE - NEP 2020 B.PHARM CURRICULUM & SYLLABUS STYLESHEET
+   Brand Harmony: Navy (#292E82), Heritage Maroon (#800020), Amber Gold (#D97706)
+   ========================================================================== */
+
+/* --- Curriculum Section Wrapper --- */
+.curriculum-section {
+  position: relative;
+  background: var(--color-bg-alt);
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.curriculum-section .container-wide {
+  max-width: 1720px;
+  width: 95%;
+  padding-left: clamp(1rem, 2.5vw, 2.5rem);
+  padding-right: clamp(1rem, 2.5vw, 2.5rem);
+}
+
+/* --- Hero Banner Card --- */
+.nep-highlight-card {
+  background: linear-gradient(135deg, #1E2368 0%, #292E82 60%, #3B42A6 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-xl);
+  padding: 2.75rem 2.5rem;
+  box-shadow: 0 20px 40px -15px rgba(41, 46, 130, 0.35);
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.nep-highlight-card::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.nep-highlight-card::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 20%;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(128, 0, 32, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.nep-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.nep-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.nep-badge-pill.gold {
+  background: rgba(217, 119, 6, 0.25);
+  color: #FEF3C7;
+  border-color: rgba(217, 119, 6, 0.4);
+}
+
+.nep-highlight-title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  color: #FFFFFF;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.nep-highlight-desc {
+  font-size: 1.05rem;
+  color: #E2E8F0;
+  line-height: 1.7;
+  max-width: 960px;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* 4-Pillars Grid inside Hero */
+.nep-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.nep-pillar-item {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.15rem;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.nep-pillar-item:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.nep-pillar-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.85rem;
+  color: #FEF3C7;
+}
+
+.nep-pillar-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 0.35rem;
+}
+
+.nep-pillar-meta {
+  font-size: 0.85rem;
+  color: #CBD5E1;
+  line-height: 1.45;
+}
+
+/* --- Control Bar: Search & Filter --- */
+.curriculum-control-bar {
+  background: #FFFFFF;
+  border: 1px solid var(--color-tertiary-light);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.curriculum-search-box {
+  position: relative;
+  flex: 1 1 320px;
+  min-width: 240px;
+}
+
+.curriculum-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-light);
+  pointer-events: none;
+}
+
+.curriculum-search-input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.75rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  color: var(--color-text-main);
+  background: var(--color-bg-alt);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.curriculum-search-input:focus {
+  border-color: var(--color-primary);
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(41, 46, 130, 0.12);
+}
+
+.curriculum-filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-chip:hover {
+  background: var(--color-primary-subtle);
+  color: var(--color-primary);
+  border-color: rgba(41, 46, 130, 0.3);
+}
+
+.filter-chip.active {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  border-color: var(--color-primary);
+  box-shadow: 0 2px 6px rgba(41, 46, 130, 0.25);
+}
+
+/* --- Semester Navigation Tabs --- */
+.semester-nav-container {
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  scrollbar-width: thin;
+}
+
+.semester-tabs-list {
+  display: flex;
+  gap: 0.6rem;
+  min-width: max-content;
+  padding: 0.25rem;
+}
+
+.sem-tab-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.85rem 1.4rem;
+  background: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-main);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  text-align: center;
+  min-width: 110px;
+}
+
+.sem-tab-btn:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.sem-tab-btn.active {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(41, 46, 130, 0.25);
+}
+
+.sem-tab-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+
+.sem-tab-credits {
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0.85;
+  margin-top: 0.2rem;
+}
+
+.sem-tab-btn.active .sem-tab-credits {
+  color: #FEF3C7;
+  opacity: 1;
+}
+
+.sem-tab-btn.special-tab {
+  background: #FAF5FF;
+  border-color: #E9D5FF;
+  color: #6B21A8;
+}
+
+.sem-tab-btn.special-tab.active {
+  background: #7E22CE;
+  color: #FFFFFF;
+  border-color: #7E22CE;
+}
+
+.sem-tab-btn.gold-tab {
+  background: #FFFBEB;
+  border-color: #FDE68A;
+  color: #92400E;
+}
+
+.sem-tab-btn.gold-tab.active {
+  background: #D97706;
+  color: #FFFFFF;
+  border-color: #D97706;
+}
+
+/* --- Active Tab Content Card --- */
+.sem-content-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-tertiary-light);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Semester Header Summary Banner */
+.sem-header-banner {
+  background: linear-gradient(to right, #F8FAFC, #FFFFFF);
+  border-bottom: 1px solid var(--color-tertiary-light);
+  padding: 1.75rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.sem-title-group h3 {
+  font-size: 1.5rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.sem-title-group p {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.sem-stat-badges {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.sem-stat-badge {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0.9rem;
+  text-align: center;
+  min-width: 90px;
+}
+
+.sem-stat-badge strong {
+  display: block;
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.sem-stat-badge span {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.sem-stat-badge.maroon strong {
+  color: var(--color-secondary);
+}
+
+.sem-stat-badge.gold strong {
+  color: var(--color-gold);
+}
+
+/* --- Table Styling --- */
+.syllabus-table-wrapper {
+  overflow-x: auto;
+}
+
+.syllabus-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.92rem;
+}
+
+.syllabus-table thead th {
+  background: #F1F5F9;
+  color: var(--color-text-main);
+  padding: 1rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.syllabus-table tbody tr {
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color 0.15s ease;
+}
+
+.syllabus-table tbody tr:hover {
+  background-color: #F8FAFC;
+}
+
+.syllabus-table td {
+  padding: 1.1rem 1.25rem;
+  vertical-align: middle;
+}
+
+.course-code-cell {
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  font-family: monospace;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.course-name-cell {
+  font-weight: 600;
+  color: var(--color-text-main);
+}
+
+.course-tags-row {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.course-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tag-theory {
+  background: var(--color-primary-subtle);
+  color: var(--color-primary);
+  border: 1px solid rgba(41, 46, 130, 0.2);
+}
+
+.tag-practical {
+  background: var(--color-secondary-subtle);
+  color: var(--color-secondary);
+  border: 1px solid rgba(128, 0, 32, 0.2);
+}
+
+.tag-ai {
+  background: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+}
+
+.tag-elective {
+  background: #FEF3C7;
+  color: #92400E;
+  border: 1px solid #FDE68A;
+}
+
+.tag-internship {
+  background: #FDF2F8;
+  color: #9D174D;
+  border: 1px solid #FBCFE8;
+}
+
+.tag-project {
+  background: #F3E8FF;
+  color: #6B21A8;
+  border: 1px solid #E9D5FF;
+}
+
+.course-num-cell {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.course-credit-cell {
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--color-primary);
+}
+
+.course-btn-cell {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.btn-view-detail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: transparent;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-md);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-view-detail:hover {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(41, 46, 130, 0.2);
+}
+
+/* Footer of Semester Table */
+.sem-footer-bar {
+  background: #F8FAFC;
+  border-top: 2px solid var(--color-border);
+  padding: 1.25rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sem-footer-note {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+  max-width: 750px;
+}
+
+.sem-footer-totals {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sem-footer-totals span strong {
+  color: var(--color-secondary);
+}
+
+/* --- Electives Basket Cards --- */
+.electives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.elective-cat-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  padding: 1.75rem;
+  background: #FFFFFF;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.elective-cat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.cat-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.cat-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.cat-badge.aec {
+  background: #FEF3C7;
+  color: #92400E;
+}
+
+.cat-badge.sec {
+  background: #DBEAFE;
+  color: #1E40AF;
+}
+
+.cat-badge.vac {
+  background: #F3E8FF;
+  color: #6B21A8;
+}
+
+.cat-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin: 0;
+}
+
+.elective-courses-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.elective-course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+}
+
+.elective-course-item strong {
+  color: var(--color-primary);
+  font-family: monospace;
+}
+
+.elective-course-item span.course-title {
+  color: var(--color-text-main);
+  flex: 1;
+}
+
+.elective-course-item span.course-sem {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  white-space: nowrap;
+}
+
+/* --- Credit Matrix Table --- */
+.matrix-container {
+  padding: 2rem;
+}
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.matrix-table th, .matrix-table td {
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+}
+
+.matrix-table thead th {
+  background: var(--color-primary);
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.matrix-table tbody tr:nth-child(even) {
+  background-color: #F8FAFC;
+}
+
+.matrix-table tfoot tr {
+  background: #EFF6FF;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+}
+
+/* --- Modal Popup for Detailed Subject Syllabus --- */
+.syllabus-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(6px);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.syllabus-modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.syllabus-modal-dialog {
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  max-width: 860px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-xl);
+  transform: translateY(20px) scale(0.97);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.syllabus-modal-overlay.open .syllabus-modal-dialog {
+  transform: translateY(0) scale(1);
+}
+
+.syllabus-modal-header {
+  background: linear-gradient(135deg, #1E2368, #292E82);
+  color: #FFFFFF;
+  padding: 1.75rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.modal-header-info {
+  flex: 1;
+}
+
+.modal-code-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: #FEF3C7;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.5rem;
+}
+
+.modal-subject-title {
+  font-family: var(--font-heading);
+  font-size: 1.65rem;
+  color: #FFFFFF;
+  margin: 0 0 0.5rem;
+  line-height: 1.3;
+}
+
+.modal-meta-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.modal-meta-pill {
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.15);
+  color: #E2E8F0;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+}
+
+.modal-close-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: #FFFFFF;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.modal-close-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(90deg);
+}
+
+.syllabus-modal-body {
+  padding: 2rem;
+  overflow-y: auto;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.modal-section-block {
+  margin-bottom: 2rem;
+}
+
+.modal-section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--color-primary-subtle);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modal-co-list, .modal-obj-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.modal-co-list li, .modal-obj-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  color: var(--color-text-main);
+}
+
+.modal-co-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 800;
+  color: var(--color-success);
+}
+
+.modal-obj-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0.5rem;
+  top: -2px;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+.unit-accordion-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: 0.85rem;
+  overflow: hidden;
+  background: var(--color-bg-alt);
+}
+
+.unit-header {
+  padding: 0.9rem 1.25rem;
+  background: #F8FAFC;
+  font-weight: 700;
+  color: var(--color-text-main);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.unit-header span.unit-hours {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  background: var(--color-secondary-subtle);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.unit-content {
+  padding: 1rem 1.25rem;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  background: #FFFFFF;
+}
+
+.books-list {
+  padding-left: 1.25rem;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+}
+
+.books-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* Modal Footer */
+.syllabus-modal-footer {
+  padding: 1rem 2rem;
+  background: #F8FAFC;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+  .nep-highlight-title {
+    font-size: 1.75rem;
+  }
+  .nep-highlight-card {
+    padding: 2rem 1.5rem;
+  }
+  .curriculum-control-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .sem-header-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .sem-tab-btn {
+    padding: 0.65rem 0.9rem;
+    min-width: 90px;
+  }
+  .sem-tab-label {
+    font-size: 0.85rem;
+  }
+  .syllabus-table th, .syllabus-table td {
+    padding: 0.75rem 0.85rem;
+  }
+  .syllabus-modal-dialog {
+    margin: 0.75rem;
+  }
+  .syllabus-modal-header, .syllabus-modal-body, .syllabus-modal-footer {
+    padding: 1.25rem;
+  }
+}

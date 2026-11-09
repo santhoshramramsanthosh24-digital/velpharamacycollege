@@ -1,0 +1,1228 @@
+{
+  "general_settings": {
+    "college_name": "Vel Pharmacy College",
+    "parent_name": "Vels Institute of Science, Technology & Advanced Studies (VISTAS)",
+    "logo_image": "assets/images/logo.jpg",
+    "phone_primary": "+91 812 261 3300",
+    "phone_secondary": "+91 44 2266 2500",
+    "email_primary": "vels@vistas.ac.in",
+    "email_admissions": "admission@velpharmacycollege.com",
+    "anti_ragging_tollfree": "1800-180-5522",
+    "campus_address": "VMCH Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk, Tiruvallur District – 601102, Tamil Nadu, India",
+    "working_hours": "Monday - Saturday: 8:30 AM - 4:30 PM",
+    "admission_status": "Admission Open for 2024–2025 Batch: 4-Year B.Pharm Degree Program (PCI Approved)",
+    "social_facebook": "https://www.facebook.com/velspharmacy",
+    "social_instagram": "https://www.instagram.com/velspharmacy",
+    "social_youtube": "https://www.youtube.com/@VelsUniversity",
+    "social_linkedin": "https://www.linkedin.com/school/vistas",
+    "social_twitter": "https://twitter.com/vistas",
+    "nav_apply_text": "Apply Now",
+    "nav_apply_link": "enquiry",
+    "floating_enquiry_text": "Admission Enquiry",
+    "floating_enquiry_link": "enquiry",
+    "floating_notice_text": "Announcements",
+    "floating_notice_link": "#announcements",
+    "footer_about_text": "Established in 2024–25 as an off-campus center of Vels Institute of Science, Technology & Advanced Studies (VISTAS Deemed University) in the VMCH Campus, Manjankaranai. Approved by the Pharmacy Council of India (PCI), New Delhi.",
+    "footer_badge_1": "30+ Yrs Legacy",
+    "footer_badge_2": "11 Campuses",
+    "footer_copyright": "Vel Pharmacy College. All Rights Reserved. Member institution of VISTAS.",
+    "admissions_cta_text": "Apply Online 2026",
+    "preloader_video": "assets/videos/vel-pharmacy-logo-animation.mp4"
+  },
+  "general_contact": {
+    "college_name": "Vel Pharmacy College",
+    "parent_name": "Vels Institute of Science, Technology & Advanced Studies (VISTAS)",
+    "phone_primary": "+91 812 261 3300",
+    "phone_secondary": "+91 44 2266 2500",
+    "email_primary": "vels@vistas.ac.in",
+    "email_admissions": "admission@velpharmacycollege.com",
+    "anti_ragging_tollfree": "1800-180-5522",
+    "campus_address": "VMCH Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk, Tiruvallur District – 601102, Tamil Nadu, India",
+    "working_hours": "Monday - Saturday: 8:30 AM - 4:30 PM",
+    "admission_status": "Admission Open for 2024–2025 Batch: 4-Year B.Pharm Degree Program (PCI Approved)"
+  },
+  "home": {
+    "pill_badge": "Admissions Open 2026–2027 • Approved by PCI New Delhi",
+    "title_main": "Excellence in",
+    "title_highlight": "Shaping The Future of Healthcare & Pharmaceutical Science",
+    "description": "4-Year Bachelor of Pharmacy (B.Pharm) Degree Program at VMCH Medical Campus, Tiruvallur. World-class research laboratories with hands-on hospital clinical training.",
+    "cta_primary_text": "Apply for Admissions 2024–2025",
+    "cta_primary_link": "enquiry",
+    "cta_secondary_text": "Explore Curriculum",
+    "cta_secondary_link": "courses",
+    "helpline_label": "Admissions Helpline",
+    "helpline_number": "+91 812 261 3300",
+    "hero_image": "assets/images/campus-front.jpg",
+    "video_mp4": "assets/videos/VMCH VIDEO - SUBBHIKRISHNAN.mp4",
+    "announcement_text": "Admission Open for 2024–2025 Batch: 4-Year B.Pharm Degree Program (PCI Approved) • Merit-based entry for +2 PCM/PCB students",
+    "pillars_header": {
+      "eyebrow": "Institutional Excellence & Trust",
+      "title": "Pillars of Pharmaceutical Eminence",
+      "subtitle": "Four defining cornerstones establishing Vel Pharmacy College as Tamil Nadu's benchmark destination for modern pharmacy education, clinical hospital mastery, and world-class scientific research."
+    },
+    "pillars": [
+      {
+        "tag": "Heritage & Trust",
+        "stat_num": "30+",
+        "stat_txt": "Years Legacy",
+        "title": "30+ Years Group Legacy",
+        "desc": "Pioneering world-class education under the visionary guidance of Chancellor Dr. Ishari K. Ganesh, nurturing thousands of healthcare leaders globally.",
+        "bullet_1": "40+ Premier Institutions",
+        "bullet_2": "45,000+ Alumni Worldwide",
+        "link_text": "Explore Heritage",
+        "link_url": "about-us",
+        "image": "assets/images/0001-768x403.jpg"
+      },
+      {
+        "tag": "Clinical Practice",
+        "stat_num": "1,000+",
+        "stat_txt": "Bed Hospital",
+        "title": "1,000+ Bed Hospital Training",
+        "desc": "Direct patient bedside learning and clinical rotations at Vel Multi-Specialty Hospital, mastering therapeutic drug monitoring and hospital ward care.",
+        "bullet_1": "On-Campus Medical Center",
+        "bullet_2": "Direct Ward & ICU Exposure",
+        "link_text": "Clinical Facility",
+        "link_url": "facilities#hospital",
+        "image": "assets/images/hospital-facility.jpg"
+      },
+      {
+        "tag": "R&D Facilities",
+        "stat_num": "15+",
+        "stat_txt": "Modern Labs",
+        "title": "15+ Modern Research Labs",
+        "desc": "Equipped with state-of-the-art HPLC, UV-Vis spectrophotometers, CADD molecular modeling suites, and industrial scale formulation machinery.",
+        "bullet_1": "HPLC & Analytical Precision",
+        "bullet_2": "Industrial Formulation Pilot Plant",
+        "link_text": "View Laboratories",
+        "link_url": "facilities",
+        "image": "assets/images/research-lab-modern.jpg"
+      },
+      {
+        "tag": "Accreditation",
+        "stat_num": "PCI",
+        "stat_txt": "Approved",
+        "title": "PCI Approved • VISTAS",
+        "desc": "Statutory accreditation by Pharmacy Council of India (PCI), New Delhi, functioning under VISTAS Deemed-to-be University with NAAC A+ standards.",
+        "bullet_1": "PCI New Delhi Approved",
+        "bullet_2": "UGC Deemed University Center",
+        "link_text": "Curriculum & Degree",
+        "link_url": "courses",
+        "image": "assets/images/campus-front.jpg"
+      }
+    ],
+    "events_highlights": {
+      "subtitle": "Campus Life & Key Milestones",
+      "title": "Upcoming Events & Institutional Highlights",
+      "description": "Stay connected with upcoming academic conferences, hands-on clinical workshops, and premier institutional achievements shaping pharmaceutical education at Vel Pharmacy College.",
+      "events_title": "Upcoming Events",
+      "events_badge": "Academic Calendar 2026",
+      "events": [
+        {
+          "date": "2026-11-18",
+          "month": "NOV",
+          "day": "18",
+          "year": "2026",
+          "category": "National Symposium",
+          "category_color": "blue",
+          "title": "National Seminar on AI & Machine Learning in Modern Drug Discovery",
+          "time": "09:30 AM – 03:30 PM",
+          "venue": "Dr. Ishari K. Ganesh Seminar Hall",
+          "description": "Expert talks by pharmaceutical data scientists on generative AI, molecular docking simulations, and QSAR algorithms.",
+          "link": "enquiry"
+        },
+        {
+          "date": "2026-11-28",
+          "month": "NOV",
+          "day": "28",
+          "year": "2026",
+          "category": "PCI Workshop",
+          "category_color": "amber",
+          "title": "PCI Sponsored Quality Improvement Program on Good Laboratory Practices (GLP)",
+          "time": "10:00 AM – 04:30 PM",
+          "venue": "Advanced Formulation Pilot Plant",
+          "description": "Comprehensive regulatory documentation, cleanroom protocol compliance, and analytical instrument validation.",
+          "link": "facilities"
+        },
+        {
+          "date": "2026-12-05",
+          "month": "DEC",
+          "day": "05",
+          "year": "2026",
+          "category": "Hands-On Workshop",
+          "category_color": "maroon",
+          "title": "Advanced Instrumentation Workshop: High-Performance Liquid Chromatography (HPLC)",
+          "time": "10:00 AM – 04:00 PM",
+          "venue": "Central Instrumentation & Analysis Lab",
+          "description": "Practical training for students on method validation, peak integration, and quantitative chromatographic assays.",
+          "link": "enquiry"
+        },
+        {
+          "date": "2026-12-18",
+          "month": "DEC",
+          "day": "18",
+          "year": "2026",
+          "category": "Clinical Rounds",
+          "category_color": "green",
+          "title": "Hospital Pharmacy Practice & Inpatient Bedside Rounds at VMCH",
+          "time": "09:00 AM – 01:00 PM",
+          "venue": "VMCH Teaching Hospital, Manjankaranai",
+          "description": "Ward rounds, patient history interviews, and therapeutic drug monitoring protocols guided by senior clinical preceptors.",
+          "link": "facilities"
+        },
+        {
+          "date": "2027-01-12",
+          "month": "JAN",
+          "day": "12",
+          "year": "2027",
+          "category": "Clinical Rounds",
+          "category_color": "green",
+          "title": "Clinical Pharmacovigilance & Adverse Drug Reaction Reporting Symposium",
+          "time": "09:00 AM – 01:00 PM",
+          "venue": "VMCH Seminar Room & Wards",
+          "description": "Clinical pharmacy faculty-led patient chart reviews, therapeutic drug monitoring, and inpatient ward protocols.",
+          "link": "facilities"
+        },
+        {
+          "date": "2027-02-20",
+          "month": "FEB",
+          "day": "20",
+          "year": "2027",
+          "category": "Community Outreach",
+          "category_color": "amber",
+          "title": "National Pharmacy Week: Rural Health Screening & Pharmacovigilance Camp",
+          "time": "08:30 AM – 02:00 PM",
+          "venue": "Velan Nagar Community Health Center",
+          "description": "Public health awareness on rational antibiotic usage, geriatric dosage regimens, and vital health screenings.",
+          "link": "contact-us"
+        },
+        {
+          "date": "2026-09-25",
+          "month": "SEP",
+          "day": "25",
+          "year": "2026",
+          "category": "Celebration & Induction",
+          "category_color": "green",
+          "title": "World Pharmacists Day 2026 & White Coat Ceremony for Freshers Batch",
+          "time": "10:00 AM – 02:00 PM",
+          "venue": "Dr. Ishari K. Ganesh Auditorium",
+          "description": "Induction of new B.Pharm students with the Pharmacist Oath, guest lectures by eminent healthcare leaders, and academic awards.",
+          "link": "about-us"
+        },
+        {
+          "date": "2026-10-15",
+          "month": "OCT",
+          "day": "15",
+          "year": "2026",
+          "category": "Guest Masterclass",
+          "category_color": "blue",
+          "title": "Industry Masterclass: Modern Computer-Aided Drug Design (CADD) & Molecular Docking",
+          "time": "11:00 AM – 03:00 PM",
+          "venue": "Advanced Digital Chemistry Lab",
+          "description": "Hands-on computational chemistry workshop on PyMOL, AutoDock Vina, and pharmacophore modeling for novel drug synthesis.",
+          "link": "courses"
+        }
+      ],
+      "highlights_title": "College Highlights",
+      "highlights_badge": "Institutional Prestige",
+      "highlights": [
+        {
+          "icon": "shield",
+          "tag": "Accreditation",
+          "badge": "PCI Approved",
+          "title": "Pharmacy Council of India (PCI) Statutory Approval",
+          "desc": "Fully recognized and approved by PCI, New Delhi under VISTAS Deemed to be University, upholding premier educational benchmarks.",
+          "link": "about-us",
+          "image": "assets/images/campus-main-entrance.jpg"
+        },
+        {
+          "icon": "cpu",
+          "tag": "Curriculum",
+          "badge": "193 Credits • NEP 2020",
+          "title": "Pioneering NEP 2020 Syllabus with Python & AI",
+          "desc": "Tamil Nadu's first 4-year B.Pharm integrating Python Programming, Machine Learning, Clinical AI, and 240 hours internships.",
+          "link": "courses",
+          "image": "assets/images/computer-lab.jpg"
+        },
+        {
+          "icon": "hospital",
+          "tag": "Clinical Immersion",
+          "badge": "300+ Bed Hospital",
+          "title": "On-Campus VMCH Medical College & Hospital",
+          "desc": "Unrivaled real-world hospital exposure with bedside patient rotations, ADR reporting, and drug interaction analysis.",
+          "link": "facilities",
+          "image": "assets/images/hospital-facility.jpg"
+        },
+        {
+          "icon": "flask",
+          "tag": "Research Labs",
+          "badge": "15+ High-Tech Labs",
+          "title": "State-of-the-Art Analytical & Formulation Suites",
+          "desc": "Equipped with HPLC, UV-Vis Spectrophotometers, Pilot Formulation Plant, Machine Room, and Digital Molecular Modeling Lab.",
+          "link": "facilities",
+          "image": "assets/images/research-lab-modern.jpg"
+        }
+      ]
+    },
+    "welcome": {
+      "subtitle": "Excellence In Pharmaceutical Education",
+      "title": "Welcome to Vel Pharmacy College",
+      "description": "Pharmacy is the noble profession concerned with the art and science of preparing drugs from natural and synthetic sources and transforming them into suitable materials for the treatment and prevention of disease.",
+      "founder_image": "assets/images/chancellor-ishari-ganesh-vistas.jpg",
+      "founder_quote": "“I welcome the aspiring youth to join us to realize the objectives of the university and the goals of Higher Education.”",
+      "founder_bio_p1": "The great visionary, educationist, philanthropist, and sports enthusiast Dr. Ishari K. Ganesh, the young and dynamic Founder Chancellor of Vels University, established Vel Pharmacy College in the academic year 2024–25 in the off-campus center at the VMCH Medical College Campus, Manjankaranai.",
+      "founder_bio_p2": "This expansion builds on the rich foundation of the School of Pharmaceutical Studies, originally founded by the Vaels Educational Trust in 1992 as Vels College of Pharmacy, which transitioned into a constituent institution of VELS INSTITUTE OF SCIENCE TECHNOLOGY AND ADVANCED STUDIES (VISTAS), Deemed to be University Estd. U/S 3 of the UGC Act, 1956.",
+      "founder_name": "Dr. Ishari K. Ganesh",
+      "founder_role": "Founder | Chancellor, VISTAS",
+      "vision_title": "Our Vision",
+      "vision_text": "To become a globally recognized premier Institution of excellence in Academics and Research in Pharmaceutical Sciences and to create experts of pharmacy profession with high level of intellect, cultural and ethical values to serve the Society.",
+      "mission_title": "Our Mission",
+      "mission_text": "To inculcate the professional thirst among the students by providing standard education. To build good character and ethical values along with pharmacy education. To serve the society by solving the emerging challenges of health care system."
+    },
+    "course_spotlight": {
+      "subtitle": "Academic Program",
+      "title": "Bachelor of Pharmacy (B.Pharm)",
+      "description": "A rigorous 4-year professional degree recognized by the Pharmacy Council of India (PCI), New Delhi, designed to mold future leaders in clinical, industrial, and hospital pharmacy.",
+      "image": "assets/images/pharmacy-lab-main.jpg",
+      "badge": "Undergraduate Degree",
+      "pill": "4 Years • 8 Semesters • NEP 2020 (193 Credits)",
+      "heading": "Bachelor of Pharmacy (B.Pharm)",
+      "desc": "Structured as per the updated Pharmacy Council of India (PCI) NEP 2020 Curriculum. Graduates master core pharmacology, pharmaceutics, and medicinal chemistry alongside high-demand digital frontiers including Python Programming, Machine Learning, Clinical AI, and 240 hours of hospital/industrial internships.",
+      "duration": "4 Years (8 Sem)",
+      "credits": "193 Credits (CBCS)",
+      "eligibility": "+2 with PCM or PCB",
+      "medium": "English",
+      "btn_primary_text": "View Full Curriculum & Syllabus",
+      "btn_primary_link": "courses",
+      "btn_secondary_text": "Admission Enquiry",
+      "btn_secondary_link": "enquiry"
+    },
+    "facilities_section": {
+      "subtitle": "Infrastructure",
+      "title": "Modern Campus & Specialized Labs",
+      "description": "Located in a serene and pollution-free campus at Velan Nagar, Manjankaranai, our dedicated facilities feature state-of-the-art infrastructure built to international standards.",
+      "cards": [
+        {
+          "title": "Smart Lecture Halls",
+          "desc": "Spacious, well-ventilated halls equipped with green boards, white boards, ceiling-mounted LCD projectors, OHP, comfortable tiered seating, and dedicated microphones and speaker systems.",
+          "image": "assets/images/lecture-hall.jpg"
+        },
+        {
+          "title": "Central Library",
+          "desc": "Accommodates 100+ students with 1,500+ books, 750+ titles, 40 National and 10 International journals, and full access to premier online e-journals for pharmacy research.",
+          "image": "assets/images/library-main.jpg"
+        },
+        {
+          "title": "Advanced Laboratories",
+          "desc": "Fully equipped labs for Pharmaceutics (Labs 1, 2, 3), Pharmaceutical Chemistry, Analysis, Pharmacognosy, Pharmacology, Bio-Chemistry, Machine Room, and Central Instrumentation.",
+          "image": "assets/images/instrumentation-lab.jpg"
+        },
+        {
+          "title": "VMCH Hospital Training",
+          "desc": "The on-campus Vels Medical College and Hospital provides students with direct clinical exposure, practical hospital pharmacy experience, and drug interaction monitoring.",
+          "image": "assets/images/hospital-facility.jpg"
+        },
+        {
+          "title": "Air-Conditioned Computer Lab",
+          "desc": "Equipped with 50 high-speed networked computers, dedicated high-speed internet, digital learning resources, and managed by qualified computer science faculty.",
+          "image": "assets/images/computer-lab.jpg"
+        },
+        {
+          "title": "Hostels & Transportation",
+          "desc": "Separate hostels for boys and girls with private dining, 24/7 security, recreational rooms, and an extensive fleet of institution buses connecting all parts of Chennai and Tiruvallur.",
+          "image": "assets/images/hostel-facility.jpg"
+        }
+      ]
+    },
+    "why_choose": {
+      "subtitle": "Institutional Strengths",
+      "title": "Why Choose Vel Pharmacy College?",
+      "description": "Building on over three decades of educational leadership under the Vaels Educational Trust and VISTAS Deemed University.",
+      "features": [
+        {
+          "title": "PCI Approved & VISTAS Center",
+          "desc": "Recognized by the Indian Pharmacy Council, New Delhi, and established as an off-campus center of VISTAS Deemed University."
+        },
+        {
+          "title": "Hospital On Campus",
+          "desc": "Immediate access to Vels Medical College and Hospital (VMCH) for bedside clinical pharmacy training and patient care experience."
+        },
+        {
+          "title": "Experienced Faculty Team",
+          "desc": "Led by Principal Dr. G. Saravanan (18.5+ years experience) and doctorate professors across all pharmaceutical disciplines."
+        },
+        {
+          "title": "Dedicated Placement Network",
+          "desc": "Direct participation in the VISTAS placement program with 90% assured placement across top pharmaceutical corporate recruiters."
+        }
+      ]
+    },
+    "placements": {
+      "subtitle": "Career Opportunities",
+      "title": "Placements @ VISTAS Network",
+      "desc_p1": "Vels Institute of Science, Technology and Advanced Studies (VISTAS) secures the highest number of placement offers in the region. Every year, over 3,000 students engage in the job placement program, with an assured 90% placement rate for eligible students into top pharmaceutical companies and corporate healthcare organizations.",
+      "desc_p2": "Career pathways for our B.Pharm graduates include Industrial Pharmacist, Hospital Pharmacist, Clinical Research Coordinator, Drug Inspector in Government Sector, Medical Writer, and Pharmacovigilance Analyst.",
+      "stat_1_num": "90%",
+      "stat_1_label": "Assured Placements",
+      "stat_2_num": "3000",
+      "stat_2_label": "Students in Annual Placement",
+      "stat_3_num": "8 LPA",
+      "stat_3_label": "Highest Package",
+      "stat_4_num": "5 LPA",
+      "stat_4_label": "Standard / Average Package"
+    },
+    "faqs": {
+      "subtitle": "Got Questions?",
+      "title": "Frequently Asked Questions",
+      "description": "Direct answers to common questions about admissions, approvals, courses, and facilities at Vel Pharmacy College.",
+      "items": [
+        {
+          "question": "What courses are offered at Vel Pharmacy College?",
+          "answer": "Vel Pharmacy College offers the 4-year Bachelor of Pharmacy (B.Pharm) undergraduate degree program across 8 semesters. The program is recognized and approved by the Pharmacy Council of India (PCI), New Delhi, and is affiliated to Vels Institute of Science, Technology & Advanced Studies (VISTAS)."
+        },
+        {
+          "question": "What is the admission eligibility for B.Pharm at Vel Pharmacy College?",
+          "answer": "As per Pharmacy Council of India (PCI) norms, candidates must have passed higher secondary (+2) examination with Physics, Chemistry, and Mathematics or Biology/Botany and Zoology. Admission is strictly merit-based on the percentage of marks secured in the qualifying examination."
+        },
+        {
+          "question": "Where is Vel Pharmacy College located?",
+          "answer": "Vel Pharmacy College is located in the VMCH Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk, Tiruvallur District – 601102, Tamil Nadu, India. The institution features a tranquil, pollution-free, green educational environment."
+        },
+        {
+          "question": "Is Vel Pharmacy College approved by the Pharmacy Council of India (PCI)?",
+          "answer": "Yes, Vel Pharmacy College is recognized and approved by the Pharmacy Council of India (PCI), New Delhi. It is an off-campus center of VISTAS (Vels Institute of Science, Technology & Advanced Studies, Deemed to be University estd. u/s 3 of UGC Act, 1956)."
+        },
+        {
+          "question": "What facilities are available for students at Vel Pharmacy College?",
+          "answer": "The campus features spacious lecture halls with LCD projectors, advanced pharmaceutical laboratories, an air-conditioned 50-seater computer lab, a library with 1,500+ books and e-journals, on-campus Vels Medical College Hospital (VMCH) training, separate hostels for boys and girls, and transport services across the city."
+        }
+      ]
+    },
+    "cta_banner": {
+      "title": "Begin Your Journey in Pharmaceutical Excellence",
+      "subtitle": "Admissions Open for 2024–2025 Batch. Merit-based seats allocated on a rolling basis.",
+      "btn_text": "Apply for Admissions 2024–2025",
+      "btn_link": "enquiry"
+    },
+    "principal_spotlight": {
+      "name": "Dr. G. Saravanan",
+      "qualification": "M. Pharm., Ph.D., FAPP",
+      "designation": "Professor & Principal",
+      "image": "assets/images/Faculty/Dr. G. Saravanan.png",
+      "badge": "Principal's Desk • Academic Leadership",
+      "quote": "Welcome to Vel Pharmacy College, VISTAS Off-campus center at the VMCH Medical Campus in Manjankaranai. Pharmacy is directly connected with the healthcare lifeline of society. The B.Pharm degree creates future pillars of the healthcare ecosystem—equipping graduates to thrive as industrial pharmacists, clinical specialists, pharmacovigilance analysts, hospital pharmacists, and pharmaceutical entrepreneurs."
+    },
+    "site_stats": {
+      "full_time_faculty": "11+",
+      "pci_approved_percent": "100%",
+      "student_faculty_ratio": "15:1",
+      "specialized_laboratories": "12+",
+      "hospital_beds_training": "300+",
+      "placement_support": "100%"
+    },
+    "hero_video": "assets/videos/VMCH VIDEO - SUBBHIKRISHNAN.mp4",
+    "hero_video_poster": "assets/images/campus-front.jpg"
+  },
+  "about_us": {
+    "banner": {
+      "title": "About Vel Pharmacy College Chennai",
+      "subtitle": "An off-campus center of VELS Institute of Science, Technology & Advanced Studies (VISTAS Deemed University), dedicated to excellence in pharmaceutical sciences, clinical training, and healthcare ethics.",
+      "image": "assets/images/library-main.jpg",
+      "badge": "30+ Years Educational Legacy"
+    },
+    "welcome": {
+      "subtitle": "A Noble Calling in Healthcare",
+      "title": "Welcome To Vel Pharmacy College - Premier Pharmaceutical Hub",
+      "paragraph_1": "Pharmacy is the profession concerned with the art and science of preparing drugs from natural and synthetic sources and converting them into suitable and convenient materials for the treatment and prevention of disease.",
+      "paragraph_2": "Pharmacy degree holders possess a greater degree of career flexibility than almost any other healthcare profession. Graduates can either start their career as independent entrepreneurs or work within hospitals and modern clinical settings.",
+      "paragraph_3": "Our pharmacy graduates are equipped to excel across diverse pharma industries, including sales, marketing, research and development (R&D), manufacturing, quality control and assurance, regulatory affairs, and pharmaceutical education."
+    },
+    "career_versatility": {
+      "heading": "Career Versatility",
+      "items": [
+        {
+          "tag": "Industrial",
+          "text": "Drug Formulation & Manufacturing"
+        },
+        {
+          "tag": "Hospital",
+          "text": "Clinical & Bedside Pharmacy Practice"
+        },
+        {
+          "tag": "Government",
+          "text": "Drug Inspector & Regulatory Affairs"
+        },
+        {
+          "tag": "Research",
+          "text": "Clinical Trials & Pharmacovigilance"
+        },
+        {
+          "tag": "Business",
+          "text": "Pharmaceutical Entrepreneurship"
+        }
+      ]
+    },
+    "legacy": {
+      "subtitle": "Heritage & Foundation",
+      "title": "Our Institutional Journey",
+      "description": "From a pioneering pharmacy college founded in 1992 to a Deemed University off-campus center of excellence.",
+      "card_heading": "A Legacy Built on Educational Philanthropy & Academic Vision",
+      "p1": "The great visionary, educationist, philanthropist, and sports enthusiast Dr. Ishari K. Ganesh, the dynamic Founder Chancellor of VISTAS Deemed University in India, established Vel Pharmacy College in the academic year 2024–25 in the Vels Medical College Campus at Manjankaranai.",
+      "p2": "This institution represents an expansion of the School of Pharmaceutical Studies, which was originally established by the Vaels Educational Trust in the year 1992 as Vels College of Pharmacy. Over three decades, it introduced pioneering undergraduate, postgraduate, and doctoral (Pharm.D & Ph.D.) programs in pharmaceutical sciences.",
+      "p3": "In 2008, the college achieved university recognition as a constituent institution of VELS INSTITUTE OF SCIENCE TECHNOLOGY AND ADVANCED STUDIES (VISTAS), Deemed to be University Estd. U/S 3 of the UGC Act, 1956. Vel Pharmacy College continues this rich heritage by delivering PCI-prescribed education in a tranquil, state-of-the-art campus."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To become a globally recognized premier Institution of excellence in Academics and Research in Pharmaceutical Sciences and to create experts of pharmacy profession with high level of intellect, cultural and ethical values to serve the Society."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To inculcate the professional thirst among the students by providing standard education. To build good character and ethical values along with pharmacy education. To serve the society by solving the emerging challenges of health care system."
+    },
+    "principal_address": {
+      "subtitle": "Academic Leadership",
+      "title": "Principal's Address",
+      "description": "Message from the head of the institution welcoming the next generation of pharmaceutical professionals.",
+      "image": "assets/images/Faculty/Dr. G. Saravanan.png",
+      "quote": "I am welcoming the pharmacy buds to our Vel Pharmacy College, VISTAS Off-campus center. VISTAS has been established in the year 2008 with the vision to make the institute an epitome of excellence in higher education by effectively providing high quality education and rigorous training to students in multiple streams of choice with ample scope for all round development.\n\nVel Pharmacy College has been started in the academic year 2024-2025 under the management of VISTAS. Pharmacy profession is directly connected with the health care system of the society. B. Pharm is a course which creates the future pillars of health care system.\n\nWe offer an education to the students not only for a future job but also to create self-confidence for the students to become part and parcel of the health care society. For becoming a successful professional in the society, one must develop self-discipline.",
+      "name": "Dr. G. Saravanan",
+      "qualification": "M. Pharm., Ph.D., FAPP",
+      "designation": "Professor & Principal",
+      "department": "Department of Pharmaceutical Chemistry",
+      "experience": "18.5 Years Experience"
+    },
+    "sister_institutions": {
+      "subtitle": "Vels Group Network",
+      "title": "Our Sister Institutions",
+      "description": "Vel Pharmacy College is proud to be part of the renowned Vels Group of Institutions, encompassing universities, medical colleges, dental institutes, nursing colleges, and premier schools across Tamil Nadu and Telangana.",
+      "list": [
+        {
+          "sno": "01",
+          "name": "Vels University (VISTAS)",
+          "location": "Pallavaram, Chennai"
+        },
+        {
+          "sno": "02",
+          "name": "Mahavir Institute of Medical Sciences",
+          "location": "Vikarabad, Hyderabad – Telangana"
+        },
+        {
+          "sno": "03",
+          "name": "Meghna Institute of Dental Sciences (MIDS)",
+          "location": "Mallaram, Nizamabad, Telangana"
+        },
+        {
+          "sno": "04",
+          "name": "Sri Venkateswara Dental College & Hospital",
+          "location": "Thalambur, Chennai"
+        },
+        {
+          "sno": "05",
+          "name": "Venkateswara Nursing College",
+          "location": "Thalambur, Chennai"
+        },
+        {
+          "sno": "06",
+          "name": "Shri ISARI Velan Mission Hospital",
+          "location": "Thalambur, Chennai"
+        },
+        {
+          "sno": "07",
+          "name": "Vels Vidyashram (CBSE School)",
+          "location": "Pallavaram, Chennai"
+        },
+        {
+          "sno": "08",
+          "name": "Vels Vidyashram (CBSE School)",
+          "location": "Thalambur, Chennai"
+        },
+        {
+          "sno": "09",
+          "name": "Vels Vidyashram Kindergarten",
+          "location": "Cantonment – Pallavaram, Chennai"
+        },
+        {
+          "sno": "10",
+          "name": "Vels Vidyashram (CBSE International School)",
+          "location": "Pallavaram, Chennai"
+        },
+        {
+          "sno": "11",
+          "name": "Vaels International School",
+          "location": "Injambakkam, Chennai"
+        },
+        {
+          "sno": "12",
+          "name": "Vels International Pre School – Kindle Kids",
+          "location": "Neelankarai, Chennai"
+        },
+        {
+          "sno": "13",
+          "name": "Vels Kinder Kids",
+          "location": "Mylapore, Chennai"
+        }
+      ]
+    },
+    "cta_banner": {
+      "title": "Join an Institution of Proven Academic Excellence",
+      "subtitle": "Admissions are open for the B.Pharm 2024–2025 batch. Contact our counselors today or submit your enquiry online.",
+      "btn1_text": "Online Enquiry Form",
+      "btn1_link": "enquiry",
+      "btn2_text": "View B.Pharm Syllabus",
+      "btn2_link": "courses"
+    }
+  },
+  "leadership": {
+    "banner": {
+      "title": "Leadership & Academic Stewardship",
+      "subtitle": "Guided by visionary educational pioneers and dedicated administrators who steer Vel Pharmacy College toward global academic distinction and ethical healthcare leadership.",
+      "image": "assets/images/Group_pic.jpg",
+      "badge": "Visionary Leadership & Excellence"
+    },
+    "section_header": {
+      "subtitle": "Governance & Academic Stewardship",
+      "title": "Our Leadership Team",
+      "description": "Meet the distinguished visionary leaders, university statutory officers, and collegiate administrators steering VISTAS and Vel Pharmacy College toward world-class academic distinction and ethical healthcare leadership."
+    },
+    "leaders": [
+      {
+        "id": "ishari-ganesh",
+        "name": "Dr. Ishari K. Ganesh",
+        "title": "Founder & Chancellor • Vels Group of Institutions & VISTAS Deemed to be University",
+        "tag": "Visionary Patron & Founder",
+        "image": "assets/images/chancellor-ishari-ganesh-vistas.jpg",
+        "quote": "Education is not merely the acquisition of theoretical qualifications, but the catalyst for nation-building, social transformation, and compassionate service to humanity.\n\nVels University has successfully advanced into its sixteenth year since it was declared a Deemed-to-be University in 2008. Rising from a modest start in 1992 under the inspiration of my illustrious father, late Shri Isari Velan (former Minister in Tamil Nadu Government), Vels Group of Institutions has now expanded over 11 excellent educational campuses with international standard facilities, qualified faculty, modern laboratories, and global exchange programs. Our steadfast commitment is to empower Vel Pharmacy College students with clinical mastery and ethical dedication to society.",
+        "badges": [
+          "★ 32+ Years Educational Leadership",
+          "43+ Academic Institutions",
+          "42,000+ Students & 7,500+ Staff",
+          "11 Prestigious Campuses"
+        ]
+      },
+      {
+        "id": "preethaa-ganesh",
+        "name": "Dr. Preethaa Ganesh",
+        "title": "M.Sc. (LSE, London), Ph.D. • Vice-President, Vels Group of Institutions",
+        "tag": "Executive Governance",
+        "image": "assets/images/dr-preethaa-ganesh.jpg",
+        "quote": "Modern healthcare and professional education demand progressive administrative vision, world-class infrastructure, and a student-centric learning environment.\n\nDr Preethaa manages operations of the Vels conglomerate comprising 43 institutions, 36,000 students and 6,000 staff across India, Singapore, and the United Kingdom. With her advanced Master's in Management from the London School of Economics and Political Sciences (LSE) and Ph.D. in Women Entrepreneurship, she guides institutional expansion, international academic partnerships, and student welfare initiatives across all group campuses.",
+        "badges": [
+          "London School of Economics Alumna",
+          "Ph.D. in Women Entrepreneurship",
+          "Global Operations: India, UK & Singapore"
+        ]
+      },
+      {
+        "id": "jothi-murugan",
+        "name": "Dr. A. Jothi Murugan",
+        "title": "Pro-Chancellor (Planning & Development), VISTAS",
+        "tag": "Planning & Development",
+        "image": "assets/images/dr-jothi-murugan.jpg",
+        "quote": "Sustainable academic distinction requires visionary master planning, rigorous curriculum governance, and continuous benchmarking against premier global standards.\n\nEntering into the teaching profession as a Tutor in Economics at Pachaiyappa’s College, Chennai in 1971, Dr. A. Jothi Murugan served over 28 years in Government collegiate education, culminating as Principal of Presidency College, Regional Joint Director of Collegiate Education for Chennai Region, and Vice-Chancellor of Thiruvalluvar University, Vellore. Presently serving as Pro-Chancellor (P&D) at VISTAS, he steers institutional expansion, strategic master planning, and national accreditations.",
+        "badges": [
+          "Former Vice-Chancellor, Thiruvalluvar University",
+          "Former Principal, Presidency College",
+          "50+ Years in Higher Education"
+        ]
+      },
+      {
+        "id": "arthi-ganesh",
+        "name": "Dr. Arthi Ganesh",
+        "title": "Pro-Chancellor (Administration), VISTAS & Academic Advisor, VELS",
+        "tag": "Academic Administration",
+        "image": "assets/images/dr-arthi-ganesh.jpg",
+        "quote": "Creating an effective, unique environment for learners at every stage of education is the key to unlocking human excellence and national progress.\n\nDr. Arthi Ganesh is a multifaceted educationist. As Pro-Chancellor of Vels University and Academic Advisor of Vels Group of Institutions, she oversees the academic functioning of more than 43 institutions offering programs from Pre-KG to Ph.D. for over 42,000 students with 7,500 staff members. Inspired by Dr. A.P.J. Abdul Kalam, Dr. Arthi Ganesh has championed Dr. Kalam’s vision of making India a knowledge superpower through holistic education, student-centric academic culture, and continuous pedagogy innovations.",
+        "badges": [
+          "Academic Advisor to 43+ Institutions",
+          "Dr. Kalam Knowledge Mission Advocate",
+          "Holistic Pedagogical Leadership"
+        ]
+      },
+      {
+        "id": "muthusamy-bhaskaran",
+        "name": "Prof. Dr. Muthusamy Bhaskaran",
+        "title": "Vice-Chancellor (FAC), VISTAS Deemed to be University",
+        "tag": "University Executive Head",
+        "image": "assets/images/dr-muthusamy-bhaskaran.jpg",
+        "quote": "Higher education and scientific inquiry must directly serve community well-being and industrial progress.\n\nProf. Dr. Muthusamy Bhaskaran is an eminent scientist, distinguished academic administrator, institution builder, and higher education policy expert with nearly four decades of rich experience in higher education, scientific research, institutional governance, and public policy. His leadership at VISTAS reflects visionary academic standards, administrative innovation, and an unwavering commitment to empowering collegiate research, faculty excellence, and student success.",
+        "badges": [
+          "Eminent Scientist & Higher Education Policy Expert",
+          "Nearly 4 Decades in University Leadership",
+          "Research & Institutional Governance"
+        ]
+      },
+      {
+        "id": "chandrasekaran",
+        "name": "Dr. M. Chandrasekaran",
+        "title": "M.E. (REC), Ph.D. (NIT Trichy) • Registrar, VISTAS",
+        "tag": "Central Administration",
+        "image": "assets/images/dr-chandrasekaran-registrar.jpg",
+        "quote": "Impeccable governance, statutory transparency, and systematic academic administration form the cornerstone of university credibility.\n\nProf. Dr. M. Chandrasekaran, a distinguished scholar, eminent administrator, and resourceful torchbearer of academic excellence, stands at the helm of VISTAS as its esteemed Registrar. Grounded in an erudite educational trajectory including a Master of Engineering from REC and a Ph.D. in Production Engineering from NIT Tiruchirappalli, Dr. Chandrasekaran brings over 26 years of experience.",
+        "badges": [
+          "Ph.D., NIT Tiruchirappalli",
+          "26+ Years Experience in Higher Education",
+          "Statutory Governance & Compliance"
+        ]
+      },
+      {
+        "id": "kathireshan",
+        "name": "Prof. Dr. A.K. Kathireshan",
+        "title": "Controller of Examinations I/C • VISTAS",
+        "tag": "Examinations & Evaluation",
+        "image": "assets/images/dr-kathireshan-coe.jpg",
+        "quote": "Preserving examination confidentiality, continuous assessment rigor, and objective academic evaluation safeguards the value of our university credentials worldwide.\n\nWith 27 years of distinguished experience in higher education and specialized research expertise in Microbiology and Life Sciences, Prof. Dr. A.K. Kathireshan has been associated with VISTAS since September 1994. He leads university examination management, computerized evaluation frameworks, continuous internal assessment rigor, and statutory examination governance.",
+        "badges": [
+          "27+ Years at VISTAS",
+          "Microbiology & Life Sciences Scholar",
+          "Confidential Evaluation Integrity"
+        ]
+      },
+      {
+        "id": "saravanan",
+        "name": "Dr. G. Saravanan",
+        "title": "M. Pharm., Ph.D., FAPP • Professor & Principal, Vel Pharmacy College",
+        "tag": "Collegiate Leadership • Principal's Desk",
+        "image": "assets/images/Faculty/Dr. G. Saravanan.png",
+        "quote": "Welcome to Vel Pharmacy College, VISTAS Off-campus center at the VMCH Medical Campus in Manjankaranai. Pharmacy is directly connected with the healthcare lifeline of society.\n\nThe B.Pharm degree creates future pillars of the healthcare ecosystem—equipping graduates to thrive as industrial pharmacists, clinical specialists, pharmacovigilance analysts, hospital pharmacists, and pharmaceutical entrepreneurs. We offer our students rigorous scientific education, state-of-the-art laboratory exposure, and hospital-integrated clinical rounds to instill self-confidence, professional discipline, and ethical commitment to patient welfare.",
+        "badges": [
+          "Department of Pharmaceutical Chemistry",
+          "18.5+ Years Teaching & Research",
+          "Approved by PCI, New Delhi"
+        ]
+      }
+    ],
+    "governance_philosophy": {
+      "subtitle": "Ethical Foundation",
+      "title": "Our Governance Philosophy",
+      "description": "Vel Pharmacy College operates under strict regulatory compliance with the Pharmacy Council of India (PCI) and UGC guidelines.",
+      "cards": [
+        {
+          "title": "Statutory Regulatory Compliance",
+          "desc": "Approved by the Pharmacy Council of India (PCI), New Delhi. All curriculum syllabi, laboratory ratios, and faculty qualifications adhere strictly to national pharmacy council standards."
+        },
+        {
+          "title": "Academic Transparency & Rigor",
+          "desc": "Managed under the academic oversight of VISTAS Deemed University with structured continuous internal assessments, transparent credit frameworks, and rigorous practical training."
+        },
+        {
+          "title": "Student-Centric Welfare",
+          "desc": "Active Anti-Ragging Committees, Anti-Discrimination Cells, and Gender Sensitization Units safeguard student well-being, mental health, and individual growth on campus."
+        }
+      ]
+    },
+    "cta_banner": {
+      "title": "Begin Your Journey in Pharmaceutical Excellence",
+      "subtitle": "Enroll in the 4-year B.Pharm degree program at Vel Pharmacy College and learn under the guidance of visionary academic mentors.",
+      "btn1_text": "Apply for Admissions",
+      "btn1_link": "enquiry",
+      "btn2_text": "Contact Admissions Office",
+      "btn2_link": "contact-us"
+    }
+  },
+  "courses": {
+    "banner": {
+      "title": "Bachelor of Pharmacy (B.Pharm) Program",
+      "subtitle": "A premier 4-Year (8 Semesters) undergraduate professional degree recognized by the Pharmacy Council of India (PCI), New Delhi and affiliated to Vels Institute of Science, Technology & Advanced Studies (VISTAS).",
+      "image": "assets/images/pharmacy-lab-main.jpg",
+      "badge": "PCI NEP 2020 Approved"
+    },
+    "highlights": {
+      "level": "Undergraduate (UG)",
+      "duration": "4 Years (8 Semesters)",
+      "credits": "193 Credits (CBCS)",
+      "approval": "Pharmacy Council of India (PCI)",
+      "curriculum": "NEP 2020 Aligned",
+      "medium": "English",
+      "intake": "60 Seats Approved"
+    },
+    "overview": {
+      "subtitle": "PCI NEP 2020 Professional Degree Program",
+      "title": "Future-Ready Pharmaceutical Education",
+      "badge": "193 Credits CBCS",
+      "pill": "8 Semesters • Hospital Clinical Training • Research Dissertations",
+      "image": "assets/images/pharmacy-lab-main.jpg",
+      "desc_p1": "The Bachelor of Pharmacy (B.Pharm) program at Vel Pharmacy College is a four-year professional degree meticulously aligned with the Pharmacy Council of India (PCI) NEP 2020 framework. Our curriculum synthesizes foundational pharmaceutical chemistry, pharmaceutics, pharmacognosy, and pharmacology with cutting-edge frontiers including Computer-Aided Drug Design (CADD), Artificial Intelligence in Drug Discovery, and Biostatistics.",
+      "desc_p2": "Our students undergo direct clinical rotations and bedside patient exposure at the on-campus 300+ bed Vels Medical College Hospital (VMCH), mastering therapeutic drug monitoring, patient counseling, pharmacovigilance, and modern hospital pharmacy logistics."
+    },
+    "eligibility": {
+      "title": "Eligibility & Admission Criteria",
+      "subtitle": "As Prescribed by the Pharmacy Council of India (PCI), New Delhi",
+      "hsc_requirement": "Candidates must have passed 10+2 (Higher Secondary) with Physics and Chemistry as compulsory subjects along with either Mathematics or Biology / Botany & Zoology.",
+      "cutoff_general": "Minimum 50% aggregate marks in qualifying examination (40% for reserved categories SC/ST/OBC).",
+      "lateral_entry": "Diploma in Pharmacy (D.Pharm) holders from PCI-approved institutions are eligible for direct admission into the 2nd Year (3rd Semester) of B.Pharm."
+    },
+    "career_scope": {
+      "title": "Career Horizons After B.Pharm",
+      "subtitle": "Diverse Professional Avenues in Healthcare, Industry & Research",
+      "description": "Pharmacy graduates possess unparalleled career flexibility spanning industrial manufacturing, regulatory drug safety, hospital clinical practice, and pharmaceutical entrepreneurship.",
+      "roles": [
+        "Industrial Formulation & Manufacturing Pharmacist",
+        "Quality Control (QC) & Quality Assurance (QA) Analyst",
+        "Clinical Research Associate & Pharmacovigilance Specialist",
+        "Hospital & Critical Care Bedside Pharmacist",
+        "Drug Regulatory Affairs Executive",
+        "Government Drug Inspector & Food Safety Officer",
+        "Medical Science Liaison & Healthcare Writer",
+        "Higher Studies: M.Pharm, MBA Pharma, MS Abroad, Ph.D."
+      ]
+    },
+    "curriculum_overview": {
+      "title": "NEP 2020 Aligned Syllabus Highlights",
+      "description": "193 Total Credits spread across 8 semesters with modular electives, lab practicals, computer simulations, and 240 hours mandatory industrial / hospital internship.",
+      "highlights": [
+        "Semester 1 & 2: Human Anatomy, Pharmaceutical Analysis, Inorganic Chemistry, Pharmaceutics",
+        "Semester 3 & 4: Organic Chemistry, Physical Pharmaceutics, Microbiology, Pharmacology I",
+        "Semester 5 & 6: Medicinal Chemistry, Industrial Pharmacy, Pharmacology II & III, Herbal Drug Tech",
+        "Semester 7 & 8: Instrumental Methods, Biopharmaceutics, Novel Drug Delivery, Capstone Project"
+      ]
+    },
+    "cta_banner": {
+      "badge": "Admissions Open • B.Pharm Program",
+      "title": "Join Vel Pharmacy College Under the Modern NEP 2020 Framework",
+      "subtitle": "Merit-based admissions for +2 passed students (PCM/PCB) and lateral entry for D.Pharm holders. Connect with our admissions desk to secure your academic future today.",
+      "btn1_text": "Submit Online Admission Enquiry",
+      "btn1_link": "enquiry",
+      "btn2_text": "Call: +91 812 261 3300",
+      "btn2_link": "tel:+918122613300"
+    }
+  },
+  "facilities": {
+    "banner": {
+      "title": "Campus Infrastructure & Research Labs",
+      "subtitle": "An expansive green educational campus at VMCH Manjankaranai equipped with high-tech analytical laboratories, central research instrumentation, air-conditioned digital library, and multi-specialty hospital training.",
+      "image": "assets/images/library-main.jpg",
+      "badge": "High-Tech Laboratories & Research Center"
+    },
+    "overview": {
+      "subtitle": "Infrastructure That Inspires Learning",
+      "title": "Modern Infrastructure In a Serene Green Campus",
+      "description_1": "There is an exclusive building with modern and spacious infrastructure. Located in a tranquil atmosphere, there are spacious lecture halls, well-equipped laboratories, a central library, an air-conditioned computer lab with internet facilities, an auditorium, student hostels with dining, indoor & outdoor sports playgrounds, and comprehensive transportation facilities for students and staff.",
+      "description_2": "Situated in the VMCH Campus at Manjankaranai Village, Tiruvallur District, our campus balances academic rigor with peaceful natural surroundings, promoting concentration, mental well-being, and scientific innovation.",
+      "lab_count": "15+ Laboratories (Fully PCI Compliant)",
+      "hospital_info": "VMCH Hospital (300+ Beds Clinical Training)",
+      "campus_front_img": "assets/images/campus-front.jpg",
+      "location_tag": "Campus Location",
+      "location_sub": "VMCH Campus, Manjankaranai • Tiruvallur Dist"
+    },
+    "amenities_header": {
+      "subtitle": "Academic & Living Amenities",
+      "title": "Comprehensive Campus Amenities",
+      "description": "Every essential facility—from smart classrooms and high-speed digital labs to clinical hospital access and separate hostels—is meticulously maintained for student success."
+    },
+    "amenities": [
+      {
+        "title": "Smart Lecture Halls",
+        "desc": "Spacious, tiered lecture halls equipped with LCD projection, acoustic audio-visual systems, high-speed Wi-Fi, and natural ventilation for interactive learning.",
+        "image": "assets/images/lecture-hall.jpg"
+      },
+      {
+        "title": "Central Digital Library",
+        "desc": "Stocked with over 1,500 reference books, National and International pharmaceutical journals, digital e-library terminals, and quiet study alcoves.",
+        "image": "assets/images/library-main.jpg"
+      },
+      {
+        "title": "Pharmaceutics Machine Room",
+        "desc": "Equipped with rotary tablet punch machines, dissolution test apparatus, coating pans, capsule filling machinery, and ampoule sealers.",
+        "image": "assets/images/pharmacy-lab-main.jpg"
+      },
+      {
+        "title": "Central Instrumentation Lab",
+        "desc": "Features high-precision HPLC systems, UV-Visible spectrophotometers, flame photometers, digital polarimeters, and analytical electronic balances.",
+        "image": "assets/images/instrumentation-lab.jpg"
+      },
+      {
+        "title": "Pharmacology Simulation Suite",
+        "desc": "Computer-assisted experimental pharmacology software (CalPharm), organ bath setups, student physiographs, and digital animal simulation tools.",
+        "image": "assets/images/research-lab-modern.jpg"
+      },
+      {
+        "title": "VMCH Medical Hospital",
+        "desc": "Direct on-campus 300+ bed hospital providing real clinical rotations, ICU monitoring exposure, and drug distribution practice.",
+        "image": "assets/images/hospital-facility.jpg"
+      },
+      {
+        "title": "Air-Conditioned Computer Lab",
+        "desc": "50 high-speed networked desktop computers with high-bandwidth internet connectivity, statistical analysis software, and CADD tools.",
+        "image": "assets/images/computer-lab.jpg"
+      },
+      {
+        "title": "Student Hostels & Mess",
+        "desc": "Safe, hygienic separate hostels for male and female students with nutritious dining, 24/7 security surveillance, and resident wardens.",
+        "image": "assets/images/hostel-facility.jpg"
+      },
+      {
+        "title": "Campus Transit Network",
+        "desc": "A fleet of institution buses connecting major residential corridors in Chennai, Red Hills, Avadi, and Tiruvallur town to the campus gates.",
+        "image": "assets/images/transportation.jpg"
+      }
+    ],
+    "specialized_labs": [
+      {
+        "title": "Machine Room",
+        "image": "assets/images/IMG_0113-1-scaled.jpg",
+        "description": "Equipped with tablet punching machines, dissolution test apparatus, disintegration testers, and coating pans."
+      },
+      {
+        "title": "Pharm. Analysis Lab",
+        "image": "assets/images/IMG_0127-scaled.jpg",
+        "description": "Specialized for titration, assay of pharmaceutical compounds, volumetric analysis, and purity testing."
+      },
+      {
+        "title": "Central Instrumentation Lab",
+        "image": "assets/images/IMG_0135-scaled.jpg",
+        "description": "Housing UV-Visible spectrophotometers, digital pH meters, analytical balances, and flame photometers."
+      },
+      {
+        "title": "Museum & Pharmacognosy",
+        "image": "assets/images/IMG_0125-scaled.jpg",
+        "description": "Rich collection of crude herbal drug specimens, anatomical botanical models, and medicinal charts."
+      },
+      {
+        "title": "Pharm. Bio-Technology Lab",
+        "image": "assets/images/IMG_0114-1-scaled.jpg",
+        "description": "Laminar air flow stations, autoclaves, biological safety cabinets, and microbial incubation units."
+      },
+      {
+        "title": "Pharmaceutics Lab 1 & 2",
+        "image": "assets/images/IMG_0117-scaled.jpg",
+        "description": "Dedicated formulation spaces for ointments, suspensions, emulsions, syrups, and capsule compounding."
+      },
+      {
+        "title": "Pharmacology & HAP Lab",
+        "image": "assets/images/IMG_0147-1-scaled.jpg",
+        "description": "Human anatomy skeletons, physiological simulation software, organ baths, and kymograph systems."
+      },
+      {
+        "title": "Anti-Ragging & Welfare Cell",
+        "image": "assets/images/IMG_0100-1-scaled.jpg",
+        "description": "Dedicated student grievance cell and administrative counseling chamber ensuring campus harmony."
+      }
+    ],
+    "placements": {
+      "badge": "Career Growth & Industry Alignment",
+      "title": "Placements @ VISTAS",
+      "description_1": "Vels Institute of Science, Technology and Advanced Studies (VISTAS) is a representation of knowledge and possibilities. It is one of the prestigious, high-grade multidisciplinary Universities in Chennai, securing the highest number of placement offers in the region.",
+      "stat_1_val": "90%",
+      "stat_1_lbl": "Assured Placement Support",
+      "stat_2_val": "3000+",
+      "stat_2_lbl": "Students Placed Annually",
+      "stat_3_val": "₹8.0 LPA",
+      "stat_3_lbl": "Highest Salary Package",
+      "stat_4_val": "₹5.0 LPA",
+      "stat_4_lbl": "Average Salary Standard",
+      "description_2": "Being the top-ranked university in Chennai, VISTAS provides comprehensive placement coaching and essential soft-skills training to students. High-level product-based companies and prominent pharmaceutical leaders are our prime recruiters. Specially designed Employability Skill Development Programs ensure every graduate enters the industry career-ready.",
+      "btn_text": "Apply Now for B.Pharm 2024-25",
+      "btn_link": "enquiry"
+    }
+  },
+  "faculties_page": {
+    "banner": {
+      "title": "Distinguished Pharmacy Faculty Directory",
+      "subtitle": "Meet the esteemed pharmacy educators and research mentors at Vel Pharmacy College, led by Principal Dr. G. Saravanan. Doctorate professors, dedicated researchers, and PCI-approved cadre.",
+      "image": "assets/images/Faculty/Dr. G. Saravanan.png",
+      "badge": "PCI Approved Cadre"
+    },
+    "intro": {
+      "subtitle": "Mentors Who Inspire",
+      "title": "Experienced Faculty Dedicated to Student Success",
+      "description": "Our faculty members bring decades of collective teaching, doctoral research, and industrial drug design expertise across all core pharmacy disciplines: Pharmaceutical Chemistry, Pharmaceutics, Pharmacology, and Pharmacognosy."
+    }
+  },
+  "anti_ragging": {
+    "banner": {
+      "title": "Anti-Ragging Committee & Safety Cell",
+      "subtitle": "Vel Pharmacy College enforces a strict Zero-Tolerance Policy toward ragging, harassment, and discrimination, ensuring a secure, supportive, and dignified academic sanctuary for all students.",
+      "image": "assets/images/seminar-hall.jpg",
+      "badge": "Zero-Tolerance Policy • 24x7 Helpline"
+    },
+    "helpline": {
+      "national_tollfree": "1800-180-5522",
+      "national_portal": "www.antiragging.in",
+      "campus_cell": "+91 812 261 3300",
+      "email": "antiragging@velpharmacycollege.com"
+    },
+    "policy": {
+      "subtitle": "Zero Tolerance Campus",
+      "title": "Our Unwavering Anti-Ragging Stance",
+      "quote": "At Vel Pharmacy College, we unequivocally reject all forms of ragging as a violation of our core values and a threat to the well-being of our community. Ragging, encompassing any behavior that causes physical or psychological harm to new members, is not only a breach of our code of conduct but also a criminal offense under the Indian Penal Code.",
+      "p1": "We are committed to fostering a campus culture rooted in respect, dignity, and inclusivity, where every individual can pursue their academic journey free from fear or intimidation. Any instances of ragging will be met with swift and severe disciplinary action, as we stand together to create a safe and supportive environment for all.",
+      "p2": "In accordance with the Supreme Court of India directives and UGC / PCI regulations, ragging is completely outlawed within the college campus, hostels, college transport, cafeteria, and during off-campus clinical postings.",
+      "consequences": [
+        "Immediate Suspension from attending classes and academic privileges.",
+        "Withholding of Results and cancellation of scholarship or financial aid.",
+        "Expulsion from Hostels and campus exclusion orders.",
+        "Rustication from the university for periods ranging from 1 to 4 semesters.",
+        "Filing of Police FIR leading to criminal trial under Indian Penal Code."
+      ]
+    },
+    "cells": [
+      {
+        "badge": "Statutory Cell 01",
+        "title": "Anti-Ragging Committee & Squad",
+        "desc": "Oversees surprise campus inspections, hostel vigils, CCTV monitoring, student orientation, and acts upon confidential complaints with immediate inquiry panels.",
+        "doc_link": "assets/docs/ANTI-RAGGING COMMITTEE.pdf",
+        "color": "#DC2626"
+      },
+      {
+        "badge": "Statutory Cell 02",
+        "title": "Anti-Discrimination Cell",
+        "desc": "Ensures absolute equality and non-discrimination across caste, creed, religion, language, or regional background, safeguarding affirmative dignity for all students.",
+        "doc_link": "assets/docs/ANTI DISCRIMINATION CELL.pdf",
+        "color": "#1E2368"
+      },
+      {
+        "badge": "Statutory Cell 03",
+        "title": "Gender Sensitization Cell",
+        "desc": "Promotes mutual gender respect, implements POSH guidelines, conducts sensitization seminars, and resolves gender-related complaints in strict confidence.",
+        "doc_link": "assets/docs/GENDER SENSITIZATION CELL.pdf",
+        "color": "#7E22CE"
+      }
+    ],
+    "report_section": {
+      "subtitle": "Confidential & Secure",
+      "title": "Report an Incident or Grievance",
+      "description": "Your safety and confidentiality are our highest priority. Reports submitted through this form are sent directly to the Principal and the Anti-Ragging Committee Chairman."
+    }
+  },
+  "contact_us": {
+    "banner": {
+      "title": "Get in Touch with Admissions",
+      "subtitle": "We welcome prospective pharmacy students, parents, academic collaborators, and healthcare partners. Reach out to our admissions helpdesk or visit our sprawling medical campus.",
+      "image": "assets/images/campus-front.jpg",
+      "badge": "Admissions & Campus Helpdesk"
+    },
+    "section_header": {
+      "subtitle": "Get In Touch With Us",
+      "title": "Contact Information & Helpdesk",
+      "description": "Our admissions officers and campus administrators are available to assist you with course inquiries, campus visits, hostel bookings, and admission guidance."
+    },
+    "address_card": {
+      "title": "Campus Location",
+      "institution": "Vel Pharmacy College",
+      "address": "VMCH Medical Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk, Tiruvallur District – 601102, Tamil Nadu.",
+      "badge": "📍 Near VMCH Hospital Gate"
+    },
+    "phone_card": {
+      "title": "Phone & Admissions",
+      "label": "Direct Admissions Line:",
+      "phone": "+91 812 261 3300",
+      "hours": "Available Mon–Sat from 8:30 AM to 5:00 PM for all admission queries.",
+      "badge": "🛡️ Anti-Ragging: 1800-180-5522"
+    },
+    "email_card": {
+      "title": "Email Correspondence",
+      "label": "Official Admissions & Inquiries:",
+      "email": "vels@vistas.ac.in",
+      "website": "velpharmacycollege.com",
+      "badge": "⚡ Reply Within 24 Business Hours"
+    },
+    "hours_card": {
+      "title": "Visiting & Office Hours",
+      "weekday": "Monday – Friday: 8:30 AM – 4:30 PM",
+      "saturday": "Saturday: 8:30 AM – 1:30 PM",
+      "sunday": "Sunday & Holidays: Closed",
+      "badge": "🚶 Campus Tours Welcome"
+    },
+    "map": {
+      "title": "Interactive Campus Map",
+      "subtitle": "Located within the 150+ Acre Vels Medical College & Hospital (VMCH) Campus, Manjankaranai",
+      "embed_url": "https://maps.google.com/maps?q=Vels%20Medical%20College%20and%20Hospital%2C%20Manjankaranai&t=m&z=13&output=embed&iwloc=near",
+      "gps": "13.2921° N, 80.0894° E • Periyapalayam High Road",
+      "direction_link": "https://maps.google.com/?q=Vels+Medical+College+and+Hospital+Manjankaranai"
+    },
+    "commute": {
+      "subtitle": "Travel & Commute Guide",
+      "title": "How to Reach Our Campus",
+      "description": "Conveniently connected by road, bus routes, and suburban rail networks across the Chennai Metropolitan and Tiruvallur regions.",
+      "cards": [
+        {
+          "title": "By Road & Metropolitan Bus",
+          "desc": "Regular direct government and private buses run from Chennai Central, Koyambedu (CMBT), Red Hills, and Broadway toward Periyapalayam / Uthukottai. Request a stop at Manjankaranai - VMCH Campus.",
+          "chip": "📍 Direct stop at VMCH Gate"
+        },
+        {
+          "title": "By Suburban Train",
+          "desc": "The nearest major railway hub is Tiruvallur Railway Station on the Chennai Western suburban corridor, followed by Ponneri Station. Taxis, autos, and college connecting shuttles operate frequently between stations.",
+          "chip": "🚆 25 Mins from Tiruvallur Hub"
+        },
+        {
+          "title": "College Transport Fleet",
+          "desc": "For enrolled students, Vel Pharmacy College runs dedicated, GPS-enabled buses covering key arterial pickup points across Chennai, Avadi, Ambattur, Red Hills, and Tiruvallur town.",
+          "chip": "🚌 15+ Arterial College Bus Routes"
+        }
+      ]
+    }
+  },
+  "enquiry": {
+    "banner": {
+      "title": "Online Admissions & Counseling Enquiry",
+      "subtitle": "Take the first step toward a rewarding career in pharmaceutical science and healthcare. Submit your details below and our admissions counseling team will contact you.",
+      "image": "assets/images/hero-pharmacy-showcase.jpg",
+      "badge": "Batch 2026–2027 Admissions Open"
+    },
+    "intro": {
+      "badge_pill": "Batch 2024–2025",
+      "title": "B.Pharm Candidate Application & Enquiry",
+      "subtitle": "Admissions Desk Open",
+      "description": "Please complete all required fields (*). Merit-based seats are allocated on a rolling basis per PCI norms."
+    },
+    "helpdesk": {
+      "phone": "+91 812 261 3300",
+      "email": "admission@velpharmacycollege.com",
+      "hours": "Monday - Saturday: 8:30 AM - 5:00 PM"
+    },
+    "why_apply": {
+      "title": "Why Choose Vel Pharmacy College?",
+      "items": [
+        {
+          "title": "PCI Approved B.Pharm Degree",
+          "desc": "Recognized by Pharmacy Council of India, New Delhi."
+        },
+        {
+          "title": "On-Campus 300+ Bed Hospital",
+          "desc": "Bedside patient rounds and practical clinical rotations."
+        },
+        {
+          "title": "15+ High-Tech Research Labs",
+          "desc": "HPLC, UV-Vis, CADD modeling suites, and tablet compression."
+        },
+        {
+          "title": "100% Placement Guidance",
+          "desc": "Integrated with VISTAS placement drives across top pharma firms."
+        }
+      ]
+    }
+  },
+  "highlights": {
+    "banner": {
+      "title": "Institutional Highlights & Official Circulars",
+      "subtitle": "Live CMS test subtitle verification",
+      "image": "assets/images/campus-front.jpg"
+    },
+    "intro": {
+      "title": "Notices, Accreditations & Academic Developments",
+      "subtitle": "Stay updated with official college gazettes, regulatory filings, and academic advancements."
+    },
+    "items": [
+      {
+        "id": "pci-approval",
+        "category": "pci",
+        "badge": "PCI Approved • 2024–2028",
+        "circular_no": "Ref: PCI/VPC/APP-2024/091",
+        "date": "July 15, 2024",
+        "title": "PCI Statutory Approval & Degree Sanction",
+        "notice_image": "assets/images/campus-front.jpg",
+        "summary": "Official grant of approval under Section 12 of the Pharmacy Act, 1948 by the Pharmacy Council of India for conducting the 4-Year B.Pharm degree program under VISTAS Deemed University at VMCH Campus.",
+        "primary_btn_text": "About Heritage",
+        "primary_btn_link": "about-us"
+      },
+      {
+        "id": "nep-curriculum",
+        "category": "curriculum",
+        "badge": "193 Credits • NEP 2020 Framework",
+        "circular_no": "Gazette Ref: PCI-NEP/BPHARM/2026",
+        "date": "August 22, 2024",
+        "title": "NEP 2020 Curriculum with Integrated Python & AI",
+        "notice_image": "assets/images/pharmacy-lab-main.jpg",
+        "summary": "Official rollout of the NEP 2020 CBCS curriculum integrating Python Programming, Machine Learning, Clinical AI drug design, and 240 hours of practical hospital/industrial internships.",
+        "primary_btn_text": "View Syllabus",
+        "primary_btn_link": "courses"
+      },
+      {
+        "id": "hospital-rounds",
+        "category": "infrastructure",
+        "badge": "300+ Bed Teaching Hospital",
+        "circular_no": "Circular: VMCH/CLIN-PHARM/2024-25",
+        "date": "September 10, 2024",
+        "title": "VMCH Teaching Hospital Clinical Rotations Agreement",
+        "notice_image": "assets/images/hospital-facility.jpg",
+        "summary": "Direct bedside clinical training at the on-campus 300+ bed VMCH Medical College Hospital covering inpatient pharmacy dispensation, therapeutic drug monitoring, and surgical ICU ward rounds.",
+        "primary_btn_text": "Hospital Training",
+        "primary_btn_link": "facilities#hospital"
+      },
+      {
+        "id": "research-labs",
+        "category": "infrastructure",
+        "badge": "Central Analytical Facility",
+        "circular_no": "Notice: VPC/R&D-FACILITY/2024",
+        "date": "October 05, 2024",
+        "title": "Central Analytical & HPLC Instrumentation Suites",
+        "notice_image": "assets/images/research-lab-modern.jpg",
+        "summary": "High-precision analytical laboratories equipped with Shimadzu HPLC, double-beam UV-Vis spectrophotometers, dissolution apparatus, and digital molecular modeling suites.",
+        "primary_btn_text": "Lab Facilities",
+        "primary_btn_link": "facilities"
+      },
+      {
+        "id": "analysis-lab",
+        "category": "infrastructure",
+        "badge": "Titration & Purity Testing",
+        "circular_no": "Circular: VPC/LAB-ANALYSIS/2024",
+        "date": "November 12, 2024",
+        "title": "Pharmaceutical Analysis & Quality Control Lab",
+        "notice_image": "assets/images/IMG_0127-scaled.jpg",
+        "summary": "Dedicated pharmaceutical analysis facility certified for API assay, volumetric titration, limit testing, pharmacopoeial purity profiling, and digital spectrophotometric analysis.",
+        "primary_btn_text": "Analysis Lab",
+        "primary_btn_link": "facilities"
+      },
+      {
+        "id": "pilot-plant",
+        "category": "infrastructure",
+        "badge": "Pilot Formulation Plant",
+        "circular_no": "Circular: VPC/PILOT-PLANT/2024",
+        "date": "December 02, 2024",
+        "title": "Industrial Pilot Plant & Formulation Machine Room",
+        "notice_image": "assets/images/IMG_0113-1-scaled.jpg",
+        "summary": "Commercial formulation plant with rotary tablet punching machines, fluid bed dryers, multi-stage dissolution testers, disintegration units, and GMP blister packaging mockups.",
+        "primary_btn_text": "Machine Room",
+        "primary_btn_link": "facilities"
+      },
+      {
+        "id": "pharmacology-lab",
+        "category": "infrastructure",
+        "badge": "Simulation & Bio-Screening",
+        "circular_no": "Circular: VPC/PHARM-HAP/2024",
+        "date": "January 18, 2025",
+        "title": "Pharmacology & In-Silico Simulation Suites",
+        "notice_image": "assets/images/IMG_0147-1-scaled.jpg",
+        "summary": "Interactive pharmacology laboratory combining human skeletal/physiological anatomical systems with computerized animal-free simulation software and digital kymograph recordings.",
+        "primary_btn_text": "Pharmacology",
+        "primary_btn_link": "facilities"
+      },
+      {
+        "id": "pharmacognosy-museum",
+        "category": "infrastructure",
+        "badge": "Herbal Drug Repository",
+        "circular_no": "Circular: VPC/HERBAL-MED/2024",
+        "date": "February 14, 2025",
+        "title": "Pharmacognosy Herbarium & Botanical Museum",
+        "notice_image": "assets/images/IMG_0117-scaled.jpg",
+        "summary": "Natural product research repository hosting over 250 authenticated medicinal plant specimens, Soxhlet extraction units, rotary evaporators, and an on-campus botanical garden.",
+        "primary_btn_text": "Botanical Lab",
+        "primary_btn_link": "facilities"
+      },
+      {
+        "id": "pharmacists-day-2026",
+        "category": "concluded",
+        "badge": "Concluded • Sep 25, 2026",
+        "circular_no": "Event Report: VPC/WPD-2026/01",
+        "date": "September 25, 2026",
+        "title": "World Pharmacists Day 2026 & White Coat Ceremony",
+        "notice_image": "assets/images/seminar-hall.jpg",
+        "summary": "Commemoration of World Pharmacists Day 2026 featuring the B.Pharm White Coat investiture ceremony, recitation of the Pharmacist Oath, and academic excellence merit awards.",
+        "primary_btn_text": "Leadership",
+        "primary_btn_link": "leadership"
+      },
+      {
+        "id": "cadd-masterclass-2026",
+        "category": "concluded",
+        "badge": "Concluded • Oct 15, 2026",
+        "circular_no": "Event Report: VPC/CADD-WRK/2026",
+        "date": "October 15, 2026",
+        "title": "Industry Masterclass on CADD & Molecular Docking",
+        "notice_image": "assets/images/computer-lab.jpg",
+        "summary": "Hands-on computational drug design workshop conducted in the digital laboratory covering PyMOL macromolecule modeling, AutoDock Vina simulations, and SwissADME screenings.",
+        "primary_btn_text": "Computer Lab",
+        "primary_btn_link": "facilities"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "name": "Dr. Academic Administrator",
+    "email": "admin@velpharmacycollege.com",
+    "password_hash": "$2y$10$HemXCsgyuThzCnKzfu8B7OGVG0s/yEoZysNpwXWE.MB7MRj//B9ja",
+    "role": "Super Admin",
+    "status": "active",
+    "last_login": "2026-10-31 12:15:00",
+    "created_at": "2026-10-31 09:00:00"
+  }
+]

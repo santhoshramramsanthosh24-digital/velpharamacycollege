@@ -1,0 +1,812 @@
+[
+    {
+        "sno": 1,
+        "id": "saravanan-g",
+        "name": "Dr. G. Saravanan",
+        "qualification": "M. Pharm., Ph.D., FAPP",
+        "designation": "Professor & Principal",
+        "department": "Pharmaceutical Chemistry",
+        "dept_slug": "chemistry",
+        "dept_color": "#1E2368",
+        "experience": "19 Years",
+        "image": "assets/images/Faculty/Dr. G. Saravanan.jpg",
+        "featured": true,
+        "is_doctorate": true,
+        "badge": "Principal & Head",
+        "cadre": "Professor & Collegiate Head",
+        "email": "principal@velpharmacycollege.com",
+        "office": "Administrative Wing, Principal Office (Room 101)",
+        "description": "Experimental attitude towards teaching methodologies including curriculum design and development of student-centered, congenial learning techniques to instill enthusiasm towards learning in students. Innovative conceptualist with a sharp eye for fresh approaches & details; An academically oriented competent and highly organized individual, committed to professional development and acquisition of continual knowledge.",
+        "specializations": [
+            "Pharmaceutical Chemistry",
+            "Advanced Analytical Techniques",
+            "Synthetic Medicinal Chemistry",
+            "Computer-Aided Drug Design (CADD)",
+            "Molecular Docking & QSAR Studies"
+        ],
+        "subjects": [
+            "Pharmaceutical Chemistry",
+            "Advanced Analytical Techniques",
+            "Medicinal Chemistry I, II & III",
+            "Pharmaceutical Organic Chemistry"
+        ],
+        "achievements": [
+            "Paper Publications: 109 in peer-reviewed national & international journals",
+            "Authored 12 Book Chapters in pharmaceutical sciences",
+            "Patents: 04 | Awards: 38 prestigious recognitions",
+            "PhDs Guiding: 08 research scholars | Completed: 02 Ph.D. degrees",
+            "Paper presentations: 115 | Career courses completed: 29"
+        ]
+    },
+    {
+        "sno": 2,
+        "id": "panneerselvam-theivendren",
+        "name": "Dr. Panneerselvam Theivendren",
+        "qualification": "M. Pharm., Ph.D.",
+        "designation": "Professor",
+        "department": "Pharmaceutical Chemistry",
+        "dept_slug": "chemistry",
+        "dept_color": "#1E2368",
+        "experience": "19 Years",
+        "image": "assets/images/Faculty/Dr. Panneerselvam Theivendren.jpg",
+        "featured": false,
+        "is_doctorate": true,
+        "badge": "Doctorate / Ph.D.",
+        "cadre": "Professor & Research Mentor",
+        "email": "t.panneerselvam@velpharmacycollege.com",
+        "office": "Department of Pharmaceutical Chemistry (Block A, Room 102)",
+        "description": "The Department of Pharmaceutical Chemistry at Vel Pharmacy College, Vels Institute of Science, Technology & Advanced Studies (VISTAS) is committed to excellence in teaching, research, and innovation in drug discovery and development. The department provides students with a strong foundation in medicinal chemistry, pharmaceutical analysis, and synthetic chemistry through modern laboratory facilities, research-oriented learning, and interdisciplinary collaboration, preparing them for careers in academia, research, and the pharmaceutical industry.",
+        "specializations": [
+            "Biochemistry",
+            "Pharmaceutical Organic Chemistry",
+            "Drug Discovery & Development",
+            "Synthetic Chemistry",
+            "Medicinal Chemistry"
+        ],
+        "subjects": [
+            "Biochemistry",
+            "Pharmaceutical Organic Chemistry",
+            "Medicinal Chemistry",
+            "Advanced Organic Chemistry"
+        ],
+        "achievements": [
+            "Paper Publications: 95 in indexed pharmaceutical journals",
+            "Book Chapters: 10 in pharmaceutical research",
+            "Patents: 05 | Awards: 16 honors",
+            "PhDs Guiding: 08 doctoral scholars",
+            "Paper presentations: 85 | Career courses completed: 21"
+        ]
+    },
+    {
+        "sno": 3,
+        "id": "magendran-r",
+        "name": "Mr. Magendran R",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmaceutical Analysis",
+        "dept_slug": "analysis",
+        "dept_color": "#B45309",
+        "experience": "13 Years",
+        "image": "assets/images/Faculty/Mr. Magendran R.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Analytical Specialist",
+        "cadre": "Assistant Professor",
+        "email": "r.magendran@velpharmacycollege.com",
+        "office": "Department of Pharmaceutical Analysis (Block A, Room 106)",
+        "description": "Assistant Professor in the Department of Pharmaceutical Analysis at Vel Pharmacy College, Vels Institute of Science, Technology & Advanced Studies (VISTAS), Chennai. His teaching and research interests include pharmaceutical analysis, analytical method development and validation, quality assurance, chromatographic techniques, and regulatory compliance in pharmaceutical sciences.",
+        "specializations": [
+            "Instrumental Analytical Techniques",
+            "Computer-Aided Drug Design (CADD)",
+            "Analytical Method Development & Validation",
+            "Quality Assurance & Regulatory Compliance",
+            "Chromatographic Techniques"
+        ],
+        "subjects": [
+            "Instrumental Analytical Techniques",
+            "Computer-Aided Drug Design (CADD)",
+            "Pharmaceutical Analysis",
+            "Pharmaceutical Quality Assurance"
+        ],
+        "achievements": [
+            "Paper Publications: 11 in peer-reviewed journals",
+            "Book Chapters: 04 in analytical methodology",
+            "Patents: 01 in pharmaceutical analysis",
+            "Paper presentations: 12 | Career courses completed: 02"
+        ]
+    },
+    {
+        "sno": 4,
+        "id": "divya-m",
+        "name": "Ms. M. Divya",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmaceutical Analysis",
+        "dept_slug": "analysis",
+        "dept_color": "#B45309",
+        "experience": "1 Year",
+        "image": "assets/images/Faculty/Ms. M. Divya.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Analytical Chemist",
+        "cadre": "Assistant Professor",
+        "email": "m.divya@velpharmacycollege.com",
+        "office": "Central Instrumental Analysis Lab (Ground Floor, Room 102)",
+        "description": "Passionate about advancing research in pharmaceutical sciences while inspiring students to achieve their full potential. Committed to academic excellence, lifelong learning, and nurturing future healthcare professionals.",
+        "specializations": [
+            "Pharmaceutical Inorganic Chemistry",
+            "Pharmaceutical Organic Chemistry",
+            "Analytical Method Development",
+            "Spectroscopic Analysis"
+        ],
+        "subjects": [
+            "Pharmaceutical Inorganic Chemistry",
+            "Pharmaceutical Organic Chemistry",
+            "Pharmaceutical Analysis Practicals"
+        ],
+        "achievements": [
+            "Paper Publications: 03 in pharmaceutical journals",
+            "Book Chapters: 02 in chemical analysis",
+            "Awards: 02 | Patents: 01",
+            "Conferences attended & presented: 27"
+        ]
+    },
+    {
+        "sno": 5,
+        "id": "arun-kumar-v",
+        "name": "Mr. Arun Kumar V",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmaceutical Analysis",
+        "dept_slug": "analysis",
+        "dept_color": "#B45309",
+        "experience": "2 Years",
+        "image": "assets/images/Faculty/Mr. Arun Kumar V.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Analytical Chemist",
+        "cadre": "Assistant Professor",
+        "email": "v.arunkumar@velpharmacycollege.com",
+        "office": "Department of Pharmaceutical Analysis (Block A, Room 107)",
+        "description": "Assistant Professor in the Department of Pharmaceutical Analysis at Vel Pharmacy College, VISTAS, Chennai. He is actively engaged in teaching and research with a focus on analytical method development, quality control of pharmaceuticals, and advanced instrumental analysis.",
+        "specializations": [
+            "Pharmaceutical Analytical Techniques",
+            "Analytical Method Development & Validation",
+            "Quality Control of Pharmaceuticals",
+            "Advanced Instrumental Analysis"
+        ],
+        "subjects": [
+            "Pharmaceutical Analytical Techniques",
+            "Instrumental Methods of Analysis",
+            "Quality Assurance Practicals"
+        ],
+        "achievements": [
+            "Paper Publications: 03 in reputed pharmaceutical journals",
+            "Book Chapters: 01 in instrumental analysis",
+            "Paper presentations: 03 | Career courses completed: 01"
+        ]
+    },
+    {
+        "sno": 6,
+        "id": "sudha-s",
+        "name": "Dr. S. Sudha",
+        "qualification": "M. Pharm., Ph.D.",
+        "designation": "Professor",
+        "department": "Pharmaceutics",
+        "dept_slug": "pharmaceutics",
+        "dept_color": "#4338CA",
+        "experience": "19 Years",
+        "image": "assets/images/Faculty/Dr. S. Sudha.jpg",
+        "featured": false,
+        "is_doctorate": true,
+        "badge": "Doctorate / Ph.D.",
+        "cadre": "Professor & Research Mentor",
+        "email": "s.sudha@velpharmacycollege.com",
+        "office": "Department of Pharmaceutics (Block A, Room 110)",
+        "description": "Dedicated to fostering students success and promoting excellence in pharmaceutical education. Committed to advancing pharmaceutical research across biotechnology, microbiology, and industrial formulation engineering.",
+        "specializations": [
+            "Pharmaceutical Biotechnology",
+            "Pharmaceutical Microbiology",
+            "Pharmaceutics",
+            "Pharmaceutical Engineering",
+            "Industrial Pharmacy"
+        ],
+        "subjects": [
+            "Pharmaceutical Biotechnology",
+            "Pharmaceutical Microbiology",
+            "Pharmaceutics I & II",
+            "Pharmaceutical Engineering",
+            "Industrial Pharmacy"
+        ],
+        "achievements": [
+            "Paper Publications: 27 in national & international indexed journals",
+            "Books / Book Chapters: 04",
+            "Awards: 02 | Patents: 01",
+            "Supervised undergraduate & postgraduate formulation dissertations"
+        ]
+    },
+    {
+        "sno": 7,
+        "id": "devibala-p-k",
+        "name": "Mrs. P K Devibala",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmaceutics",
+        "dept_slug": "pharmaceutics",
+        "dept_color": "#4338CA",
+        "experience": "11 Years",
+        "image": "assets/images/Faculty/Mrs. P K Devibala.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Formulation Specialist",
+        "cadre": "Assistant Professor",
+        "email": "pk.devibala@velpharmacycollege.com",
+        "office": "Pharmaceutics Laboratory (Block A, Room 112)",
+        "description": "The Department of Pharmaceutics focuses on the design, development, and evaluation of safe and effective drug delivery systems. VELS Institute of Science, Technology & Advanced Studies (VISTAS) is a leading institution known for academic excellence and innovation.",
+        "specializations": [
+            "Biopharmaceutics & Pharmacokinetics (BPPK)",
+            "Novel Drug Delivery Systems (NDDS)",
+            "Industrial Pharmacy",
+            "Pharmacovigilance"
+        ],
+        "subjects": [
+            "Biopharmaceutics & Pharmacokinetics (BPPK)",
+            "Novel Drug Delivery Systems (NDDS)",
+            "Industrial Pharmacy",
+            "Pharmacovigilance"
+        ],
+        "achievements": [
+            "Paper Publications: 01 in indexed pharmaceutical literature",
+            "Books authored: 01",
+            "Awards: 03 recognitions for academic merit",
+            "Patents: 01 in drug formulation"
+        ]
+    },
+    {
+        "sno": 8,
+        "id": "chittoor-divya",
+        "name": "Mrs. Chittoor Divya",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmaceutics",
+        "dept_slug": "pharmaceutics",
+        "dept_color": "#4338CA",
+        "experience": "3 Years 5 Months",
+        "image": "assets/images/Faculty/Mrs. Chittoor Divya.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Regulatory Specialist",
+        "cadre": "Assistant Professor",
+        "email": "c.divya@velpharmacycollege.com",
+        "office": "Pharmaceutics Pilot Plant & Lab (Block A, Room 108)",
+        "description": "Vel Pharmacy College emphasizes the development of knowledge, skills, leadership qualities, and social responsibility, empowering students to become future healthcare leaders committed to improving the quality of life through pharmaceutical care and scientific advancement.",
+        "specializations": [
+            "Pharmaceutical Formulations",
+            "Pharmaceutical Regulatory Affairs",
+            "Pharmaceutical Jurisprudence",
+            "Computer Applications in Pharmacy",
+            "Community Pharmacy"
+        ],
+        "subjects": [
+            "Pharmaceutical Formulations",
+            "Pharmaceutical Regulatory Affairs",
+            "Pharmaceutical Jurisprudence",
+            "Computer Applications in Pharmacy",
+            "Community Pharmacy"
+        ],
+        "achievements": [
+            "Paper Publications: 02 in peer-reviewed journals",
+            "Books: 01 | Book Chapters: 01",
+            "Faculty mentor for regulatory affairs & formulation projects"
+        ]
+    },
+    {
+        "sno": 9,
+        "id": "jancyrani-s",
+        "name": "Mrs. S. Jancyrani",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmaceutics",
+        "dept_slug": "pharmaceutics",
+        "dept_color": "#4338CA",
+        "experience": "1 Year",
+        "image": "assets/images/Faculty/Mrs. S. Jancyrani.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Formulation Specialist",
+        "cadre": "Assistant Professor",
+        "email": "s.jancyrani@velpharmacycollege.com",
+        "office": "Pharmaceutics Formulation Lab (Block A, Room 105)",
+        "description": "Driven to advance pharmaceutics while fostering student growth and professional excellence. Dedicated to academic rigor, continuous learning, and shaping the next generation of healthcare professionals.",
+        "specializations": [
+            "Pharmaceutical Engineering",
+            "Pharmaceutics",
+            "Novel Drug Delivery Systems",
+            "Tablet Technology & Scale-Up"
+        ],
+        "subjects": [
+            "Pharmaceutical Engineering",
+            "Pharmaceutics I & II",
+            "Physical Pharmaceutics"
+        ],
+        "achievements": [
+            "Paper Publications: 05 in indexed pharmaceutical journals",
+            "Book Chapters: 01 in formulation engineering",
+            "Patents: 01 | Awards: 01",
+            "Conferences attended & presented: 22"
+        ]
+    },
+    {
+        "sno": 10,
+        "id": "nallamuthu-m",
+        "name": "Mr. Nallamuthu M",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmaceutics",
+        "dept_slug": "pharmaceutics",
+        "dept_color": "#4338CA",
+        "experience": "2 Years",
+        "image": "assets/images/Faculty/Mr. Nallamuthu M.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "NDDS Researcher",
+        "cadre": "Assistant Professor",
+        "email": "m.nallamuthu@velpharmacycollege.com",
+        "office": "Department of Pharmaceutics (Block A, Room 109)",
+        "description": "Serves as an Assistant Professor in the Department of Pharmaceutics at Vel Pharmacy College, VISTAS, Chennai. His research focuses on pharmaceutical formulation, advanced drug delivery systems, and translational pharmaceutics aimed at improving therapeutic outcomes.",
+        "specializations": [
+            "Novel Drug Delivery Systems (NDDS)",
+            "Pharmaceutical Formulation",
+            "Advanced Drug Delivery Systems",
+            "Translational Pharmaceutics"
+        ],
+        "subjects": [
+            "Novel Drug Delivery Systems",
+            "Pharmaceutics Practicals",
+            "Industrial Pharmacy"
+        ],
+        "achievements": [
+            "Paper Publications: 03 in pharmaceutical journals",
+            "Book Chapters: 02 in drug delivery research",
+            "Patents: 01 in delivery systems",
+            "Paper presentations: 12 | Career courses completed: 02"
+        ]
+    },
+    {
+        "sno": 11,
+        "id": "kasireddy-paul-babu",
+        "name": "Dr. Kasireddy Paul Babu",
+        "qualification": "M. Pharm., Ph.D.",
+        "designation": "Associate Professor",
+        "department": "Pharmacology",
+        "dept_slug": "pharmacology",
+        "dept_color": "#800020",
+        "experience": "16 Years",
+        "image": "assets/images/Faculty/Dr. Kasireddy Paul Babu.jpg",
+        "featured": false,
+        "is_doctorate": true,
+        "badge": "Doctorate / Ph.D.",
+        "cadre": "Associate Professor & Research Guide",
+        "email": "kasireddy.paul@velpharmacycollege.com",
+        "office": "Preclinical Pharmacology Research Lab (Block A, Room 208)",
+        "description": "The Pharmacology department in pharmaceutical sciences is a core division focused on understanding how drugs and chemicals interact with living systems. It investigates the biological effects, mechanisms of action, safety profiles, and therapeutic uses of medicinal compounds.",
+        "specializations": [
+            "Pharmacology & Toxicology",
+            "Drug Discovery & Molecular Pharmacology",
+            "Biological Standardization",
+            "Pharmacological Screening Methods"
+        ],
+        "subjects": [
+            "Pharmacology & Toxicology",
+            "Drug Discovery & Molecular Pharmacology",
+            "Biological Standardization & Screening"
+        ],
+        "achievements": [
+            "Paper Publications: 10 in indexed pharmacology journals",
+            "Over 16 years of preclinical research and academic mentorship",
+            "Mentor for competitive GPAT and postgraduate medical aspirants"
+        ]
+    },
+    {
+        "sno": 12,
+        "id": "paladugu-pravallika",
+        "name": "Mrs. Paladugu Pravallika",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmacology",
+        "dept_slug": "pharmacology",
+        "dept_color": "#800020",
+        "experience": "5 Years",
+        "image": "assets/images/Faculty/Mrs. Paladugu Pravallika.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Pharmacology Researcher",
+        "cadre": "Assistant Professor",
+        "email": "p.pravallika@velpharmacycollege.com",
+        "office": "Preclinical Pharmacology Lab (Block A, Room 210)",
+        "description": "Focused on research in translational therapeutics and disease models, with active contributions to scientific publications and academic activities.",
+        "specializations": [
+            "Pharmacology",
+            "Advanced Pharmacological Screening Methods",
+            "Toxicology",
+            "Translational Therapeutics & Disease Models"
+        ],
+        "subjects": [
+            "Pharmacology",
+            "Advanced Pharmacological Screening Methods",
+            "Toxicology",
+            "Human Anatomy & Physiology"
+        ],
+        "achievements": [
+            "Paper Publications: 07 in peer-reviewed pharmacology journals",
+            "Books/Book Chapters: 02",
+            "Awards: 03 | Patents: 01",
+            "Conferences attended & presented: 25"
+        ]
+    },
+    {
+        "sno": 13,
+        "id": "chandragiri-pooja",
+        "name": "Mrs. Chandragiri Pooja",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmacology",
+        "dept_slug": "pharmacology",
+        "dept_color": "#800020",
+        "experience": "3 Years",
+        "image": "assets/images/Faculty/Mrs. Chandragiri Pooja.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Faculty Mentor",
+        "cadre": "Assistant Professor",
+        "email": "c.pooja@velpharmacycollege.com",
+        "office": "Department of Pharmacology (Block A, Room 212)",
+        "description": "Our college is committed to providing quality education, fostering innovation, and nurturing skilled professionals equipped to meet the evolving needs of society. The institution strives to create an environment that promotes academic excellence, ethical values, and holistic development.",
+        "specializations": [
+            "Advanced Pharmacology",
+            "Human Anatomy and Physiology (HAP)",
+            "Pharmaceutical Biotechnology",
+            "Pharmacological Screening"
+        ],
+        "subjects": [
+            "Advanced Pharmacology",
+            "Human Anatomy & Physiology (HAP)",
+            "Biotechnology",
+            "Pathophysiology"
+        ],
+        "achievements": [
+            "Paper Publications: 01 in pharmacology literature",
+            "Books authored: 01",
+            "Awards: 03 honors | Patents: 01",
+            "Active mentor for student academic and practical development"
+        ]
+    },
+    {
+        "sno": 14,
+        "id": "latha-s",
+        "name": "Ms. S Latha",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmacology",
+        "dept_slug": "pharmacology",
+        "dept_color": "#800020",
+        "experience": "2 Years",
+        "image": "assets/images/Faculty/Ms. S Latha.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Clinical Pharmacologist",
+        "cadre": "Assistant Professor",
+        "email": "s.latha@velpharmacycollege.com",
+        "office": "Department of Pharmacology (Block A, Room 214)",
+        "description": "Vel Pharmacy College, a constituent institution of Vels Institute of Science, Technology & Advanced Studies (VISTAS), Chennai, is committed to excellence in pharmaceutical education, research, and innovation. The college provides a dynamic academic environment with modern infrastructure, experienced faculty, and industry-oriented training, fostering competent healthcare professionals and promoting impactful research in pharmaceutical sciences.",
+        "specializations": [
+            "Clinical Pharmacology",
+            "Pharmacotherapeutics",
+            "Preclinical Screening Models",
+            "Pharmacovigilance"
+        ],
+        "subjects": [
+            "Clinical Pharmacology",
+            "Pharmacology II Practicals",
+            "Human Anatomy & Physiology"
+        ],
+        "achievements": [
+            "Paper Publications: 02 in clinical pharmacology",
+            "Book Chapters: 02 in therapeutics",
+            "Patents: 01 | Awards: 01",
+            "Paper presentations: 10 | Career courses completed: 02"
+        ]
+    },
+    {
+        "sno": 15,
+        "id": "dhanesh-pandiyan-s",
+        "name": "Mr. Dhanesh Pandiyan S",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmacology",
+        "dept_slug": "pharmacology",
+        "dept_color": "#800020",
+        "experience": "1 Year",
+        "image": "assets/images/Faculty/Mr. Dhanesh Pandiyan S.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Physiology Specialist",
+        "cadre": "Assistant Professor",
+        "email": "s.dhanesh@velpharmacycollege.com",
+        "office": "Department of Pharmacology (Block A, Room 215)",
+        "description": "Assistant Professor in the Department of Pharmacology at Vel Pharmacy College, Vels Institute of Science, Technology & Advanced Studies (VISTAS), Chennai. He is actively involved in teaching, research, and academic mentoring, with research interests in pharmacology, drug evaluation, and translational pharmaceutical sciences.",
+        "specializations": [
+            "Human Anatomy and Physiology",
+            "Pharmacology & Drug Evaluation",
+            "Translational Pharmaceutical Sciences",
+            "Experimental Bioassays"
+        ],
+        "subjects": [
+            "Human Anatomy and Physiology I & II",
+            "Pharmacology Practicals",
+            "Pathophysiology"
+        ],
+        "achievements": [
+            "Paper Publications: 02 in indexed journals",
+            "Book Chapters: 01 in physiological sciences",
+            "Paper presentations: 03 | Career courses completed: 02"
+        ]
+    },
+    {
+        "sno": 16,
+        "id": "rohith-sm",
+        "name": "Mr. Rohith SM",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmacology",
+        "dept_slug": "pharmacology",
+        "dept_color": "#800020",
+        "experience": "1 Year",
+        "image": "assets/images/Faculty/Mr. Rohith SM.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Pharmacodynamics Researcher",
+        "cadre": "Assistant Professor",
+        "email": "sm.rohith@velpharmacycollege.com",
+        "office": "Department of Pharmacology (Block A, Room 216)",
+        "description": "The Department of Pharmacology at Vel Pharmacy College, Vels Institute of Science, Technology & Advanced Studies (VISTAS), Chennai, is dedicated to excellence in pharmacological education and research. The department provides comprehensive training in experimental and clinical pharmacology through modern laboratory facilities, research-oriented learning, and a strong emphasis on rational drug therapy and translational research.",
+        "specializations": [
+            "Pharmacology and Pharmacodynamics",
+            "Rational Drug Therapy",
+            "Translational Research",
+            "Experimental Pharmacology"
+        ],
+        "subjects": [
+            "Pharmacology and Pharmacodynamics",
+            "Experimental Pharmacology Practicals",
+            "Human Anatomy & Physiology"
+        ],
+        "achievements": [
+            "Paper Publications: 03 in pharmacology research",
+            "Book Chapters: 01 in pharmacodynamics",
+            "Paper presentations: 03 | Career courses completed: 01"
+        ]
+    },
+    {
+        "sno": 17,
+        "id": "shilpa-s",
+        "name": "Ms. Shilpa S",
+        "qualification": "M. Pharm.",
+        "designation": "Assistant Professor",
+        "department": "Pharmacology",
+        "dept_slug": "pharmacology",
+        "dept_color": "#800020",
+        "experience": "1 Year",
+        "image": "assets/images/Faculty/Ms. Shilpa S.jpg",
+        "featured": false,
+        "is_doctorate": false,
+        "badge": "Pathophysiology Educator",
+        "cadre": "Assistant Professor",
+        "email": "s.shilpa@velpharmacycollege.com",
+        "office": "Department of Pharmacology (Block A, Room 217)",
+        "description": "The Department of Pharmacology at Vel Pharmacy College, VISTAS, Chennai, is dedicated to advancing excellence in pharmacology education and research through modern laboratory facilities, experienced faculty, and research-driven learning.",
+        "specializations": [
+            "Pathophysiology",
+            "Experimental Pharmacology",
+            "Cellular Mechanisms of Diseases",
+            "Toxicological Bioassays"
+        ],
+        "subjects": [
+            "Pathophysiology",
+            "Pharmacology Practicals",
+            "Human Anatomy & Physiology"
+        ],
+        "achievements": [
+            "Paper Publications: 03 in peer-reviewed journals",
+            "Book Chapters: 02 in disease pathology",
+            "Patents: 01 in pharmacology methods",
+            "Paper presentations: 02 | Career courses completed: 02"
+        ]
+    },
+    {
+        "sno": 18,
+        "id": "kumanan-r",
+        "name": "Dr. R. Kumanan",
+        "qualification": "M. Pharm., Ph.D.",
+        "designation": "Professor",
+        "department": "Pharmacognosy",
+        "dept_slug": "pharmacognosy",
+        "dept_color": "#047857",
+        "experience": "20 Years",
+        "image": "assets/images/Faculty/Dr. R. Kumanan.jpg",
+        "featured": false,
+        "is_doctorate": true,
+        "badge": "Doctorate / Ph.D.",
+        "cadre": "Professor & Phytomedicine Researcher",
+        "email": "r.kumanan@velpharmacycollege.com",
+        "office": "Phytopharmacy Research Laboratory (Block B, Room 202)",
+        "description": "Our college is committed to providing quality education, fostering innovation, and nurturing skilled professionals equipped to meet the evolving needs of society. The institution strives to create an environment that promotes academic excellence, ethical values, and holistic development.",
+        "specializations": [
+            "Herbal Drug Technology",
+            "Pharmacognosy & Phytochemistry",
+            "Nutraceuticals",
+            "Herbal Cosmetics",
+            "Indian Systems of Medicines Formulations"
+        ],
+        "subjects": [
+            "Herbal Drug Technology",
+            "Pharmacognosy & Phytochemistry",
+            "Nutraceuticals & Herbal Cosmetics",
+            "Indian Systems of Medicine"
+        ],
+        "achievements": [
+            "Paper Publications: 50 in peer-reviewed national & international journals",
+            "Books / Book Chapters: 03",
+            "Awards: 01 prestigious research award",
+            "Patents: 02 in herbal medicine formulations",
+            "20 years of research leadership in phytomedicine"
+        ]
+    },
+    {
+        "sno": 19,
+        "id": "avinash-kumar-g",
+        "name": "Dr. G. Avinash Kumar",
+        "qualification": "M. Pharm., Ph.D.",
+        "designation": "Associate Professor",
+        "department": "Pharmacognosy",
+        "dept_slug": "pharmacognosy",
+        "dept_color": "#047857",
+        "experience": "15 Years",
+        "image": "assets/images/Faculty/Dr. G. Avinash Kumar.jpg",
+        "featured": false,
+        "is_doctorate": true,
+        "badge": "Doctorate / Ph.D.",
+        "cadre": "Associate Professor & Research Guide",
+        "email": "g.avinash@velpharmacycollege.com",
+        "office": "Phytomedicine Research Center (Block B, Room 206)",
+        "description": "Expertise in natural product chemistry with in vivo and in vitro disease models to develop translational solutions for chronic disorders and application of NDDS to phytoconstituents. Dedicated to enrich scientific literature with academic leadership, aligning education with regulatory and research advancements.",
+        "specializations": [
+            "Herbal Drug Standardization",
+            "Herbal Cosmetics",
+            "Pharmacognosy & Phytochemistry",
+            "Food & Cosmetic Analysis",
+            "NDDS for Phytoconstituents"
+        ],
+        "subjects": [
+            "Herbal Drug Standardization",
+            "Herbal Cosmetics",
+            "Pharmacognosy & Phytochemistry",
+            "Food & Cosmetic Analysis"
+        ],
+        "achievements": [
+            "Paper Publications: 69 in Scopus & Web of Science indexed journals",
+            "Books / Book Chapters: 03 in natural product chemistry",
+            "Awards: 04 honors | Patents: 02",
+            "PhDs Guiding: 02 doctoral research scholars"
+        ]
+    },
+    {
+        "sno": 20,
+        "id": "anitha-s",
+        "name": "Dr. Anitha S",
+        "qualification": "M. Pharm., Ph.D.",
+        "designation": "Associate Professor",
+        "department": "Pharmacognosy",
+        "dept_slug": "pharmacognosy",
+        "dept_color": "#047857",
+        "experience": "12 Years",
+        "image": "assets/images/Faculty/Dr. Anitha S.jpg",
+        "featured": false,
+        "is_doctorate": true,
+        "badge": "Doctorate / Ph.D.",
+        "cadre": "Associate Professor & Phytochemist",
+        "email": "s.anitha@velpharmacycollege.com",
+        "office": "Department of Pharmacognosy (Block B, Room 204)",
+        "description": "Department of Pharmacognosy, Vel Pharmacy College, Vels Institute of Science, Technology & Advanced Studies (VISTAS), Chennai, is actively engaged in teaching and research in medicinal plants, phytochemistry, herbal drug standardization, and natural product-based drug discovery, with a commitment to academic excellence and innovation in pharmaceutical sciences.",
+        "specializations": [
+            "Pharmacognosy & Phytochemistry",
+            "Medicinal Plants Extraction",
+            "Herbal Drug Standardization",
+            "Natural Product-Based Drug Discovery"
+        ],
+        "subjects": [
+            "Pharmacognosy & Phytochemistry I & II",
+            "Medicinal Plant Biotechnology",
+            "Herbal Quality Control"
+        ],
+        "achievements": [
+            "Paper Publications: 02 in phytomedicine journals",
+            "Book Chapters: 02 in botanical standardization",
+            "Patents: 02 | Awards: 01",
+            "Paper presentations: 10 | Career courses completed: 02"
+        ]
+    },
+    {
+        "sno": 21,
+        "id": "gayathri-k",
+        "name": "Dr. Gayathri K",
+        "qualification": "Pharm. D",
+        "designation": "Assistant Professor",
+        "department": "Pharmacy Practice",
+        "dept_slug": "practice",
+        "dept_color": "#0891B2",
+        "experience": "1 Year",
+        "image": "assets/images/Faculty/Dr. Gayathri K.jpg",
+        "featured": false,
+        "is_doctorate": true,
+        "badge": "Clinical Pharmacy Specialist",
+        "cadre": "Assistant Professor & Clinical Preceptor",
+        "email": "k.gayathri@velpharmacycollege.com",
+        "office": "Department of Pharmacy Practice & VMCH Hospital (Block C, Room 301)",
+        "description": "Vel Pharmacy College, a constituent institution of Vels Institute of Science, Technology & Advanced Studies (VISTAS), Chennai, is committed to excellence in pharmaceutical education, research, and innovation. The college provides a dynamic academic environment with modern infrastructure, experienced faculty, and industry-oriented training, fostering competent healthcare professionals and promoting impactful research in pharmaceutical sciences.",
+        "specializations": [
+            "Pharmacotherapeutics",
+            "Clinical Pharmacy Practice",
+            "Hospital Ward Rounds & Clinical Interventions",
+            "Patient Counseling & Medication Management"
+        ],
+        "subjects": [
+            "Pharmacotherapeutics",
+            "Clinical Pharmacy Practice",
+            "Hospital & Community Pharmacy"
+        ],
+        "achievements": [
+            "Paper Publications: 02 in clinical pharmacotherapy",
+            "Book Chapters: 02 in clinical medicine",
+            "Patents: 01 | Awards: 01",
+            "Paper presentations: 10 | Career courses completed: 02"
+        ]
+    },
+    {
+        "sno": 22,
+        "id": "sherni-prithiba-jhansi-rani-s",
+        "name": "Dr. Sherni Prithiba Jhansi Rani S",
+        "qualification": "Pharm. D",
+        "designation": "Assistant Professor",
+        "department": "Pharmacy Practice",
+        "dept_slug": "practice",
+        "dept_color": "#0891B2",
+        "experience": "1 Year",
+        "image": "assets/images/Faculty/Dr. Sherni Prithiba Jhansi Rani S.jpg",
+        "featured": false,
+        "is_doctorate": true,
+        "badge": "Clinical Pharmacy Specialist",
+        "cadre": "Assistant Professor & Clinical Preceptor",
+        "email": "s.sherniprithiba@velpharmacycollege.com",
+        "office": "Department of Pharmacy Practice & VMCH Hospital (Block C, Room 302)",
+        "description": "Serves as an Assistant Professor in the Department of Pharmacy Practice at Vel Pharmacy College, VISTAS, Chennai. She is actively involved in teaching, clinical research, and promoting rational drug use through evidence-based pharmaceutical care.",
+        "specializations": [
+            "Clinical Pharmacy",
+            "Evidence-Based Pharmaceutical Care",
+            "Rational Drug Therapy",
+            "Adverse Drug Reaction Monitoring",
+            "Clinical Research & Trials"
+        ],
+        "subjects": [
+            "Clinical Pharmacy",
+            "Pharmacy Practice Practicals",
+            "Pharmacovigilance & Drug Safety"
+        ],
+        "achievements": [
+            "Paper Publications: 02 in clinical pharmacy journals",
+            "Book Chapters: 01 in patient care",
+            "Paper presentations: 02 | Career courses completed: 01",
+            "Active clinical preceptor at VMCH Medical College Hospital"
+        ]
+    }
+]

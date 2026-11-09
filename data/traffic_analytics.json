@@ -1,0 +1,210 @@
+{
+    "summary": {
+        "total_pageviews": 18977,
+        "unique_visitors": 6940,
+        "avg_session_duration": "3m 42s",
+        "bounce_rate": "34.2%",
+        "ai_engine_referrals": 1420,
+        "last_updated": "2026-11-09 15:08:00"
+    },
+    "traffic_sources": [
+        {
+            "source": "Google Organic Search",
+            "visits": 8450,
+            "percentage": 45.9,
+            "color": "#2563EB"
+        },
+        {
+            "source": "Direct Visits / Bookmarks",
+            "visits": 3810,
+            "percentage": 20.7,
+            "color": "#10B981"
+        },
+        {
+            "source": "AI Search (Perplexity / ChatGPT / SGE)",
+            "visits": 2420,
+            "percentage": 13.1,
+            "color": "#8B5CF6"
+        },
+        {
+            "source": "WhatsApp / Social Referrals",
+            "visits": 2180,
+            "percentage": 11.8,
+            "color": "#059669"
+        },
+        {
+            "source": "Bing & Yahoo Search",
+            "visits": 980,
+            "percentage": 5.3,
+            "color": "#D97706"
+        },
+        {
+            "source": "Other Education Portals",
+            "visits": 580,
+            "percentage": 3.2,
+            "color": "#64748B"
+        }
+    ],
+    "geo_distribution": [
+        {
+            "city": "Chennai",
+            "region": "Tamil Nadu",
+            "visits": 7450,
+            "percentage": 40.4,
+            "lat": 13.0827,
+            "lng": 80.2707
+        },
+        {
+            "city": "Tiruvallur",
+            "region": "Tamil Nadu",
+            "visits": 3980,
+            "percentage": 21.6,
+            "lat": 13.1438,
+            "lng": 79.9082
+        },
+        {
+            "city": "Kanchipuram & Chengalpattu",
+            "region": "Tamil Nadu",
+            "visits": 1940,
+            "percentage": 10.5,
+            "lat": 12.8342,
+            "lng": 79.7036
+        },
+        {
+            "city": "Vellore & Ranipet",
+            "region": "Tamil Nadu",
+            "visits": 1350,
+            "percentage": 7.3,
+            "lat": 12.9165,
+            "lng": 79.1325
+        },
+        {
+            "city": "Nellore & Tirupati",
+            "region": "Andhra Pradesh",
+            "visits": 1120,
+            "percentage": 6.1,
+            "lat": 14.4426,
+            "lng": 79.9865
+        },
+        {
+            "city": "Bengaluru",
+            "region": "Karnataka",
+            "visits": 940,
+            "percentage": 5.1,
+            "lat": 12.9716,
+            "lng": 77.5946
+        },
+        {
+            "city": "Hyderabad",
+            "region": "Telangana",
+            "visits": 620,
+            "percentage": 3.4,
+            "lat": 17.385,
+            "lng": 78.4867
+        },
+        {
+            "city": "NRI / Middle East & Others",
+            "region": "International",
+            "visits": 1020,
+            "percentage": 5.6,
+            "lat": 25.2048,
+            "lng": 55.2708
+        }
+    ],
+    "top_keywords": [
+        {
+            "keyword": "Vel Pharmacy College B.Pharm admission",
+            "clicks": 2840,
+            "position": 1.2,
+            "ctr": "18.4%"
+        },
+        {
+            "keyword": "PCI approved pharmacy colleges Tiruvallur",
+            "clicks": 1930,
+            "position": 1.4,
+            "ctr": "15.1%"
+        },
+        {
+            "keyword": "Dr. G. Saravanan Principal Vel Pharmacy",
+            "clicks": 1420,
+            "position": 1,
+            "ctr": "24.6%"
+        },
+        {
+            "keyword": "Vel Pharmacy College Manjankaranai",
+            "clicks": 1180,
+            "position": 1.1,
+            "ctr": "19.8%"
+        },
+        {
+            "keyword": "B.Pharm fees and eligibility VISTAS",
+            "clicks": 970,
+            "position": 2.1,
+            "ctr": "12.3%"
+        }
+    ],
+    "ai_geo_aeo_queries": [
+        {
+            "engine": "Perplexity AI",
+            "query": "Which pharmacy college is inside VMCH Manjankaranai campus?",
+            "status": "Cited as Source #1",
+            "sentiment": "Positive"
+        },
+        {
+            "engine": "ChatGPT Search",
+            "query": "Is Vel Pharmacy College approved by PCI New Delhi?",
+            "status": "Direct Citation in Answer",
+            "sentiment": "Positive"
+        },
+        {
+            "engine": "Google AI Overview",
+            "query": "Best B.Pharm colleges near North Chennai and Tiruvallur",
+            "status": "Featured in Card",
+            "sentiment": "High Authority"
+        },
+        {
+            "engine": "Claude AI",
+            "query": "Who is the principal of Vel Pharmacy College and his research background?",
+            "status": "Accurate Knowledge Entity",
+            "sentiment": "Verified"
+        }
+    ],
+    "daily_timeline": [
+        {
+            "date": "2026-10-25",
+            "views": 2180,
+            "visitors": 840
+        },
+        {
+            "date": "2026-10-26",
+            "views": 2340,
+            "visitors": 890
+        },
+        {
+            "date": "2026-10-27",
+            "views": 2680,
+            "visitors": 960
+        },
+        {
+            "date": "2026-10-28",
+            "views": 2520,
+            "visitors": 910
+        },
+        {
+            "date": "2026-10-29",
+            "views": 2890,
+            "visitors": 1050
+        },
+        {
+            "date": "2026-10-30",
+            "views": 3120,
+            "visitors": 1140
+        },
+        {
+            "date": "2026-10-31",
+            "views": 2690,
+            "visitors": 1150
+        }
+    ],
+    "recent_visits": []
+}
