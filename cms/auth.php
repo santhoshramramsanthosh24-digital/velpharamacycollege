@@ -5,11 +5,14 @@
  */
 
 if (session_status() === PHP_SESSION_NONE) {
+    if (is_dir('/tmp') && is_writable('/tmp')) {
+        @session_save_path('/tmp');
+    }
     // Enforce hardened session cookies
-    ini_set('session.cookie_httponly', 1);
-    ini_set('session.use_only_cookies', 1);
-    ini_set('session.cookie_samesite', 'Strict');
-    session_start();
+    @ini_set('session.cookie_httponly', '1');
+    @ini_set('session.use_only_cookies', '1');
+    @ini_set('session.cookie_samesite', 'Strict');
+    @session_start();
 }
 
 define('CMS_DATA_DIR', dirname(__DIR__) . '/data');

@@ -85,8 +85,8 @@ if (strpos($clean_slug, 'cms/') === 0) {
     exit;
 }
 
-// Log public visits to analytics (avoid logging static assets or 404s)
-if (file_exists(__DIR__ . '/cms/helpers.php')) {
+// Log public visits to analytics (avoid logging static assets or 404s, and skip on serverless read-only environments)
+if (file_exists(__DIR__ . '/cms/helpers.php') && !defined('VERCEL_ENV')) {
     require_once __DIR__ . '/cms/helpers.php';
     cms_record_visit($uri);
 }
