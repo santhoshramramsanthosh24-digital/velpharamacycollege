@@ -19,7 +19,36 @@ $file = __DIR__ . $uri;
 
 // If requesting an actual static file (CSS, JS, images, PDFs, etc.)
 if ($uri !== '/' && file_exists($file) && !is_dir($file)) {
-    return false; // serve as-is
+    if (php_sapi_name() === 'cli-server') {
+        return false; // serve as-is in PHP built-in server
+    }
+    // Stream static asset with proper MIME type in serverless/production runtimes
+    $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+    $mimes = [
+        'css'   => 'text/css',
+        'js'    => 'application/javascript',
+        'json'  => 'application/json',
+        'png'   => 'image/png',
+        'jpg'   => 'image/jpeg',
+        'jpeg'  => 'image/jpeg',
+        'gif'   => 'image/gif',
+        'svg'   => 'image/svg+xml',
+        'webp'  => 'image/webp',
+        'ico'   => 'image/x-icon',
+        'pdf'   => 'application/pdf',
+        'mp4'   => 'video/mp4',
+        'woff'  => 'font/woff',
+        'woff2' => 'font/woff2',
+        'ttf'   => 'font/ttf',
+        'txt'   => 'text/plain',
+        'xml'   => 'application/xml'
+    ];
+    $contentType = $mimes[$ext] ?? 'application/octet-stream';
+    header('Content-Type: ' . $contentType);
+    header('Content-Length: ' . filesize($file));
+    header('Cache-Control: public, max-age=86400');
+    readfile($file);
+    exit;
 }
 
 $clean_slug = trim($uri, '/');
@@ -62,15 +91,16 @@ if (file_exists(__DIR__ . '/cms/helpers.php')) {
     cms_record_visit($uri);
 }
 
-// Root request
-if (empty($clean_slug)) {
+// Root request or front-controller entrypoints
+if (empty($clean_slug) || $clean_slug === 'index' || $clean_slug === 'index.php' || $clean_slug === 'api/index.php') {
     require __DIR__ . '/index.php';
     exit;
 }
 
-// Clean extensionless URL matching a .php file
-if (file_exists(__DIR__ . '/' . $clean_slug . '.php')) {
-    require __DIR__ . '/' . $clean_slug . '.php';
+// Clean extensionless URL or .php URL matching a script file
+$base_name = preg_replace('/\.php$/i', '', $clean_slug);
+if (file_exists(__DIR__ . '/' . $base_name . '.php')) {
+    require __DIR__ . '/' . $base_name . '.php';
     exit;
 }
 

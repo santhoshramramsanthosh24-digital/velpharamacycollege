@@ -15,7 +15,7 @@ $error_msg = '';
 $ip = $_SERVER['REMOTE_ADDR'] ?? '127.0.0.1';
 $lock_check = cms_is_ip_locked($ip);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
   if (!cms_verify_csrf()) {
     $error_msg = 'Security token expired. Please try submitting again.';
   } elseif ($lock_check['locked']) {

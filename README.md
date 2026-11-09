@@ -60,6 +60,25 @@ This repository contains the complete web application, including the public-faci
 
 ---
 
+## ⚡ Deploying to Vercel
+
+This repository is pre-configured with [`vercel.json`](file:///f:/Vels_pharamcy/vercel.json) and a dedicated serverless front-controller ([`api/index.php`](file:///f:/Vels_pharamcy/api/index.php)) using the `vercel-php@0.9.0` runtime.
+
+### Option 1: Deploy via Vercel Web Dashboard (Recommended)
+1. Log in to [vercel.com](https://vercel.com).
+2. Click **"Add New..."** &rarr; **"Project"**.
+3. Import `santhoshramsanthosh24-tech/Velpharamacycollege`.
+4. Leave the Framework Preset as **Other** (Vercel will automatically read `vercel.json`).
+5. Click **Deploy**. Your site will be live worldwide in under 60 seconds with SSL and global Edge CDN!
+
+### Option 2: Deploy using Vercel CLI
+```bash
+npm i -g vercel
+vercel
+```
+
+---
+
 ## 🔒 Security & Data Integrity
 - Sensitive administrator sessions are protected with CSRF tokens.
 - Content data is safely persisted in the `data/` directory with `.htaccess` access restrictions preventing direct public file browsing.

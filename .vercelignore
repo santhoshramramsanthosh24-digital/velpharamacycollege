@@ -1,0 +1,9 @@
+.git
+.gitignore
+.htaccess
+README.md
+LOCKED_SECTIONS.md
+.DS_Store
+Thumbs.db
+data/security_log.json
+*.log

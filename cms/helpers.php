@@ -22,7 +22,7 @@ function cms_get_faculties(): array {
  */
 function cms_save_faculties(array $faculties): bool {
     $file = CMS_DATA_DIR . '/faculties.json';
-    return (bool)file_put_contents($file, json_encode($faculties, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+    return (bool)@file_put_contents($file, json_encode($faculties, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
 }
 
 /**
@@ -42,7 +42,7 @@ function cms_get_content(): array {
  */
 function cms_save_content(array $content): bool {
     $file = CMS_DATA_DIR . '/pages_content.json';
-    return (bool)file_put_contents($file, json_encode($content, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+    return (bool)@file_put_contents($file, json_encode($content, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
 }
 
 /**
@@ -62,7 +62,7 @@ function cms_get_syllabus(): array {
  */
 function cms_save_syllabus(array $data): bool {
     $file = dirname(__DIR__) . '/includes/syllabus_nep2020.json';
-    return (bool)file_put_contents($file, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+    return (bool)@file_put_contents($file, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
 }
 
 /**
@@ -82,7 +82,7 @@ function cms_get_seo(): array {
  */
 function cms_save_seo(array $seo_data): bool {
     $file = CMS_DATA_DIR . '/seo_geo_aeo.json';
-    return (bool)file_put_contents($file, json_encode($seo_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+    return (bool)@file_put_contents($file, json_encode($seo_data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
 }
 
 /**
@@ -122,7 +122,7 @@ function cms_record_visit(string $page_slug): void {
     }
 
     // Keep atomic write
-    file_put_contents($file, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+    @file_put_contents($file, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
 }
 
 /**

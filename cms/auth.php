@@ -58,7 +58,7 @@ function cms_is_ip_locked(string $ip): array {
             // Lockout expired, clear it
             unset($data['lockouts'][$ip]);
             unset($data['failed_attempts'][$ip]);
-            file_put_contents($log_file, json_encode($data, JSON_PRETTY_PRINT));
+            @file_put_contents($log_file, json_encode($data, JSON_PRETTY_PRINT));
         }
     }
     return ['locked' => false];
@@ -82,7 +82,7 @@ function cms_record_failed_attempt(string $username, string $ip): int {
         cms_audit_log('login_failed', "Failed login attempt for username '{$username}' from IP {$ip} (Attempt {$attempts}/5)", 'warning');
     }
 
-    file_put_contents($log_file, json_encode($data, JSON_PRETTY_PRINT));
+    @file_put_contents($log_file, json_encode($data, JSON_PRETTY_PRINT));
     return $attempts;
 }
 
@@ -95,7 +95,7 @@ function cms_clear_failed_attempts(string $ip): void {
         $data = json_decode(file_get_contents($log_file), true) ?: [];
         unset($data['failed_attempts'][$ip]);
         unset($data['lockouts'][$ip]);
-        file_put_contents($log_file, json_encode($data, JSON_PRETTY_PRINT));
+        @file_put_contents($log_file, json_encode($data, JSON_PRETTY_PRINT));
     }
 }
 
@@ -120,7 +120,7 @@ function cms_audit_log(string $event, string $details, string $severity = 'info'
     // Keep last 150 entries
     $data['audit_trail'] = array_slice($data['audit_trail'], 0, 150);
 
-    file_put_contents($log_file, json_encode($data, JSON_PRETTY_PRINT));
+    @file_put_contents($log_file, json_encode($data, JSON_PRETTY_PRINT));
 }
 
 /**
