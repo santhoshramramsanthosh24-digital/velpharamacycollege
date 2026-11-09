@@ -9,19 +9,21 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
 
-// Register shutdown function to catch any fatal PHP error
-register_shutdown_function(function() {
-    $error = error_get_last();
-    if ($error && in_array($error['type'], [E_ERROR, E_PARSE, E_CORE_ERROR, E_COMPILE_ERROR])) {
-        http_response_code(500);
-        header('Content-Type: text/html; charset=utf-8');
-        echo "<!DOCTYPE html><html><head><title>Fatal Error</title></head><body>";
-        echo "<h1>PHP Fatal Error</h1>";
-        echo "<p><strong>Message:</strong> " . htmlspecialchars($error['message']) . "</p>";
-        echo "<p><strong>File:</strong> " . htmlspecialchars($error['file']) . " on line " . $error['line'] . "</p>";
-        echo "</body></html>";
-    }
-});
+if (isset($_GET['debug_ping'])) {
+    header('Content-Type: text/plain; charset=utf-8');
+    echo "PHP_OK: " . PHP_VERSION . " SAPI: " . php_sapi_name();
+    exit;
+}
+
+if (isset($_GET['debug_files'])) {
+    header('Content-Type: text/plain; charset=utf-8');
+    echo "CURRENT_DIR: " . __DIR__ . "\n";
+    echo "PARENT_DIR: " . dirname(__DIR__) . "\n";
+    echo "CWD: " . getcwd() . "\n";
+    echo "FILES_IN_PARENT: " . (is_dir(dirname(__DIR__)) ? implode(', ', scandir(dirname(__DIR__))) : 'NOT_A_DIR') . "\n";
+    echo "FILES_IN_CURRENT: " . (is_dir(__DIR__) ? implode(', ', scandir(__DIR__)) : 'NOT_A_DIR') . "\n";
+    exit;
+}
 
 // Mark Vercel environment
 if (!defined('VERCEL_ENV')) {
@@ -38,6 +40,16 @@ $rootDir = dirname(__DIR__);
 if (!file_exists($rootDir . '/router.php')) {
     $rootDir = __DIR__;
 }
+
+if (!file_exists($rootDir . '/router.php')) {
+    header('Content-Type: text/plain; charset=utf-8');
+    echo "CRITICAL: router.php was not found.\n";
+    echo "Parent directory: " . dirname(__DIR__) . "\n";
+    echo "Files in parent: " . (is_dir(dirname(__DIR__)) ? implode(', ', scandir(dirname(__DIR__))) : 'NOT_A_DIR') . "\n";
+    echo "Files in current: " . (is_dir(__DIR__) ? implode(', ', scandir(__DIR__)) : 'NOT_A_DIR') . "\n";
+    exit;
+}
+
 chdir($rootDir);
 
 // Normalize standard CGI/Serverless superglobals
