@@ -68,3 +68,4 @@ This repository contains the complete web application, including the public-faci
 
 ## 📜 License
 &copy; 2026 Vel Pharmacy College / Vels Institute of Science, Technology & Advanced Studies (VISTAS). All rights reserved.
+
