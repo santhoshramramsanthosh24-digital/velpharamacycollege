@@ -1,9 +1,0 @@
-{
-  "name": "vel-pharmacy-college",
-  "version": "1.0.0",
-  "private": true,
-  "engines": {
-    "node": "22.x"
-  }
-}
-

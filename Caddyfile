@@ -11,7 +11,7 @@
     }
     respond @data 403
 
-    php_server {
-        try_files {path} {path}/ /router.php /index.php
-    }
+    try_files {path} {path}.php {path}/ /router.php /index.php
+
+    php_server
 }
