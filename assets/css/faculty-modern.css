@@ -541,23 +541,9 @@
   color: #F8FAFC;
 }
 
+/* Experience Pill Badge on Photo - Removed per user requirement */
 .faculty-exp-badge {
-  position: absolute;
-  bottom: 12px;
-  left: 14px;
-  z-index: 4;
-  background: rgba(255, 255, 255, 0.94);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  color: var(--color-primary-dark);
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 0.25rem 0.65rem;
-  border-radius: var(--radius-full);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
+  display: none !important;
 }
 
 

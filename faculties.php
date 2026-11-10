@@ -661,15 +661,6 @@ include __DIR__ . '/includes/header.php';
               </div>
             <?php endif; ?>
 
-            <!-- Experience Counter Pill on Image -->
-            <div class="faculty-exp-badge">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
-              <span><?= htmlspecialchars($fac['experience']) ?> Exp</span>
-            </div>
-
           </div>
 
           <!-- CARD CONTENT BODY -->
@@ -1042,39 +1033,41 @@ include __DIR__ . '/includes/header.php';
 <!-- ==========================================================================
      SECTION 3: ACADEMIC MENTORSHIP CALLOUT
      ========================================================================== -->
-<section class="section" style="padding-top: 1.5rem; padding-bottom: 5.5rem; background: var(--color-bg-alt);"
+  class="section" style="padding-top: 1.5rem; padding-bottom: 5.5rem; background: var(--color-bg-alt);"
   aria-label="Faculty Mentorship">
-  <div class="container" style="max-width: 1080px;">
-    <div style="background: linear-gradient(135deg, #1E2368 0%, #0E1338 100%); color: #FFFFFF; border-radius: 24px; padding: 4.5rem 2.5rem; text-align: center; box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.2); border: 1px solid rgba(255, 255, 255, 0.1); position: relative; overflow: hidden;">
-      <div
-        style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 0.35rem 1rem; border-radius: 9999px; margin-bottom: 1.25rem; color: #FEF3C7; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">
-        ★ Individualized Research &amp; Clinical Mentorship
+      <div class="container" style="max-width: 1080px;">
+        <div
+          style="background: linear-gradient(135deg, #1E2368 0%, #0E1338 100%); color: #FFFFFF; border-radius: 24px; padding: 4.5rem 2.5rem; text-align: center; box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.2); border: 1px solid rgba(255, 255, 255, 0.1); position: relative; overflow: hidden;">
+          <div
+            style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 0.35rem 1rem; border-radius: 9999px; margin-bottom: 1.25rem; color: #FEF3C7; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">
+            ★ Individualized Research &amp; Clinical Mentorship
+          </div>
+          <h2
+            style="font-family: var(--font-heading); font-size: clamp(2rem, 3.5vw, 2.75rem); color: #FFFFFF; margin-bottom: 1.25rem; line-height: 1.2;">
+            Learn Under National Scholars &amp; Pharmacy Researchers
+          </h2>
+          <p
+            style="font-size: 1.1rem; color: #CBD5E1; line-height: 1.7; margin-bottom: 2.25rem; max-width: 780px; margin-left: auto; margin-right: auto;">
+            At Vel Pharmacy College, academic mentors do not simply lecture—they guide clinical rounds, mentor research
+            publications, train students in modern analytical instrumentation, and provide focused coaching for GPAT and
+            international licensing examinations.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="enquiry" class="btn"
+              style="background: #D97706; color: #FFFFFF; font-weight: 700; padding: 0.85rem 2rem; border-radius: var(--radius-full); box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);">
+              <span>Apply for B.Pharm 2024–2025</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="contact-us" class="btn"
+              style="background: rgba(255,255,255,0.15); color: #FFFFFF; font-weight: 600; padding: 0.85rem 1.75rem; border-radius: var(--radius-full); border: 1px solid rgba(255,255,255,0.3);">
+              <span>Schedule Campus Visit</span>
+            </a>
+          </div>
+        </div>
       </div>
-      <h2
-        style="font-family: var(--font-heading); font-size: clamp(2rem, 3.5vw, 2.75rem); color: #FFFFFF; margin-bottom: 1.25rem; line-height: 1.2;">
-        Learn Under National Scholars &amp; Pharmacy Researchers
-      </h2>
-      <p style="font-size: 1.1rem; color: #CBD5E1; line-height: 1.7; margin-bottom: 2.25rem; max-width: 780px; margin-left: auto; margin-right: auto;">
-        At Vel Pharmacy College, academic mentors do not simply lecture—they guide clinical rounds, mentor research
-        publications, train students in modern analytical instrumentation, and provide focused coaching for GPAT and
-        international licensing examinations.
-      </p>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="enquiry" class="btn"
-          style="background: #D97706; color: #FFFFFF; font-weight: 700; padding: 0.85rem 2rem; border-radius: var(--radius-full); box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);">
-          <span>Apply for B.Pharm 2024–2025</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-        <a href="contact-us" class="btn"
-          style="background: rgba(255,255,255,0.15); color: #FFFFFF; font-weight: 600; padding: 0.85rem 1.75rem; border-radius: var(--radius-full); border: 1px solid rgba(255,255,255,0.3);">
-          <span>Schedule Campus Visit</span>
-        </a>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- ==========================================================================
