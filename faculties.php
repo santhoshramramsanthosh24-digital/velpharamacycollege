@@ -955,85 +955,7 @@ include __DIR__ . '/includes/header.php';
 </div>
 
 <!-- ==========================================================================
-     SECTION 2: OFFICIAL COLLEGE FACULTY CADRE DIRECTORY TABLE
-     ========================================================================== -->
-<!--
-<section class="section section-alt" aria-labelledby="tableHeading">
-  <div class="container">
-    <div class="text-center" style="max-width: 780px; margin: 0 auto 3rem;">
-      <span class="section-subtitle">Statutory Institutional Records</span>
-      <h2 class="section-title" id="tableHeading">Official Faculty Cadre &amp; Verified Credentials</h2>
-      <p class="section-description">
-        Comprehensive roster of approved teaching cadre, verified doctorate and post-graduate credentials, and
-        cumulative academic experience according to Pharmacy Council of India (PCI) standards.
-      </p>
-    </div>
-
-    <!-- Modern Table Container -->
-    <div
-      style="background: #FFFFFF; border-radius: 20px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); overflow-x: auto; border: 1px solid #E2E8F0;">
-      <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.925rem;">
-        <thead>
-          <tr style="background: linear-gradient(135deg, #1E2368 0%, #292E82 100%); color: #FFFFFF;">
-            <th style="padding: 1.1rem 1.25rem; font-weight: 700; width: 70px; text-align: center;">S. No</th>
-            <th style="padding: 1.1rem 1.25rem; font-weight: 700;">Faculty Name</th>
-            <th style="padding: 1.1rem 1.25rem; font-weight: 700;">Qualification</th>
-            <th style="padding: 1.1rem 1.25rem; font-weight: 700;">Cadre Designation</th>
-            <th style="padding: 1.1rem 1.25rem; font-weight: 700;">Department</th>
-            <th style="padding: 1.1rem 1.25rem; font-weight: 700; text-align: center; width: 140px;">Teaching Exp</th>
-            <th style="padding: 1.1rem 1.25rem; font-weight: 700; text-align: center; width: 130px;">Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php foreach ($faculties as $idx => $fac): ?>
-            <tr style="border-bottom: 1px solid #F1F5F9; transition: background 0.15s ease;"
-              onmouseover="this.style.background='#F8FAFC'" onmouseout="this.style.background='#FFFFFF'">
-              <td style="padding: 1rem 1.25rem; text-align: center; font-weight: 700; color: #64748B;">
-                <?= $idx + 1 ?>
-              </td>
-              <td style="padding: 1rem 1.25rem;">
-                <div style="font-weight: 700; color: var(--color-primary-dark); font-size: 0.975rem;">
-                  <?= htmlspecialchars($fac['name']) ?>
-                </div>
-                <?php if ($fac['featured']): ?>
-                  <span
-                    style="display: inline-block; font-size: 0.7rem; font-weight: 700; color: #B45309; background: #FEF3C7; padding: 0.1rem 0.5rem; border-radius: 4px; margin-top: 2px;">Principal</span>
-                <?php endif; ?>
-              </td>
-              <td style="padding: 1rem 1.25rem; color: #334155; font-weight: 500;">
-                <?= htmlspecialchars($fac['qualification']) ?>
-              </td>
-              <td style="padding: 1rem 1.25rem; color: var(--color-secondary); font-weight: 600;">
-                <?= htmlspecialchars($fac['designation']) ?>
-              </td>
-              <td style="padding: 1rem 1.25rem; color: #475569;">
-                <span class="faculty-dept-badge dept-badge-<?= htmlspecialchars($fac['dept_slug']) ?>"
-                  style="margin-bottom: 0;">
-                  <?= htmlspecialchars($fac['department']) ?>
-                </span>
-              </td>
-              <td style="padding: 1rem 1.25rem; text-align: center; font-weight: 700; color: var(--color-primary);">
-                <?= htmlspecialchars($fac['experience']) ?>
-              </td>
-              <td style="padding: 1rem 1.25rem; text-align: center;">
-                <button type="button" class="table-view-btn" data-index="<?= $idx ?>"
-                  style="background: var(--color-primary-subtle); color: var(--color-primary); border: 1px solid rgba(41,46,130,0.2); padding: 0.35rem 0.85rem; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700; cursor: pointer; transition: all 0.2s ease;"
-                  onmouseover="this.style.background='var(--color-primary)'; this.style.color='#FFFFFF'"
-                  onmouseout="this.style.background='var(--color-primary-subtle)'; this.style.color='var(--color-primary)'">
-                  Pop Card
-                </button>
-              </td>
-            </tr>
-          <?php endforeach; ?>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
--->
-
-<!-- ==========================================================================
-     SECTION 3: ACADEMIC MENTORSHIP CALLOUT
+     SECTION 2: ACADEMIC MENTORSHIP CALLOUT
      ========================================================================== -->
 <section class="section" style="padding-top: 1.5rem; padding-bottom: 5.5rem; background: var(--color-bg-alt);"
   aria-label="Faculty Mentorship">
@@ -1381,15 +1303,6 @@ include __DIR__ . '/includes/header.php';
           openFacultyPopCard(index);
         });
       }
-    });
-
-    // Table Row "Pop Card" Button Listeners
-    const tableBtns = document.querySelectorAll('.table-view-btn');
-    tableBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const idx = parseInt(btn.getAttribute('data-index'), 10);
-        openFacultyPopCard(idx);
-      });
     });
 
   });
