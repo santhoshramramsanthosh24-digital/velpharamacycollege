@@ -35,408 +35,409 @@ if (file_exists($cms_fac_file)) {
 
 // Fallback Default Faculty Data if CMS data not present
 if (!isset($faculties)) {
-$faculties = [
-  [
-    'sno' => 1,
-    'id' => 'saravanan-g',
-    'name' => 'Dr. G. Saravanan',
-    'qualification' => 'M. Pharm., Ph.D., FAPP',
-    'designation' => 'Professor & Principal',
-    'department' => 'Pharmaceutical Chemistry',
-    'dept_slug' => 'chemistry',
-    'dept_color' => '#1E2368',
-    'experience' => '18.5+ Years',
-    'image' => 'assets/images/Faculty/Dr. G. Saravanan.png',
-    'featured' => true,
-    'is_doctorate' => true,
-    'badge' => 'Principal & Head',
-    'cadre' => 'Professor & Collegiate Head',
-    'email' => 'principal@velpharmacycollege.com',
-    'office' => 'Administrative Wing, Principal Office (Room 101)',
-    'description' => 'Dr. G. Saravanan is an accomplished pharmaceutical scientist and academic administrator with over 18.5 years of rich experience in pharmacy education, PCI statutory administration, and rational drug design. As Principal of Vel Pharmacy College, he spearheads modern pharmaceutical pedagogy, PCI compliance, and student research mentorship. His doctoral research is rooted in novel heterocyclic synthesis, molecular docking, and QSAR studies for antimycobacterial and anticancer therapeutics.',
-    'specializations' => [
-      'Synthetic Medicinal Chemistry',
-      'Computer-Aided Drug Design (CADD)',
-      'Molecular Docking & QSAR Studies',
-      'Novel Heterocyclic Scaffolds',
-      'Academic Governance & PCI Norms'
+  $faculties = [
+    [
+      'sno' => 1,
+      'id' => 'saravanan-g',
+      'name' => 'Dr. G. Saravanan',
+      'qualification' => 'M. Pharm., Ph.D., FAPP',
+      'designation' => 'Professor & Principal',
+      'department' => 'Pharmaceutical Chemistry',
+      'dept_slug' => 'chemistry',
+      'dept_color' => '#1E2368',
+      'experience' => '18.5+ Years',
+      'image' => 'assets/images/Faculty/Dr. G. Saravanan.png',
+      'featured' => true,
+      'is_doctorate' => true,
+      'badge' => 'Principal & Head',
+      'cadre' => 'Professor & Collegiate Head',
+      'email' => 'principal@velpharmacycollege.com',
+      'office' => 'Administrative Wing, Principal Office (Room 101)',
+      'description' => 'Dr. G. Saravanan is an accomplished pharmaceutical scientist and academic administrator with over 18.5 years of rich experience in pharmacy education, PCI statutory administration, and rational drug design. As Principal of Vel Pharmacy College, he spearheads modern pharmaceutical pedagogy, PCI compliance, and student research mentorship. His doctoral research is rooted in novel heterocyclic synthesis, molecular docking, and QSAR studies for antimycobacterial and anticancer therapeutics.',
+      'specializations' => [
+        'Synthetic Medicinal Chemistry',
+        'Computer-Aided Drug Design (CADD)',
+        'Molecular Docking & QSAR Studies',
+        'Novel Heterocyclic Scaffolds',
+        'Academic Governance & PCI Norms'
+      ],
+      'subjects' => [
+        'Medicinal Chemistry I, II & III',
+        'Advanced Organic Chemistry',
+        'Drug Design & Molecular Modeling',
+        'Pharmaceutical Inorganic Chemistry'
+      ],
+      'achievements' => [
+        'Published 45+ research articles in Scopus & Web of Science indexed journals',
+        'Elected Fellow of Association of Pharmacy Professionals (FAPP)',
+        'Guided over 25 postgraduate & undergraduate pharmacy research dissertations'
+      ]
     ],
-    'subjects' => [
-      'Medicinal Chemistry I, II & III',
-      'Advanced Organic Chemistry',
-      'Drug Design & Molecular Modeling',
-      'Pharmaceutical Inorganic Chemistry'
+    [
+      'sno' => 2,
+      'id' => 'kumanan-r',
+      'name' => 'Dr. R. Kumanan',
+      'qualification' => 'M. Pharm., Ph.D.',
+      'designation' => 'Professor',
+      'department' => 'Pharmaceutical Chemistry',
+      'dept_slug' => 'chemistry',
+      'dept_color' => '#1E2368',
+      'experience' => '15+ Years',
+      'image' => 'assets/images/Faculty/Dr. R.Kumanan.jpeg',
+      'featured' => false,
+      'is_doctorate' => true,
+      'badge' => 'Doctorate / Ph.D.',
+      'cadre' => 'Professor & Research Mentor',
+      'email' => 'r.kumanan@velpharmacycollege.com',
+      'office' => 'Department of Pharmaceutical Chemistry (Block A, Room 104)',
+      'description' => 'Dr. R. Kumanan is an esteemed Professor with over 15 years of academic and investigative expertise in pharmaceutical chemistry, chromatographic method development, and drug discovery. He guides scholars in advanced analytical techniques, reverse-phase HPLC characterization, and molecular analysis of active pharmaceutical ingredients.',
+      'specializations' => [
+        'Analytical Method Development & Validation',
+        'RP-HPLC & Spectroscopic Characterization',
+        'Phytopharmaceutical Chemistry',
+        'Synthetic Drug Analysis & Quality Auditing'
+      ],
+      'subjects' => [
+        'Pharmaceutical Analysis',
+        'Medicinal Chemistry',
+        'Instrumental Methods of Analysis',
+        'Pharmaceutical Quality Assurance'
+      ],
+      'achievements' => [
+        'Extensive publications in peer-reviewed Scopus indexed pharmaceutical journals',
+        'Pioneered validated RP-HPLC analytical methods per international ICH protocols',
+        'Supervised numerous graduate and undergraduate dissertation research projects'
+      ]
     ],
-    'achievements' => [
-      'Published 45+ research articles in Scopus & Web of Science indexed journals',
-      'Elected Fellow of Association of Pharmacy Professionals (FAPP)',
-      'Guided over 25 postgraduate & undergraduate pharmacy research dissertations'
+    [
+      'sno' => 3,
+      'id' => 'avinash-kumar-g',
+      'name' => 'Dr. G. Avinash Kumar',
+      'qualification' => 'M. Pharm., Ph.D.',
+      'designation' => 'Associate Professor',
+      'department' => 'Pharmacognosy',
+      'dept_slug' => 'pharmacognosy',
+      'dept_color' => '#047857',
+      'experience' => '14+ Years',
+      'image' => 'assets/images/Faculty/Dr. G. Avinash Kumar.png',
+      'featured' => false,
+      'is_doctorate' => true,
+      'badge' => 'Doctorate / Ph.D.',
+      'cadre' => 'Associate Professor & Research Guide',
+      'email' => 'g.avinash@velpharmacycollege.com',
+      'office' => 'Phytomedicine Research Center (Block B, Room 206)',
+      'description' => 'Dr. G. Avinash Kumar holds a Ph.D. with close to 14 years of teaching and investigative research in natural product chemistry, botanical standardizations, and ethnopharmacology. He guides scholars in chromatographic separation of plant active principles, antioxidant bioassays, and standardization of traditional herbal formulations.',
+      'specializations' => [
+        'Natural Product Chemistry',
+        'Ethnopharmacological Screening',
+        'Thin Layer & Column Chromatography',
+        'Bioactive Secondary Metabolites'
+      ],
+      'subjects' => [
+        'Industrial Pharmacognosy',
+        'Advanced Phytochemistry',
+        'Medicinal Plant Biotechnology',
+        'Herbal Formulation & Standardization'
+      ],
+      'achievements' => [
+        'Extensive research publications in peer-reviewed phytomedicine and herbal journals',
+        'Invited keynote speaker at botanical drug research conferences',
+        'Principal investigator on plant bioassay efficacy and isolation projects'
+      ]
+    ],
+    [
+      'sno' => 4,
+      'id' => 'kasireddy-paul',
+      'name' => 'Dr. Kasireddy Paul',
+      'qualification' => 'M. Pharm., Ph.D.',
+      'designation' => 'Associate Professor',
+      'department' => 'Pharmacology',
+      'dept_slug' => 'pharmacology',
+      'dept_color' => '#800020',
+      'experience' => '10+ Years',
+      'image' => 'assets/images/Faculty/Dr. Kasireddy Paul.jpeg',
+      'featured' => false,
+      'is_doctorate' => true,
+      'badge' => 'Doctorate / Ph.D.',
+      'cadre' => 'Associate Professor & Research Guide',
+      'email' => 'kasireddy.paul@velpharmacycollege.com',
+      'office' => 'Preclinical Pharmacology Research Lab (Block A, Room 208)',
+      'description' => 'Dr. Kasireddy Paul is a seasoned doctoral researcher and educator specializing in preclinical in-vivo/in-vitro screening, artificial intelligence in precision therapeutics, and neuropharmacological evaluations. He leads advanced investigational pharmacology protocols and guides scholars in translational drug mechanisms.',
+      'specializations' => [
+        'In-Vivo & In-Vitro Pharmacological Screening',
+        'AI & Machine Learning in Drug Delivery',
+        'Hepatoprotective & Anticancer Bioassays',
+        'Toxicological Protocols & Regulatory Bioethics'
+      ],
+      'subjects' => [
+        'Pharmacology I, II & III',
+        'Clinical Pharmacokinetics & Pharmacodynamics',
+        'Experimental Pharmacology Practicals',
+        'Pathophysiology & Disease Therapeutics'
+      ],
+      'achievements' => [
+        'Authored high-impact publications on pharmacological strategies and targeted medicine',
+        'Principal researcher in preclinical bioassays and metabolic syndrome animal models',
+        'Mentor for GPAT and postgraduate medical entrance aspirants'
+      ]
+    ],
+    [
+      'sno' => 5,
+      'id' => 'sudha-s',
+      'name' => 'Dr. Sudha S.',
+      'qualification' => 'M. Pharm., Ph.D.',
+      'designation' => 'Associate Professor',
+      'department' => 'Pharmacognosy',
+      'dept_slug' => 'pharmacognosy',
+      'dept_color' => '#047857',
+      'experience' => '11+ Years',
+      'image' => 'assets/images/Faculty/Dr. Sudha S.jpeg',
+      'featured' => false,
+      'is_doctorate' => true,
+      'badge' => 'Doctorate / Ph.D.',
+      'cadre' => 'Associate Professor & Phytomedicine Researcher',
+      'email' => 'sudha.s@velpharmacycollege.com',
+      'office' => 'Pharmacognosy Research Lab (Block B, Room 204)',
+      'description' => 'Dr. Sudha S. brings over 11 years of academic excellence and doctoral expertise in natural pharmacognosy, herbal monograph standardization, and botanical secondary metabolites. She trains students in phytochemical extraction, tissue microscopy, and quality verification of indigenous herbal drugs.',
+      'specializations' => [
+        'Herbal Drug Standardization & Fingerprinting',
+        'Extraction & Isolation of Bioactive Principles',
+        'Phytochemical Bioassays & Antioxidant Profiling',
+        'Herbal Quality Control & Regulatory Protocols'
+      ],
+      'subjects' => [
+        'Pharmacognosy & Phytochemistry I & II',
+        'Herbal Drug Technology',
+        'Plant Biotechnology & Secondary Metabolites',
+        'Remedial Biology'
+      ],
+      'achievements' => [
+        'Doctoral research in isolation and biological evaluation of herbal medicinal active components',
+        'Published research in reputed peer-reviewed journals of pharmaceutical sciences',
+        'Organizer of academic workshops on botanical standardization and AYUSH paradigms'
+      ]
+    ],
+    [
+      'sno' => 6,
+      'id' => 'pravallika-p',
+      'name' => 'Mrs. Paladugu Pravallika',
+      'qualification' => 'M. Pharm.',
+      'designation' => 'Assistant Professor',
+      'department' => 'Pharmacology',
+      'dept_slug' => 'pharmacology',
+      'dept_color' => '#800020',
+      'experience' => '4+ Years',
+      'image' => 'assets/images/Faculty/Mrs. Paladugu Pravallika.png',
+      'featured' => false,
+      'is_doctorate' => false,
+      'badge' => 'Faculty Mentor',
+      'cadre' => 'Assistant Professor',
+      'email' => 'p.pravallika@velpharmacycollege.com',
+      'office' => 'Preclinical Pharmacology Lab (Block A, Room 210)',
+      'description' => 'Mrs. Paladugu Pravallika brings dynamic teaching pedagogy and research enthusiasm in preclinical screening, neuropharmacology, and toxicological bioassays. She engages students through computer-simulated software models, reinforcing receptor theory, autonomic drug interactions, and physiological principles.',
+      'specializations' => [
+        'Preclinical In-Vivo & In-Vitro Screening',
+        'Neuropharmacology & Analgesic Screening',
+        'Computer-Assisted Experimental Pharmacology',
+        'Toxicological Protocols & Regulatory Bioethics'
+      ],
+      'subjects' => [
+        'Pharmacology I & II',
+        'Human Anatomy & Physiology',
+        'Pathophysiology of Diseases'
+      ],
+      'achievements' => [
+        'Coordinated digital pharmacology laboratory simulations for B.Pharm students',
+        'Published research papers on anti-inflammatory and analgesic screening models',
+        'Dedicated faculty mentor for GPAT competitive examination preparation'
+      ]
+    ],
+    [
+      'sno' => 7,
+      'id' => 'jancyrani-s',
+      'name' => 'Mrs. S. Jancyrani',
+      'qualification' => 'M. Pharm.',
+      'designation' => 'Assistant Professor',
+      'department' => 'Pharmaceutics',
+      'dept_slug' => 'pharmaceutics',
+      'dept_color' => '#4338CA',
+      'experience' => '3+ Years',
+      'image' => 'assets/images/Faculty/Mrs. S. Jancyrani.jpeg',
+      'featured' => false,
+      'is_doctorate' => false,
+      'badge' => 'Formulation Specialist',
+      'cadre' => 'Assistant Professor',
+      'email' => 's.jancyrani@velpharmacycollege.com',
+      'office' => 'Pharmaceutics Formulation Lab (Block A, Room 105)',
+      'description' => 'Mrs. S. Jancyrani specializes in pharmaceutics, novel drug delivery systems, and solid oral dosage form technology. She is committed to fostering practical formulation competence among students, with hands-on practice in granulation, tablet compression, and dissolution evaluation.',
+      'specializations' => [
+        'Novel Drug Delivery Systems (NDDS)',
+        'Tablet Compression & Quality Control',
+        'Microencapsulation & Polymer Matrices',
+        'Biopharmaceutics & Dissolution Testing'
+      ],
+      'subjects' => [
+        'Pharmaceutics I',
+        'Industrial Pharmacy I',
+        'Physical Pharmaceutics I'
+      ],
+      'achievements' => [
+        'Conducted student industrial formulation demonstrations and scale-up studies',
+        'Presented research on sustained-release drug carriers at pharmacy symposiums',
+        'Active mentor for laboratory practical skills development'
+      ]
+    ],
+    [
+      'sno' => 8,
+      'id' => 'divya-c',
+      'name' => 'Mrs. C. Divya',
+      'qualification' => 'M. Pharm.',
+      'designation' => 'Assistant Professor',
+      'department' => 'Pharmaceutics',
+      'dept_slug' => 'pharmaceutics',
+      'dept_color' => '#4338CA',
+      'experience' => '4+ Years',
+      'image' => 'assets/images/Faculty/C.DIVYA.png',
+      'featured' => false,
+      'is_doctorate' => false,
+      'badge' => 'Cosmetic & NDDS',
+      'cadre' => 'Assistant Professor',
+      'email' => 'c.divya@velpharmacycollege.com',
+      'office' => 'Pharmaceutics Pilot Plant & Lab (Block A, Room 108)',
+      'description' => 'Mrs. C. Divya brings 4+ years of experience in dosage formulation design, cosmetic science, and physical pharmacy. She combines theoretical lectures with practical lab drills covering emulsification, suspension stability, cosmetic compounding, and dosage form packaging.',
+      'specializations' => [
+        'Cosmetic Formulations & Technology',
+        'Colloidal & Rheological Formulations',
+        'Semisolid Compounding & Ointments',
+        'Pharmaceutical Packaging Technology'
+      ],
+      'subjects' => [
+        'Pharmaceutics II',
+        'Cosmetic Science',
+        'Physical Pharmaceutics II',
+        'Pharmaceutical Technology'
+      ],
+      'achievements' => [
+        'Formulated innovative topical skincare herbal emulsions and dermatological bases',
+        'Guided undergraduate formulation projects for state-level competitions',
+        'Active member of the Indian Pharmaceutical Association (IPA)'
+      ]
+    ],
+    [
+      'sno' => 9,
+      'id' => 'divya-m',
+      'name' => 'Ms. M. Divya',
+      'qualification' => 'M. Pharm.',
+      'designation' => 'Assistant Professor',
+      'department' => 'Pharmaceutical Analysis',
+      'dept_slug' => 'analysis',
+      'dept_color' => '#B45309',
+      'experience' => '3+ Years',
+      'image' => 'assets/images/Faculty/Ms. M. Divya.jpeg',
+      'featured' => false,
+      'is_doctorate' => false,
+      'badge' => 'Analytical Specialist',
+      'cadre' => 'Assistant Professor',
+      'email' => 'm.divya@velpharmacycollege.com',
+      'office' => 'Central Instrumental Analysis Lab (Ground Floor, Room 102)',
+      'description' => 'Ms. M. Divya is a dedicated faculty member in pharmaceutical analysis with expertise in spectrophotometric method development, instrumental chromatography, and validation per ICH protocols. She coordinates hands-on analytical instrumentation training for undergraduate pharmacy scholars.',
+      'specializations' => [
+        'Spectrophotometric Method Development',
+        'RP-HPLC Analytical Validation',
+        'ICH Quality Assurance & Stability Testing',
+        'Quantitative Pharmaceutical Analysis'
+      ],
+      'subjects' => [
+        'Pharmaceutical Analysis',
+        'Instrumental Methods of Analysis',
+        'Modern Pharmaceutical Analytical Techniques',
+        'Quality Assurance Practicals'
+      ],
+      'achievements' => [
+        'Co-authored research articles on analytical method validation in pharmaceutical journals',
+        'Conducted instrumental analysis masterclasses for students on HPLC and UV-Vis spectrophotometers',
+        'Faculty coordinator for departmental academic documentation and lab safety'
+      ]
+    ],
+    [
+      'sno' => 10,
+      'id' => 'devibala',
+      'name' => 'Mrs. Devibala',
+      'qualification' => 'M. Pharm.',
+      'designation' => 'Assistant Professor',
+      'department' => 'Pharmaceutics',
+      'dept_slug' => 'pharmaceutics',
+      'dept_color' => '#4338CA',
+      'experience' => '4+ Years',
+      'image' => 'assets/images/Faculty/Mrs. Devibala.jpeg',
+      'featured' => false,
+      'is_doctorate' => false,
+      'badge' => 'Faculty Mentor',
+      'cadre' => 'Assistant Professor',
+      'email' => 'devibala@velpharmacycollege.com',
+      'office' => 'Pharmaceutics & Traditional Medicine Lab (Block A, Room 112)',
+      'description' => 'Mrs. Devibala is a dedicated pharmaceutics educator and researcher with expertise in green nanotechnology, traditional medicine formulation, and novel delivery systems. She trains students in particulate science, herbal excipient optimization, and formulation stability.',
+      'specializations' => [
+        'Green Synthesis of Nanoparticles',
+        'Advances in Herbal & Traditional Medicines',
+        'Novel Drug Delivery Systems (NDDS)',
+        'Polymeric Nanocarriers & Controlled Release'
+      ],
+      'subjects' => [
+        'Pharmaceutics I & II',
+        'Industrial Pharmacy',
+        'Physical Pharmaceutics',
+        'Traditional & Herbal Medicine Formulations'
+      ],
+      'achievements' => [
+        'Co-authored published studies on traditional medicines and green synthesized nanoparticles',
+        'Presented research papers at national pharmaceutical science symposiums',
+        'Mentored student research projects in novel herbal formulation development'
+      ]
+    ],
+    [
+      'sno' => 11,
+      'id' => 'pooja',
+      'name' => 'Mrs. Pooja',
+      'qualification' => 'M. Pharm.',
+      'designation' => 'Assistant Professor',
+      'department' => 'Pharmacology',
+      'dept_slug' => 'pharmacology',
+      'dept_color' => '#800020',
+      'experience' => '3+ Years',
+      'image' => 'assets/images/Faculty/Mrs. Pooja.jpeg',
+      'featured' => false,
+      'is_doctorate' => false,
+      'badge' => 'Faculty Mentor',
+      'cadre' => 'Assistant Professor',
+      'email' => 'pooja@velpharmacycollege.com',
+      'office' => 'Department of Pharmacology (Block A, Room 212)',
+      'description' => 'Mrs. Pooja specializes in pharmacology screening protocols, clinical pharmacy practice, and pharmacovigilance. She focuses on interactive teaching methods, clinical case problem-solving, and receptor mechanism demonstrations for pharmacy students.',
+      'specializations' => [
+        'Pharmacological Screening Strategies',
+        'Clinical Pharmacy Practice & Pharmacovigilance',
+        'Receptor Pharmacology & Cellular Signaling',
+        'Drug-Drug Interaction Analysis'
+      ],
+      'subjects' => [
+        'Pharmacology I & II',
+        'Clinical Research & Pharmacovigilance',
+        'Pathophysiology',
+        'Human Anatomy & Physiology'
+      ],
+      'achievements' => [
+        'Authored research publications on pharmacological strategies and therapeutic management',
+        'Conducted clinical interactive workshops on drug safety and patient counseling',
+        'Active mentor for student academic development and seminar presentations'
+      ]
     ]
-  ],
-  [
-    'sno' => 2,
-    'id' => 'kumanan-r',
-    'name' => 'Dr. R. Kumanan',
-    'qualification' => 'M. Pharm., Ph.D.',
-    'designation' => 'Professor',
-    'department' => 'Pharmaceutical Chemistry',
-    'dept_slug' => 'chemistry',
-    'dept_color' => '#1E2368',
-    'experience' => '15+ Years',
-    'image' => 'assets/images/Faculty/Dr. R.Kumanan.jpeg',
-    'featured' => false,
-    'is_doctorate' => true,
-    'badge' => 'Doctorate / Ph.D.',
-    'cadre' => 'Professor & Research Mentor',
-    'email' => 'r.kumanan@velpharmacycollege.com',
-    'office' => 'Department of Pharmaceutical Chemistry (Block A, Room 104)',
-    'description' => 'Dr. R. Kumanan is an esteemed Professor with over 15 years of academic and investigative expertise in pharmaceutical chemistry, chromatographic method development, and drug discovery. He guides scholars in advanced analytical techniques, reverse-phase HPLC characterization, and molecular analysis of active pharmaceutical ingredients.',
-    'specializations' => [
-      'Analytical Method Development & Validation',
-      'RP-HPLC & Spectroscopic Characterization',
-      'Phytopharmaceutical Chemistry',
-      'Synthetic Drug Analysis & Quality Auditing'
-    ],
-    'subjects' => [
-      'Pharmaceutical Analysis',
-      'Medicinal Chemistry',
-      'Instrumental Methods of Analysis',
-      'Pharmaceutical Quality Assurance'
-    ],
-    'achievements' => [
-      'Extensive publications in peer-reviewed Scopus indexed pharmaceutical journals',
-      'Pioneered validated RP-HPLC analytical methods per international ICH protocols',
-      'Supervised numerous graduate and undergraduate dissertation research projects'
-    ]
-  ],
-  [
-    'sno' => 3,
-    'id' => 'avinash-kumar-g',
-    'name' => 'Dr. G. Avinash Kumar',
-    'qualification' => 'M. Pharm., Ph.D.',
-    'designation' => 'Associate Professor',
-    'department' => 'Pharmacognosy',
-    'dept_slug' => 'pharmacognosy',
-    'dept_color' => '#047857',
-    'experience' => '14+ Years',
-    'image' => 'assets/images/Faculty/Dr. G. Avinash Kumar.png',
-    'featured' => false,
-    'is_doctorate' => true,
-    'badge' => 'Doctorate / Ph.D.',
-    'cadre' => 'Associate Professor & Research Guide',
-    'email' => 'g.avinash@velpharmacycollege.com',
-    'office' => 'Phytomedicine Research Center (Block B, Room 206)',
-    'description' => 'Dr. G. Avinash Kumar holds a Ph.D. with close to 14 years of teaching and investigative research in natural product chemistry, botanical standardizations, and ethnopharmacology. He guides scholars in chromatographic separation of plant active principles, antioxidant bioassays, and standardization of traditional herbal formulations.',
-    'specializations' => [
-      'Natural Product Chemistry',
-      'Ethnopharmacological Screening',
-      'Thin Layer & Column Chromatography',
-      'Bioactive Secondary Metabolites'
-    ],
-    'subjects' => [
-      'Industrial Pharmacognosy',
-      'Advanced Phytochemistry',
-      'Medicinal Plant Biotechnology',
-      'Herbal Formulation & Standardization'
-    ],
-    'achievements' => [
-      'Extensive research publications in peer-reviewed phytomedicine and herbal journals',
-      'Invited keynote speaker at botanical drug research conferences',
-      'Principal investigator on plant bioassay efficacy and isolation projects'
-    ]
-  ],
-  [
-    'sno' => 4,
-    'id' => 'kasireddy-paul',
-    'name' => 'Dr. Kasireddy Paul',
-    'qualification' => 'M. Pharm., Ph.D.',
-    'designation' => 'Associate Professor',
-    'department' => 'Pharmacology',
-    'dept_slug' => 'pharmacology',
-    'dept_color' => '#800020',
-    'experience' => '10+ Years',
-    'image' => 'assets/images/Faculty/Dr. Kasireddy Paul.jpeg',
-    'featured' => false,
-    'is_doctorate' => true,
-    'badge' => 'Doctorate / Ph.D.',
-    'cadre' => 'Associate Professor & Research Guide',
-    'email' => 'kasireddy.paul@velpharmacycollege.com',
-    'office' => 'Preclinical Pharmacology Research Lab (Block A, Room 208)',
-    'description' => 'Dr. Kasireddy Paul is a seasoned doctoral researcher and educator specializing in preclinical in-vivo/in-vitro screening, artificial intelligence in precision therapeutics, and neuropharmacological evaluations. He leads advanced investigational pharmacology protocols and guides scholars in translational drug mechanisms.',
-    'specializations' => [
-      'In-Vivo & In-Vitro Pharmacological Screening',
-      'AI & Machine Learning in Drug Delivery',
-      'Hepatoprotective & Anticancer Bioassays',
-      'Toxicological Protocols & Regulatory Bioethics'
-    ],
-    'subjects' => [
-      'Pharmacology I, II & III',
-      'Clinical Pharmacokinetics & Pharmacodynamics',
-      'Experimental Pharmacology Practicals',
-      'Pathophysiology & Disease Therapeutics'
-    ],
-    'achievements' => [
-      'Authored high-impact publications on pharmacological strategies and targeted medicine',
-      'Principal researcher in preclinical bioassays and metabolic syndrome animal models',
-      'Mentor for GPAT and postgraduate medical entrance aspirants'
-    ]
-  ],
-  [
-    'sno' => 5,
-    'id' => 'sudha-s',
-    'name' => 'Dr. Sudha S.',
-    'qualification' => 'M. Pharm., Ph.D.',
-    'designation' => 'Associate Professor',
-    'department' => 'Pharmacognosy',
-    'dept_slug' => 'pharmacognosy',
-    'dept_color' => '#047857',
-    'experience' => '11+ Years',
-    'image' => 'assets/images/Faculty/Dr. Sudha S.jpeg',
-    'featured' => false,
-    'is_doctorate' => true,
-    'badge' => 'Doctorate / Ph.D.',
-    'cadre' => 'Associate Professor & Phytomedicine Researcher',
-    'email' => 'sudha.s@velpharmacycollege.com',
-    'office' => 'Pharmacognosy Research Lab (Block B, Room 204)',
-    'description' => 'Dr. Sudha S. brings over 11 years of academic excellence and doctoral expertise in natural pharmacognosy, herbal monograph standardization, and botanical secondary metabolites. She trains students in phytochemical extraction, tissue microscopy, and quality verification of indigenous herbal drugs.',
-    'specializations' => [
-      'Herbal Drug Standardization & Fingerprinting',
-      'Extraction & Isolation of Bioactive Principles',
-      'Phytochemical Bioassays & Antioxidant Profiling',
-      'Herbal Quality Control & Regulatory Protocols'
-    ],
-    'subjects' => [
-      'Pharmacognosy & Phytochemistry I & II',
-      'Herbal Drug Technology',
-      'Plant Biotechnology & Secondary Metabolites',
-      'Remedial Biology'
-    ],
-    'achievements' => [
-      'Doctoral research in isolation and biological evaluation of herbal medicinal active components',
-      'Published research in reputed peer-reviewed journals of pharmaceutical sciences',
-      'Organizer of academic workshops on botanical standardization and AYUSH paradigms'
-    ]
-  ],
-  [
-    'sno' => 6,
-    'id' => 'pravallika-p',
-    'name' => 'Mrs. Paladugu Pravallika',
-    'qualification' => 'M. Pharm.',
-    'designation' => 'Assistant Professor',
-    'department' => 'Pharmacology',
-    'dept_slug' => 'pharmacology',
-    'dept_color' => '#800020',
-    'experience' => '4+ Years',
-    'image' => 'assets/images/Faculty/Mrs. Paladugu Pravallika.png',
-    'featured' => false,
-    'is_doctorate' => false,
-    'badge' => 'Faculty Mentor',
-    'cadre' => 'Assistant Professor',
-    'email' => 'p.pravallika@velpharmacycollege.com',
-    'office' => 'Preclinical Pharmacology Lab (Block A, Room 210)',
-    'description' => 'Mrs. Paladugu Pravallika brings dynamic teaching pedagogy and research enthusiasm in preclinical screening, neuropharmacology, and toxicological bioassays. She engages students through computer-simulated software models, reinforcing receptor theory, autonomic drug interactions, and physiological principles.',
-    'specializations' => [
-      'Preclinical In-Vivo & In-Vitro Screening',
-      'Neuropharmacology & Analgesic Screening',
-      'Computer-Assisted Experimental Pharmacology',
-      'Toxicological Protocols & Regulatory Bioethics'
-    ],
-    'subjects' => [
-      'Pharmacology I & II',
-      'Human Anatomy & Physiology',
-      'Pathophysiology of Diseases'
-    ],
-    'achievements' => [
-      'Coordinated digital pharmacology laboratory simulations for B.Pharm students',
-      'Published research papers on anti-inflammatory and analgesic screening models',
-      'Dedicated faculty mentor for GPAT competitive examination preparation'
-    ]
-  ],
-  [
-    'sno' => 7,
-    'id' => 'jancyrani-s',
-    'name' => 'Mrs. S. Jancyrani',
-    'qualification' => 'M. Pharm.',
-    'designation' => 'Assistant Professor',
-    'department' => 'Pharmaceutics',
-    'dept_slug' => 'pharmaceutics',
-    'dept_color' => '#4338CA',
-    'experience' => '3+ Years',
-    'image' => 'assets/images/Faculty/Mrs. S. Jancyrani.jpeg',
-    'featured' => false,
-    'is_doctorate' => false,
-    'badge' => 'Formulation Specialist',
-    'cadre' => 'Assistant Professor',
-    'email' => 's.jancyrani@velpharmacycollege.com',
-    'office' => 'Pharmaceutics Formulation Lab (Block A, Room 105)',
-    'description' => 'Mrs. S. Jancyrani specializes in pharmaceutics, novel drug delivery systems, and solid oral dosage form technology. She is committed to fostering practical formulation competence among students, with hands-on practice in granulation, tablet compression, and dissolution evaluation.',
-    'specializations' => [
-      'Novel Drug Delivery Systems (NDDS)',
-      'Tablet Compression & Quality Control',
-      'Microencapsulation & Polymer Matrices',
-      'Biopharmaceutics & Dissolution Testing'
-    ],
-    'subjects' => [
-      'Pharmaceutics I',
-      'Industrial Pharmacy I',
-      'Physical Pharmaceutics I'
-    ],
-    'achievements' => [
-      'Conducted student industrial formulation demonstrations and scale-up studies',
-      'Presented research on sustained-release drug carriers at pharmacy symposiums',
-      'Active mentor for laboratory practical skills development'
-    ]
-  ],
-  [
-    'sno' => 8,
-    'id' => 'divya-c',
-    'name' => 'Mrs. C. Divya',
-    'qualification' => 'M. Pharm.',
-    'designation' => 'Assistant Professor',
-    'department' => 'Pharmaceutics',
-    'dept_slug' => 'pharmaceutics',
-    'dept_color' => '#4338CA',
-    'experience' => '4+ Years',
-    'image' => 'assets/images/Faculty/C.DIVYA.png',
-    'featured' => false,
-    'is_doctorate' => false,
-    'badge' => 'Cosmetic & NDDS',
-    'cadre' => 'Assistant Professor',
-    'email' => 'c.divya@velpharmacycollege.com',
-    'office' => 'Pharmaceutics Pilot Plant & Lab (Block A, Room 108)',
-    'description' => 'Mrs. C. Divya brings 4+ years of experience in dosage formulation design, cosmetic science, and physical pharmacy. She combines theoretical lectures with practical lab drills covering emulsification, suspension stability, cosmetic compounding, and dosage form packaging.',
-    'specializations' => [
-      'Cosmetic Formulations & Technology',
-      'Colloidal & Rheological Formulations',
-      'Semisolid Compounding & Ointments',
-      'Pharmaceutical Packaging Technology'
-    ],
-    'subjects' => [
-      'Pharmaceutics II',
-      'Cosmetic Science',
-      'Physical Pharmaceutics II',
-      'Pharmaceutical Technology'
-    ],
-    'achievements' => [
-      'Formulated innovative topical skincare herbal emulsions and dermatological bases',
-      'Guided undergraduate formulation projects for state-level competitions',
-      'Active member of the Indian Pharmaceutical Association (IPA)'
-    ]
-  ],
-  [
-    'sno' => 9,
-    'id' => 'divya-m',
-    'name' => 'Ms. M. Divya',
-    'qualification' => 'M. Pharm.',
-    'designation' => 'Assistant Professor',
-    'department' => 'Pharmaceutical Analysis',
-    'dept_slug' => 'analysis',
-    'dept_color' => '#B45309',
-    'experience' => '3+ Years',
-    'image' => 'assets/images/Faculty/Ms. M. Divya.jpeg',
-    'featured' => false,
-    'is_doctorate' => false,
-    'badge' => 'Analytical Specialist',
-    'cadre' => 'Assistant Professor',
-    'email' => 'm.divya@velpharmacycollege.com',
-    'office' => 'Central Instrumental Analysis Lab (Ground Floor, Room 102)',
-    'description' => 'Ms. M. Divya is a dedicated faculty member in pharmaceutical analysis with expertise in spectrophotometric method development, instrumental chromatography, and validation per ICH protocols. She coordinates hands-on analytical instrumentation training for undergraduate pharmacy scholars.',
-    'specializations' => [
-      'Spectrophotometric Method Development',
-      'RP-HPLC Analytical Validation',
-      'ICH Quality Assurance & Stability Testing',
-      'Quantitative Pharmaceutical Analysis'
-    ],
-    'subjects' => [
-      'Pharmaceutical Analysis',
-      'Instrumental Methods of Analysis',
-      'Modern Pharmaceutical Analytical Techniques',
-      'Quality Assurance Practicals'
-    ],
-    'achievements' => [
-      'Co-authored research articles on analytical method validation in pharmaceutical journals',
-      'Conducted instrumental analysis masterclasses for students on HPLC and UV-Vis spectrophotometers',
-      'Faculty coordinator for departmental academic documentation and lab safety'
-    ]
-  ],
-  [
-    'sno' => 10,
-    'id' => 'devibala',
-    'name' => 'Mrs. Devibala',
-    'qualification' => 'M. Pharm.',
-    'designation' => 'Assistant Professor',
-    'department' => 'Pharmaceutics',
-    'dept_slug' => 'pharmaceutics',
-    'dept_color' => '#4338CA',
-    'experience' => '4+ Years',
-    'image' => 'assets/images/Faculty/Mrs. Devibala.jpeg',
-    'featured' => false,
-    'is_doctorate' => false,
-    'badge' => 'Faculty Mentor',
-    'cadre' => 'Assistant Professor',
-    'email' => 'devibala@velpharmacycollege.com',
-    'office' => 'Pharmaceutics & Traditional Medicine Lab (Block A, Room 112)',
-    'description' => 'Mrs. Devibala is a dedicated pharmaceutics educator and researcher with expertise in green nanotechnology, traditional medicine formulation, and novel delivery systems. She trains students in particulate science, herbal excipient optimization, and formulation stability.',
-    'specializations' => [
-      'Green Synthesis of Nanoparticles',
-      'Advances in Herbal & Traditional Medicines',
-      'Novel Drug Delivery Systems (NDDS)',
-      'Polymeric Nanocarriers & Controlled Release'
-    ],
-    'subjects' => [
-      'Pharmaceutics I & II',
-      'Industrial Pharmacy',
-      'Physical Pharmaceutics',
-      'Traditional & Herbal Medicine Formulations'
-    ],
-    'achievements' => [
-      'Co-authored published studies on traditional medicines and green synthesized nanoparticles',
-      'Presented research papers at national pharmaceutical science symposiums',
-      'Mentored student research projects in novel herbal formulation development'
-    ]
-  ],
-  [
-    'sno' => 11,
-    'id' => 'pooja',
-    'name' => 'Mrs. Pooja',
-    'qualification' => 'M. Pharm.',
-    'designation' => 'Assistant Professor',
-    'department' => 'Pharmacology',
-    'dept_slug' => 'pharmacology',
-    'dept_color' => '#800020',
-    'experience' => '3+ Years',
-    'image' => 'assets/images/Faculty/Mrs. Pooja.jpeg',
-    'featured' => false,
-    'is_doctorate' => false,
-    'badge' => 'Faculty Mentor',
-    'cadre' => 'Assistant Professor',
-    'email' => 'pooja@velpharmacycollege.com',
-    'office' => 'Department of Pharmacology (Block A, Room 212)',
-    'description' => 'Mrs. Pooja specializes in pharmacology screening protocols, clinical pharmacy practice, and pharmacovigilance. She focuses on interactive teaching methods, clinical case problem-solving, and receptor mechanism demonstrations for pharmacy students.',
-    'specializations' => [
-      'Pharmacological Screening Strategies',
-      'Clinical Pharmacy Practice & Pharmacovigilance',
-      'Receptor Pharmacology & Cellular Signaling',
-      'Drug-Drug Interaction Analysis'
-    ],
-    'subjects' => [
-      'Pharmacology I & II',
-      'Clinical Research & Pharmacovigilance',
-      'Pathophysiology',
-      'Human Anatomy & Physiology'
-    ],
-    'achievements' => [
-      'Authored research publications on pharmacological strategies and therapeutic management',
-      'Conducted clinical interactive workshops on drug safety and patient counseling',
-      'Active mentor for student academic development and seminar presentations'
-    ]
-  ]
-];
+  ];
 }
 
 // Clean sort helper function: strips title prefixes (Dr., Mr., Mrs., Ms.)
 if (!function_exists('getCleanFacultyName')) {
-  function getCleanFacultyName($name) {
+  function getCleanFacultyName($name)
+  {
     return trim(preg_replace('/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s+/i', '', trim($name)));
   }
 }
@@ -497,7 +498,8 @@ include __DIR__ . '/includes/header.php';
     <nav class="breadcrumb" aria-label="Breadcrumbs" style="margin-bottom: 1.25rem;">
       <a href="/" style="color: #CBD5E1;">Home</a>
       <span class="breadcrumb-separator" style="color: #94A3B8;">/</span>
-      <span class="breadcrumb-current" aria-current="page" style="color: #FEF3C7; font-weight: 600;">Faculty Directory</span>
+      <span class="breadcrumb-current" aria-current="page" style="color: #FEF3C7; font-weight: 600;">Faculty
+        Directory</span>
     </nav>
 
     <!-- Top Badge -->
@@ -557,8 +559,7 @@ include __DIR__ . '/includes/header.php';
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
         <input type="search" id="facultySearchInput" class="faculty-search-input"
-          placeholder="Search by faculty name..." autocomplete="off"
-          aria-label="Search faculty members by name">
+          placeholder="Search by faculty name..." autocomplete="off" aria-label="Search faculty members by name">
         <button type="button" id="facultySearchClear" class="faculty-search-clear" aria-label="Clear search">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -588,11 +589,7 @@ include __DIR__ . '/includes/header.php';
       </button>
       <?php foreach (range('A', 'Z') as $char): ?>
         <?php $has_fac = isset($available_letters[$char]); ?>
-        <button type="button" 
-          class="faculty-alpha-btn <?= !$has_fac ? 'is-empty' : '' ?>" 
-          data-letter="<?= $char ?>" 
-          role="tab" 
-          aria-selected="false"
+        <button type="button" class="faculty-alpha-btn <?= !$has_fac ? 'is-empty' : '' ?>" data-letter="<?= $char ?>"
           <?= !$has_fac ? 'disabled title="No faculty starting with ' . $char . '"' : '' ?>>
           <?= $char ?>
         </button>
@@ -638,8 +635,7 @@ include __DIR__ . '/includes/header.php';
 
         <div class="modern-faculty-card fade-up" data-index="<?= $index ?>" data-id="<?= htmlspecialchars($fac['id']) ?>"
           data-dept="<?= htmlspecialchars($fac['dept_slug']) ?>"
-          data-doctorate="<?= $fac['is_doctorate'] ? 'true' : 'false' ?>"
-          data-initial="<?= $first_char ?>"
+          data-doctorate="<?= $fac['is_doctorate'] ? 'true' : 'false' ?>" data-initial="<?= $first_char ?>"
           data-name="<?= htmlspecialchars(strtolower($fac['name'] . ' ' . $clean_name)) ?>"
           style="--dept-accent: <?= $dept_border ?>;">
 
@@ -970,7 +966,7 @@ include __DIR__ . '/includes/header.php';
 <!-- ==========================================================================
      SECTION 2: OFFICIAL COLLEGE FACULTY CADRE DIRECTORY TABLE
      ========================================================================== -->
-<section class="section section-alt" aria-labelledby="tableHeading">
+<!--<section class="section section-alt" aria-labelledby="tableHeading">
   <div class="container">
     <div class="text-center" style="max-width: 780px; margin: 0 auto 3rem;">
       <span class="section-subtitle">Statutory Institutional Records</span>
@@ -979,10 +975,10 @@ include __DIR__ . '/includes/header.php';
         Comprehensive roster of approved teaching cadre, verified doctorate and post-graduate credentials, and
         cumulative academic experience according to Pharmacy Council of India (PCI) standards.
       </p>
-    </div>
+    </div>-->
 
-    <!-- Modern Table Container -->
-    <div
+<!-- Modern Table Container -->
+<!-- <div
       style="background: #FFFFFF; border-radius: 20px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); overflow-x: auto; border: 1px solid #E2E8F0;">
       <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.925rem;">
         <thead>
@@ -1040,41 +1036,43 @@ include __DIR__ . '/includes/header.php';
         </tbody>
       </table>
     </div>
-  </div>
+  </div> -->
 </section>
 
 <!-- ==========================================================================
      SECTION 3: ACADEMIC MENTORSHIP CALLOUT
      ========================================================================== -->
-<section class="section" style="background: linear-gradient(135deg, #1E2368 0%, #0E1338 100%); color: #FFFFFF;"
+<section class="section" style="padding-top: 1.5rem; padding-bottom: 5.5rem; background: var(--color-bg-alt);"
   aria-label="Faculty Mentorship">
-  <div class="container text-center" style="max-width: 820px;">
-    <div
-      style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 0.35rem 1rem; border-radius: 9999px; margin-bottom: 1.25rem; color: #FEF3C7; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">
-      ★ Individualized Research &amp; Clinical Mentorship
-    </div>
-    <h2
-      style="font-family: var(--font-heading); font-size: clamp(2rem, 3.5vw, 2.75rem); color: #FFFFFF; margin-bottom: 1.25rem; line-height: 1.2;">
-      Learn Under National Scholars &amp; Pharmacy Researchers
-    </h2>
-    <p style="font-size: 1.1rem; color: #CBD5E1; line-height: 1.7; margin-bottom: 2.25rem;">
-      At Vel Pharmacy College, academic mentors do not simply lecture—they guide clinical rounds, mentor research
-      publications, train students in modern analytical instrumentation, and provide focused coaching for GPAT and
-      international licensing examinations.
-    </p>
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-      <a href="enquiry" class="btn"
-        style="background: #D97706; color: #FFFFFF; font-weight: 700; padding: 0.85rem 2rem; border-radius: var(--radius-full); box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);">
-        <span>Apply for B.Pharm 2024–2025</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </a>
-      <a href="contact-us" class="btn"
-        style="background: rgba(255,255,255,0.15); color: #FFFFFF; font-weight: 600; padding: 0.85rem 1.75rem; border-radius: var(--radius-full); border: 1px solid rgba(255,255,255,0.3);">
-        <span>Schedule Campus Visit</span>
-      </a>
+  <div class="container" style="max-width: 1080px;">
+    <div style="background: linear-gradient(135deg, #1E2368 0%, #0E1338 100%); color: #FFFFFF; border-radius: 24px; padding: 4.5rem 2.5rem; text-align: center; box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.2); border: 1px solid rgba(255, 255, 255, 0.1); position: relative; overflow: hidden;">
+      <div
+        style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 0.35rem 1rem; border-radius: 9999px; margin-bottom: 1.25rem; color: #FEF3C7; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">
+        ★ Individualized Research &amp; Clinical Mentorship
+      </div>
+      <h2
+        style="font-family: var(--font-heading); font-size: clamp(2rem, 3.5vw, 2.75rem); color: #FFFFFF; margin-bottom: 1.25rem; line-height: 1.2;">
+        Learn Under National Scholars &amp; Pharmacy Researchers
+      </h2>
+      <p style="font-size: 1.1rem; color: #CBD5E1; line-height: 1.7; margin-bottom: 2.25rem; max-width: 780px; margin-left: auto; margin-right: auto;">
+        At Vel Pharmacy College, academic mentors do not simply lecture—they guide clinical rounds, mentor research
+        publications, train students in modern analytical instrumentation, and provide focused coaching for GPAT and
+        international licensing examinations.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="enquiry" class="btn"
+          style="background: #D97706; color: #FFFFFF; font-weight: 700; padding: 0.85rem 2rem; border-radius: var(--radius-full); box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);">
+          <span>Apply for B.Pharm 2024–2025</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="contact-us" class="btn"
+          style="background: rgba(255,255,255,0.15); color: #FFFFFF; font-weight: 600; padding: 0.85rem 1.75rem; border-radius: var(--radius-full); border: 1px solid rgba(255,255,255,0.3);">
+          <span>Schedule Campus Visit</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
