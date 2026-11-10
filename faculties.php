@@ -957,7 +957,8 @@ include __DIR__ . '/includes/header.php';
 <!-- ==========================================================================
      SECTION 2: OFFICIAL COLLEGE FACULTY CADRE DIRECTORY TABLE
      ========================================================================== -->
-<!--<section class="section section-alt" aria-labelledby="tableHeading">
+<!--
+<section class="section section-alt" aria-labelledby="tableHeading">
   <div class="container">
     <div class="text-center" style="max-width: 780px; margin: 0 auto 3rem;">
       <span class="section-subtitle">Statutory Institutional Records</span>
@@ -966,10 +967,10 @@ include __DIR__ . '/includes/header.php';
         Comprehensive roster of approved teaching cadre, verified doctorate and post-graduate credentials, and
         cumulative academic experience according to Pharmacy Council of India (PCI) standards.
       </p>
-    </div>-->
+    </div>
 
-<!-- Modern Table Container -->
-<!-- <div
+    <!-- Modern Table Container -->
+    <div
       style="background: #FFFFFF; border-radius: 20px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); overflow-x: auto; border: 1px solid #E2E8F0;">
       <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.925rem;">
         <thead>
@@ -1027,15 +1028,16 @@ include __DIR__ . '/includes/header.php';
         </tbody>
       </table>
     </div>
-  </div> -->
+  </div>
 </section>
+-->
 
 <!-- ==========================================================================
      SECTION 3: ACADEMIC MENTORSHIP CALLOUT
      ========================================================================== -->
-  class="section" style="padding-top: 1.5rem; padding-bottom: 5.5rem; background: var(--color-bg-alt);"
+<section class="section" style="padding-top: 1.5rem; padding-bottom: 5.5rem; background: var(--color-bg-alt);"
   aria-label="Faculty Mentorship">
-      <div class="container" style="max-width: 1080px;">
+  <div class="container" style="max-width: 1080px;">
         <div
           style="background: linear-gradient(135deg, #1E2368 0%, #0E1338 100%); color: #FFFFFF; border-radius: 24px; padding: 4.5rem 2.5rem; text-align: center; box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.2); border: 1px solid rgba(255, 255, 255, 0.1); position: relative; overflow: hidden;">
           <div
