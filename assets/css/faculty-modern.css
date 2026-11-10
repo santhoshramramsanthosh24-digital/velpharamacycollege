@@ -252,7 +252,70 @@
   border-color: #FCD34D;
 }
 
-/* Department Filter Tabs */
+/* Alphabetical Filter Bar (A-Z) - Matching Academic Standards */
+.faculty-alphabet-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+  padding: 0.45rem 0.75rem;
+  background: #FFFFFF;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.faculty-alphabet-bar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.faculty-alpha-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 34px;
+  height: 34px;
+  padding: 0 6px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #232D76;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.faculty-alpha-btn[data-letter="all"] {
+  padding: 0 1.15rem;
+  min-width: 52px;
+}
+
+.faculty-alpha-btn:hover:not(.active):not(.is-empty) {
+  background: #EEF2F6;
+  color: #1E2368;
+}
+
+.faculty-alpha-btn.active {
+  background: #232D76;
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(35, 45, 118, 0.32);
+}
+
+.faculty-alpha-btn.is-empty {
+  color: #CBD5E1;
+  cursor: default;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* Legacy Department Filter Tabs (Retained for fallbacks) */
 .faculty-filter-tabs {
   display: flex;
   align-items: center;
@@ -260,7 +323,6 @@
   flex-wrap: wrap;
   padding: 0.25rem 0;
 }
-
 
 .faculty-tab-btn {
   display: inline-flex;
@@ -381,15 +443,21 @@
   object-position: center center;
   transform: scale(1);
   transform-origin: center center;
-  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.25, 1), filter 0.3s ease;
-  will-change: transform;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.25, 1), 
+              filter 0.35s ease, 
+              -webkit-filter 0.35s ease;
+  will-change: transform, filter;
   display: block;
 }
 
-/* Mouse Enter: Subtle, elegant zoom-in with zero facial cropping */
-.faculty-card-media:hover .faculty-card-img {
+/* Mouse Hover: Black & White smoothly transforms into vibrant Full-Color photo */
+.faculty-card-media:hover .faculty-card-img,
+.modern-faculty-card:hover .faculty-card-img {
   transform: scale(1.03);
-  filter: contrast(1.02);
+  filter: grayscale(0%) contrast(1.02);
+  -webkit-filter: grayscale(0%) contrast(1.02);
 }
 
 .faculty-card-media:hover .faculty-monogram-avatar {
@@ -430,27 +498,9 @@
   opacity: 0.85;
 }
 
-/* Floating Badges on Photo */
+/* Floating Badges on Photo - Removed per user requirement */
 .faculty-ribbon-tag {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  z-index: 4;
-  background: rgba(15, 23, 42, 0.85);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  color: #FFFFFF;
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  padding: 0.3rem 0.75rem;
-  border-radius: var(--radius-full);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  display: flex;
-  align-items: center;
-  gap: 0.35rem;
+  display: none !important;
 }
 
 .faculty-ribbon-tag.principal {
@@ -760,6 +810,8 @@
   max-height: 100%;
   object-fit: cover;
   object-position: center center;
+  filter: none;
+  -webkit-filter: none;
   display: block;
 }
 

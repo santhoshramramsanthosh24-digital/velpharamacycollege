@@ -434,6 +434,30 @@ $faculties = [
 ];
 }
 
+// Clean sort helper function: strips title prefixes (Dr., Mr., Mrs., Ms.)
+if (!function_exists('getCleanFacultyName')) {
+  function getCleanFacultyName($name) {
+    return trim(preg_replace('/^(Dr\.|Mr\.|Mrs\.|Ms\.)\s+/i', '', trim($name)));
+  }
+}
+
+// Sort all faculty members in alphabetical order (A to Z)
+usort($faculties, function ($a, $b) {
+  $nameA = getCleanFacultyName($a['name'] ?? '');
+  $nameB = getCleanFacultyName($b['name'] ?? '');
+  return strcasecmp($nameA, $nameB);
+});
+
+// Precompute available starting letters for the A-Z filter bar
+$available_letters = [];
+foreach ($faculties as $f) {
+  $clean = getCleanFacultyName($f['name'] ?? '');
+  if (!empty($clean)) {
+    $first = strtoupper($clean[0]);
+    $available_letters[$first] = ($available_letters[$first] ?? 0) + 1;
+  }
+}
+
 // Dynamically compute live department counters & doctorate totals
 $dept_counts = [
   'chemistry' => 0,
@@ -533,8 +557,8 @@ include __DIR__ . '/includes/header.php';
           <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
         </svg>
         <input type="search" id="facultySearchInput" class="faculty-search-input"
-          placeholder="Search by faculty name, qualification, research or department..." autocomplete="off"
-          aria-label="Search faculty members">
+          placeholder="Search by faculty name..." autocomplete="off"
+          aria-label="Search faculty members by name">
         <button type="button" id="facultySearchClear" class="faculty-search-clear" aria-label="Clear search">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -557,42 +581,22 @@ include __DIR__ . '/includes/header.php';
       </div>
     </div>
 
-    <!-- Department Filter Tabs with Live Counters -->
-    <div class="faculty-filter-tabs" role="tablist" aria-label="Filter Faculty by Department">
-      <button class="faculty-tab-btn active" data-filter="all" role="tab" aria-selected="true">
-        <span>All Disciplines</span>
-        <span class="faculty-tab-count"><?= count($faculties) ?></span>
+    <!-- Alphabetical Filter Bar (A-Z) -->
+    <div class="faculty-alphabet-bar" role="tablist" aria-label="Filter Faculty Alphabetically">
+      <button type="button" class="faculty-alpha-btn active" data-letter="all" role="tab" aria-selected="true">
+        All
       </button>
-
-      <button class="faculty-tab-btn" data-filter="chemistry" role="tab" aria-selected="false">
-        <span>Pharmaceutical Chemistry</span>
-        <span class="faculty-tab-count"><?= $dept_counts['chemistry'] ?></span>
-      </button>
-
-      <button class="faculty-tab-btn" data-filter="pharmaceutics" role="tab" aria-selected="false">
-        <span>Pharmaceutics</span>
-        <span class="faculty-tab-count"><?= $dept_counts['pharmaceutics'] ?></span>
-      </button>
-
-      <button class="faculty-tab-btn" data-filter="pharmacology" role="tab" aria-selected="false">
-        <span>Pharmacology</span>
-        <span class="faculty-tab-count"><?= $dept_counts['pharmacology'] ?></span>
-      </button>
-
-      <button class="faculty-tab-btn" data-filter="pharmacognosy" role="tab" aria-selected="false">
-        <span>Pharmacognosy</span>
-        <span class="faculty-tab-count"><?= $dept_counts['pharmacognosy'] ?></span>
-      </button>
-
-      <button class="faculty-tab-btn" data-filter="analysis" role="tab" aria-selected="false">
-        <span>Pharmaceutical Analysis</span>
-        <span class="faculty-tab-count"><?= $dept_counts['analysis'] ?></span>
-      </button>
-
-      <button class="faculty-tab-btn" data-filter="practice" role="tab" aria-selected="false">
-        <span>Pharmacy Practice</span>
-        <span class="faculty-tab-count"><?= $dept_counts['practice'] ?? 0 ?></span>
-      </button>
+      <?php foreach (range('A', 'Z') as $char): ?>
+        <?php $has_fac = isset($available_letters[$char]); ?>
+        <button type="button" 
+          class="faculty-alpha-btn <?= !$has_fac ? 'is-empty' : '' ?>" 
+          data-letter="<?= $char ?>" 
+          role="tab" 
+          aria-selected="false"
+          <?= !$has_fac ? 'title="No faculty starting with ' . $char . '"' : '' ?>>
+          <?= $char ?>
+        </button>
+      <?php endforeach; ?>
     </div>
 
   </div>
@@ -608,8 +612,11 @@ include __DIR__ . '/includes/header.php';
     <div class="faculty-cards-grid" id="facultyGridContainer">
       <?php foreach ($faculties as $index => $fac): ?>
         <?php
+        $clean_name = getCleanFacultyName($fac['name']);
+        $first_char = !empty($clean_name) ? strtoupper($clean_name[0]) : '';
+
         // Extract initials for fallback avatar
-        $words = explode(' ', str_replace(['Dr. ', 'Mrs. ', 'Mr. ', 'Ms. '], '', $fac['name']));
+        $words = explode(' ', $clean_name);
         $initials = '';
         foreach ($words as $w) {
           if (!empty($w))
@@ -632,7 +639,8 @@ include __DIR__ . '/includes/header.php';
         <div class="modern-faculty-card fade-up" data-index="<?= $index ?>" data-id="<?= htmlspecialchars($fac['id']) ?>"
           data-dept="<?= htmlspecialchars($fac['dept_slug']) ?>"
           data-doctorate="<?= $fac['is_doctorate'] ? 'true' : 'false' ?>"
-          data-search="<?= htmlspecialchars(strtolower($fac['name'] . ' ' . $fac['department'] . ' ' . $fac['qualification'] . ' ' . implode(' ', $fac['specializations']))) ?>"
+          data-initial="<?= $first_char ?>"
+          data-name="<?= htmlspecialchars(strtolower($fac['name'] . ' ' . $clean_name)) ?>"
           style="--dept-accent: <?= $dept_border ?>;">
 
           <!-- FACULTY PHOTO CONTAINER (Click to open full pop-up dossier, Hover to zoom close in / close out) -->
@@ -654,21 +662,6 @@ include __DIR__ . '/includes/header.php';
                   <path d="M2 17l10 5 10-5"></path>
                   <path d="M2 12l10 5 10-5"></path>
                 </svg>
-              </div>
-            <?php endif; ?>
-
-            <!-- Floating Status Ribbon -->
-            <?php if (!empty($fac['badge'])): ?>
-              <div
-                class="faculty-ribbon-tag <?= $fac['featured'] ? 'principal' : ($fac['is_doctorate'] ? 'doctorate' : '') ?>">
-                <?php if ($fac['featured']): ?>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                    <polygon
-                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                    </polygon>
-                  </svg>
-                <?php endif; ?>
-                <span><?= htmlspecialchars($fac['badge']) ?></span>
               </div>
             <?php endif; ?>
 
@@ -768,7 +761,7 @@ include __DIR__ . '/includes/header.php';
         </svg>
         <h3 class="no-results-title">No Faculty Members Found</h3>
         <p class="no-results-text">We couldn't find any faculty members matching your search criteria. Please adjust
-          your keywords or department filter.</p>
+          your name search or letter filter.</p>
         <button type="button" id="resetFiltersBtn" class="btn btn-primary"
           style="padding: 0.6rem 1.5rem; font-size: 0.875rem;">
           Reset All Filters
@@ -1008,7 +1001,7 @@ include __DIR__ . '/includes/header.php';
             <tr style="border-bottom: 1px solid #F1F5F9; transition: background 0.15s ease;"
               onmouseover="this.style.background='#F8FAFC'" onmouseout="this.style.background='#FFFFFF'">
               <td style="padding: 1rem 1.25rem; text-align: center; font-weight: 700; color: #64748B;">
-                <?= $fac['sno'] ?>
+                <?= $idx + 1 ?>
               </td>
               <td style="padding: 1rem 1.25rem;">
                 <div style="font-weight: 700; color: var(--color-primary-dark); font-size: 0.975rem;">
@@ -1095,7 +1088,7 @@ include __DIR__ . '/includes/header.php';
 
   document.addEventListener('DOMContentLoaded', () => {
     let currentActiveIndex = 0;
-    let activeFilterDept = 'all';
+    let activeFilterLetter = 'all';
     let onlyDoctorates = false;
     let searchQuery = '';
 
@@ -1103,7 +1096,7 @@ include __DIR__ . '/includes/header.php';
     const searchInput = document.getElementById('facultySearchInput');
     const searchClear = document.getElementById('facultySearchClear');
     const toggleDocBtn = document.getElementById('toggleDoctorates');
-    const tabBtns = document.querySelectorAll('.faculty-tab-btn');
+    const alphaBtns = document.querySelectorAll('.faculty-alpha-btn');
     const cards = document.querySelectorAll('.modern-faculty-card');
     const counterBadge = document.getElementById('facultyCounterBadge');
     const noResultsBox = document.getElementById('facultyNoResults');
@@ -1138,15 +1131,15 @@ include __DIR__ . '/includes/header.php';
       let visibleCount = 0;
 
       cards.forEach(card => {
-        const dept = card.getAttribute('data-dept');
+        const initial = card.getAttribute('data-initial') || '';
+        const name = (card.getAttribute('data-name') || '').toLowerCase();
         const isDoc = card.getAttribute('data-doctorate') === 'true';
-        const searchContent = card.getAttribute('data-search') || '';
 
-        const matchesDept = (activeFilterDept === 'all' || dept === activeFilterDept);
+        const matchesLetter = (activeFilterLetter === 'all' || initial === activeFilterLetter);
         const matchesDoc = (!onlyDoctorates || isDoc);
-        const matchesSearch = (!searchQuery || searchContent.includes(searchQuery));
+        const matchesSearch = (!searchQuery || name.includes(searchQuery));
 
-        if (matchesDept && matchesDoc && matchesSearch) {
+        if (matchesLetter && matchesDoc && matchesSearch) {
           card.style.display = 'flex';
           visibleCount++;
         } else {
@@ -1156,7 +1149,7 @@ include __DIR__ . '/includes/header.php';
 
       // Update Counter
       if (counterBadge) {
-        counterBadge.textContent = `Showing ${visibleCount} of ${cards.length} Faculty`;
+        counterBadge.textContent = `Showing ${visibleCount} Faculty`;
       }
 
       // Toggle No Results
@@ -1165,7 +1158,7 @@ include __DIR__ . '/includes/header.php';
       }
     }
 
-    // Search Input Handler
+    // Search Input Handler (Search by Faculty Name)
     if (searchInput) {
       searchInput.addEventListener('input', (e) => {
         searchQuery = e.target.value.trim().toLowerCase();
@@ -1196,16 +1189,17 @@ include __DIR__ . '/includes/header.php';
       });
     }
 
-    // Department Tabs
-    tabBtns.forEach(btn => {
+    // Alphabetical Filter Tabs
+    alphaBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        tabBtns.forEach(b => {
+        if (btn.classList.contains('is-empty')) return;
+        alphaBtns.forEach(b => {
           b.classList.remove('active');
           b.setAttribute('aria-selected', 'false');
         });
         btn.classList.add('active');
         btn.setAttribute('aria-selected', 'true');
-        activeFilterDept = btn.getAttribute('data-filter');
+        activeFilterLetter = btn.getAttribute('data-letter');
         applyFilters();
       });
     });
@@ -1213,7 +1207,7 @@ include __DIR__ . '/includes/header.php';
     // Reset Filters
     if (resetFiltersBtn) {
       resetFiltersBtn.addEventListener('click', () => {
-        activeFilterDept = 'all';
+        activeFilterLetter = 'all';
         onlyDoctorates = false;
         searchQuery = '';
         if (searchInput) searchInput.value = '';
@@ -1222,8 +1216,10 @@ include __DIR__ . '/includes/header.php';
           toggleDocBtn.classList.remove('active');
           toggleDocBtn.setAttribute('aria-pressed', 'false');
         }
-        tabBtns.forEach(b => {
-          b.classList.toggle('active', b.getAttribute('data-filter') === 'all');
+        alphaBtns.forEach(b => {
+          const isAll = b.getAttribute('data-letter') === 'all';
+          b.classList.toggle('active', isAll);
+          b.setAttribute('aria-selected', isAll ? 'true' : 'false');
         });
         applyFilters();
       });
