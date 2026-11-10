@@ -594,23 +594,6 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
             <?php endforeach; ?>
           </div>
         </div>
-
-        <div class="eh-action-box">
-          <a href="highlights?filter=concluded" target="_blank" rel="noopener noreferrer"
-            class="btn btn-outline-primary"
-            style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 0.5rem;"
-            title="View Concluded Events &amp; Highlights in a new page">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-              <line x1="16" y1="2" x2="16" y2="6"></line>
-              <line x1="8" y1="2" x2="8" y2="6"></line>
-              <line x1="3" y1="10" x2="21" y2="10"></line>
-              <path d="m9 16 2 2 4-4"></path>
-            </svg>
-            <span><?= !empty($past_events_to_highlights) ? count($past_events_to_highlights) : '2' ?> Concluded in
-              Highlights &rarr;</span>
-          </a>
-        </div>
       </div>
 
       <!-- RIGHT COLUMN: HIGHLIGHTS (WITH AUTO-TRANSFERRED PAST EVENTS) -->
@@ -631,11 +614,6 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
             </div>
           </div>
           <div style="display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap;">
-            <?php if (!empty($past_events_to_highlights)): ?>
-              <span class="eh-col-badge badge-blue"
-                title="<?= count($past_events_to_highlights) ?> past events automatically transferred here"><?= count($past_events_to_highlights) ?>
-                Concluded</span>
-            <?php endif; ?>
             <span
               class="eh-col-badge badge-gold"><?= htmlspecialchars($events_highlights['highlights_badge'] ?? 'Institutional Prestige') ?></span>
           </div>
@@ -689,8 +667,8 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
         <div class="eh-action-box">
           <a href="highlights" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
             style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 0.5rem;"
-            title="Explore Full Circulars &amp; Research Labs on Highlights Page">
-            <span>Explore Full Circulars &amp; Research Labs &rarr;</span>
+            title="View Highlights">
+            <span>View Highlights &rarr;</span>
           </a>
         </div>
       </div>
