@@ -377,20 +377,45 @@
   background: #F8FAFC;
 }
 
+.faculty-grid-section .container-wide {
+  max-width: 1440px;
+}
+
 .faculty-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-  gap: 2.25rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+  .faculty-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .faculty-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .faculty-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
 }
 
 /* Card Outer Shell */
 .modern-faculty-card {
   position: relative;
   background: #FFFFFF;
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
   border: 1px solid rgba(226, 232, 240, 0.9);
-  box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.06), 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+  box-shadow: 0 6px 20px -4px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
   display: flex;
   flex-direction: column;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
@@ -422,11 +447,12 @@
   height: 6px;
 }
 
-/* Image Frame Container with Smooth Close-In / Close-Out Zoom & Strict Uniform Sizing */
+/* Image Frame Container - Compact & Elegant Sizing */
 .faculty-card-media {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
+  max-height: 270px;
   background: #F8FAFC;
   overflow: hidden;
   display: flex;
@@ -441,7 +467,7 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center 15%;
   transform: scale(1);
   transform-origin: center center;
   filter: grayscale(100%);
@@ -542,7 +568,7 @@
    FACULTY CARD BODY
    ========================================================================== */
 .faculty-card-body {
-  padding: 1.5rem;
+  padding: 1.15rem 1.25rem 1.25rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -551,14 +577,14 @@
 .faculty-dept-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  font-size: 0.75rem;
+  gap: 0.35rem;
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 0.25rem 0.65rem;
+  padding: 0.2rem 0.55rem;
   border-radius: var(--radius-full);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
   align-self: flex-start;
 }
 
@@ -571,11 +597,11 @@
 
 .faculty-card-name {
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: var(--color-primary-dark);
-  line-height: 1.25;
-  margin-bottom: 0.35rem;
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
   transition: color 0.2s ease;
 }
 
@@ -584,17 +610,17 @@
 }
 
 .faculty-card-designation {
-  font-size: 0.925rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--color-secondary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .faculty-card-qual {
-  font-size: 0.825rem;
+  font-size: 0.78rem;
   color: var(--color-text-muted);
   line-height: 1.4;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
   display: flex;
   align-items: flex-start;
   gap: 0.35rem;
@@ -608,15 +634,15 @@
 .faculty-specialty-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem;
+  gap: 0.3rem;
   margin-top: auto;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .faculty-tag-pill {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 500;
-  padding: 0.2rem 0.55rem;
+  padding: 0.18rem 0.5rem;
   border-radius: 6px;
   background: #F1F5F9;
   color: #475569;
@@ -624,7 +650,7 @@
 
 /* Card Action Footer */
 .faculty-card-footer {
-  padding-top: 1rem;
+  padding-top: 0.85rem;
   border-top: 1px dashed #E2E8F0;
   display: flex;
   align-items: center;
@@ -634,13 +660,13 @@
 .btn-open-dossier {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.85rem;
+  gap: 0.45rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: var(--color-primary);
   background: var(--color-primary-subtle);
   border: 1px solid rgba(41, 46, 130, 0.15);
-  padding: 0.5rem 1rem;
+  padding: 0.45rem 0.85rem;
   border-radius: var(--radius-full);
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   width: 100%;
