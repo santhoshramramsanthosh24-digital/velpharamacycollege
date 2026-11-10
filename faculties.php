@@ -593,7 +593,7 @@ include __DIR__ . '/includes/header.php';
           data-letter="<?= $char ?>" 
           role="tab" 
           aria-selected="false"
-          <?= !$has_fac ? 'title="No faculty starting with ' . $char . '"' : '' ?>>
+          <?= !$has_fac ? 'disabled title="No faculty starting with ' . $char . '"' : '' ?>>
           <?= $char ?>
         </button>
       <?php endforeach; ?>
