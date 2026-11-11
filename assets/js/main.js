@@ -163,9 +163,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Mobile Navigation Toggle
   const navToggle = document.querySelector('.mobile-nav-toggle');
   if (navToggle && siteNav) {
-    navToggle.addEventListener('click', () => {
+    navToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
       const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
       navToggle.setAttribute('aria-expanded', !isExpanded);
+      navToggle.classList.toggle('active', !isExpanded);
       siteNav.classList.toggle('active');
       if (siteNav.classList.contains('active') && header) {
         header.classList.remove('menu-notice-hidden');
@@ -176,6 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (e) => {
       if (!siteNav.contains(e.target) && !navToggle.contains(e.target) && siteNav.classList.contains('active')) {
         siteNav.classList.remove('active');
+        navToggle.classList.remove('active');
         navToggle.setAttribute('aria-expanded', 'false');
       }
     });
@@ -184,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
     siteNav.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         siteNav.classList.remove('active');
+        navToggle.classList.remove('active');
         navToggle.setAttribute('aria-expanded', 'false');
       });
     });
@@ -192,6 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', () => {
       if (window.innerWidth > 1120 && siteNav.classList.contains('active')) {
         siteNav.classList.remove('active');
+        navToggle.classList.remove('active');
         navToggle.setAttribute('aria-expanded', 'false');
       }
     });
@@ -566,8 +571,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const iconPause = cinemaVideoToggle.querySelector('.icon-pause');
     const iconPlay = cinemaVideoToggle.querySelector('.icon-play');
 
-    cinemaVideoToggle.addEventListener('click', (e) => {
-      e.stopPropagation();
+    const toggleVideoPlayback = (e) => {
+      if (e) e.stopPropagation();
       if (collegeVideoPlayer.paused) {
         collegeVideoPlayer.play();
         if (iconPause) iconPause.style.display = 'block';
@@ -579,6 +584,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (iconPlay) iconPlay.style.display = 'block';
         cinemaVideoToggle.setAttribute('aria-label', 'Play background video');
       }
-    });
+    };
+
+    cinemaVideoToggle.addEventListener('click', toggleVideoPlayback);
+
+    // On phone view, allow tapping the landscape video container directly to play/pause
+    const heroMedia = heroSection ? heroSection.querySelector('.cinema-hero-media') : null;
+    if (heroMedia) {
+      heroMedia.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+          toggleVideoPlayback(e);
+        }
+      });
+    }
   }
 });

@@ -1467,7 +1467,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* Responsive */
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 769px) {
   .cinema-hero {
     min-height: auto;
     padding: 4rem 0 3.5rem 0;
@@ -1506,9 +1506,235 @@ p:last-child { margin-bottom: 0; }
   }
 }
 
-@media (max-width: 640px) {
+/* ==========================================================================
+   PHONE VIEW HERO SECTION: Full Landscape Video + Content Below
+   Strictly applies to phone view (<= 768px) per user request
+   Desktop & tablet landscape remain untouched
+   ========================================================================== */
+@media (max-width: 768px) {
+  .cinema-hero {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    min-height: auto !important;
+    padding: 0 0 2.5rem 0 !important;
+    background-color: #080C24 !important;
+    overflow: hidden !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  }
+
+  /* 1. Full Landscape Video at Top */
+  .cinema-hero-media {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    aspect-ratio: 16 / 9 !important;
+    height: auto !important;
+    max-height: 56.25vw !important;
+    overflow: hidden !important;
+    order: 1 !important;
+    pointer-events: auto !important;
+    background: #000000 !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
+    border-bottom: 2px solid rgba(217, 119, 6, 0.45) !important;
+    cursor: pointer !important;
+  }
+
+  .cinema-video {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    transform: none !important;
+    object-fit: cover !important;
+    filter: brightness(1.02) contrast(1.02) !important;
+    opacity: 1 !important;
+  }
+
+  /* Clear, bright landscape video: subtle vignette only, no dark mask hiding the video */
+  .cinema-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(180deg, rgba(8, 12, 36, 0.15) 0%, transparent 40%, rgba(8, 12, 36, 0.55) 100%) !important;
+    pointer-events: none !important;
+  }
+
+  .cinema-ambient-glow {
+    display: none !important;
+  }
+
+  /* Hide the desktop hover focus circle on phone view */
+  .cinema-round-focus-zone {
+    display: none !important;
+  }
+
+  /* 2. Hero Content Container Positioned Below the Landscape Video */
+  .cinema-hero-container {
+    position: relative !important;
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1.5rem 1.25rem 0.5rem 1.25rem !important;
+    margin: 0 !important;
+    pointer-events: auto !important;
+  }
+
+  .cinema-hero-wrap {
+    min-height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0 !important;
+    width: 100% !important;
+  }
+
+  .cinema-hero-content {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Accreditation Badge Pill */
+  .cinema-pill {
+    display: inline-flex !important;
+    max-width: 100% !important;
+    padding: 0.35rem 0.75rem !important;
+    font-size: 0.72rem !important;
+    margin-bottom: 0.85rem !important;
+    white-space: normal !important;
+    line-height: 1.35 !important;
+    border-radius: 999px !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  }
+
+  .cinema-pill-dot {
+    width: 6px !important;
+    height: 6px !important;
+    margin-right: 0.45rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  .cinema-pill-bold {
+    font-size: 0.72rem !important;
+    letter-spacing: 0.02em !important;
+    word-break: break-word !important;
+  }
+
+  /* Headline */
   .cinema-title {
-    font-size: 2.15rem;
+    font-size: clamp(1.75rem, 6.5vw, 2.25rem) !important;
+    line-height: 1.2 !important;
+    margin-bottom: 0.85rem !important;
+    color: #FFFFFF !important;
+    font-family: var(--font-heading) !important;
+  }
+
+  .cinema-title-accent {
+    color: #FBBF24 !important;
+    display: inline !important;
+  }
+
+  /* Lead Description */
+  .cinema-lead {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    color: #CBD5E1 !important;
+    margin-bottom: 1.35rem !important;
+  }
+
+  /* Action Buttons & Helpline */
+  .cinema-actions {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.85rem !important;
+    margin-top: 0.25rem !important;
+  }
+
+  .cinema-actions .btn,
+  .cinema-actions .cinema-btn-primary,
+  .cinema-actions .cinema-btn-outline,
+  .cinema-actions .cinema-helpline-pill {
+    width: 100% !important;
+    max-width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0.95rem 1.25rem !important;
+    font-size: 0.95rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .cinema-btn-primary {
+    background: #D97706 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.4) !important;
+  }
+
+  .cinema-btn-outline {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.35) !important;
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+  }
+
+  .cinema-helpline-pill {
+    padding: 0.8rem 1.15rem !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.75rem !important;
+  }
+
+  .cinema-helpline-pill .helpline-sub {
+    font-size: 0.72rem !important;
+    color: #94A3B8 !important;
+  }
+
+  .cinema-helpline-pill .helpline-num {
+    font-size: 0.98rem !important;
+    font-weight: 700 !important;
+    color: #FBBF24 !important;
+  }
+
+  /* Video controls (pause/play button) centered under the hero content */
+  .cinema-video-controls {
+    display: inline-flex !important;
+    align-self: center !important;
+    margin-top: 1.35rem !important;
+    position: static !important;
+  }
+
+  .cinema-video-toggle {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.4rem !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-radius: 999px !important;
+    padding: 0.45rem 0.95rem !important;
+    color: #CBD5E1 !important;
+    font-size: 0.78rem !important;
+    cursor: pointer !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .cinema-hero-container {
+    padding: 1.25rem 1rem 0.5rem 1rem !important;
+  }
+  .cinema-title {
+    font-size: 1.65rem !important;
   }
 }
 
@@ -3209,123 +3435,179 @@ p:last-child { margin-bottom: 0; }
     display: none !important;
   }
   .header-brand-container {
-    padding: 0 4.5rem 0 1.5rem;
-    justify-content: center;
+    padding: 0 4.5rem 0 1.25rem !important;
+    justify-content: center !important;
+    position: relative !important;
   }
   .brand-logo-large {
-    height: clamp(100px, 11vw, 130px);
-    max-width: min(580px, 80vw);
+    height: clamp(88px, 11vw, 120px) !important;
+    max-width: min(540px, calc(100vw - 90px)) !important;
   }
   .header-brand-row {
-    padding: 0.75rem 0;
+    padding: 0.65rem 0 !important;
   }
   .header-nav-row {
-    padding: 0;
-    border: none;
+    position: static !important;
+    overflow: visible !important;
+    max-height: none !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: none !important;
   }
   .site-header.menu-notice-hidden .header-nav-row {
-    max-height: 0 !important;
-    overflow: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
+    max-height: none !important;
+    overflow: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: none !important;
   }
   .header-nav-container {
-    padding: 0;
+    position: static !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    display: block !important;
+    overflow: visible !important;
   }
   .mobile-nav-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 1.25rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 42px;
-    height: 42px;
-    border-radius: var(--radius-sm);
-    background: #F8FAFC;
-    border: 1px solid #E2E8F0;
-    color: var(--color-primary);
-    z-index: 10;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    right: 1.25rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: var(--radius-sm) !important;
+    background: #F1F5F9 !important;
+    border: 1.5px solid #CBD5E1 !important;
+    color: var(--color-primary) !important;
+    z-index: 10002 !important;
+    cursor: pointer !important;
+    -webkit-tap-highlight-color: transparent !important;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease !important;
+  }
+  .mobile-nav-toggle:hover,
+  .mobile-nav-toggle:active,
+  .mobile-nav-toggle.active,
+  .mobile-nav-toggle[aria-expanded="true"] {
+    background: var(--color-primary) !important;
+    color: #FFFFFF !important;
+    border-color: var(--color-primary) !important;
+  }
+  .mobile-nav-toggle svg {
+    width: 24px !important;
+    height: 24px !important;
+    stroke: currentColor !important;
+    fill: none !important;
+    pointer-events: none !important;
   }
   
   .site-nav {
-    display: flex;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #FFFFFF;
-    flex-direction: column;
-    padding: 1.25rem 1.5rem 1.75rem;
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid var(--color-border);
-    transform: translateY(-10px);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-    z-index: 1001;
-    max-height: calc(85vh - 70px);
-    overflow-y: auto;
+    display: none !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    background: #FFFFFF !important;
+    flex-direction: column !important;
+    padding: 1.25rem 1.5rem 1.75rem !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22) !important;
+    border-top: 1px solid var(--color-border) !important;
+    border-bottom: 3px solid var(--color-primary) !important;
+    transform: translateY(-10px) !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.25s ease, transform 0.25s ease !important;
+    z-index: 10001 !important;
+    max-height: calc(85vh - 70px) !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
   }
   
   .site-nav.active {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
+    display: flex !important;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    visibility: visible !important;
   }
   
   .nav-list {
-    flex-direction: column;
-    width: 100%;
-    align-items: stretch;
-    gap: 0.2rem;
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: stretch !important;
+    gap: 0.25rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   
   .nav-link {
-    width: 100%;
-    padding: 0.7rem 0.9rem;
-    height: auto;
-    border-radius: var(--radius-sm);
-    justify-content: flex-start;
-    font-size: 0.95rem;
+    width: 100% !important;
+    padding: 0.8rem 1rem !important;
+    height: auto !important;
+    border-radius: var(--radius-sm) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    font-size: 0.98rem !important;
+    font-weight: 600 !important;
+    color: #1E293B !important;
+    border-bottom: 1px solid #F1F5F9 !important;
+    transition: background 0.15s ease, color 0.15s ease !important;
+  }
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link.active {
+    background: #EEF2FF !important;
+    color: var(--color-primary) !important;
   }
   
   .btn-nav-apply {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 0.85rem;
-    height: 44px;
-    justify-content: center;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 1rem !important;
+    height: 46px !important;
+    justify-content: center !important;
+    display: inline-flex !important;
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+    border-radius: var(--radius-sm) !important;
   }
 }
 
 @media (max-width: 768px) {
   .header-brand-container {
-    padding: 0 4.25rem 0 1rem;
+    padding: 0 4.25rem 0 1rem !important;
   }
   .brand-logo-large {
-    height: clamp(82px, 13vw, 106px);
-    max-width: min(460px, calc(100vw - 75px));
+    height: clamp(80px, 13vw, 104px) !important;
+    max-width: min(460px, calc(100vw - 75px)) !important;
   }
 }
 
 @media (max-width: 640px) {
   .header-brand-row {
-    padding: 0.65rem 0;
+    padding: 0.6rem 0 !important;
   }
   .header-brand-container {
-    padding: 0 48px 0 10px;
-    justify-content: center;
+    padding: 0 48px 0 10px !important;
+    justify-content: center !important;
   }
   .brand-logo-large {
-    height: clamp(66px, 17vw, 84px);
-    max-width: min(350px, calc(100vw - 58px));
+    height: clamp(64px, 17vw, 82px) !important;
+    max-width: min(340px, calc(100vw - 58px)) !important;
   }
   .mobile-nav-toggle {
-    right: 0.65rem;
-    width: 38px;
-    height: 38px;
+    right: 0.65rem !important;
+    width: 40px !important;
+    height: 40px !important;
   }
 }
 
