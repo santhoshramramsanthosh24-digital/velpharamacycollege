@@ -4843,7 +4843,7 @@ p:last-child { margin-bottom: 0; }
   border: 1px solid #A7F3D0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 769px) {
   .events-highlights-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -4853,30 +4853,233 @@ p:last-child { margin-bottom: 0; }
   }
 }
 
-@media (max-width: 600px) {
+/* ==========================================================================
+   EVENTS & HIGHLIGHTS - FULL PHONE VIEW RESPONSIVE ALIGNMENT FIX
+   Ensures 100% proper alignment with zero cut-off or horizontal clipping
+   ========================================================================== */
+@media (max-width: 768px) {
+  .events-highlights-section {
+    padding: 3.25rem 0 2.75rem !important;
+    overflow: hidden !important;
+  }
+
+  .events-highlights-section .container-wide {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .events-highlights-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Prevent horizontal entrance transforms from causing horizontal overflow */
+  .events-highlights-grid .eh-col-box {
+    transform: none !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 1.25rem 1rem !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+  }
+
+  /* Two-tier clean header layout: Title on top, controls / badges below */
+  .eh-col-header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+    margin-bottom: 1.15rem !important;
+    padding-bottom: 0.85rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .eh-col-title-group {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.65rem !important;
+  }
+
+  .eh-col-icon {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 10px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .eh-col-icon svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .eh-col-title {
+    font-size: 1.22rem !important;
+    line-height: 1.25 !important;
+  }
+
+  /* Live scroll pill on left, circular buttons on right */
+  .eh-scroll-controls {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.4rem !important;
+    box-sizing: border-box !important;
+  }
+
+  .eh-live-badge {
+    font-size: 0.68rem !important;
+    padding: 0.2rem 0.55rem !important;
+    letter-spacing: 0.02em !important;
+  }
+
+  .eh-ctrl-btn {
+    width: 30px !important;
+    height: 30px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .eh-col-badge {
+    font-size: 0.68rem !important;
+    padding: 0.22rem 0.6rem !important;
+    align-self: flex-start !important;
+  }
+
+  .eh-events-scroll-viewport,
+  .eh-highlights-scroll-viewport {
+    max-height: 400px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .eh-events-list,
+  .eh-highlights-list {
+    gap: 0.85rem !important;
+    margin-bottom: 1.25rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
   .eh-event-card {
-    flex-direction: column;
-    gap: 0.85rem;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    padding: 1rem 0.85rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
   }
+
   .eh-date-badge {
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    padding: 0.4rem 0.75rem;
-    gap: 0.5rem;
-    justify-content: flex-start;
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 0.4rem 0.75rem !important;
+    gap: 0.55rem !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    border-radius: 8px !important;
+    box-sizing: border-box !important;
   }
+
+  .eh-date-month {
+    font-size: 0.75rem !important;
+    letter-spacing: 0.05em !important;
+  }
+
   .eh-date-day {
-    font-size: 1.15rem;
+    font-size: 1.15rem !important;
+    line-height: 1 !important;
   }
+
+  .eh-date-year {
+    font-size: 0.7rem !important;
+    margin-left: auto !important;
+  }
+
+  .eh-event-title {
+    font-size: 0.94rem !important;
+    line-height: 1.35 !important;
+    margin: 0 0 0.35rem !important;
+  }
+
+  .eh-event-meta {
+    font-size: 0.76rem !important;
+    gap: 0.5rem 0.75rem !important;
+  }
+
   .eh-highlight-card {
-    gap: 0.9rem;
-    padding: 0.95rem;
+    display: flex !important;
+    gap: 0.85rem !important;
+    padding: 0.95rem 0.85rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
+    overflow: hidden !important;
   }
+
   .eh-hl-image-wrap {
-    width: 64px;
-    height: 64px;
-    border-radius: 10px;
+    width: 62px !important;
+    height: 62px !important;
+    border-radius: 10px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .eh-hl-title {
+    font-size: 0.92rem !important;
+    line-height: 1.35 !important;
+    margin: 0 0 0.25rem !important;
+  }
+
+  .eh-hl-desc {
+    font-size: 0.8rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .eh-action-box .btn {
+    font-size: 0.88rem !important;
+    padding: 0.75rem 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-highlights-section .container-wide {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  .eh-col-box {
+    padding: 1.1rem 0.85rem !important;
+    border-radius: 14px !important;
+  }
+
+  .eh-event-card,
+  .eh-highlight-card {
+    padding: 0.85rem 0.75rem !important;
+    border-radius: 12px !important;
+  }
+
+  .eh-hl-image-wrap {
+    width: 54px !important;
+    height: 54px !important;
+  }
+
+  .eh-col-title {
+    font-size: 1.12rem !important;
   }
 }
 
