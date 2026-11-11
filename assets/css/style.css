@@ -1523,15 +1523,15 @@ p:last-child { margin-bottom: 0; }
     border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
   }
 
-  /* 1. Full Landscape Video at Top */
+  /* 1. Full Landscape Video at Top (Enlarged Height for Richer Mobile Presence) */
   .cinema-hero-media {
     position: relative !important;
     top: auto !important;
     left: auto !important;
     width: 100% !important;
-    aspect-ratio: 16 / 9 !important;
-    height: auto !important;
-    max-height: 56.25vw !important;
+    aspect-ratio: 16 / 10 !important;
+    height: clamp(235px, 62vw, 360px) !important;
+    max-height: 65vw !important;
     overflow: hidden !important;
     order: 1 !important;
     pointer-events: auto !important;
@@ -1580,7 +1580,7 @@ p:last-child { margin-bottom: 0; }
     order: 2 !important;
     width: 100% !important;
     max-width: 100% !important;
-    padding: 1.5rem 1.25rem 0.5rem 1.25rem !important;
+    padding: 1.15rem 1rem 0.5rem 1rem !important;
     margin: 0 !important;
     pointer-events: auto !important;
   }
@@ -1601,13 +1601,13 @@ p:last-child { margin-bottom: 0; }
     padding: 0 !important;
   }
 
-  /* Accreditation Badge Pill */
+  /* Accreditation Badge Pill - Compact */
   .cinema-pill {
     display: inline-flex !important;
     max-width: 100% !important;
-    padding: 0.35rem 0.75rem !important;
-    font-size: 0.72rem !important;
-    margin-bottom: 0.85rem !important;
+    padding: 0.25rem 0.65rem !important;
+    font-size: 0.66rem !important;
+    margin-bottom: 0.65rem !important;
     white-space: normal !important;
     line-height: 1.35 !important;
     border-radius: 999px !important;
@@ -1616,23 +1616,23 @@ p:last-child { margin-bottom: 0; }
   }
 
   .cinema-pill-dot {
-    width: 6px !important;
-    height: 6px !important;
-    margin-right: 0.45rem !important;
+    width: 5px !important;
+    height: 5px !important;
+    margin-right: 0.4rem !important;
     flex-shrink: 0 !important;
   }
 
   .cinema-pill-bold {
-    font-size: 0.72rem !important;
+    font-size: 0.66rem !important;
     letter-spacing: 0.02em !important;
     word-break: break-word !important;
   }
 
-  /* Headline */
+  /* Headline - Scaled Down for Mobile Proportions */
   .cinema-title {
-    font-size: clamp(1.75rem, 6.5vw, 2.25rem) !important;
-    line-height: 1.2 !important;
-    margin-bottom: 0.85rem !important;
+    font-size: clamp(1.35rem, 5vw, 1.7rem) !important;
+    line-height: 1.25 !important;
+    margin-bottom: 0.65rem !important;
     color: #FFFFFF !important;
     font-family: var(--font-heading) !important;
   }
@@ -1642,21 +1642,21 @@ p:last-child { margin-bottom: 0; }
     display: inline !important;
   }
 
-  /* Lead Description */
+  /* Lead Description - Smaller & Cleaner */
   .cinema-lead {
-    font-size: 0.95rem !important;
-    line-height: 1.6 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
     color: #CBD5E1 !important;
-    margin-bottom: 1.35rem !important;
+    margin-bottom: 1rem !important;
   }
 
-  /* Action Buttons & Helpline */
+  /* Action Buttons & Helpline - Compact & Neat */
   .cinema-actions {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
-    gap: 0.85rem !important;
-    margin-top: 0.25rem !important;
+    gap: 0.55rem !important;
+    margin-top: 0.2rem !important;
   }
 
   .cinema-actions .btn,
@@ -1667,8 +1667,8 @@ p:last-child { margin-bottom: 0; }
     max-width: 100% !important;
     justify-content: center !important;
     text-align: center !important;
-    padding: 0.95rem 1.25rem !important;
-    font-size: 0.95rem !important;
+    padding: 0.72rem 1rem !important;
+    font-size: 0.86rem !important;
     box-sizing: border-box !important;
   }
 
@@ -1677,32 +1677,32 @@ p:last-child { margin-bottom: 0; }
     color: #FFFFFF !important;
     border: none !important;
     font-weight: 700 !important;
-    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.4) !important;
+    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35) !important;
   }
 
   .cinema-btn-outline {
     background: rgba(255, 255, 255, 0.06) !important;
-    border: 1.5px solid rgba(255, 255, 255, 0.35) !important;
+    border: 1.5px solid rgba(255, 255, 255, 0.3) !important;
     color: #FFFFFF !important;
     font-weight: 600 !important;
   }
 
   .cinema-helpline-pill {
-    padding: 0.8rem 1.15rem !important;
+    padding: 0.62rem 0.95rem !important;
     background: rgba(255, 255, 255, 0.08) !important;
     border: 1px solid rgba(255, 255, 255, 0.18) !important;
     display: flex !important;
     align-items: center !important;
-    gap: 0.75rem !important;
+    gap: 0.65rem !important;
   }
 
   .cinema-helpline-pill .helpline-sub {
-    font-size: 0.72rem !important;
+    font-size: 0.68rem !important;
     color: #94A3B8 !important;
   }
 
   .cinema-helpline-pill .helpline-num {
-    font-size: 0.98rem !important;
+    font-size: 0.88rem !important;
     font-weight: 700 !important;
     color: #FBBF24 !important;
   }
@@ -1711,30 +1711,37 @@ p:last-child { margin-bottom: 0; }
   .cinema-video-controls {
     display: inline-flex !important;
     align-self: center !important;
-    margin-top: 1.35rem !important;
+    margin-top: 1rem !important;
     position: static !important;
   }
 
   .cinema-video-toggle {
     display: inline-flex !important;
     align-items: center !important;
-    gap: 0.4rem !important;
+    gap: 0.35rem !important;
     background: rgba(255, 255, 255, 0.08) !important;
     border: 1px solid rgba(255, 255, 255, 0.18) !important;
     border-radius: 999px !important;
-    padding: 0.45rem 0.95rem !important;
+    padding: 0.35rem 0.8rem !important;
     color: #CBD5E1 !important;
-    font-size: 0.78rem !important;
+    font-size: 0.72rem !important;
     cursor: pointer !important;
   }
 }
 
 @media (max-width: 480px) {
   .cinema-hero-container {
-    padding: 1.25rem 1rem 0.5rem 1rem !important;
+    padding: 1rem 0.85rem 0.5rem 0.85rem !important;
   }
   .cinema-title {
-    font-size: 1.65rem !important;
+    font-size: 1.35rem !important;
+  }
+  .cinema-actions .btn,
+  .cinema-actions .cinema-btn-primary,
+  .cinema-actions .cinema-btn-outline,
+  .cinema-actions .cinema-helpline-pill {
+    padding: 0.68rem 0.9rem !important;
+    font-size: 0.84rem !important;
   }
 }
 
@@ -3587,27 +3594,27 @@ p:last-child { margin-bottom: 0; }
     padding: 0 4.25rem 0 1rem !important;
   }
   .brand-logo-large {
-    height: clamp(80px, 13vw, 104px) !important;
-    max-width: min(460px, calc(100vw - 75px)) !important;
+    height: clamp(92px, 16vw, 116px) !important;
+    max-width: min(490px, calc(100vw - 75px)) !important;
   }
 }
 
 @media (max-width: 640px) {
   .header-brand-row {
-    padding: 0.6rem 0 !important;
+    padding: 0.65rem 0 !important;
   }
   .header-brand-container {
     padding: 0 48px 0 10px !important;
     justify-content: center !important;
   }
   .brand-logo-large {
-    height: clamp(64px, 17vw, 82px) !important;
-    max-width: min(340px, calc(100vw - 58px)) !important;
+    height: clamp(82px, 20vw, 102px) !important;
+    max-width: min(390px, calc(100vw - 60px)) !important;
   }
   .mobile-nav-toggle {
     right: 0.65rem !important;
-    width: 40px !important;
-    height: 40px !important;
+    width: 42px !important;
+    height: 42px !important;
   }
 }
 
