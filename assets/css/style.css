@@ -1650,12 +1650,12 @@ p:last-child { margin-bottom: 0; }
     margin-bottom: 1rem !important;
   }
 
-  /* Action Buttons & Helpline - Compact & Neat */
+  /* Action Buttons & Helpline - Professional Sleek Look & Modern Corner Radius */
   .cinema-actions {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
-    gap: 0.55rem !important;
+    gap: 0.5rem !important;
     margin-top: 0.2rem !important;
   }
 
@@ -1667,8 +1667,9 @@ p:last-child { margin-bottom: 0; }
     max-width: 100% !important;
     justify-content: center !important;
     text-align: center !important;
-    padding: 0.72rem 1rem !important;
-    font-size: 0.86rem !important;
+    padding: 0.62rem 1rem !important;
+    font-size: 0.84rem !important;
+    border-radius: 8px !important; /* Professional crisp rounded rectangle */
     box-sizing: border-box !important;
   }
 
@@ -1677,7 +1678,8 @@ p:last-child { margin-bottom: 0; }
     color: #FFFFFF !important;
     border: none !important;
     font-weight: 700 !important;
-    box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 3px 12px rgba(217, 119, 6, 0.35) !important;
   }
 
   .cinema-btn-outline {
@@ -1685,24 +1687,38 @@ p:last-child { margin-bottom: 0; }
     border: 1.5px solid rgba(255, 255, 255, 0.3) !important;
     color: #FFFFFF !important;
     font-weight: 600 !important;
+    border-radius: 8px !important;
   }
 
   .cinema-helpline-pill {
-    padding: 0.62rem 0.95rem !important;
+    padding: 0.55rem 0.95rem !important;
     background: rgba(255, 255, 255, 0.08) !important;
     border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    border-radius: 8px !important;
     display: flex !important;
     align-items: center !important;
     gap: 0.65rem !important;
   }
 
+  .cinema-helpline-pill .helpline-icon-pulse {
+    width: 26px !important;
+    height: 26px !important;
+    border-radius: 6px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .cinema-helpline-pill .helpline-icon-pulse svg {
+    width: 13px !important;
+    height: 13px !important;
+  }
+
   .cinema-helpline-pill .helpline-sub {
-    font-size: 0.68rem !important;
+    font-size: 0.66rem !important;
     color: #94A3B8 !important;
   }
 
   .cinema-helpline-pill .helpline-num {
-    font-size: 0.88rem !important;
+    font-size: 0.86rem !important;
     font-weight: 700 !important;
     color: #FBBF24 !important;
   }
@@ -1721,7 +1737,7 @@ p:last-child { margin-bottom: 0; }
     gap: 0.35rem !important;
     background: rgba(255, 255, 255, 0.08) !important;
     border: 1px solid rgba(255, 255, 255, 0.18) !important;
-    border-radius: 999px !important;
+    border-radius: 8px !important;
     padding: 0.35rem 0.8rem !important;
     color: #CBD5E1 !important;
     font-size: 0.72rem !important;
@@ -1740,8 +1756,9 @@ p:last-child { margin-bottom: 0; }
   .cinema-actions .cinema-btn-primary,
   .cinema-actions .cinema-btn-outline,
   .cinema-actions .cinema-helpline-pill {
-    padding: 0.68rem 0.9rem !important;
-    font-size: 0.84rem !important;
+    padding: 0.58rem 0.85rem !important;
+    font-size: 0.82rem !important;
+    border-radius: 8px !important;
   }
 }
 
