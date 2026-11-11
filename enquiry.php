@@ -27,7 +27,7 @@ $custom_schema = [
 $form_submitted = false;
 $form_error = '';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['enquiry_action'])) {
+if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST' && isset($_POST['enquiry_action'])) {
     $applicant_name = trim($_POST['applicant_name'] ?? '');
     $applicant_email = trim($_POST['applicant_email'] ?? '');
     $applicant_phone = trim($_POST['applicant_phone'] ?? '');
@@ -74,11 +74,11 @@ include __DIR__ . '/includes/header.php';
 <!-- SECTION 1: ADMISSION FORM & BENEFITS -->
 <section class="section" aria-labelledby="formHeading">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1.35fr 0.85fr; gap: 3.5rem; align-items: flex-start;" class="enquiry-grid">
+    <div class="enquiry-grid">
       
       <!-- Left Column: The Interactive Form -->
-      <div class="fade-up">
-        <div style="background: #FFFFFF; border-radius: var(--radius-xl); border: 1px solid var(--color-tertiary-light); padding: 2.75rem 2.5rem; box-shadow: var(--shadow-lg);">
+      <div class="enquiry-form-col fade-up">
+        <div class="enquiry-form-card">
           
           <div style="margin-bottom: 2rem;">
             <span class="badge-pill badge-gold" style="margin-bottom: 0.75rem; display: inline-block;"><?= htmlspecialchars($enquiry_cms['intro']['badge_pill'] ?? 'Batch 2024–2025') ?></span>
@@ -241,7 +241,7 @@ include __DIR__ . '/includes/header.php';
       </div>
 
       <!-- Right Column: Why Choose VPC & Fast Help -->
-      <div class="fade-up delay-2" style="display: flex; flex-direction: column; gap: 2rem;">
+      <div class="enquiry-help-col fade-up delay-2">
         
         <?php 
         $eq_help = $enquiry_cms['helpdesk'] ?? [];

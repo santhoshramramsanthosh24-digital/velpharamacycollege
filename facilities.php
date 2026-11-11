@@ -65,8 +65,8 @@ $f_amenities = $facilities_cms['amenities'] ?? [];
 <!-- SECTION 1: OVERVIEW HERO -->
 <section class="section" aria-labelledby="facilitiesOverviewTitle">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 3.5rem; align-items: center;" class="facilities-hero-grid">
-      <div class="fade-up">
+    <div class="facilities-hero-grid">
+      <div class="facilities-hero-content fade-up">
         <span class="section-subtitle"><?= htmlspecialchars($f_ov['subtitle'] ?? 'Infrastructure That Inspires Learning') ?></span>
         <h2 class="section-title" id="facilitiesOverviewTitle" style="text-align: left; margin-bottom: 1.25rem;">
           <?= htmlspecialchars($f_ov['title'] ?? 'Modern Infrastructure In a Serene Green Campus') ?>
@@ -78,7 +78,7 @@ $f_amenities = $facilities_cms['amenities'] ?? [];
           <?= htmlspecialchars($f_ov['description_2'] ?? 'Situated in the VMCH Campus at Manjankaranai Village, Tiruvallur District, our campus balances academic rigor with peaceful natural surroundings, promoting concentration, mental well-being, and scientific innovation.') ?>
         </p>
 
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+        <div class="facilities-stats-dual">
           <div style="background: var(--color-bg-alt); padding: 1rem 1.25rem; border-radius: var(--radius-md); border-left: 3px solid var(--color-primary);">
             <div style="font-weight: 700; color: var(--color-primary-dark); font-size: 1.1rem;"><?= htmlspecialchars($f_ov['lab_count'] ?? '15+ Laboratories') ?></div>
             <div style="font-size: 0.85rem; color: var(--color-text-light);">Fully PCI Compliant</div>
@@ -90,10 +90,10 @@ $f_amenities = $facilities_cms['amenities'] ?? [];
         </div>
       </div>
 
-      <div class="fade-up delay-2">
-        <div style="position: relative;">
-          <img src="<?= htmlspecialchars($f_ov['campus_front_img'] ?? 'assets/images/campus-front.jpg') ?>" alt="Vel Pharmacy College Campus Front" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); width: 100%; height: 380px; object-fit: cover;">
-          <div style="position: absolute; bottom: -20px; left: 20px; right: 20px; background: #FFFFFF; border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; box-shadow: var(--shadow-lg); border-left: 4px solid var(--color-primary); display: flex; justify-content: space-between; align-items: center;">
+      <div class="facilities-hero-card fade-up delay-2">
+        <div class="facilities-hero-img-wrap">
+          <img src="<?= htmlspecialchars($f_ov['campus_front_img'] ?? 'assets/images/campus-front.jpg') ?>" alt="Vel Pharmacy College Campus Front" class="facilities-hero-img">
+          <div class="facilities-hero-floating-badge">
             <div>
               <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-primary); text-transform: uppercase;"><?= htmlspecialchars($f_ov['location_tag'] ?? 'Campus Location') ?></div>
               <div style="font-size: 0.95rem; font-weight: 600; color: var(--color-text-main);"><?= htmlspecialchars($f_ov['location_sub'] ?? 'VMCH Campus, Manjankaranai') ?></div>
@@ -117,7 +117,7 @@ $f_amenities = $facilities_cms['amenities'] ?? [];
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 2rem;">
+    <div class="facilities-amenities-grid">
       <?php foreach ($f_amenities as $idx => $am): 
         $delay_class = ($idx % 3 === 1) ? 'delay-1' : (($idx % 3 === 2) ? 'delay-2' : '');
       ?>
@@ -177,7 +177,7 @@ $f_place = $facilities_cms['placements'] ?? [];
 <!-- SECTION 4: PLACEMENTS @ VISTAS -->
 <section class="section section-alt" id="placements" aria-labelledby="placementsHeading">
   <div class="container">
-    <div style="background-color: var(--color-primary); border-radius: var(--radius-xl); padding: 3.5rem; color: #FFFFFF; box-shadow: var(--shadow-xl);">
+    <div class="facilities-placements-card">
       <div style="max-width: 900px; margin: 0 auto; text-align: center;">
         <span style="display: inline-block; background: rgba(255,255,255,0.15); color: #FEF3C7; font-size: 0.825rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; padding: 0.35rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.25rem;">
           <?= htmlspecialchars($f_place['badge'] ?? 'Career Growth & Industry Alignment') ?>

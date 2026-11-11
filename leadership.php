@@ -128,7 +128,7 @@ $cta = $lead_cms['cta_banner'] ?? [];
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+    <div class="governance-cards-grid">
       <?php if (!empty($gov['cards'])): ?>
         <?php foreach ($gov['cards'] as $gIdx => $gCard): ?>
           <div class="feature-card fade-up <?= ($gIdx === 1) ? 'delay-1' : (($gIdx === 2) ? 'delay-2' : '') ?>">

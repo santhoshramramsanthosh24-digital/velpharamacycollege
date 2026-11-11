@@ -95,8 +95,8 @@ $ar_rep = $antiragging_cms['report_section'] ?? [];
 <!-- SECTION 1: INSTITUTIONAL ZERO-TOLERANCE DECLARATION -->
 <section class="section" aria-labelledby="policyHeading">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: center;" class="anti-ragging-grid">
-      <div class="fade-up">
+    <div class="anti-ragging-grid">
+      <div class="anti-ragging-content fade-up">
         <span class="section-subtitle"><?= htmlspecialchars($ar_pol['subtitle'] ?? 'Zero Tolerance Campus') ?></span>
         <h2 class="section-title" id="policyHeading" style="text-align: left; margin-bottom: 1.25rem;">
           <?= htmlspecialchars($ar_pol['title'] ?? 'Our Unwavering Anti-Ragging Stance') ?>
@@ -114,8 +114,8 @@ $ar_rep = $antiragging_cms['report_section'] ?? [];
         </p>
       </div>
 
-      <div class="fade-up delay-2">
-        <div style="background: #FFFFFF; border-radius: var(--radius-xl); border: 2px solid #FCA5A5; padding: 2rem; box-shadow: var(--shadow-lg);">
+      <div class="anti-ragging-card fade-up delay-2">
+        <div class="anti-ragging-legal-card">
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem;">
             <div style="width: 40px; height: 40px; border-radius: 50%; background: #FEE2E2; color: #DC2626; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12.01" y2="8"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
@@ -160,7 +160,7 @@ $ar_rep = $antiragging_cms['report_section'] ?? [];
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+    <div class="anti-ragging-cells-grid">
       <?php foreach ($ar_cells as $idx => $cell): 
         $cellColor = !empty($cell['color']) ? $cell['color'] : '#DC2626';
         $delay_class = ($idx === 1) ? 'delay-1' : (($idx === 2) ? 'delay-2' : '');
@@ -197,8 +197,8 @@ $ar_rep = $antiragging_cms['report_section'] ?? [];
       </p>
     </div>
 
-    <div style="background: #FFFFFF; border-radius: var(--radius-xl); border: 1px solid var(--color-tertiary-light); padding: 2.5rem; box-shadow: var(--shadow-lg);">
-      <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['grievance_submit'])): ?>
+    <div class="anti-ragging-form-card fade-up">
+      <?php if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST' && isset($_POST['grievance_submit'])): ?>
         <div style="background: #DCFCE7; border: 1px solid #86EFAC; color: #166534; padding: 1.25rem 1.5rem; border-radius: var(--radius-md); margin-bottom: 2rem;">
           <h4 style="font-size: 1.1rem; margin-bottom: 0.25rem; font-weight: 700;">Grievance Report Received</h4>
           <p style="font-size: 0.9rem;">Thank you for your report. The Anti-Ragging Committee has been notified and prompt, confidential action is underway.</p>

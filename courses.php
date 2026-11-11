@@ -126,8 +126,8 @@ $c_el = $courses_cms['eligibility'] ?? [];
 <!-- SECTION 1: PROGRAM OVERVIEW -->
 <section class="section" aria-labelledby="programOverviewTitle">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: center;" class="course-overview-grid">
-      <div class="fade-up">
+    <div class="course-overview-grid">
+      <div class="course-overview-content fade-up">
         <span class="section-subtitle"><?= htmlspecialchars($c_ov['subtitle'] ?? 'Excellence in Pharmaceutical Education') ?></span>
         <h2 class="section-title" id="programOverviewTitle" style="text-align: left; margin-bottom: 1.25rem;">
           <?= htmlspecialchars($c_ov['title'] ?? 'Courses Offered - B.Pharm') ?>
@@ -150,10 +150,10 @@ $c_el = $courses_cms['eligibility'] ?? [];
         </div>
       </div>
 
-      <div class="fade-up delay-2">
-        <div style="position: relative;">
-          <img src="<?= htmlspecialchars($c_ov['image'] ?? 'assets/images/IMG_0098-1-scaled.jpg') ?>" alt="Vel Pharmacy College Advanced Laboratory" style="border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); width: 100%; height: 380px; object-fit: cover;">
-          <div style="position: absolute; bottom: -20px; left: 20px; right: 20px; background: #FFFFFF; border-radius: var(--radius-lg); padding: 1.25rem 1.5rem; box-shadow: var(--shadow-lg); border-left: 4px solid var(--color-primary);">
+      <div class="course-overview-card fade-up delay-2">
+        <div class="course-overview-img-wrap">
+          <img src="<?= htmlspecialchars($c_ov['image'] ?? 'assets/images/IMG_0098-1-scaled.jpg') ?>" alt="Vel Pharmacy College Advanced Laboratory" class="course-overview-img">
+          <div class="course-overview-badge-tag">
             <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); text-transform: uppercase; margin-bottom: 0.25rem;"><?= htmlspecialchars($c_ov['badge'] ?? 'Off-Campus Center & Hospital') ?></div>
             <div style="font-size: 0.95rem; font-weight: 600; color: var(--color-text-main);"><?= htmlspecialchars($c_ov['pill'] ?? 'VMCH Campus, Manjankaranai, Tiruvallur') ?></div>
           </div>
@@ -940,7 +940,7 @@ $ga_meta_map = [
       </p>
     </div>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.75rem;">
+    <div class="course-pathways-grid">
       
       <div style="background: #FFFFFF; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
         <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: #EEF0FA; color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">

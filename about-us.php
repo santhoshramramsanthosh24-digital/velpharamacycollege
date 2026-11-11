@@ -69,8 +69,8 @@ $cta = $about_cms['cta_banner'] ?? [];
 <!-- SECTION 1: WELCOME & THE PHARMACY PROFESSION -->
 <section class="section" aria-labelledby="overviewTitle">
   <div class="container">
-    <div class="about-welcome-grid" style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 3.5rem; align-items: center;">
-      <div class="fade-up">
+    <div class="about-welcome-grid">
+      <div class="about-welcome-content fade-up">
         <span class="section-subtitle"><?= htmlspecialchars($welcome['subtitle'] ?? 'A Noble Calling in Healthcare') ?></span>
         <h2 class="section-title" id="overviewTitle" style="text-align: left; margin-bottom: 1.25rem;">
           <?= htmlspecialchars($welcome['title'] ?? 'Welcome To Vel Pharmacy College') ?>
@@ -86,18 +86,18 @@ $cta = $about_cms['cta_banner'] ?? [];
         </p>
       </div>
 
-      <div class="fade-up delay-2">
-        <div style="background: var(--color-bg-alt); border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-xl); padding: 2rem; box-shadow: var(--shadow-md);">
-          <h3 style="font-size: 1.35rem; color: var(--color-primary-dark); margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+      <div class="about-welcome-card fade-up delay-2">
+        <div class="career-versatility-card">
+          <h3 class="career-versatility-title">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
             <span><?= htmlspecialchars($versatility['heading'] ?? 'Career Versatility') ?></span>
           </h3>
-          <ul style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <ul class="career-versatility-list">
             <?php if (!empty($versatility['items'])): ?>
               <?php foreach ($versatility['items'] as $vIdx => $vItem): ?>
-                <li style="display: flex; align-items: center; gap: 0.75rem;">
+                <li class="career-versatility-item">
                   <span class="badge-tag <?= ($vIdx % 2 === 0) ? 'badge-tag-primary' : 'badge-tag-secondary' ?>"><?= htmlspecialchars($vItem['tag'] ?? '') ?></span>
-                  <span style="font-size: 0.95rem; color: var(--color-text-main); font-weight: 500;"><?= htmlspecialchars($vItem['text'] ?? '') ?></span>
+                  <span class="career-versatility-text"><?= htmlspecialchars($vItem['text'] ?? '') ?></span>
                 </li>
               <?php endforeach; ?>
             <?php endif; ?>
@@ -119,7 +119,7 @@ $cta = $about_cms['cta_banner'] ?? [];
       </p>
     </div>
 
-    <div style="background: #FFFFFF; border-radius: var(--radius-xl); border: 1px solid var(--color-tertiary-light); box-shadow: var(--shadow-lg); padding: 3.5rem; max-width: 960px; margin: 0 auto;" class="fade-up">
+    <div class="about-legacy-card fade-up">
       <div style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-primary-dark); margin-bottom: 1.5rem; line-height: 1.5;">
         <?= htmlspecialchars($legacy['card_heading'] ?? 'A Legacy Built on Educational Philanthropy & Academic Vision') ?>
       </div>

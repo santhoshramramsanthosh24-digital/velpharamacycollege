@@ -4131,6 +4131,8 @@ p:last-child { margin-bottom: 0; }
   border-radius: var(--radius-full);
   background-color: #E2E8F0;
   color: var(--color-text-muted);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .badge-tag-primary {
@@ -5682,6 +5684,458 @@ p:last-child { margin-bottom: 0; }
 @media (prefers-reduced-motion: reduce) {
   .cta-track-1, .cta-track-2 {
     animation-play-state: paused;
+  }
+}
+
+/* ==========================================================================
+   PAGE-WIDE INNER GRIDS & RESPONSIVE COMPONENT SYSTEM
+   Strictly scoped: Desktop is preserved, Phone & Tablet (<991px) stack properly
+   ========================================================================== */
+
+/* About Page Welcome Section */
+.about-welcome-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.about-welcome-content {
+  width: 100%;
+}
+
+.about-welcome-card {
+  width: 100%;
+}
+
+.career-versatility-card {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-tertiary-light);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.career-versatility-title {
+  font-size: 1.35rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.career-versatility-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.career-versatility-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.career-versatility-text {
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.about-legacy-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-tertiary-light);
+  box-shadow: var(--shadow-lg);
+  padding: 3.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Anti-Ragging Policy Section */
+.anti-ragging-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.anti-ragging-content {
+  width: 100%;
+}
+
+.anti-ragging-card {
+  width: 100%;
+}
+
+.anti-ragging-legal-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  border: 2px solid #FCA5A5;
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.anti-ragging-cells-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.anti-ragging-form-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-tertiary-light);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Courses Page Overview Section */
+.course-overview-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.course-overview-content {
+  width: 100%;
+}
+
+.course-overview-card {
+  width: 100%;
+}
+
+.course-overview-img-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.course-overview-img {
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.course-overview-badge-tag {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  right: 20px;
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-lg);
+  border-left: 4px solid var(--color-primary);
+}
+
+.course-pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+}
+
+/* Enquiry Page Form Section */
+.enquiry-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 3.5rem;
+  align-items: flex-start;
+}
+
+.enquiry-form-col {
+  width: 100%;
+}
+
+.enquiry-form-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-tertiary-light);
+  padding: 2.75rem 2.5rem;
+  box-shadow: var(--shadow-lg);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.enquiry-help-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Facilities Page Overview Section */
+.facilities-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.facilities-hero-content {
+  width: 100%;
+}
+
+.facilities-stats-dual {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.facilities-hero-card {
+  width: 100%;
+}
+
+.facilities-hero-img-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.facilities-hero-img {
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.facilities-hero-floating-badge {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  right: 20px;
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-lg);
+  border-left: 4px solid var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facilities-amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.facilities-placements-card {
+  background-color: var(--color-primary);
+  border-radius: var(--radius-xl);
+  padding: 3.5rem;
+  color: #FFFFFF;
+  box-shadow: var(--shadow-xl);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Leadership Page Governance Grid */
+.governance-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* ==========================================================================
+   PHONE & TABLET RESPONSIVE ADAPTATIONS (max-width: 991px)
+   Stacks content text first (order: 1) and card/media next (order: 2)
+   ========================================================================== */
+@media (max-width: 991px) {
+  .about-welcome-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.25rem !important;
+  }
+  .about-welcome-content {
+    order: 1 !important;
+    width: 100% !important;
+  }
+  .about-welcome-card {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .anti-ragging-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.25rem !important;
+  }
+  .anti-ragging-content {
+    order: 1 !important;
+    width: 100% !important;
+  }
+  .anti-ragging-card {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .course-overview-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.25rem !important;
+  }
+  .course-overview-content {
+    order: 1 !important;
+    width: 100% !important;
+  }
+  .course-overview-card {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .enquiry-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  .enquiry-form-col {
+    order: 1 !important;
+    width: 100% !important;
+  }
+  .enquiry-help-col {
+    order: 2 !important;
+    width: 100% !important;
+  }
+
+  .facilities-hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.25rem !important;
+  }
+  .facilities-hero-content {
+    order: 1 !important;
+    width: 100% !important;
+  }
+  .facilities-hero-card {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
+
+/* ==========================================================================
+   PHONE VIEWPORT RESPONSIVE PERFECTION (max-width: 768px & max-width: 640px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .about-legacy-card {
+    padding: 2rem 1.35rem !important;
+    border-radius: 16px !important;
+  }
+
+  .career-versatility-card {
+    padding: 1.6rem 1.25rem !important;
+    border-radius: 16px !important;
+  }
+
+  .career-versatility-item {
+    gap: 0.65rem !important;
+  }
+
+  .groups-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .group-card {
+    padding: 1.25rem 1rem !important;
+  }
+
+  .anti-ragging-cells-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .anti-ragging-legal-card {
+    padding: 1.6rem 1.25rem !important;
+    border-radius: 16px !important;
+  }
+
+  .anti-ragging-form-card {
+    padding: 1.75rem 1.25rem !important;
+    border-radius: 16px !important;
+  }
+
+  .course-pathways-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .course-overview-img {
+    height: 250px !important;
+  }
+
+  .enquiry-form-card {
+    padding: 1.75rem 1.25rem !important;
+    border-radius: 16px !important;
+  }
+
+  .facilities-amenities-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .facilities-hero-img {
+    height: 250px !important;
+  }
+
+  .facilities-placements-card {
+    padding: 2rem 1.25rem !important;
+    border-radius: 16px !important;
+  }
+
+  .facilities-placements-card h2 {
+    font-size: clamp(1.6rem, 5vw, 2.1rem) !important;
+  }
+
+  .governance-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .facility-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .cta-banner {
+    padding: 2.25rem 1.25rem !important;
+    border-radius: 16px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .facilities-stats-dual {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  .facilities-hero-floating-badge {
+    position: static !important;
+    margin-top: 0.75rem !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  .course-overview-badge-tag {
+    position: static !important;
+    margin-top: 0.75rem !important;
+    border-radius: var(--radius-md) !important;
   }
 }
 
