@@ -11,6 +11,26 @@
     }
     respond @data 403
 
+    # Legacy video rewrite to avoid duplicate 60MB file
+    rewrite /assets/videos/VMCH%20VIDEO%20-%20SUBBHIKRISHNAN.mp4 /assets/videos/vmch-campus-hero.mp4
+
+    # High-Performance Edge CDN & Browser Caching for static assets
+    @static {
+        path /assets/* *.css *.js *.jpg *.jpeg *.png *.gif *.svg *.webp *.ico *.woff *.woff2 *.ttf *.mp4 *.webm *.pdf
+    }
+    header @static {
+        Cache-Control "public, max-age=31536000, s-maxage=31536000, immutable"
+        Access-Control-Allow-Origin "*"
+    }
+
+    # Edge CDN caching for public pages (1 hour edge cache, revalidate in background)
+    @html_pages {
+        path / /about-us /courses /facilities /faculties /leadership /anti-ragging /contact-us /highlights
+    }
+    header @html_pages {
+        Cache-Control "public, max-age=300, s-maxage=3600, stale-while-revalidate=86400"
+    }
+
     try_files {path} {path}.php {path}/ /router.php /index.php
 
     php_server

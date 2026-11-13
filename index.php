@@ -108,7 +108,7 @@ $hero_cta2_lnk = $home_cms['cta_secondary_link'] ?? 'courses';
 $hero_helpline_lbl = $home_cms['helpline_label'] ?? 'Admissions Helpline';
 $hero_helpline_num = $home_cms['helpline_number'] ?? $phone_primary;
 $hero_img = $home_cms['hero_image'] ?? ($home_cms['hero_video_poster'] ?? 'assets/images/campus-front.jpg');
-$hero_video = !empty($home_cms['video_mp4']) ? $home_cms['video_mp4'] : (!empty($home_cms['hero_video']) ? $home_cms['hero_video'] : 'assets/videos/VMCH VIDEO - SUBBHIKRISHNAN.mp4');
+$hero_video = !empty($home_cms['video_mp4']) ? $home_cms['video_mp4'] : (!empty($home_cms['hero_video']) ? $home_cms['hero_video'] : 'assets/videos/vmch-campus-hero.mp4');
 
 $pillars_header = $home_cms['pillars_header'] ?? [
   'eyebrow' => 'Institutional Excellence & Trust',
@@ -134,11 +134,9 @@ $cta_banner = $home_cms['cta_banner'] ?? [];
 <section class="cinema-hero" id="heroSection" aria-label="Vel Pharmacy College Admissions 2024–2025">
   <!-- Cinematic Full-Bleed College Video Background -->
   <div class="cinema-hero-media">
-    <video class="cinema-video" id="collegeVideoPlayer" autoplay muted loop playsinline preload="auto"
+    <video class="cinema-video" id="collegeVideoPlayer" autoplay muted loop playsinline preload="metadata"
       poster="<?= htmlspecialchars($hero_img) ?>">
       <source src="<?= htmlspecialchars($hero_video) ?>" type="video/mp4">
-      <source src="assets/videos/VMCH VIDEO - SUBBHIKRISHNAN.mp4" type="video/mp4">
-      <source src="assets/videos/vmch-campus-hero.mp4" type="video/mp4">
       <source src="assets/videos/pharmacy-lab-loop.webm" type="video/webm">
     </video>
     <div class="cinema-overlay"></div>

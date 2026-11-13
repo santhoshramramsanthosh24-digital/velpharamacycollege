@@ -8,6 +8,11 @@
 $raw_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri = urldecode($raw_path);
 
+// Seamlessly alias legacy large video filename to standardized path
+if ($uri === '/assets/videos/VMCH VIDEO - SUBBHIKRISHNAN.mp4' || $raw_path === '/assets/videos/VMCH%20VIDEO%20-%20SUBBHIKRISHNAN.mp4') {
+    $uri = '/assets/videos/vmch-campus-hero.mp4';
+}
+
 // Security: Block direct HTTP access to data folder
 if (strpos($uri, '/data') === 0) {
     http_response_code(403);
@@ -38,6 +43,7 @@ if ($uri !== '/' && $ext !== 'php' && file_exists($file) && !is_dir($file)) {
         'ico'   => 'image/x-icon',
         'pdf'   => 'application/pdf',
         'mp4'   => 'video/mp4',
+        'webm'  => 'video/webm',
         'woff'  => 'font/woff',
         'woff2' => 'font/woff2',
         'ttf'   => 'font/ttf',
@@ -47,7 +53,8 @@ if ($uri !== '/' && $ext !== 'php' && file_exists($file) && !is_dir($file)) {
     $contentType = $mimes[$ext] ?? 'application/octet-stream';
     header('Content-Type: ' . $contentType);
     header('Content-Length: ' . filesize($file));
-    header('Cache-Control: public, max-age=86400');
+    header('Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable');
+    header('Access-Control-Allow-Origin: *');
     readfile($file);
     exit;
 }

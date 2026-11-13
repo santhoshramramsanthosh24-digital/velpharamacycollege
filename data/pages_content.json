@@ -53,7 +53,7 @@
     "helpline_label": "Admissions Helpline",
     "helpline_number": "+91 812 261 3300",
     "hero_image": "assets/images/campus-front.jpg",
-    "video_mp4": "assets/videos/VMCH VIDEO - SUBBHIKRISHNAN.mp4",
+    "video_mp4": "assets/videos/vmch-campus-hero.mp4",
     "announcement_text": "Admission Open for 2024–2025 Batch: 4-Year B.Pharm Degree Program (PCI Approved) • Merit-based entry for +2 PCM/PCB students",
     "pillars_header": {
       "eyebrow": "Institutional Excellence & Trust",
@@ -419,7 +419,7 @@
       "hospital_beds_training": "300+",
       "placement_support": "100%"
     },
-    "hero_video": "assets/videos/VMCH VIDEO - SUBBHIKRISHNAN.mp4",
+    "hero_video": "assets/videos/vmch-campus-hero.mp4",
     "hero_video_poster": "assets/images/campus-front.jpg"
   },
   "about_us": {
