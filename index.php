@@ -154,7 +154,7 @@ $cta_banner = $home_cms['cta_banner'] ?? [];
         <img src="assets/images/college-logo-transparent.png" alt="Vel Pharmacy College Logo" class="focus-college-logo"
           width="44" height="44">
       </div>
-      <div class="focus-label-wrap">
+      <!--<div class="focus-label-wrap">
         <span class="focus-state-pill">
           <span class="focus-state-dot" aria-hidden="true"></span>
           <span class="focus-text-default">Move Cursor Here</span>
@@ -162,7 +162,7 @@ $cta_banner = $home_cms['cta_banner'] ?? [];
         </span>
         <span class="focus-subtext-default">Focus Campus Video</span>
         <span class="focus-subtext-active">Move Out to Restore</span>
-      </div>
+      </div>-->
     </div>
   </div>
 
@@ -420,9 +420,12 @@ foreach ($raw_events as &$ev) {
   if (!empty($ev_date)) {
     $ts = strtotime($ev_date);
     if ($ts) {
-      if (empty($ev['month'])) $ev['month'] = strtoupper(date('M', $ts));
-      if (empty($ev['day'])) $ev['day'] = date('d', $ts);
-      if (empty($ev['year'])) $ev['year'] = date('Y', $ts);
+      if (empty($ev['month']))
+        $ev['month'] = strtoupper(date('M', $ts));
+      if (empty($ev['day']))
+        $ev['day'] = date('d', $ts);
+      if (empty($ev['year']))
+        $ev['year'] = date('Y', $ts);
     }
   } elseif (!empty($ev['year']) && !empty($ev['month']) && !empty($ev['day'])) {
     $parsed_ts = strtotime($ev['day'] . ' ' . $ev['month'] . ' ' . $ev['year']);
@@ -624,31 +627,32 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
           <div class="eh-highlights-list" id="ehHighlightsList">
             <?php foreach ($all_highlights as $hl): ?>
               <?php
-                // Resolve topic-related image according to title
-                $hl_img = !empty($hl['image']) ? $hl['image'] : (!empty($hl['notice_image']) ? $hl['notice_image'] : '');
-                if (empty($hl_img)) {
-                  $t = strtolower($hl['title'] ?? '');
-                  if (strpos($t, 'pci') !== false || strpos($t, 'approval') !== false) {
-                    $hl_img = 'assets/images/campus-main-entrance.jpg';
-                  } elseif (strpos($t, 'python') !== false || strpos($t, 'ai') !== false || strpos($t, 'nep') !== false || strpos($t, 'cadd') !== false) {
-                    $hl_img = 'assets/images/computer-lab.jpg';
-                  } elseif (strpos($t, 'hospital') !== false || strpos($t, 'clinical') !== false || strpos($t, 'vmch') !== false) {
-                    $hl_img = 'assets/images/hospital-facility.jpg';
-                  } elseif (strpos($t, 'lab') !== false || strpos($t, 'analytical') !== false || strpos($t, 'suite') !== false) {
-                    $hl_img = 'assets/images/research-lab-modern.jpg';
-                  } elseif (strpos($t, 'pharmacist') !== false || strpos($t, 'ceremony') !== false) {
-                    $hl_img = 'assets/images/seminar-hall.jpg';
-                  } else {
-                    $hl_img = 'assets/images/campus-main-entrance.jpg';
-                  }
+              // Resolve topic-related image according to title
+              $hl_img = !empty($hl['image']) ? $hl['image'] : (!empty($hl['notice_image']) ? $hl['notice_image'] : '');
+              if (empty($hl_img)) {
+                $t = strtolower($hl['title'] ?? '');
+                if (strpos($t, 'pci') !== false || strpos($t, 'approval') !== false) {
+                  $hl_img = 'assets/images/campus-main-entrance.jpg';
+                } elseif (strpos($t, 'python') !== false || strpos($t, 'ai') !== false || strpos($t, 'nep') !== false || strpos($t, 'cadd') !== false) {
+                  $hl_img = 'assets/images/computer-lab.jpg';
+                } elseif (strpos($t, 'hospital') !== false || strpos($t, 'clinical') !== false || strpos($t, 'vmch') !== false) {
+                  $hl_img = 'assets/images/hospital-facility.jpg';
+                } elseif (strpos($t, 'lab') !== false || strpos($t, 'analytical') !== false || strpos($t, 'suite') !== false) {
+                  $hl_img = 'assets/images/research-lab-modern.jpg';
+                } elseif (strpos($t, 'pharmacist') !== false || strpos($t, 'ceremony') !== false) {
+                  $hl_img = 'assets/images/seminar-hall.jpg';
+                } else {
+                  $hl_img = 'assets/images/campus-main-entrance.jpg';
                 }
+              }
               ?>
               <a href="highlights#<?= !empty($hl['slug']) ? htmlspecialchars($hl['slug']) : '' ?>" target="_blank"
                 rel="noopener noreferrer"
                 class="eh-highlight-card <?= !empty($hl['is_transferred_event']) ? 'transferred-event-card' : '' ?>"
                 title="<?= htmlspecialchars($hl['title']) ?>">
                 <div class="eh-hl-image-wrap <?= !empty($hl['is_transferred_event']) ? 'img-transferred' : '' ?>">
-                  <img src="<?= htmlspecialchars($hl_img) ?>" alt="<?= htmlspecialchars($hl['title']) ?>" class="eh-hl-thumb-img" loading="lazy" width="76" height="76">
+                  <img src="<?= htmlspecialchars($hl_img) ?>" alt="<?= htmlspecialchars($hl['title']) ?>"
+                    class="eh-hl-thumb-img" loading="lazy" width="76" height="76">
                 </div>
                 <div class="eh-hl-body">
                   <div class="eh-hl-badge-row">
