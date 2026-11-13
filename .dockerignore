@@ -5,3 +5,4 @@
 .vercelignore
 Dockerfile*
 *.log
+
