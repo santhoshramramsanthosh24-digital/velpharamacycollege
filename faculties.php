@@ -44,7 +44,7 @@ if (!isset($faculties)) {
       'designation' => 'Professor & Principal',
       'department' => 'Pharmaceutical Chemistry',
       'dept_slug' => 'chemistry',
-      'dept_color' => '#1E2368',
+      'dept_color' => '#1E6A4D',
       'experience' => '18.5+ Years',
       'image' => 'assets/images/Faculty/Dr. G. Saravanan.png',
       'featured' => true,
@@ -81,7 +81,7 @@ if (!isset($faculties)) {
       'designation' => 'Professor',
       'department' => 'Pharmaceutical Chemistry',
       'dept_slug' => 'chemistry',
-      'dept_color' => '#1E2368',
+      'dept_color' => '#1E6A4D',
       'experience' => '15+ Years',
       'image' => 'assets/images/Faculty/Dr. R.Kumanan.jpeg',
       'featured' => false,
@@ -117,7 +117,7 @@ if (!isset($faculties)) {
       'designation' => 'Associate Professor',
       'department' => 'Pharmacognosy',
       'dept_slug' => 'pharmacognosy',
-      'dept_color' => '#047857',
+      'dept_color' => '#1E6A4D',
       'experience' => '14+ Years',
       'image' => 'assets/images/Faculty/Dr. G. Avinash Kumar.png',
       'featured' => false,
@@ -153,7 +153,7 @@ if (!isset($faculties)) {
       'designation' => 'Associate Professor',
       'department' => 'Pharmacology',
       'dept_slug' => 'pharmacology',
-      'dept_color' => '#800020',
+      'dept_color' => '#D6B56D',
       'experience' => '10+ Years',
       'image' => 'assets/images/Faculty/Dr. Kasireddy Paul.jpeg',
       'featured' => false,
@@ -189,7 +189,7 @@ if (!isset($faculties)) {
       'designation' => 'Associate Professor',
       'department' => 'Pharmacognosy',
       'dept_slug' => 'pharmacognosy',
-      'dept_color' => '#047857',
+      'dept_color' => '#1E6A4D',
       'experience' => '11+ Years',
       'image' => 'assets/images/Faculty/Dr. Sudha S.jpeg',
       'featured' => false,
@@ -225,7 +225,7 @@ if (!isset($faculties)) {
       'designation' => 'Assistant Professor',
       'department' => 'Pharmacology',
       'dept_slug' => 'pharmacology',
-      'dept_color' => '#800020',
+      'dept_color' => '#D6B56D',
       'experience' => '4+ Years',
       'image' => 'assets/images/Faculty/Mrs. Paladugu Pravallika.png',
       'featured' => false,
@@ -260,7 +260,7 @@ if (!isset($faculties)) {
       'designation' => 'Assistant Professor',
       'department' => 'Pharmaceutics',
       'dept_slug' => 'pharmaceutics',
-      'dept_color' => '#4338CA',
+      'dept_color' => '#1E6A4D',
       'experience' => '3+ Years',
       'image' => 'assets/images/Faculty/Mrs. S. Jancyrani.jpeg',
       'featured' => false,
@@ -295,7 +295,7 @@ if (!isset($faculties)) {
       'designation' => 'Assistant Professor',
       'department' => 'Pharmaceutics',
       'dept_slug' => 'pharmaceutics',
-      'dept_color' => '#4338CA',
+      'dept_color' => '#1E6A4D',
       'experience' => '4+ Years',
       'image' => 'assets/images/Faculty/C.DIVYA.png',
       'featured' => false,
@@ -331,7 +331,7 @@ if (!isset($faculties)) {
       'designation' => 'Assistant Professor',
       'department' => 'Pharmaceutical Analysis',
       'dept_slug' => 'analysis',
-      'dept_color' => '#B45309',
+      'dept_color' => '#D6B56D',
       'experience' => '3+ Years',
       'image' => 'assets/images/Faculty/Ms. M. Divya.jpeg',
       'featured' => false,
@@ -367,7 +367,7 @@ if (!isset($faculties)) {
       'designation' => 'Assistant Professor',
       'department' => 'Pharmaceutics',
       'dept_slug' => 'pharmaceutics',
-      'dept_color' => '#4338CA',
+      'dept_color' => '#1E6A4D',
       'experience' => '4+ Years',
       'image' => 'assets/images/Faculty/Mrs. Devibala.jpeg',
       'featured' => false,
@@ -403,7 +403,7 @@ if (!isset($faculties)) {
       'designation' => 'Assistant Professor',
       'department' => 'Pharmacology',
       'dept_slug' => 'pharmacology',
-      'dept_color' => '#800020',
+      'dept_color' => '#D6B56D',
       'experience' => '3+ Years',
       'image' => 'assets/images/Faculty/Mrs. Pooja.jpeg',
       'featured' => false,
@@ -496,9 +496,9 @@ include __DIR__ . '/includes/header.php';
 
     <!-- Breadcrumb -->
     <nav class="breadcrumb" aria-label="Breadcrumbs" style="margin-bottom: 1.25rem;">
-      <a href="/" style="color: #CBD5E1;">Home</a>
-      <span class="breadcrumb-separator" style="color: #94A3B8;">/</span>
-      <span class="breadcrumb-current" aria-current="page" style="color: #FEF3C7; font-weight: 600;">Faculty
+      <a href="/" style="color: #F5F7F4;">Home</a>
+      <span class="breadcrumb-separator" style="color: #D6B56D;">/</span>
+      <span class="breadcrumb-current" aria-current="page" style="color: #D6B56D; font-weight: 600;">Faculty
         Directory</span>
     </nav>
 
@@ -569,7 +569,7 @@ include __DIR__ . '/includes/header.php';
       </div>
 
       <!-- Quick Toggles & Result Count -->
-      <div class="faculty-result-meta">
+      <!--<div class="faculty-result-meta">
         <button type="button" id="toggleDoctorates" class="faculty-cadre-toggle" aria-pressed="false">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
@@ -579,7 +579,7 @@ include __DIR__ . '/includes/header.php';
         </button>
         <span id="facultyCounterBadge" style="font-weight: 700; color: var(--color-primary-dark);">Showing
           <?= count($faculties) ?> Faculty</span>
-      </div>
+      </div>-->
     </div>
 
     <!-- Alphabetical Filter Bar (A-Z) -->
@@ -623,13 +623,13 @@ include __DIR__ . '/includes/header.php';
 
         // Department CSS color map
         $dept_border = match ($fac['dept_slug']) {
-          'chemistry' => '#2563EB',
-          'pharmaceutics' => '#7C3AED',
-          'pharmacology' => '#BE123C',
-          'pharmacognosy' => '#059669',
-          'analysis' => '#D97706',
-          'practice' => '#0891B2',
-          default => '#292E82'
+          'chemistry' => '#1E6A4D',
+          'pharmaceutics' => '#D6B56D',
+          'pharmacology' => '#1E6A4D',
+          'pharmacognosy' => '#D6B56D',
+          'analysis' => '#1E6A4D',
+          'practice' => '#D6B56D',
+          default => '#1E6A4D'
         };
         ?>
 
@@ -649,8 +649,7 @@ include __DIR__ . '/includes/header.php';
                 class="faculty-card-img" loading="lazy" width="360" height="450">
             <?php else: ?>
               <!-- High-end Monogram Crest Avatar -->
-              <div class="faculty-monogram-avatar"
-                style="background: linear-gradient(135deg, <?= $dept_border ?> 0%, #0F172A 100%);">
+              <div class="faculty-monogram-avatar" style="background: <?= $dept_border ?>;">
                 <span class="faculty-monogram-initials"><?= $initials ?></span>
                 <svg class="faculty-monogram-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2">
@@ -709,7 +708,7 @@ include __DIR__ . '/includes/header.php';
 
             <div class="faculty-card-qual">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                style="color: #64748B; flex-shrink: 0; margin-top: 2px;">
+                style="color: #1E6A4D; flex-shrink: 0; margin-top: 2px;">
                 <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
                 <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
               </svg>
@@ -876,7 +875,7 @@ include __DIR__ . '/includes/header.php';
       <div>
         <div class="modal-section-title">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            style="color: #059669;">
+            style="color: #1E6A4D;">
             <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
             <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
           </svg>
@@ -889,13 +888,13 @@ include __DIR__ . '/includes/header.php';
       <div>
         <div class="modal-section-title">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            style="color: #D97706;">
+            style="color: #D6B56D;">
             <circle cx="12" cy="8" r="7"></circle>
             <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
           </svg>
           <span>Research Accomplishments &amp; Key Honors</span>
         </div>
-        <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: #334155; line-height: 1.7;" id="modalAchievements">
+        <ul style="padding-left: 1.25rem; font-size: 0.95rem; color: #1E6A4D; line-height: 1.7;" id="modalAchievements">
         </ul>
       </div>
 
@@ -957,41 +956,42 @@ include __DIR__ . '/includes/header.php';
 <!-- ==========================================================================
      SECTION 2: ACADEMIC MENTORSHIP CALLOUT
      ========================================================================== -->
-<section class="section" style="padding-top: 1.5rem; padding-bottom: 5.5rem; background: var(--color-bg-alt);"
+<section class="section" style="padding-top: 1.5rem; padding-bottom: 5.5rem; background: #FFFFFF;"
   aria-label="Faculty Mentorship">
   <div class="container" style="max-width: 1080px;">
-        <div
-          style="background: linear-gradient(135deg, #1E2368 0%, #0E1338 100%); color: #FFFFFF; border-radius: 24px; padding: 4.5rem 2.5rem; text-align: center; box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.2); border: 1px solid rgba(255, 255, 255, 0.1); position: relative; overflow: hidden;">
-          <div
-            style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 0.35rem 1rem; border-radius: 9999px; margin-bottom: 1.25rem; color: #FEF3C7; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">
-            ★ Individualized Research &amp; Clinical Mentorship
-          </div>
-          <h2
-            style="font-family: var(--font-heading); font-size: clamp(2rem, 3.5vw, 2.75rem); color: #FFFFFF; margin-bottom: 1.25rem; line-height: 1.2;">
-            Learn Under National Scholars &amp; Pharmacy Researchers
-          </h2>
-          <p
-            style="font-size: 1.1rem; color: #CBD5E1; line-height: 1.7; margin-bottom: 2.25rem; max-width: 780px; margin-left: auto; margin-right: auto;">
-            At Vel Pharmacy College, academic mentors do not simply lecture—they guide clinical rounds, mentor research
-            publications, train students in modern analytical instrumentation, and provide focused coaching for GPAT and
-            international licensing examinations.
-          </p>
-          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-            <a href="enquiry" class="btn"
-              style="background: #D97706; color: #FFFFFF; font-weight: 700; padding: 0.85rem 2rem; border-radius: var(--radius-full); box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);">
-              <span>Apply for B.Pharm 2024–2025</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
-            <a href="contact-us" class="btn"
-              style="background: rgba(255,255,255,0.15); color: #FFFFFF; font-weight: 600; padding: 0.85rem 1.75rem; border-radius: var(--radius-full); border: 1px solid rgba(255,255,255,0.3);">
-              <span>Schedule Campus Visit</span>
-            </a>
-          </div>
-        </div>
+    <div
+      style="background: #1E6A4D; color: #F5F7F4; border-radius: 24px; padding: 4.5rem 2.5rem; text-align: center; box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.2); border: 2px solid #D6B56D; position: relative; overflow: hidden;">
+      <div
+        style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 0.35rem 1rem; border-radius: 9999px; margin-bottom: 1.25rem; color: #D6B56D; font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">
+        ★ Individualized Research &amp; Clinical Mentorship
       </div>
+      <h2
+        style="font-family: var(--font-heading); font-size: clamp(2rem, 3.5vw, 2.75rem); color: #F5F7F4; margin-bottom: 1.25rem; line-height: 1.2;">
+        Learn Under National Scholars &amp; Pharmacy Researchers
+      </h2>
+      <p
+        style="font-size: 1.1rem; color: #F5F7F4; line-height: 1.7; margin-bottom: 2.25rem; max-width: 780px; margin-left: auto; margin-right: auto;">
+        At Vel Pharmacy College, academic mentors do not simply lecture—they guide clinical rounds, mentor research
+        publications, train students in modern analytical instrumentation, and provide focused coaching for GPAT and
+        international licensing examinations.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="enquiry" class="btn"
+          style="background: #D6B56D; color: #1E6A4D; font-weight: 700; padding: 0.85rem 2rem; border-radius:
+          var(--radius-full); box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);">
+          <span>Apply for B.Pharm 2024–2025</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="contact-us" class="btn"
+          style="background: rgba(255,255,255,0.15); color: #F5F7F4; font-weight: 600; padding: 0.85rem 1.75rem; border-radius: var(--radius-full); border: 1px solid rgba(255,255,255,0.3);">
+          <span>Schedule Campus Visit</span>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ==========================================================================

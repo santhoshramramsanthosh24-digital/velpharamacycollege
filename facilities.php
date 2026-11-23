@@ -121,7 +121,7 @@ $f_amenities = $facilities_cms['amenities'] ?? [];
       <?php foreach ($f_amenities as $idx => $am): 
         $delay_class = ($idx % 3 === 1) ? 'delay-1' : (($idx % 3 === 2) ? 'delay-2' : '');
       ?>
-      <div class="fade-up <?= $delay_class ?>" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--color-tertiary-light);">
+      <div class="fade-up <?= $delay_class ?>" style="background: #FFFFFF; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1.5px solid #D6B56D;">
         <div style="height: 220px; overflow: hidden;">
           <img src="<?= htmlspecialchars($am['image'] ?? 'assets/images/lecture-hall.jpg') ?>" alt="<?= htmlspecialchars($am['title'] ?? 'Facility') ?>" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
         </div>
@@ -161,7 +161,7 @@ $f_place = $facilities_cms['placements'] ?? [];
     <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem;">
       <?php if (!empty($f_labs)): ?>
         <?php foreach ($f_labs as $lIdx => $lab): ?>
-          <div class="fade-up" style="background: #FFFFFF; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--color-tertiary-light); box-shadow: var(--shadow-sm);">
+          <div class="fade-up" style="background: #F5F7F4; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--color-tertiary-light); box-shadow: var(--shadow-sm);">
             <img src="<?= htmlspecialchars($lab['image'] ?? 'assets/images/IMG_0113-1-scaled.jpg') ?>" alt="<?= htmlspecialchars($lab['title'] ?? 'Laboratory') ?>" style="width: 100%; height: 200px; object-fit: cover;">
             <div style="padding: 1.25rem;">
               <h4 style="font-size: 1.1rem; color: var(--color-primary-dark); margin-bottom: 0.35rem;"><?= htmlspecialchars($lab['title'] ?? '') ?></h4>
@@ -179,52 +179,52 @@ $f_place = $facilities_cms['placements'] ?? [];
   <div class="container">
     <div class="facilities-placements-card">
       <div style="max-width: 900px; margin: 0 auto; text-align: center;">
-        <span style="display: inline-block; background: rgba(255,255,255,0.15); color: #FEF3C7; font-size: 0.825rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; padding: 0.35rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.25rem;">
+        <span style="display: inline-block; background: rgba(255,255,255,0.15); color: #D6B56D; font-size: 0.825rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; padding: 0.35rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.25rem;">
           <?= htmlspecialchars($f_place['badge'] ?? 'Career Growth & Industry Alignment') ?>
         </span>
-        <h2 id="placementsHeading" style="font-family: var(--font-heading); font-size: 2.5rem; color: #FFFFFF; margin-bottom: 1.25rem; line-height: 1.2;">
+        <h2 id="placementsHeading" style="font-family: var(--font-heading); font-size: 2.5rem; color: #F5F7F4; margin-bottom: 1.25rem; line-height: 1.2;">
           <?= htmlspecialchars($f_place['title'] ?? 'Placements @ VISTAS') ?>
         </h2>
-        <p style="font-size: 1.05rem; line-height: 1.8; color: #E0E7FF; margin-bottom: 2rem;">
+        <p style="font-size: 1.05rem; line-height: 1.8; color: #F5F7F4; margin-bottom: 2rem;">
           <?= htmlspecialchars($f_place['description_1'] ?? 'Vels Institute of Science, Technology and Advanced Studies (VISTAS) is a representation of knowledge and possibilities. It is one of the prestigious, high-grade multidisciplinary Universities in Chennai, securing the highest number of placement offers in the region.') ?>
         </p>
 
         <!-- Stats Counter Row -->
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
           <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 1.5rem; border: 1px solid rgba(255,255,255,0.15);">
-            <div style="font-size: 2.25rem; font-weight: 800; color: #FEF3C7; margin-bottom: 0.25rem;">
+            <div style="font-size: 2.25rem; font-weight: 800; color: #D6B56D; margin-bottom: 0.25rem;">
               <span class="count-up" data-target="90"><?= htmlspecialchars($f_place['stat_1_val'] ?? '90%') ?></span>
             </div>
-            <div style="font-size: 0.9rem; color: #CBD5E1;"><?= htmlspecialchars($f_place['stat_1_lbl'] ?? 'Assured Placement Support') ?></div>
+            <div style="font-size: 0.9rem; color: #F5F7F4;"><?= htmlspecialchars($f_place['stat_1_lbl'] ?? 'Assured Placement Support') ?></div>
           </div>
 
           <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 1.5rem; border: 1px solid rgba(255,255,255,0.15);">
-            <div style="font-size: 2.25rem; font-weight: 800; color: #FEF3C7; margin-bottom: 0.25rem;">
+            <div style="font-size: 2.25rem; font-weight: 800; color: #D6B56D; margin-bottom: 0.25rem;">
               <span class="count-up" data-target="3000"><?= htmlspecialchars($f_place['stat_2_val'] ?? '3000+') ?></span>
             </div>
-            <div style="font-size: 0.9rem; color: #CBD5E1;"><?= htmlspecialchars($f_place['stat_2_lbl'] ?? 'Students Placed Annually') ?></div>
+            <div style="font-size: 0.9rem; color: #F5F7F4;"><?= htmlspecialchars($f_place['stat_2_lbl'] ?? 'Students Placed Annually') ?></div>
           </div>
 
           <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 1.5rem; border: 1px solid rgba(255,255,255,0.15);">
-            <div style="font-size: 2.25rem; font-weight: 800; color: #FEF3C7; margin-bottom: 0.25rem;">
+            <div style="font-size: 2.25rem; font-weight: 800; color: #D6B56D; margin-bottom: 0.25rem;">
               <?= htmlspecialchars($f_place['stat_3_val'] ?? '₹8.0 LPA') ?>
             </div>
-            <div style="font-size: 0.9rem; color: #CBD5E1;"><?= htmlspecialchars($f_place['stat_3_lbl'] ?? 'Highest Salary Package') ?></div>
+            <div style="font-size: 0.9rem; color: #F5F7F4;"><?= htmlspecialchars($f_place['stat_3_lbl'] ?? 'Highest Salary Package') ?></div>
           </div>
 
           <div style="background: rgba(255,255,255,0.1); border-radius: var(--radius-lg); padding: 1.5rem; border: 1px solid rgba(255,255,255,0.15);">
-            <div style="font-size: 2.25rem; font-weight: 800; color: #FEF3C7; margin-bottom: 0.25rem;">
+            <div style="font-size: 2.25rem; font-weight: 800; color: #D6B56D; margin-bottom: 0.25rem;">
               <?= htmlspecialchars($f_place['stat_4_val'] ?? '₹5.0 LPA') ?>
             </div>
-            <div style="font-size: 0.9rem; color: #CBD5E1;"><?= htmlspecialchars($f_place['stat_4_lbl'] ?? 'Average Salary Standard') ?></div>
+            <div style="font-size: 0.9rem; color: #F5F7F4;"><?= htmlspecialchars($f_place['stat_4_lbl'] ?? 'Average Salary Standard') ?></div>
           </div>
         </div>
 
-        <p style="font-size: 0.95rem; line-height: 1.7; color: #CBD5E1; margin-bottom: 2rem;">
+        <p style="font-size: 0.95rem; line-height: 1.7; color: #F5F7F4; margin-bottom: 2rem;">
           <?= htmlspecialchars($f_place['description_2'] ?? 'Being the top-ranked university in Chennai, VISTAS provides comprehensive placement coaching and essential soft-skills training to students. High-level product-based companies and prominent pharmaceutical leaders are our prime recruiters. Specially designed Employability Skill Development Programs ensure every graduate enters the industry career-ready.') ?>
         </p>
 
-        <a href="<?= htmlspecialchars($f_place['btn_link'] ?? 'enquiry') ?>" class="btn" style="background: #D97706; color: #FFFFFF; font-weight: 700;">
+        <a href="<?= htmlspecialchars($f_place['btn_link'] ?? 'enquiry') ?>" class="btn" style="background: #D6B56D; color: #1E6A4D; font-weight: 700; border: 1px solid #1E6A4D;">
           <span><?= htmlspecialchars($f_place['btn_text'] ?? 'Apply Now for B.Pharm 2024-25') ?></span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>

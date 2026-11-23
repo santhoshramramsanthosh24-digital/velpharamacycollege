@@ -10,7 +10,7 @@
 if (!isset($current_page)) {
     $current_page = 'home';
 }
-$nav_logo = $gen_settings['logo_img'] ?? ($gen_settings['logo_image'] ?? 'assets/images/logo.jpg');
+$nav_logo = $gen_settings['logo_img'] ?? ($gen_settings['logo_image'] ?? 'assets/images/VPC NEW LOGO.jpeg');
 $nav_phone = $gen_settings['contact_phone'] ?? ($gen_settings['phone_primary'] ?? ($gen_contact['phone_primary'] ?? '+91 812 261 3300'));
 $nav_phone_clean = preg_replace('/[^0-9+]/', '', $nav_phone);
 $nav_email = $gen_settings['contact_email'] ?? ($gen_settings['email_primary'] ?? ($gen_contact['email_primary'] ?? 'vels@vistas.ac.in'));

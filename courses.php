@@ -68,7 +68,7 @@ include __DIR__ . '/includes/header.php';
           <span class="breadcrumb-separator">/</span>
           <span class="breadcrumb-current" aria-current="page">Courses</span>
         </nav>
-        <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.18); padding: 0.35rem 0.85rem; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700; color: #FEF3C7; text-transform: uppercase; letter-spacing: 0.75px; margin-bottom: 0.75rem;">
+        <div style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.18); padding: 0.35rem 0.85rem; border-radius: var(--radius-full); font-size: 0.8rem; font-weight: 700; color: #F5F7F4; text-transform: uppercase; letter-spacing: 0.75px; margin-bottom: 0.75rem;">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
           <?= htmlspecialchars($courses_cms['banner']['badge'] ?? 'PCI NEP 2020 Regulation (2026 Curriculum)') ?>
         </div>
@@ -92,7 +92,7 @@ $c_hl = $courses_cms['highlights'] ?? [];
 $c_ov = $courses_cms['overview'] ?? [];
 $c_el = $courses_cms['eligibility'] ?? [];
 ?>
-<div style="background: var(--color-bg-alt); border-bottom: 1px solid var(--color-tertiary-light); padding: 1.25rem 0;">
+<div style="background: #FFFFFF; border-bottom: 1px solid #D6B56D; padding: 1.25rem 0;">
   <div class="container-wide">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; text-align: center;">
       <div>
@@ -175,10 +175,10 @@ $c_el = $courses_cms['eligibility'] ?? [];
     </div>
 
     <!-- Eligibility Table -->
-    <div style="background: #FFFFFF; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); overflow-x: auto; border: 1px solid var(--color-tertiary-light); margin-bottom: 2.5rem;">
+    <div style="background: #FFFFFF; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); overflow-x: auto; border: 1.5px solid #D6B56D; margin-bottom: 2.5rem;">
       <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem;">
         <thead>
-          <tr style="background-color: var(--color-primary); color: #FFFFFF;">
+          <tr style="background-color: var(--color-primary); color: #F5F7F4;">
             <th style="padding: 1.25rem 1.5rem; font-weight: 700; letter-spacing: 0.5px;">Program Stream</th>
             <th style="padding: 1.25rem 1.5rem; font-weight: 700; letter-spacing: 0.5px;">Program Duration</th>
             <th style="padding: 1.25rem 1.5rem; font-weight: 700; letter-spacing: 0.5px;">Prescribed Eligibility (PCI Regulations)</th>
@@ -203,7 +203,7 @@ $c_el = $courses_cms['eligibility'] ?? [];
               <span style="font-size: 0.85rem; font-weight: 500; color: var(--color-text-light);">Theory + Practical + 240h Internship + Research</span>
             </td>
           </tr>
-          <tr style="border-bottom: 1px solid var(--color-tertiary-light); background: #FAFBFD;">
+          <tr style="border-bottom: 1px solid var(--color-tertiary-light); background: #F5F7F4;">
             <td style="padding: 1.5rem; font-weight: 700; color: var(--color-primary-dark); font-size: 1.05rem;">
               Lateral Entry B.Pharm<br>
               <span style="color: var(--color-secondary); font-size: 0.9rem;">(Direct 3rd Semester)</span>
@@ -225,7 +225,7 @@ $c_el = $courses_cms['eligibility'] ?? [];
     </div>
 
     <!-- Medium of Instruction Notice -->
-    <div style="background: var(--color-primary-subtle); border-left: 4px solid var(--color-primary); padding: 1.25rem 1.75rem; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 1rem;">
+    <div style="background: #FFFFFF; border: 1.5px solid #D6B56D; border-left: 6px solid #D6B56D; padding: 1.25rem 1.75rem; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 1rem;">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-primary); flex-shrink: 0;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
       <div>
         <strong style="color: var(--color-primary-dark);">Medium of Instruction &amp; Examinations:</strong>
@@ -240,81 +240,81 @@ $ga_meta_map = [
   '01' => [
     'group' => 'science',
     'category' => 'Core Sciences',
-    'accent' => '#2563EB',
-    'subtle' => '#EFF6FF',
-    'gradient' => 'linear-gradient(90deg, #2563EB, #60A5FA)',
+    'accent' => '#1E6A4D',
+    'subtle' => '#F5F7F4',
+    'gradient' => '#D6B56D',
     'icon' => '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31L4.69 19.3A2 2 0 0 0 6.44 22h11.12a2 2 0 0 0 1.75-2.7L14 9.31V2"/><line x1="8.5" y1="2" x2="15.5" y2="2"/><line x1="7" y1="16" x2="17" y2="16"/></svg>'
   ],
   '02' => [
     'group' => 'science',
     'category' => 'Analytical Lab',
-    'accent' => '#0D9488',
-    'subtle' => '#F0FDFA',
-    'gradient' => 'linear-gradient(90deg, #0D9488, #2DD4BF)',
+    'accent' => '#1E6A4D',
+    'subtle' => '#F5F7F4',
+    'gradient' => '#D6B56D',
     'icon' => '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>'
   ],
   '03' => [
     'group' => 'clinical',
     'category' => 'PCI Oath & Ethics',
-    'accent' => '#D97706',
-    'subtle' => '#FFFBEB',
-    'gradient' => 'linear-gradient(90deg, #D97706, #FBBF24)',
+    'accent' => '#1E6A4D',
+    'subtle' => '#F5F7F4',
+    'gradient' => '#D6B56D',
     'icon' => '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>'
   ],
   '04' => [
     'group' => 'clinical',
     'category' => 'Patient Care',
-    'accent' => '#E11D48',
-    'subtle' => '#FFF1F2',
-    'gradient' => 'linear-gradient(90deg, #E11D48, #FB7185)',
+    'accent' => '#1E6A4D',
+    'subtle' => '#F5F7F4',
+    'gradient' => '#D6B56D',
     'icon' => '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 9v4"/><path d="M10 11h4"/></svg>'
   ],
   '05' => [
     'group' => 'science',
     'category' => 'Industry Readiness',
-    'accent' => '#7C3AED',
-    'subtle' => '#F5F3FF',
-    'gradient' => 'linear-gradient(90deg, #7C3AED, #A78BFA)',
+    'accent' => '#1E6A4D',
+    'subtle' => '#F5F7F4',
+    'gradient' => '#D6B56D',
     'icon' => '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><line x1="6" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="18" y2="12"/></svg>'
   ],
   '06' => [
     'group' => 'tech',
     'category' => 'AI & Pharma 4.0',
-    'accent' => '#0284C7',
-    'subtle' => '#F0F9FF',
-    'gradient' => 'linear-gradient(90deg, #0284C7, #38BDF8)',
+    'accent' => '#1E6A4D',
+    'subtle' => '#F5F7F4',
+    'gradient' => '#D6B56D',
     'icon' => '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>'
   ],
   '07' => [
     'group' => 'clinical',
     'category' => 'Healthcare Dialogue',
-    'accent' => '#059669',
-    'subtle' => '#ECFDF5',
-    'gradient' => 'linear-gradient(90deg, #059669, #34D399)',
+    'accent' => '#1E6A4D',
+    'subtle' => '#F5F7F4',
+    'gradient' => '#D6B56D',
     'icon' => '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="13" y2="13"/></svg>'
   ],
   '08' => [
     'group' => 'tech',
     'category' => 'Leadership & Teams',
-    'accent' => '#4F46E5',
-    'subtle' => '#EEF2FF',
-    'gradient' => 'linear-gradient(90deg, #4F46E5, #818CF8)',
+    'accent' => '#1E6A4D',
+    'subtle' => '#F5F7F4',
+    'gradient' => '#D6B56D',
     'icon' => '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>'
   ],
   '09' => [
     'group' => 'tech',
     'category' => 'Problem Innovation',
-    'accent' => '#EA580C',
-    'subtle' => '#FFF7ED',
-    'gradient' => 'linear-gradient(90deg, #EA580C, #FB923C)',
+    'accent' => '#1E6A4D',
+    'subtle' => '#F5F7F4',
+    'gradient' => '#D6B56D',
     'icon' => '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>'
   ],
   '10' => [
     'group' => 'tech',
     'category' => 'Lifelong Learning',
-    'accent' => '#1E3A8A',
-    'subtle' => '#EEF2FF',
-    'gradient' => 'linear-gradient(90deg, #1E3A8A, #3B82F6)',
+    'accent' => '#1E6A4D',
+    'subtle' => '#F5F7F4',
+    'gradient' => '#D6B56D',
     'icon' => '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>'
   ]
 ];
@@ -360,9 +360,9 @@ $ga_meta_map = [
         $meta = $ga_meta_map[$num] ?? [
           'group' => 'all',
           'category' => 'Graduate Attribute',
-          'accent' => '#292E82',
-          'subtle' => '#EEF0FA',
-          'gradient' => 'linear-gradient(90deg, #292E82, #3B82F6)',
+          'accent' => '#1E6A4D',
+          'subtle' => '#F5F7F4',
+          'gradient' => '#D6B56D',
           'icon' => '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>'
         ];
       ?>
@@ -432,11 +432,11 @@ $ga_meta_map = [
       </p>
 
       <div style="margin-top: 1.25rem; display: flex; gap: 0.85rem; flex-wrap: wrap;">
-        <a href="assets/docs/B.Pharm_Syllabus_2026_NEP2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.4); font-size: 0.88rem; padding: 0.55rem 1.15rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+        <a href="assets/docs/B.Pharm_Syllabus_2026_NEP2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="background: rgba(255,255,255,0.15); color: #F5F7F4; border-color: rgba(255,255,255,0.4); font-size: 0.88rem; padding: 0.55rem 1.15rem; display: inline-flex; align-items: center; gap: 0.5rem;">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           <span>View Official Syllabus PDF</span>
         </a>
-        <a href="assets/docs/B.Pharm_Syllabus_2026_NEP2020.pdf" download="B.Pharm_Syllabus_2026_NEP2020.pdf" class="btn" style="background: #D97706; color: #FFFFFF; font-weight: 700; font-size: 0.88rem; padding: 0.55rem 1.15rem; display: inline-flex; align-items: center; gap: 0.5rem; border: none; box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);">
+        <a href="assets/docs/B.Pharm_Syllabus_2026_NEP2020.pdf" download="B.Pharm_Syllabus_2026_NEP2020.pdf" class="btn" style="background: #D6B56D; color: #1E6A4D; font-weight: 700; font-size: 0.88rem; padding: 0.55rem 1.15rem; display: inline-flex; align-items: center; gap: 0.5rem; border: none; box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
           <span>Download Syllabus (PDF)</span>
         </a>
@@ -682,7 +682,7 @@ $ga_meta_map = [
         </div>
 
         <div class="matrix-container">
-          <div style="background: #FFFFFF; border-radius: var(--radius-lg); border: 1px solid var(--color-border); overflow-x: auto; box-shadow: var(--shadow-sm); margin-bottom: 2rem;">
+          <div style="background: #F5F7F4; border-radius: var(--radius-lg); border: 1px solid var(--color-border); overflow-x: auto; box-shadow: var(--shadow-sm); margin-bottom: 2rem;">
             <table class="matrix-table" aria-label="Semester wise credits distribution">
               <thead>
                 <tr>
@@ -842,11 +842,11 @@ $ga_meta_map = [
         </div>
 
         <div style="padding: 1.5rem 2rem;">
-          <div style="background: #FFFBEB; border-left: 4px solid #D97706; padding: 1.15rem 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; font-size: 0.9rem; color: #92400E; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+          <div style="background: #F5F7F4; border-left: 4px solid #D6B56D; padding: 1.15rem 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; font-size: 0.9rem; color: #1E6A4D; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
             <div>
               <strong>Notice for Continuing Students:</strong> Students admitted in earlier academic years continue under the 2017 PCI CBCS framework. All new admissions follow the updated 2026 NEP 2020 framework displayed in Semesters I through VIII.
             </div>
-            <a href="assets/docs/B.Pharm_Syllabus_2017_CBCS.pdf" download="B.Pharm_Syllabus_2017_CBCS.pdf" class="btn btn-outline" style="font-size: 0.82rem; padding: 0.4rem 0.85rem; border-color: #D97706; color: #92400E; display: inline-flex; align-items: center; gap: 0.4rem; white-space: nowrap; background: #FEF3C7;">
+            <a href="assets/docs/B.Pharm_Syllabus_2017_CBCS.pdf" download="B.Pharm_Syllabus_2017_CBCS.pdf" class="btn" style="font-size: 0.82rem; padding: 0.4rem 0.85rem; border: 1px solid #1E6A4D; color: #1E6A4D; font-weight: 700; display: inline-flex; align-items: center; gap: 0.4rem; white-space: nowrap; background: #D6B56D;">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               <span>Download 2017 CBCS Syllabus (PDF)</span>
             </a>
@@ -864,14 +864,14 @@ $ga_meta_map = [
                 </tr>
               </thead>
               <tbody>
-                <tr><td colspan="5" style="background: #F8FAFC; font-weight: 700; color: var(--color-primary);">Semester I Theory Courses (2017 Scheme)</td></tr>
+                <tr><td colspan="5" style="background: #F5F7F4; font-weight: 700; color: var(--color-primary);">Semester I Theory Courses (2017 Scheme)</td></tr>
                 <tr><td class="course-code-cell">17BP101T</td><td>Human Anatomy and Physiology I – Theory</td><td class="course-num-cell">3</td><td class="course-num-cell">1</td><td class="course-credit-cell">4</td></tr>
                 <tr><td class="course-code-cell">17BP102T</td><td>Pharmaceutical Analysis I – Theory</td><td class="course-num-cell">3</td><td class="course-num-cell">1</td><td class="course-credit-cell">4</td></tr>
                 <tr><td class="course-code-cell">17BP103T</td><td>Pharmaceutics I – Theory</td><td class="course-num-cell">3</td><td class="course-num-cell">1</td><td class="course-credit-cell">4</td></tr>
                 <tr><td class="course-code-cell">17BP104T</td><td>Pharmaceutical Inorganic Chemistry – Theory</td><td class="course-num-cell">3</td><td class="course-num-cell">1</td><td class="course-credit-cell">4</td></tr>
                 <tr><td class="course-code-cell">17BP105T</td><td>Communication skills – Theory *</td><td class="course-num-cell">2</td><td class="course-num-cell">-</td><td class="course-credit-cell">2</td></tr>
                 <tr><td class="course-code-cell">17BP106RBT/MT</td><td>Remedial Biology / Remedial Mathematics – Theory *</td><td class="course-num-cell">2</td><td class="course-num-cell">-</td><td class="course-credit-cell">2</td></tr>
-                <tr><td colspan="5" style="background: #F8FAFC; font-weight: 700; color: var(--color-secondary);">Semester I Practical Courses (2017 Scheme)</td></tr>
+                <tr><td colspan="5" style="background: #F5F7F4; font-weight: 700; color: var(--color-secondary);">Semester I Practical Courses (2017 Scheme)</td></tr>
                 <tr><td class="course-code-cell">17BP107P</td><td>Human Anatomy and Physiology – Practical</td><td class="course-num-cell">4</td><td class="course-num-cell">-</td><td class="course-credit-cell">2</td></tr>
                 <tr><td class="course-code-cell">17BP108P</td><td>Pharmaceutical Analysis I – Practical</td><td class="course-num-cell">4</td><td class="course-num-cell">-</td><td class="course-credit-cell">2</td></tr>
                 <tr><td class="course-code-cell">17BP109P</td><td>Pharmaceutics I – Practical</td><td class="course-num-cell">4</td><td class="course-num-cell">-</td><td class="course-credit-cell">2</td></tr>
@@ -942,8 +942,8 @@ $ga_meta_map = [
 
     <div class="course-pathways-grid">
       
-      <div style="background: #FFFFFF; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
-        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: #EEF0FA; color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+      <div style="background: #F5F7F4; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
+        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: #F5F7F4; color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
         <div>
@@ -954,8 +954,8 @@ $ga_meta_map = [
         </div>
       </div>
 
-      <div style="background: #FFFFFF; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
-        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: #FFF1F2; color: #800020; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+      <div style="background: #F5F7F4; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
+        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: var(--color-secondary-subtle); color: var(--color-secondary-dark); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         </div>
         <div>
@@ -966,8 +966,8 @@ $ga_meta_map = [
         </div>
       </div>
 
-      <div style="background: #FFFFFF; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
-        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: #FEF3C7; color: #D97706; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+      <div style="background: #F5F7F4; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
+        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: var(--color-tertiary); color: var(--color-primary-dark); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31L6.71 14.1A6 6 0 0 0 11.5 22h1a6 6 0 0 0 4.79-7.9L14 9.31V2"/></svg>
         </div>
         <div>
@@ -978,8 +978,8 @@ $ga_meta_map = [
         </div>
       </div>
 
-      <div style="background: #FFFFFF; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
-        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: #DCFCE7; color: #15803D; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+      <div style="background: #F5F7F4; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
+        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: #F5F7F4; color: #1E6A4D; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
         <div>
@@ -990,8 +990,8 @@ $ga_meta_map = [
         </div>
       </div>
 
-      <div style="background: #FFFFFF; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
-        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: #F3E8FF; color: #7E22CE; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+      <div style="background: #F5F7F4; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
+        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: #F5F7F4; color: #1E6A4D; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
         </div>
         <div>
@@ -1002,8 +1002,8 @@ $ga_meta_map = [
         </div>
       </div>
 
-      <div style="background: #FFFFFF; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
-        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: #EEF0FA; color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+      <div style="background: #F5F7F4; border: 1px solid var(--color-tertiary-light); border-radius: var(--radius-lg); padding: 1.75rem; box-shadow: var(--shadow-sm); display: flex; gap: 1.25rem;">
+        <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: #F5F7F4; color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 12l-4-4-4 4M12 8v8"/></svg>
         </div>
         <div>
@@ -1069,21 +1069,21 @@ $ga_meta_map = [
   $c_cta = $courses_cms['cta_banner'] ?? [];
   ?>
   <div class="container text-center" style="position: relative; z-index: 2; max-width: 800px;">
-    <span style="display: inline-block; background: rgba(255,255,255,0.15); color: #FEF3C7; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; padding: 0.35rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.25rem; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2);">
+    <span style="display: inline-block; background: rgba(255,255,255,0.15); color: #F5F7F4; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; padding: 0.35rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.25rem; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2);">
       <?= htmlspecialchars($c_cta['badge'] ?? 'Admissions Open • B.Pharm Program') ?>
     </span>
-    <h2 style="font-family: var(--font-heading); font-size: 2.25rem; color: #FFFFFF; margin-bottom: 1rem; text-shadow: 0 2px 10px rgba(0,0,0,0.35);">
+    <h2 style="font-family: var(--font-heading); font-size: 2.25rem; color: #F5F7F4; margin-bottom: 1rem; text-shadow: 0 2px 10px rgba(0,0,0,0.35);">
       <?= htmlspecialchars($c_cta['title'] ?? 'Join Vel Pharmacy College Under the Modern NEP 2020 Framework') ?>
     </h2>
-    <p style="font-size: 1.1rem; color: #E0E7FF; line-height: 1.7; margin-bottom: 2rem; text-shadow: 0 1px 4px rgba(0,0,0,0.25);">
+    <p style="font-size: 1.1rem; color: #F5F7F4; line-height: 1.7; margin-bottom: 2rem; text-shadow: 0 1px 4px rgba(0,0,0,0.25);">
       <?= htmlspecialchars($c_cta['subtitle'] ?? 'Merit-based admissions for +2 passed students (PCM/PCB) and lateral entry for D.Pharm holders. Connect with our admissions desk to secure your academic future today.') ?>
     </p>
     <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-      <a href="<?= htmlspecialchars($c_cta['btn1_link'] ?? 'enquiry') ?>" class="btn" style="background: #D97706; color: #FFFFFF; font-weight: 700; box-shadow: 0 4px 14px rgba(217,119,6,0.35);">
+      <a href="<?= htmlspecialchars($c_cta['btn1_link'] ?? 'enquiry') ?>" class="btn" style="background: #D6B56D; color: #1E6A4D; font-weight: 700; box-shadow: 0 4px 14px rgba(217,119,6,0.35);">
         <span><?= htmlspecialchars($c_cta['btn1_text'] ?? 'Submit Online Admission Enquiry') ?></span>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
       </a>
-      <a href="<?= htmlspecialchars($c_cta['btn2_link'] ?? 'tel:+918122613300') ?>" class="btn" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border: 1px solid rgba(255,255,255,0.3); backdrop-filter: blur(8px);">
+      <a href="<?= htmlspecialchars($c_cta['btn2_link'] ?? 'tel:+918122613300') ?>" class="btn" style="background: rgba(255,255,255,0.15); color: #F5F7F4; border: 1px solid rgba(255,255,255,0.3); backdrop-filter: blur(8px);">
         <span><?= htmlspecialchars($c_cta['btn2_text'] ?? 'Call: +91 812 261 3300') ?></span>
       </a>
     </div>
@@ -1268,9 +1268,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Official Gazette Syllabus Document Card
-    html += `<div class="modal-section-block" style="background: linear-gradient(135deg, #F8FAFC, #EEF2FF); border: 1px solid #C7D2FE; border-radius: 10px; padding: 1.15rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+    html += `<div class="modal-section-block" style="background: #F5F7F4; border: 1px solid #D6B56D; border-radius: 10px; padding: 1.15rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
       <div style="display: flex; align-items: center; gap: 0.85rem;">
-        <div style="width: 42px; height: 42px; border-radius: 8px; background: #E0E7FF; color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+        <div style="width: 42px; height: 42px; border-radius: 8px; background: #F5F7F4; color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
         </div>
         <div>

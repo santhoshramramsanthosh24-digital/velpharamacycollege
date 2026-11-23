@@ -70,7 +70,7 @@ $f_tw = $foot_settings['social_twitter'] ?? 'https://twitter.com/vistas';
         <!-- Col 1: Brand & Institution -->
         <div class="footer-widget footer-about">
           <a href="/" class="footer-brand-badge" title="Vel Pharmacy College Home">
-            <img src="assets\images\logo.jpg" alt="Vel Pharmacy College" height="52" loading="lazy">
+            <img src="assets/images/VPC NEW LOGO.jpeg" alt="Vel Pharmacy College" height="52" loading="lazy">
           </a>
           <h4 class="footer-brand-title">Vel Pharmacy College</h4>
           <div class="footer-brand-sub">Under Vels Institute of Science, Technology &amp; Advanced Studies (VISTAS)
@@ -119,7 +119,7 @@ $f_tw = $foot_settings['social_twitter'] ?? 'https://twitter.com/vistas';
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
                   <path
                     d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#181E54" />
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#1E6A4D" />
                 </svg>
               </a>
             <?php endif; ?>

@@ -88,25 +88,46 @@ document.addEventListener('DOMContentLoaded', () => {
     let lastScrollY = Math.max(0, window.pageYOffset || document.documentElement.scrollTop || 0);
     let accumulatedDelta = 0;
     let isTicking = false;
+    let isTransitioning = false;
+    let transitionTimer = null;
 
-    const TOP_ZONE = 180;          // Near top: always keep logo, menus & notice fully visible
-    const MIN_SCROLL_TO_HIDE = 240;// Only hide after scrolling past the header itself
-    const DELTA_HIDE = 30;         // Accumulated downward scroll needed to hide
-    const DELTA_SHOW = -20;        // Accumulated upward scroll needed to reveal
+    const TOP_ZONE = 40;           // Near top: always keep logo, menus & notice fully visible
+    const MIN_SCROLL_TO_HIDE = 260;// Only hide after scrolling past the header itself
+    const DELTA_HIDE = 45;         // Accumulated downward scroll needed to hide
+    const DELTA_SHOW = -30;        // Accumulated upward scroll needed to reveal
+
+    const setHeaderHidden = (hidden) => {
+      const isCurrentlyHidden = header.classList.contains('menu-notice-hidden');
+      if (isCurrentlyHidden === hidden) return;
+
+      if (hidden) {
+        header.classList.add('menu-notice-hidden');
+      } else {
+        header.classList.remove('menu-notice-hidden');
+      }
+
+      accumulatedDelta = 0;
+      isTransitioning = true;
+      if (transitionTimer) clearTimeout(transitionTimer);
+      transitionTimer = setTimeout(() => {
+        isTransitioning = false;
+        lastScrollY = Math.max(0, window.pageYOffset || document.documentElement.scrollTop || 0);
+      }, 320);
+    };
 
     const updateHeader = () => {
       const currentScrollY = Math.max(0, window.pageYOffset || document.documentElement.scrollTop || 0);
 
       // Don't auto-hide if mobile drawer is currently open
       if (siteNav && siteNav.classList.contains('active')) {
-        header.classList.remove('menu-notice-hidden');
+        setHeaderHidden(false);
         lastScrollY = currentScrollY;
         isTicking = false;
         return;
       }
 
       // Add elevated shadow when scrolled
-      if (currentScrollY > 20) {
+      if (currentScrollY > 15) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
@@ -114,13 +135,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // 1. Near the top of the page: always show logo, menus & notice
       if (currentScrollY <= TOP_ZONE) {
-        header.classList.remove('menu-notice-hidden');
-        accumulatedDelta = 0;
-      } 
-      // 2. Only consider hiding once past the header
-      else if (currentScrollY > MIN_SCROLL_TO_HIDE) {
-        const delta = currentScrollY - lastScrollY;
+        setHeaderHidden(false);
+        lastScrollY = currentScrollY;
+        isTicking = false;
+        return;
+      }
 
+      // If we are currently transitioning, ignore intermediate scroll events
+      if (isTransitioning) {
+        lastScrollY = currentScrollY;
+        isTicking = false;
+        return;
+      }
+
+      const delta = currentScrollY - lastScrollY;
+
+      // Ignore sub-pixel / micro-scroll jitter (< 2px)
+      if (Math.abs(delta) < 2) {
+        isTicking = false;
+        return;
+      }
+
+      // 2. Only consider hiding once past the header
+      if (currentScrollY > MIN_SCROLL_TO_HIDE) {
         // Reset accumulated delta if direction reverses
         if ((delta > 0 && accumulatedDelta < 0) || (delta < 0 && accumulatedDelta > 0)) {
           accumulatedDelta = 0;
@@ -129,13 +166,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Scrolling DOWN: Menus & Notice smoothly hide
         if (accumulatedDelta >= DELTA_HIDE) {
-          header.classList.add('menu-notice-hidden');
-          accumulatedDelta = 0;
+          setHeaderHidden(true);
         }
         // Scrolling UP: Menus & Notice smoothly slide back down into view
         else if (accumulatedDelta <= DELTA_SHOW) {
-          header.classList.remove('menu-notice-hidden');
-          accumulatedDelta = 0;
+          setHeaderHidden(false);
+        }
+      } else {
+        // Buffer zone: if scrolling up, reveal
+        if (delta < -10) {
+          setHeaderHidden(false);
         }
       }
 

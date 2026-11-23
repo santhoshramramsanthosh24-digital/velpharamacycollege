@@ -57,7 +57,7 @@ $csrf_token = cms_csrf_token();
   <link rel="icon" type="image/png" href="/assets/images/logo-icon.png">
   <style>
     body {
-      background: radial-gradient(circle at 10% 20%, #0e1338 0%, #1e2368 50%, #080c24 100%);
+      background: #1E6A4D;
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -73,11 +73,7 @@ $csrf_token = cms_csrf_token();
       left: 0;
       right: 0;
       bottom: 0;
-      background-image:
-        radial-gradient(circle at 80% 80%, rgba(217, 119, 6, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.25) 0%, transparent 45%),
-        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      display: none;
       background-size: 100% 100%, 100% 100%, 45px 45px, 45px 45px;
       pointer-events: none;
     }
@@ -95,8 +91,8 @@ $csrf_token = cms_csrf_token();
     }
 
     .login-header {
-      background: linear-gradient(135deg, #1E2368 0%, #0E1338 100%);
-      color: #FFFFFF;
+      background: #1E6A4D;
+      color: #F5F7F4;
       padding: 2.25rem 2rem 2rem;
       text-align: center;
       border-bottom: 3px solid var(--cms-gold);
@@ -106,7 +102,7 @@ $csrf_token = cms_csrf_token();
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      background: #FFFFFF;
+      background: #F5F7F4;
       border-radius: 14px;
       padding: 8px 16px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.25);
@@ -170,7 +166,7 @@ $csrf_token = cms_csrf_token();
     <!-- Header -->
     <div class="login-header">
       <a href="/" class="login-logo-box" title="Return to Vel Pharmacy College Website">
-        <img src="/assets/images/logo.jpg" alt="Vel Pharmacy College Logo" width="220" height="56" loading="eager">
+        <img src="/assets/images/VPC NEW LOGO.jpeg" alt="Vel Pharmacy College Logo" width="220" height="56" loading="eager">
       </a>
       <h1 style="font-family: var(--cms-font-heading); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;">
         Vel Pharmacy College
@@ -222,7 +218,7 @@ $csrf_token = cms_csrf_token();
         </div>
 
         <button type="submit" class="cms-btn cms-btn-primary"
-          style="width: 100%; justify-content: center; padding: 0.85rem; font-size: 0.95rem; margin-top: 0.5rem; background: linear-gradient(135deg, #1E2368 0%, #2563EB 100%);">
+          style="width: 100%; justify-content: center; padding: 0.85rem; font-size: 0.95rem; margin-top: 0.5rem; background: #D6B56D; color: #1E6A4D; font-weight: 700;">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
             <polyline points="10 17 15 12 10 7"></polyline>

@@ -113,32 +113,32 @@ $c_commute = $contact_cms['commute'] ?? [];
           <strong><?= htmlspecialchars($c_addr['institution'] ?? 'Vel Pharmacy College') ?></strong><br>
           <?= htmlspecialchars($c_addr['address'] ?? 'VMCH Medical Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk, Tiruvallur District – 601102, Tamil Nadu.') ?>
         </p>
-        <span class="contact-badge-pill" style="background: var(--color-primary-subtle); color: var(--color-primary);">
+        <span class="contact-badge-pill" style="background: #1E6A4D; color: #F5F7F4;">
           <?= htmlspecialchars($c_addr['badge'] ?? '📍 Near VMCH Hospital Gate') ?>
         </span>
       </div>
 
       <!-- Card 2: Phone Numbers -->
       <div class="contact-info-card fade-up delay-1">
-        <div class="contact-icon-bubble" style="background: #FFF1F2; color: #800020;">
+        <div class="contact-icon-bubble" style="background: #D6B56D; color: #1E6A4D;">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         </div>
         <h3 class="contact-info-title"><?= htmlspecialchars($c_phone['title'] ?? 'Phone & Admissions') ?></h3>
         <p class="contact-info-text">
           <?= htmlspecialchars($c_phone['label'] ?? 'Direct Admissions Line:') ?><br>
-          <a href="tel:<?= preg_replace('/[^0-9+]/', '', $c_phone['phone'] ?? '+918122613300') ?>" style="font-size: 1.25rem; font-weight: 800; color: #800020; display: block; margin: 0.5rem 0; text-decoration: none;">
+          <a href="tel:<?= preg_replace('/[^0-9+]/', '', $c_phone['phone'] ?? '+918122613300') ?>" style="font-size: 1.25rem; font-weight: 800; color: #1E6A4D; display: block; margin: 0.5rem 0; text-decoration: none;">
             <?= htmlspecialchars($c_phone['phone'] ?? '+91 812 261 3300') ?>
           </a>
           <?= htmlspecialchars($c_phone['hours'] ?? 'Available Mon–Sat from 8:30 AM to 5:00 PM for all admission queries.') ?>
         </p>
-        <span class="contact-badge-pill" style="background: #FFF1F2; color: #800020;">
+        <span class="contact-badge-pill" style="background: #D6B56D; color: #1E6A4D; font-weight: 700;">
           <?= htmlspecialchars($c_phone['badge'] ?? '🛡️ Anti-Ragging: 1800-180-5522') ?>
         </span>
       </div>
 
       <!-- Card 3: Email Address -->
       <div class="contact-info-card fade-up delay-2">
-        <div class="contact-icon-bubble" style="background: #FEF3C7; color: #D97706;">
+        <div class="contact-icon-bubble" style="background: #D6B56D; color: #1E6A4D;">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </div>
         <h3 class="contact-info-title"><?= htmlspecialchars($c_email['title'] ?? 'Email Correspondence') ?></h3>
@@ -150,14 +150,14 @@ $c_commute = $contact_cms['commute'] ?? [];
           Official Institution Website:<br>
           <strong><?= htmlspecialchars($c_email['website'] ?? 'velpharmacycollege.com') ?></strong>
         </p>
-        <span class="contact-badge-pill" style="background: #FEF3C7; color: #B45309;">
+        <span class="contact-badge-pill" style="background: #D6B56D; color: #1E6A4D; font-weight: 700;">
           <?= htmlspecialchars($c_email['badge'] ?? '⚡ Reply Within 24 Business Hours') ?>
         </span>
       </div>
 
       <!-- Card 4: Working Hours -->
       <div class="contact-info-card fade-up delay-3">
-        <div class="contact-icon-bubble" style="background: #DCFCE7; color: #15803D;">
+        <div class="contact-icon-bubble" style="background: #1E6A4D; color: #F5F7F4;">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
         </div>
         <h3 class="contact-info-title"><?= htmlspecialchars($c_hours['title'] ?? 'Visiting & Office Hours') ?></h3>
@@ -166,7 +166,7 @@ $c_commute = $contact_cms['commute'] ?? [];
           <strong><?= htmlspecialchars($c_hours['saturday'] ?? 'Saturday: 8:30 AM – 1:30 PM') ?></strong><br>
           <strong><?= htmlspecialchars($c_hours['sunday'] ?? 'Sunday & Holidays: Closed') ?></strong>
         </p>
-        <span class="contact-badge-pill" style="background: #DCFCE7; color: #15803D;">
+        <span class="contact-badge-pill" style="background: #1E6A4D; color: #F5F7F4;">
           <?= htmlspecialchars($c_hours['badge'] ?? '🚶 Campus Tours Welcome') ?>
         </span>
       </div>
@@ -217,7 +217,7 @@ $c_commute = $contact_cms['commute'] ?? [];
         </div>
         
         <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_message_submit'])): ?>
-          <div style="margin: 1.5rem 2.25rem 0; background: #DCFCE7; border: 1px solid #86EFAC; color: #166534; padding: 1rem 1.25rem; border-radius: var(--radius-md); font-size: 0.95rem;">
+          <div style="margin: 1.5rem 2.25rem 0; background: #F5F7F4; border: 1px solid #D6B56D; color: #1E6A4D; padding: 1rem 1.25rem; border-radius: var(--radius-md); font-size: 0.95rem;">
             <strong>Thank You!</strong> Your message has been received. Our admissions team will reach out to you shortly.
           </div>
         <?php endif; ?>
@@ -227,7 +227,7 @@ $c_commute = $contact_cms['commute'] ?? [];
 
           <div class="form-group">
             <label for="contact_name">
-              Your Full Name <span style="color: #DC2626;">*</span>
+              Your Full Name <span style="color: #D6B56D;">*</span>
             </label>
             <div class="form-input-wrapper">
               <span class="form-input-icon">
@@ -240,7 +240,7 @@ $c_commute = $contact_cms['commute'] ?? [];
           <div class="form-row-dual">
             <div class="form-group">
               <label for="contact_email">
-                Email Address <span style="color: #DC2626;">*</span>
+                Email Address <span style="color: #D6B56D;">*</span>
               </label>
               <div class="form-input-wrapper">
                 <span class="form-input-icon">
@@ -252,7 +252,7 @@ $c_commute = $contact_cms['commute'] ?? [];
             
             <div class="form-group">
               <label for="contact_phone">
-                Phone Number <span style="color: #DC2626;">*</span>
+                Phone Number <span style="color: #D6B56D;">*</span>
               </label>
               <div class="form-input-wrapper">
                 <span class="form-input-icon">
@@ -279,7 +279,7 @@ $c_commute = $contact_cms['commute'] ?? [];
 
           <div class="form-group">
             <label for="contact_message">
-              Message <span style="color: #DC2626;">*</span>
+              Message <span style="color: #D6B56D;">*</span>
             </label>
             <textarea id="contact_message" name="contact_message" rows="3" required placeholder="Write your question or request here..." class="form-control-custom no-icon" style="resize: vertical;"></textarea>
           </div>
@@ -322,8 +322,8 @@ $c_commute = $contact_cms['commute'] ?? [];
       ];
       $commute_styles = [
         ['bg' => 'var(--color-primary-subtle)', 'col' => 'var(--color-primary)'],
-        ['bg' => '#FFF1F2', 'col' => '#800020'],
-        ['bg' => '#FEF3C7', 'col' => '#D97706']
+        ['bg' => 'var(--color-secondary-subtle)', 'col' => 'var(--color-secondary-dark)'],
+        ['bg' => 'var(--color-tertiary)', 'col' => 'var(--color-primary-dark)']
       ];
       foreach ($commute_cards as $c_idx => $c_card):
         $c_style = $commute_styles[$c_idx % 3];

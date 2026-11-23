@@ -105,7 +105,7 @@ if (!function_exists('cms_render_image_field')) {
       <!-- Brand Header -->
       <div class="cms-brand">
         <a href="/" class="login-logo-box" title="Return to Vel Pharmacy College Website">
-          <img src="/assets/images/logo.jpg" alt="Vel Pharmacy College Logo" width="220" height="56" loading="eager">
+          <img src="/assets/images/VPC NEW LOGO.jpeg" alt="Vel Pharmacy College Logo" width="220" height="56" loading="eager">
         </a>
         <div class="cms-brand-meta">
           <span class="cms-brand-status">
@@ -1031,7 +1031,7 @@ if (!function_exists('cms_render_image_field')) {
                     </svg>
                     <h3>Section 3: Upcoming Events &amp; College Highlights (Dual-Column)</h3>
                   </div>
-                  <span class="cms-stat-badge" style="background: #EEF0FA; color: var(--cms-primary-dark);">Home Section
+                  <span class="cms-stat-badge" style="background: #EAF4F0; color: var(--cms-primary-dark);">Home Section
                     3</span>
                 </div>
                 <div class="cms-panel-body">
@@ -3559,7 +3559,7 @@ if (!function_exists('cms_render_image_field')) {
                       visits (<?= $geo['percentage'] ?>%)</span>
                   </div>
                   <div class="cms-progress-track">
-                    <div class="cms-progress-fill" style="width: <?= $geo['percentage'] * 2.2 ?>%; background: #1E2368;">
+                    <div class="cms-progress-fill" style="width: <?= $geo['percentage'] * 2.2 ?>%; background: #1E6A4D;">
                     </div>
                   </div>
                 </div>

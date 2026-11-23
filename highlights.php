@@ -220,12 +220,12 @@ foreach ($highlights_data as $h) {
 /* Highlights, Notices & Circulars Page Styles - Compact & Short Card Architecture */
 .hl-page-wrap {
   padding: 3rem 0 5rem;
-  background: var(--color-bg-alt);
+  background: #FFFFFF;
 }
 
 .hl-intro-banner {
   background: #FFFFFF;
-  border: 1px solid var(--color-border);
+  border: 1.5px solid #D6B56D;
   border-radius: var(--radius-lg);
   padding: 1.25rem 1.75rem;
   margin-bottom: 2rem;
@@ -258,8 +258,8 @@ foreach ($highlights_data as $h) {
 }
 
 .hl-stat-box {
-  background: #F8FAFC;
-  border: 1px solid #E2E8F0;
+  background: #F5F7F4;
+  border: 1px solid #D6B56D;
   border-radius: var(--radius-md);
   padding: 0.5rem 0.85rem;
   text-align: center;
@@ -297,7 +297,7 @@ foreach ($highlights_data as $h) {
   font-size: 0.86rem;
   font-weight: 700;
   border: 1px solid var(--color-border);
-  background: #FFFFFF;
+  background: #F5F7F4;
   color: var(--color-text-muted);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -308,17 +308,17 @@ foreach ($highlights_data as $h) {
 }
 
 .hl-filter-chip:hover {
-  background: #F1F5F9;
+  background: #F5F7F4;
   color: var(--color-primary-dark);
-  border-color: #CBD5E1;
+  border-color: #D6B56D;
   transform: translateY(-2px);
 }
 
 .hl-filter-chip.active {
   background: var(--color-primary);
-  color: #FFFFFF;
+  color: #F5F7F4;
   border-color: var(--color-primary);
-  box-shadow: 0 4px 12px rgba(41, 46, 130, 0.22);
+  box-shadow: 0 4px 12px rgba(30, 106, 77, 0.22);
 }
 
 .hl-filter-count {
@@ -330,7 +330,7 @@ foreach ($highlights_data as $h) {
 
 .hl-filter-chip.active .hl-filter-count {
   background: rgba(255, 255, 255, 0.25);
-  color: #FFFFFF;
+  color: #F5F7F4;
 }
 
 /* Compact Highlights Grid */
@@ -341,8 +341,8 @@ foreach ($highlights_data as $h) {
 }
 
 .hl-card {
-  background: #FFFFFF;
-  border: 1px solid #E2E8F0;
+  background: #F5F7F4;
+  border: 1px solid #D6B56D;
   border-radius: var(--radius-lg);
   box-shadow: 0 2px 12px rgba(15, 23, 42, 0.05);
   overflow: hidden;
@@ -354,13 +354,13 @@ foreach ($highlights_data as $h) {
 
 .hl-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(41, 46, 130, 0.12);
-  border-color: #CBD5E1;
+  box-shadow: 0 12px 28px rgba(30, 106, 77, 0.12);
+  border-color: #D6B56D;
 }
 
 .hl-card.hl-card-focused {
   border-color: var(--color-gold);
-  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.3), 0 12px 28px rgba(41, 46, 130, 0.15);
+  box-shadow: 0 0 0 3px rgba(214, 181, 109, 0.35), 0 12px 28px rgba(30, 106, 77, 0.15);
   animation: hlPulseFocus 1.5s ease-in-out;
 }
 
@@ -375,7 +375,7 @@ foreach ($highlights_data as $h) {
   position: relative;
   height: 180px;
   overflow: hidden;
-  background: #1E2368;
+  background: #1E6A4D;
   cursor: pointer;
 }
 
@@ -393,7 +393,7 @@ foreach ($highlights_data as $h) {
 .hl-media-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(30, 35, 104, 0.18) 0%, rgba(15, 23, 42, 0.8) 100%);
+  background: rgba(30, 106, 77, 0.82);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -402,7 +402,7 @@ foreach ($highlights_data as $h) {
 }
 
 .hl-card-media:hover .hl-media-overlay {
-  background: linear-gradient(180deg, rgba(30, 35, 104, 0.28) 0%, rgba(15, 23, 42, 0.9) 100%);
+  background: rgba(30, 106, 77, 0.90);
 }
 
 .hl-badge-top-row {
@@ -419,22 +419,22 @@ foreach ($highlights_data as $h) {
   letter-spacing: 0.4px;
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-full);
-  background: #FFFFFF;
+  background: #F5F7F4;
   color: var(--color-primary-dark);
   box-shadow: var(--shadow-sm);
   white-space: nowrap;
 }
 
 .hl-status-pill.concluded {
-  background: #10B981;
-  color: #FFFFFF;
+  background: #1E6A4D;
+  color: #F5F7F4;
 }
 
 .hl-zoom-btn {
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.4);
-  color: #FFFFFF;
+  color: #F5F7F4;
   font-size: 0.72rem;
   font-weight: 700;
   padding: 0.25rem 0.65rem;
@@ -447,7 +447,7 @@ foreach ($highlights_data as $h) {
 }
 
 .hl-zoom-btn:hover {
-  background: #FFFFFF;
+  background: #F5F7F4;
   color: var(--color-primary-dark);
 }
 
@@ -455,7 +455,7 @@ foreach ($highlights_data as $h) {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  color: #FFFFFF;
+  color: #F5F7F4;
   font-size: 0.78rem;
   gap: 0.5rem;
 }
@@ -466,7 +466,7 @@ foreach ($highlights_data as $h) {
   background: rgba(0, 0, 0, 0.55);
   padding: 0.2rem 0.5rem;
   border-radius: 4px;
-  color: #FEF3C7;
+  color: #D6B56D;
   font-weight: 600;
   letter-spacing: 0.2px;
   white-space: nowrap;
@@ -522,7 +522,7 @@ foreach ($highlights_data as $h) {
   gap: 0.5rem;
   align-items: center;
   padding-top: 0.85rem;
-  border-top: 1px solid #F1F5F9;
+  border-top: 1px solid #F5F7F4;
   margin-top: auto;
 }
 
@@ -555,7 +555,7 @@ foreach ($highlights_data as $h) {
 }
 
 .notice-lightbox-dialog {
-  background: #FFFFFF;
+  background: #F5F7F4;
   border-radius: var(--radius-xl);
   max-width: 820px;
   width: 100%;
@@ -574,8 +574,8 @@ foreach ($highlights_data as $h) {
 
 .notice-lightbox-header {
   padding: 1rem 1.35rem;
-  background: #1E2368;
-  color: #FFFFFF;
+  background: #1E6A4D;
+  color: #F5F7F4;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -586,14 +586,14 @@ foreach ($highlights_data as $h) {
   font-size: 1.05rem;
   font-weight: 700;
   margin: 0;
-  color: #FFFFFF;
+  color: #F5F7F4;
   line-height: 1.35;
 }
 
 .notice-lightbox-close {
   background: rgba(255, 255, 255, 0.2);
   border: none;
-  color: #FFFFFF;
+  color: #F5F7F4;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -614,7 +614,7 @@ foreach ($highlights_data as $h) {
   padding: 1.25rem;
   overflow-y: auto;
   text-align: center;
-  background: #0F172A;
+  background: #1E6A4D;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -632,8 +632,8 @@ foreach ($highlights_data as $h) {
 
 .notice-lightbox-footer {
   padding: 0.85rem 1.35rem;
-  background: #F8FAFC;
-  border-top: 1px solid #E2E8F0;
+  background: #F5F7F4;
+  border-top: 1px solid #D6B56D;
   display: flex;
   justify-content: space-between;
   align-items: center;

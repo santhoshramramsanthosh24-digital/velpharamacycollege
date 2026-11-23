@@ -149,7 +149,7 @@ $cta = $lead_cms['cta_banner'] ?? [];
 </section>
 
 <!-- SECTION 3: CALL TO ACTION -->
-<section class="section" style="background: var(--color-bg-alt); border-top: 1px solid var(--color-tertiary-light);"
+<section class="section" style="background: #FFFFFF; border-top: 1px solid #D6B56D;"
   aria-label="Admissions Call to Action">
   <div class="container text-center" style="max-width: 800px;">
     <h2

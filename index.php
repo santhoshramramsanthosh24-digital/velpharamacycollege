@@ -149,7 +149,7 @@ $cta_banner = $home_cms['cta_banner'] ?? [];
     <div class="focus-circle-content">
       <div class="focus-ring-pulse" aria-hidden="true"></div>
       <div class="focus-lens-circle" aria-label="Vel Pharmacy College Emblem">
-        <img src="assets/images/college-logo-transparent.png" alt="Vel Pharmacy College Logo" class="focus-college-logo"
+        <img src="assets/images/VPC NEW LOGO.jpeg" alt="Vel Pharmacy College Logo" class="focus-college-logo"
           width="44" height="44">
       </div>
       <!--<div class="focus-label-wrap">
@@ -966,11 +966,11 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
 </section>
 
 <!-- WHY VELS SECTION -->
-<section class="section why-vels-section" aria-labelledby="whyTitle">
+<section class="section section-alt why-vels-section" aria-labelledby="whyTitle">
   <div class="container">
     <div class="section-header fade-up">
       <span class="section-subtitle"
-        style="color: #FCD34D;"><?= htmlspecialchars($why_choose['subtitle'] ?? 'Institutional Strengths') ?></span>
+        style="color: #D6B56D;"><?= htmlspecialchars($why_choose['subtitle'] ?? 'Institutional Strengths') ?></span>
       <h2 class="section-title" id="whyTitle">
         <?= htmlspecialchars($why_choose['title'] ?? 'Why Choose Vel Pharmacy College?') ?>
       </h2>
@@ -989,8 +989,8 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
                   d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
               </svg>
             </div>
-            <h3><?= htmlspecialchars($wFeat['title'] ?? '') ?></h3>
-            <p><?= htmlspecialchars($wFeat['desc'] ?? '') ?></p>
+            <h3 class="why-card-title"><?= htmlspecialchars($wFeat['title'] ?? '') ?></h3>
+            <p class="why-card-desc"><?= htmlspecialchars($wFeat['desc'] ?? '') ?></p>
           </div>
         <?php endforeach; ?>
       <?php endif; ?>
@@ -1133,7 +1133,7 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
       </p>
       <div class="cta-buttons">
         <a href="<?= htmlspecialchars($cta_banner['btn_link'] ?? 'enquiry') ?>" class="btn btn-primary"
-          style="background: #FFFFFF; color: var(--color-primary-dark);">
+          style="background: #D6B56D; color: #1E6A4D; font-weight: 700;">
           <span><?= htmlspecialchars($cta_banner['btn_text'] ?? 'Fill Online Enquiry Form') ?></span>
         </a>
         <a href="contact-us" class="btn btn-outline-white">

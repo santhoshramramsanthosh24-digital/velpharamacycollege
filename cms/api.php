@@ -54,7 +54,7 @@ switch ($action) {
             'designation' => trim($_POST['designation'] ?? ''),
             'department' => trim($_POST['department'] ?? ''),
             'dept_slug' => trim($_POST['dept_slug'] ?? 'chemistry'),
-            'dept_color' => trim($_POST['dept_color'] ?? '#1E2368'),
+            'dept_color' => trim($_POST['dept_color'] ?? '#1E6A4D'),
             'experience' => trim($_POST['experience'] ?? ''),
             'image' => trim($_POST['image'] ?? ''),
             'featured' => !empty($_POST['featured']),

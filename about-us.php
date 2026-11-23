@@ -236,7 +236,7 @@ $cta = $about_cms['cta_banner'] ?? [];
 </section>
 
 <!-- CALL TO ACTION BANNER -->
-<section class="section" style="padding-top: 0;">
+<section class="section section-alt">
   <div class="container">
     <div class="cta-banner fade-up">
       <h2><?= htmlspecialchars($cta['title'] ?? 'Join an Institution of Proven Academic Excellence') ?></h2>
@@ -244,7 +244,7 @@ $cta = $about_cms['cta_banner'] ?? [];
         <?= htmlspecialchars($cta['subtitle'] ?? 'Admissions are open for the B.Pharm 2024–2025 batch. Contact our counselors today or submit your enquiry online.') ?>
       </p>
       <div class="cta-buttons">
-        <a href="<?= htmlspecialchars($cta['btn1_link'] ?? 'enquiry') ?>" class="btn btn-primary" style="background: #FFFFFF; color: var(--color-primary-dark);">
+        <a href="<?= htmlspecialchars($cta['btn1_link'] ?? 'enquiry') ?>" class="btn btn-primary" style="background: #D6B56D; color: #1E6A4D; font-weight: 700;">
           <span><?= htmlspecialchars($cta['btn1_text'] ?? 'Online Enquiry Form') ?></span>
         </a>
         <a href="<?= htmlspecialchars($cta['btn2_link'] ?? 'courses') ?>" class="btn btn-outline-white">

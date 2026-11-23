@@ -91,29 +91,29 @@ include __DIR__ . '/includes/header.php';
           </div>
 
           <?php if ($form_submitted): ?>
-            <div style="background: #DCFCE7; border: 1px solid #86EFAC; color: #166534; padding: 1.75rem 1.5rem; border-radius: var(--radius-lg); margin-bottom: 2rem; text-align: center;">
-              <div style="width: 56px; height: 56px; border-radius: 50%; background: #22C55E; color: #FFFFFF; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+            <div style="background: #F5F7F4; border: 1px solid #D6B56D; color: #1E6A4D; padding: 1.75rem 1.5rem; border-radius: var(--radius-lg); margin-bottom: 2rem; text-align: center;">
+              <div style="width: 56px; height: 56px; border-radius: 50%; background: #1E6A4D; color: #F5F7F4; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
               </div>
-              <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem; color: #14532D;">
+              <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem; color: #1E6A4D;">
                 Application Received Successfully!
               </h3>
               <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
                 Thank you, <strong><?= htmlspecialchars($applicant_name) ?></strong>. Your admission enquiry has been registered with Vel Pharmacy College.
               </p>
-              <div style="background: #FFFFFF; padding: 1rem; border-radius: var(--radius-md); font-size: 0.9rem; color: #166534; display: inline-block; text-align: left;">
+              <div style="background: #F5F7F4; padding: 1rem; border-radius: var(--radius-md); font-size: 0.9rem; color: #1E6A4D; display: inline-block; text-align: left;">
                 <div><strong>Enquiry Ref:</strong> VPC-<?= rand(10000, 99999) ?></div>
                 <div><strong>Registered Phone:</strong> <?= htmlspecialchars($applicant_phone) ?></div>
                 <div><strong>Registered Email:</strong> <?= htmlspecialchars($applicant_email) ?></div>
               </div>
-              <p style="font-size: 0.85rem; color: #15803D; margin-top: 1rem;">
+              <p style="font-size: 0.85rem; color: #1E6A4D; margin-top: 1rem;">
                 Our admissions counselor will call you within 24 business hours to guide you through verification and seat reservation.
               </p>
             </div>
           <?php endif; ?>
 
           <?php if (!empty($form_error)): ?>
-            <div style="background: #FEE2E2; border: 1px solid #FCA5A5; color: #991B1B; padding: 1rem 1.25rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; font-size: 0.95rem;">
+            <div style="background: #F5F7F4; border: 1px solid #D6B56D; color: #1E6A4D; padding: 1rem 1.25rem; border-radius: var(--radius-md); margin-bottom: 1.5rem; font-size: 0.95rem;">
               <strong>Error:</strong> <?= htmlspecialchars($form_error) ?>
             </div>
           <?php endif; ?>
@@ -124,7 +124,7 @@ include __DIR__ . '/includes/header.php';
             <!-- Name -->
             <div>
               <label style="display: block; font-size: 0.9rem; font-weight: 600; color: var(--color-primary-dark); margin-bottom: 0.4rem;">
-                Full Name of Applicant <span style="color: #DC2626;">*</span>
+                Full Name of Applicant <span style="color: #D6B56D;">*</span>
               </label>
               <input type="text" name="applicant_name" required placeholder="e.g. Ramesh Kumar" value="<?= htmlspecialchars($_POST['applicant_name'] ?? '') ?>" style="width: 100%; padding: 0.85rem 1.1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem;">
             </div>
@@ -133,14 +133,14 @@ include __DIR__ . '/includes/header.php';
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem;">
               <div>
                 <label style="display: block; font-size: 0.9rem; font-weight: 600; color: var(--color-primary-dark); margin-bottom: 0.4rem;">
-                  Email Address <span style="color: #DC2626;">*</span>
+                  Email Address <span style="color: #D6B56D;">*</span>
                 </label>
                 <input type="email" name="applicant_email" required placeholder="e.g. candidate@gmail.com" value="<?= htmlspecialchars($_POST['applicant_email'] ?? '') ?>" style="width: 100%; padding: 0.85rem 1.1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem;">
               </div>
 
               <div>
                 <label style="display: block; font-size: 0.9rem; font-weight: 600; color: var(--color-primary-dark); margin-bottom: 0.4rem;">
-                  Mobile Phone Number <span style="color: #DC2626;">*</span>
+                  Mobile Phone Number <span style="color: #D6B56D;">*</span>
                 </label>
                 <input type="tel" name="applicant_phone" required placeholder="e.g. +91 98765 43210" value="<?= htmlspecialchars($_POST['applicant_phone'] ?? '') ?>" style="width: 100%; padding: 0.85rem 1.1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem;">
               </div>
@@ -151,7 +151,7 @@ include __DIR__ . '/includes/header.php';
               <label style="display: block; font-size: 0.9rem; font-weight: 600; color: var(--color-primary-dark); margin-bottom: 0.4rem;">
                 How did you know about our website?
               </label>
-              <select name="referral_source" style="width: 100%; padding: 0.85rem 1.1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem; background: #FFFFFF;">
+              <select name="referral_source" style="width: 100%; padding: 0.85rem 1.1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.95rem; background: #F5F7F4;">
                 <option value="">-- Please Select --</option>
                 <option value="FRIENDS">Friends / Family Referral</option>
                 <option value="SOCIAL MEDIA">Social Media (Instagram, Facebook, LinkedIn)</option>
@@ -172,14 +172,14 @@ include __DIR__ . '/includes/header.php';
                 <label style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--color-text-main); margin-bottom: 0.35rem;">
                   Street Address
                 </label>
-                <input type="text" name="address_street" placeholder="House / Flat No., Street Name" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #FFFFFF;">
+                <input type="text" name="address_street" placeholder="House / Flat No., Street Name" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #F5F7F4;">
               </div>
 
               <div>
                 <label style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--color-text-main); margin-bottom: 0.35rem;">
                   Apartment, suite, unit, etc. (optional)
                 </label>
-                <input type="text" name="address_suite" placeholder="Apartment / Landmark" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #FFFFFF;">
+                <input type="text" name="address_suite" placeholder="Apartment / Landmark" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #F5F7F4;">
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
@@ -187,21 +187,21 @@ include __DIR__ . '/includes/header.php';
                   <label style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--color-text-main); margin-bottom: 0.35rem;">
                     City
                   </label>
-                  <input type="text" name="address_city" placeholder="City / Town" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #FFFFFF;">
+                  <input type="text" name="address_city" placeholder="City / Town" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #F5F7F4;">
                 </div>
 
                 <div>
                   <label style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--color-text-main); margin-bottom: 0.35rem;">
                     State / Province
                   </label>
-                  <input type="text" name="address_state" placeholder="e.g. Tamil Nadu" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #FFFFFF;">
+                  <input type="text" name="address_state" placeholder="e.g. Tamil Nadu" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #F5F7F4;">
                 </div>
 
                 <div>
                   <label style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--color-text-main); margin-bottom: 0.35rem;">
                     ZIP / Postal Code
                   </label>
-                  <input type="text" name="address_zip" placeholder="e.g. 600001" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #FFFFFF;">
+                  <input type="text" name="address_zip" placeholder="e.g. 600001" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #F5F7F4;">
                 </div>
               </div>
 
@@ -209,7 +209,7 @@ include __DIR__ . '/includes/header.php';
                 <label style="display: block; font-size: 0.85rem; font-weight: 600; color: var(--color-text-main); margin-bottom: 0.35rem;">
                   Country
                 </label>
-                <select name="address_country" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #FFFFFF;">
+                <select name="address_country" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid var(--color-border); border-radius: var(--radius-md); font-size: 0.9rem; background: #F5F7F4;">
                   <option value="India" selected>India</option>
                   <option value="Sri Lanka">Sri Lanka</option>
                   <option value="Nepal">Nepal</option>
@@ -248,28 +248,28 @@ include __DIR__ . '/includes/header.php';
         $eq_why = $enquiry_cms['why_apply'] ?? [];
         ?>
         <!-- Quick Admission Helpline Card -->
-        <div style="background-color: var(--color-primary); border-radius: var(--radius-xl); padding: 2rem; color: #FFFFFF; box-shadow: var(--shadow-lg);">
+        <div style="background-color: var(--color-primary); border-radius: var(--radius-xl); padding: 2rem; color: #F5F7F4; box-shadow: var(--shadow-lg);">
           <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
             <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center;">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5F7F4" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <div>
-              <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #93C5FD; font-weight: 700;">Direct Admissions Line</div>
+              <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: #D6B56D; font-weight: 700;">Direct Admissions Line</div>
               <div style="font-size: 1.35rem; font-weight: 800;">
-                <a href="tel:<?= preg_replace('/[^0-9+]/', '', $eq_help['phone'] ?? '+918122613300') ?>" style="color: #FFFFFF;"><?= htmlspecialchars($eq_help['phone'] ?? '+91 812 261 3300') ?></a>
+                <a href="tel:<?= preg_replace('/[^0-9+]/', '', $eq_help['phone'] ?? '+918122613300') ?>" style="color: #F5F7F4;"><?= htmlspecialchars($eq_help['phone'] ?? '+91 812 261 3300') ?></a>
               </div>
             </div>
           </div>
-          <p style="font-size: 0.9rem; color: #CBD5E1; line-height: 1.6; margin-bottom: 1.25rem;">
+          <p style="font-size: 0.9rem; color: #F5F7F4; line-height: 1.6; margin-bottom: 1.25rem;">
             <?= htmlspecialchars($eq_help['hours'] ?? 'Monday - Saturday: 8:30 AM - 5:00 PM') ?>. Speak directly with our senior admission counselors for immediate seat confirmation.
           </p>
-          <div style="font-size: 0.85rem; color: #FEF3C7; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.2);">
+          <div style="font-size: 0.85rem; color: #D6B56D; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.2);">
             ✉️ Email: <strong><?= htmlspecialchars($eq_help['email'] ?? 'vels@vistas.ac.in') ?></strong>
           </div>
         </div>
 
         <!-- Why Choose VPC Card -->
-        <div style="background: #FFFFFF; border-radius: var(--radius-xl); border: 1px solid var(--color-tertiary-light); padding: 2rem; box-shadow: var(--shadow-md);">
+        <div style="background: #F5F7F4; border-radius: var(--radius-xl); border: 1px solid var(--color-tertiary-light); padding: 2rem; box-shadow: var(--shadow-md);">
           <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-primary-dark); margin-bottom: 1.25rem;">
             <?= htmlspecialchars($eq_why['title'] ?? 'Why Choose Vel Pharmacy College?') ?>
           </h3>
@@ -285,7 +285,7 @@ include __DIR__ . '/includes/header.php';
             foreach ($why_items as $item):
             ?>
             <li style="display: flex; gap: 0.75rem; align-items: flex-start;">
-              <div style="width: 24px; height: 24px; border-radius: 50%; background: #DCFCE7; color: #166534; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.8rem; font-weight: 700;">✓</div>
+              <div style="width: 24px; height: 24px; border-radius: 50%; background: #F5F7F4; color: #1E6A4D; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.8rem; font-weight: 700;">✓</div>
               <div style="font-size: 0.9rem; color: var(--color-text-main); line-height: 1.5;">
                 <strong><?= htmlspecialchars($item['title'] ?? '') ?>:</strong> <?= htmlspecialchars($item['desc'] ?? '') ?>
               </div>
