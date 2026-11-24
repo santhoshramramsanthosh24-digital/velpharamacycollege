@@ -313,6 +313,501 @@ $cta_banner = $home_cms['cta_banner'] ?? [];
 </section>
 
 <!-- ==========================================================================
+     SECTION 3: UPCOMING EVENTS & INSTITUTIONAL HIGHLIGHTS (DUAL-COLUMN)
+     ========================================================================== -->
+<?php
+// Base Events Dataset
+$raw_events = $events_highlights['events'] ?? [
+  [
+    'date' => '2026-11-18',
+    'month' => 'NOV',
+    'day' => '18',
+    'year' => '2026',
+    'category' => 'National Symposium',
+    'category_color' => 'blue',
+    'title' => 'National Seminar on AI & Machine Learning in Modern Drug Discovery',
+    'time' => '09:30 AM – 03:30 PM',
+    'venue' => 'Dr. Ishari K. Ganesh Seminar Hall',
+    'description' => 'Expert talks by pharmaceutical data scientists on generative AI, molecular docking simulations, and QSAR algorithms.',
+    'link' => 'enquiry'
+  ],
+  [
+    'date' => '2026-11-28',
+    'month' => 'NOV',
+    'day' => '28',
+    'year' => '2026',
+    'category' => 'PCI Workshop',
+    'category_color' => 'amber',
+    'title' => 'PCI Sponsored Quality Improvement Program on Good Laboratory Practices (GLP)',
+    'time' => '10:00 AM – 04:30 PM',
+    'venue' => 'Advanced Formulation Pilot Plant',
+    'description' => 'Comprehensive regulatory documentation, cleanroom protocol compliance, and analytical instrument validation.',
+    'link' => 'facilities'
+  ],
+  [
+    'date' => '2026-12-05',
+    'month' => 'DEC',
+    'day' => '05',
+    'year' => '2026',
+    'category' => 'Hands-On Workshop',
+    'category_color' => 'maroon',
+    'title' => 'Advanced Instrumentation Workshop: High-Performance Liquid Chromatography (HPLC)',
+    'time' => '10:00 AM – 04:00 PM',
+    'venue' => 'Central Instrumentation & Analysis Lab',
+    'description' => 'Practical training for students on method validation, peak integration, and quantitative chromatographic assays.',
+    'link' => 'enquiry'
+  ],
+  [
+    'date' => '2026-12-18',
+    'month' => 'DEC',
+    'day' => '18',
+    'year' => '2026',
+    'category' => 'Clinical Rounds',
+    'category_color' => 'green',
+    'title' => 'Hospital Pharmacy Practice & Inpatient Bedside Rounds at VMCH',
+    'time' => '09:00 AM – 01:00 PM',
+    'venue' => 'VMCH Teaching Hospital, Manjankaranai',
+    'description' => 'Ward rounds, patient history interviews, and therapeutic drug monitoring protocols guided by senior clinical preceptors.',
+    'link' => 'facilities'
+  ],
+  [
+    'date' => '2027-01-12',
+    'month' => 'JAN',
+    'day' => '12',
+    'year' => '2027',
+    'category' => 'Clinical Rounds',
+    'category_color' => 'green',
+    'title' => 'Clinical Pharmacovigilance & Adverse Drug Reaction Reporting Symposium',
+    'time' => '09:00 AM – 01:00 PM',
+    'venue' => 'VMCH Seminar Room & Wards',
+    'description' => 'Clinical pharmacy faculty-led patient chart reviews, therapeutic drug monitoring, and inpatient ward protocols.',
+    'link' => 'facilities'
+  ],
+  [
+    'date' => '2027-02-20',
+    'month' => 'FEB',
+    'day' => '20',
+    'year' => '2027',
+    'category' => 'Community Outreach',
+    'category_color' => 'amber',
+    'title' => 'National Pharmacy Week: Rural Health Screening & Pharmacovigilance Camp',
+    'time' => '08:30 AM – 02:00 PM',
+    'venue' => 'Velan Nagar Community Health Center',
+    'description' => 'Public health awareness on rational antibiotic usage, geriatric dosage regimens, and vital health screenings.',
+    'link' => 'contact-us'
+  ],
+  [
+    'date' => '2026-09-25',
+    'month' => 'SEP',
+    'day' => '25',
+    'year' => '2026',
+    'category' => 'Celebration & Induction',
+    'category_color' => 'green',
+    'title' => 'World Pharmacists Day 2026 & White Coat Ceremony for Freshers Batch',
+    'time' => '10:00 AM – 02:00 PM',
+    'venue' => 'Dr. Ishari K. Ganesh Auditorium',
+    'description' => 'Induction of new B.Pharm students with the Pharmacist Oath, guest lectures by eminent healthcare leaders, and academic awards.',
+    'link' => 'about-us'
+  ],
+  [
+    'date' => '2026-10-15',
+    'month' => 'OCT',
+    'day' => '15',
+    'year' => '2026',
+    'category' => 'Guest Masterclass',
+    'category_color' => 'blue',
+    'title' => 'Industry Masterclass: Modern Computer-Aided Drug Design (CADD) & Molecular Docking',
+    'time' => '11:00 AM – 03:00 PM',
+    'venue' => 'Advanced Digital Chemistry Lab',
+    'description' => 'Hands-on computational chemistry workshop on PyMOL, AutoDock Vina, and pharmacophore modeling for novel drug synthesis.',
+    'link' => 'courses'
+  ]
+];
+
+// Today's date comparison (YYYY-MM-DD)
+$today_ymd = date('Y-m-d');
+$active_upcoming_events = [];
+$past_events_to_highlights = [];
+
+foreach ($raw_events as &$ev) {
+  $ev_date = $ev['date'] ?? '';
+  if (!empty($ev_date)) {
+    $ts = strtotime($ev_date);
+    if ($ts) {
+      if (empty($ev['month']))
+        $ev['month'] = strtoupper(date('M', $ts));
+      if (empty($ev['day']))
+        $ev['day'] = date('d', $ts);
+      if (empty($ev['year']))
+        $ev['year'] = date('Y', $ts);
+    }
+  } elseif (!empty($ev['year']) && !empty($ev['month']) && !empty($ev['day'])) {
+    $parsed_ts = strtotime($ev['day'] . ' ' . $ev['month'] . ' ' . $ev['year']);
+    if ($parsed_ts) {
+      $ev_date = date('Y-m-d', $parsed_ts);
+    }
+  }
+
+  // Automatic date check: if event date is over -> move to Highlights!
+  if (!empty($ev_date) && $ev_date < $today_ymd) {
+    $past_events_to_highlights[] = [
+      'icon' => 'calendar-check',
+      'tag' => 'Concluded Event Highlight',
+      'badge' => 'Concluded • ' . date('M j, Y', strtotime($ev_date)),
+      'title' => $ev['title'] ?? '',
+      'desc' => !empty($ev['description'])
+        ? $ev['description']
+        : ('Successfully conducted at ' . ($ev['venue'] ?? 'VEL Pharmacy College') . ' with high student engagement and research discussions.'),
+      'link' => $ev['link'] ?? 'about-us',
+      'is_transferred_event' => true
+    ];
+  } else {
+    $active_upcoming_events[] = $ev;
+  }
+}
+unset($ev);
+
+// Base Highlights
+$base_highlights = $events_highlights['highlights'] ?? [
+  [
+    'image' => 'assets/images/campus-main-entrance.jpg',
+    'tag' => 'Accreditation',
+    'badge' => 'PCI Approved',
+    'title' => 'Pharmacy Council of India (PCI) Statutory Approval',
+    'desc' => 'Fully recognized and approved by PCI, New Delhi under VISTAS Deemed to be University, upholding premier educational benchmarks.',
+    'link' => 'about-us'
+  ],
+  [
+    'image' => 'assets/images/computer-lab.jpg',
+    'tag' => 'Curriculum',
+    'badge' => '193 Credits • NEP 2020',
+    'title' => 'Pioneering NEP 2020 Syllabus with Python & AI',
+    'desc' => 'Tamil Nadu\'s first 4-year B.Pharm integrating Python Programming, Machine Learning, Clinical AI, and 240 hours internships.',
+    'link' => 'courses'
+  ],
+  [
+    'image' => 'assets/images/hospital-facility.jpg',
+    'tag' => 'Clinical Immersion',
+    'badge' => '300+ Bed Hospital',
+    'title' => 'On-Campus VMCH Medical College & Hospital',
+    'desc' => 'Unrivaled real-world hospital exposure with bedside patient rotations, ADR reporting, and drug interaction analysis.',
+    'link' => 'facilities'
+  ],
+  [
+    'image' => 'assets/images/research-lab-modern.jpg',
+    'tag' => 'Research Labs',
+    'badge' => '15+ High-Tech Labs',
+    'title' => 'State-of-the-Art Analytical & Formulation Suites',
+    'desc' => 'Equipped with HPLC, UV-Vis Spectrophotometers, Pilot Formulation Plant, Machine Room, and Digital Molecular Modeling Lab.',
+    'link' => 'facilities'
+  ]
+];
+
+// Concluded events automatically added to Highlights list
+$all_highlights = array_merge($base_highlights, $past_events_to_highlights);
+?>
+
+<section class="section section-alt events-highlights-section" id="events-highlights"
+  aria-labelledby="eventsHighlightsTitle">
+  <span id="announcements" class="anchor-target" aria-hidden="true" style="position: absolute; top: -80px;"></span>
+  <span id="highlights-anchor" class="anchor-target" aria-hidden="true" style="position: absolute; top: -80px;"></span>
+  <div class="container-wide">
+    <div class="section-header fade-up">
+      <span
+        class="section-subtitle"><?= htmlspecialchars($events_highlights['subtitle'] ?? 'Campus Life & Key Milestones') ?></span>
+      <h2 class="section-title" id="eventsHighlightsTitle">
+        <?= htmlspecialchars($events_highlights['title'] ?? 'Upcoming Events & Institutional Highlights') ?>
+      </h2>
+      <p class="section-description">
+        <?= htmlspecialchars($events_highlights['description'] ?? 'Stay connected with upcoming academic conferences, hands-on clinical workshops, and premier institutional achievements shaping pharmaceutical education at VEL Pharmacy College.') ?>
+      </p>
+    </div>
+
+    <div class="events-highlights-grid">
+
+      <!-- LEFT COLUMN: UPCOMING EVENTS (AUTO-SCROLLING) -->
+      <div class="eh-col-box events-col motion-from-left">
+        <div class="eh-col-header">
+          <div class="eh-col-title-group">
+            <div class="eh-col-icon events-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="eh-col-title"><?= htmlspecialchars($events_highlights['events_title'] ?? 'Upcoming Events') ?>
+              </h3>
+            </div>
+          </div>
+
+          <div class="eh-scroll-controls">
+            <span class="eh-live-badge" title="Auto-scrolling list. Hover cursor to pause.">
+              <span class="eh-live-dot" aria-hidden="true"></span>
+              <span class="eh-live-text">Live Scroll</span>
+            </span>
+            <button type="button" class="eh-ctrl-btn" id="ehScrollPrevBtn" aria-label="Scroll to previous event"
+              title="Previous event">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="18 15 12 9 6 15"></polyline>
+              </svg>
+            </button>
+            <button type="button" class="eh-ctrl-btn" id="ehScrollNextBtn" aria-label="Scroll to next event"
+              title="Next event">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <button type="button" class="eh-ctrl-btn" id="ehScrollPlayPauseBtn" aria-label="Pause or resume auto-scroll"
+              title="Pause / Play auto-scroll">
+              <svg class="icon-pause" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="6" y="4" width="4" height="16"></rect>
+                <rect x="14" y="4" width="4" height="16"></rect>
+              </svg>
+              <svg class="icon-play" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"
+                style="display: none;">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Auto-Scrolling Viewport -->
+        <div class="eh-events-scroll-viewport" id="ehEventsScrollViewport">
+          <div class="eh-events-list" id="ehEventsList">
+            <?php foreach ($active_upcoming_events as $ev): ?>
+              <a href="<?= htmlspecialchars($ev['link'] ?? 'enquiry') ?>" class="eh-event-card"
+                data-event-date="<?= htmlspecialchars($ev['date'] ?? '') ?>"
+                title="<?= htmlspecialchars($ev['title']) ?>">
+                <div class="eh-date-badge">
+                  <span class="eh-date-month"><?= htmlspecialchars($ev['month']) ?></span>
+                  <span class="eh-date-day"><?= htmlspecialchars($ev['day']) ?></span>
+                  <span class="eh-date-year"><?= htmlspecialchars($ev['year']) ?></span>
+                </div>
+                <div class="eh-event-body">
+                  <span
+                    class="eh-tag-pill <?= htmlspecialchars($ev['category_color'] ?? 'blue') ?>"><?= htmlspecialchars($ev['category']) ?></span>
+                  <h4 class="eh-event-title"><?= htmlspecialchars($ev['title']) ?></h4>
+                  <div class="eh-event-meta">
+                    <span class="eh-meta-item">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                      </svg>
+                      <?= htmlspecialchars($ev['time']) ?>
+                    </span>
+                    <span class="eh-meta-item">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                      <?= htmlspecialchars($ev['venue']) ?>
+                    </span>
+                  </div>
+                </div>
+              </a>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: HIGHLIGHTS (WITH AUTO-TRANSFERRED PAST EVENTS) -->
+      <div class="eh-col-box highlights-col motion-from-right delay-1" id="highlights">
+        <div class="eh-col-header">
+          <div class="eh-col-title-group">
+            <div class="eh-col-icon highlights-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                </polygon>
+              </svg>
+            </div>
+            <div>
+              <h3 class="eh-col-title">
+                <?= htmlspecialchars($events_highlights['highlights_title'] ?? 'College Highlights') ?>
+              </h3>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap;">
+            <span
+              class="eh-col-badge badge-gold"><?= htmlspecialchars($events_highlights['highlights_badge'] ?? 'Institutional Prestige') ?></span>
+          </div>
+        </div>
+
+        <!-- Scrollable Highlights Viewport -->
+        <div class="eh-highlights-scroll-viewport eh-scroll-styled" id="ehHighlightsScrollViewport">
+          <div class="eh-highlights-list" id="ehHighlightsList">
+            <?php foreach ($all_highlights as $hl): ?>
+              <?php
+              // Resolve topic-related image according to title
+              $hl_img = !empty($hl['image']) ? $hl['image'] : (!empty($hl['notice_image']) ? $hl['notice_image'] : '');
+              if (empty($hl_img)) {
+                $t = strtolower($hl['title'] ?? '');
+                if (strpos($t, 'pci') !== false || strpos($t, 'approval') !== false) {
+                  $hl_img = 'assets/images/campus-main-entrance.jpg';
+                } elseif (strpos($t, 'python') !== false || strpos($t, 'ai') !== false || strpos($t, 'nep') !== false || strpos($t, 'cadd') !== false) {
+                  $hl_img = 'assets/images/computer-lab.jpg';
+                } elseif (strpos($t, 'hospital') !== false || strpos($t, 'clinical') !== false || strpos($t, 'vmch') !== false) {
+                  $hl_img = 'assets/images/hospital-facility.jpg';
+                } elseif (strpos($t, 'lab') !== false || strpos($t, 'analytical') !== false || strpos($t, 'suite') !== false) {
+                  $hl_img = 'assets/images/research-lab-modern.jpg';
+                } elseif (strpos($t, 'pharmacist') !== false || strpos($t, 'ceremony') !== false) {
+                  $hl_img = 'assets/images/seminar-hall.jpg';
+                } else {
+                  $hl_img = 'assets/images/campus-main-entrance.jpg';
+                }
+              }
+              ?>
+              <a href="highlights#<?= !empty($hl['slug']) ? htmlspecialchars($hl['slug']) : '' ?>" target="_blank"
+                rel="noopener noreferrer"
+                class="eh-highlight-card <?= !empty($hl['is_transferred_event']) ? 'transferred-event-card' : '' ?>"
+                title="<?= htmlspecialchars($hl['title']) ?>">
+                <div class="eh-hl-image-wrap <?= !empty($hl['is_transferred_event']) ? 'img-transferred' : '' ?>">
+                  <img src="<?= htmlspecialchars($hl_img) ?>" alt="<?= htmlspecialchars($hl['title']) ?>"
+                    class="eh-hl-thumb-img" loading="lazy" width="76" height="76">
+                </div>
+                <div class="eh-hl-body">
+                  <div class="eh-hl-badge-row">
+                    <span
+                      class="eh-hl-badge <?= !empty($hl['is_transferred_event']) ? 'badge-concluded' : '' ?>"><?= htmlspecialchars($hl['badge']) ?></span>
+                    <span class="eh-hl-category"><?= htmlspecialchars($hl['tag']) ?></span>
+                  </div>
+                  <h4 class="eh-hl-title"><?= htmlspecialchars($hl['title']) ?></h4>
+                  <p class="eh-hl-desc"><?= htmlspecialchars($hl['desc']) ?></p>
+                </div>
+              </a>
+            <?php endforeach; ?>
+          </div>
+        </div>
+
+        <div class="eh-action-box">
+          <a href="highlights" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+            style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 0.5rem;"
+            title="View Highlights">
+            <span>View Highlights &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Auto-Scroll Engine & Live Date Checker for Upcoming Events -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const viewport = document.getElementById('ehEventsScrollViewport');
+    const list = document.getElementById('ehEventsList');
+    if (!viewport || !list) return;
+
+    const playPauseBtn = document.getElementById('ehScrollPlayPauseBtn');
+    const prevBtn = document.getElementById('ehScrollPrevBtn');
+    const nextBtn = document.getElementById('ehScrollNextBtn');
+    const iconPause = playPauseBtn ? playPauseBtn.querySelector('.icon-pause') : null;
+    const iconPlay = playPauseBtn ? playPauseBtn.querySelector('.icon-play') : null;
+    const liveBadge = document.querySelector('.eh-live-badge');
+
+    let isPaused = false;
+    let scrollSpeed = 0.65; // pixels per animation frame
+    let animationFrameId = null;
+
+    // Duplicate items for continuous seamless loop if list has at least 2 cards
+    const cards = list.querySelectorAll('.eh-event-card');
+    if (cards.length >= 2) {
+      const originalCardsHtml = list.innerHTML;
+      list.insertAdjacentHTML('beforeend', originalCardsHtml);
+    }
+
+    function getHalfHeight() {
+      return list.scrollHeight / 2;
+    }
+
+    function autoScrollLoop() {
+      if (!isPaused) {
+        viewport.scrollTop += scrollSpeed;
+        const halfHeight = getHalfHeight();
+        if (halfHeight > 0 && viewport.scrollTop >= halfHeight) {
+          viewport.scrollTop = 0;
+        }
+      }
+      animationFrameId = requestAnimationFrame(autoScrollLoop);
+    }
+
+    // Start smooth auto-scroll loop
+    animationFrameId = requestAnimationFrame(autoScrollLoop);
+
+    // Pause on hover
+    const eventsCol = document.querySelector('.eh-col-box.events-col');
+    if (eventsCol) {
+      eventsCol.addEventListener('mouseenter', function () {
+        isPaused = true;
+        if (liveBadge) liveBadge.style.opacity = '0.6';
+      });
+      eventsCol.addEventListener('mouseleave', function () {
+        if (!playPauseBtn || !playPauseBtn.classList.contains('manual-paused')) {
+          isPaused = false;
+          if (liveBadge) liveBadge.style.opacity = '1';
+        }
+      });
+      eventsCol.addEventListener('touchstart', function () {
+        isPaused = true;
+      }, { passive: true });
+      eventsCol.addEventListener('touchend', function () {
+        setTimeout(function () {
+          if (!playPauseBtn || !playPauseBtn.classList.contains('manual-paused')) {
+            isPaused = false;
+          }
+        }, 3000);
+      }, { passive: true });
+    }
+
+    // Play / Pause Toggle Button
+    if (playPauseBtn) {
+      playPauseBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (isPaused) {
+          isPaused = false;
+          playPauseBtn.classList.remove('manual-paused');
+          if (iconPause) iconPause.style.display = 'block';
+          if (iconPlay) iconPlay.style.display = 'none';
+          if (liveBadge) liveBadge.style.opacity = '1';
+        } else {
+          isPaused = true;
+          playPauseBtn.classList.add('manual-paused');
+          if (iconPause) iconPause.style.display = 'none';
+          if (iconPlay) iconPlay.style.display = 'block';
+          if (liveBadge) liveBadge.style.opacity = '0.5';
+        }
+      });
+    }
+
+    // Manual Prev / Next Buttons
+    if (prevBtn) {
+      prevBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        viewport.scrollBy({ top: -110, behavior: 'smooth' });
+        if (viewport.scrollTop <= 0) {
+          viewport.scrollTop = getHalfHeight();
+        }
+      });
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        viewport.scrollBy({ top: 110, behavior: 'smooth' });
+        if (viewport.scrollTop >= getHalfHeight()) {
+          viewport.scrollTop = 0;
+        }
+      });
+    }
+  });
+</script>
+
+
+<!-- ==========================================================================
      WHY VEL PHARMACY COLLEGE IS BETTER THAN OTHER COLLEGES IN & AROUND
      ========================================================================== -->
 <section class="section why-vels-better-section" id="whyVelBetter" aria-labelledby="whyVelBetterTitle" style="background: #FFFFFF;">
