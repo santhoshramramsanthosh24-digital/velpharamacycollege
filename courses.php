@@ -478,456 +478,158 @@ $ga_meta_map = [
       </div>
     </div>
 
-    <!-- Search & Filter Controls -->
-    <div class="curriculum-control-bar fade-up">
-      <div class="curriculum-search-box">
-        <svg class="curriculum-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input type="text" id="courseSearchInput" class="curriculum-search-input" placeholder="Search subjects by name, code or topic (e.g., Python, Machine Learning, Pharmacology)..." aria-label="Search courses">
+    <!-- 4-Year Academic Progression Matrix (Clean High-Level Roadmap) -->
+    <div style="margin-top: 3.5rem;">
+      <div class="text-center" style="max-width: 760px; margin: 0 auto 2.5rem;">
+        <span class="section-subtitle">EXECUTIVE CURRICULUM ARCHITECTURE</span>
+        <h3 class="section-title" style="font-size: 1.85rem;">4-Year B.Pharm Academic Progression</h3>
+        <p class="section-description">
+          A phased, high-impact curriculum moving from foundational sciences to advanced pharmacology, artificial intelligence, clinical hospital immersion, and capstone research dissertations:
+        </p>
       </div>
 
-      <div class="curriculum-filters" role="group" aria-label="Filter courses by category">
-        <button class="filter-chip active" data-filter="all">All Courses</button>
-        <button class="filter-chip" data-filter="Theory">Theory (T)</button>
-        <button class="filter-chip" data-filter="Practical">Practical (P)</button>
-        <button class="filter-chip" data-filter="AI">AI &amp; Computing</button>
-        <button class="filter-chip" data-filter="Elective">Elective Streams</button>
+      <div class="years-progression-grid fade-up">
+        <div class="year-card">
+          <span class="year-card-badge">YEAR 1 • FOUNDATIONS</span>
+          <h4 class="year-card-title">Foundational Sciences &amp; Digital Health</h4>
+          <p class="year-card-desc">
+            Human Anatomy &amp; Physiology, Pharmaceutical Analysis I, Pharmaceutics I, Inorganic Chemistry, Communication Skills, and modern <strong>Python Programming for Health Sciences</strong>.
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700;">
+            Semesters I &amp; II • 54 Credits Total
+          </div>
+        </div>
+
+        <div class="year-card">
+          <span class="year-card-badge">YEAR 2 • FORMULATIONS</span>
+          <h4 class="year-card-title">Organic Synthesis &amp; Pharmacology</h4>
+          <p class="year-card-desc">
+            Pharmaceutical Organic Chemistry II &amp; III, Physical Pharmaceutics, Microbiology, Pharmacology I, <strong>Machine Learning Fundamentals</strong>, and mandatory <strong>120-Hour Industrial GMP Internship</strong>.
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700;">
+            Semesters III &amp; IV • 52 Credits Total
+          </div>
+        </div>
+
+        <div class="year-card">
+          <span class="year-card-badge">YEAR 3 • CLINICAL AI</span>
+          <h4 class="year-card-title">Medicinal Chemistry &amp; Hospital Rounds</h4>
+          <p class="year-card-desc">
+            Medicinal Chemistry II &amp; III, Pharmacology II &amp; III, Herbal Drug Tech, Biopharmaceutics, <strong>Clinical AI in Diagnostics</strong>, and <strong>120-Hour VMCH Teaching Hospital Internship</strong>.
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700;">
+            Semesters V &amp; VI • 54 Credits Total
+          </div>
+        </div>
+
+        <div class="year-card">
+          <span class="year-card-badge">YEAR 4 • RESEARCH</span>
+          <h4 class="year-card-title">Instrumental Analysis &amp; Capstone Thesis</h4>
+          <p class="year-card-desc">
+            Instrumental Methods of Analysis (HPLC, UV-Vis), Novel Drug Delivery Systems, Pharmacy Practice, Biostatistics, and a <strong>12-Credit Original Research Capstone Thesis &amp; Defense</strong>.
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700;">
+            Semesters VII &amp; VIII • 43 Credits Total
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Semester Navigation Tabs -->
-    <div class="semester-nav-container fade-up" role="tablist" aria-label="Semester Tabs">
-      <div class="semester-tabs-list">
-        <?php foreach ($nep_syllabus_data['semesters'] as $sem_key => $sem): ?>
-          <button class="sem-tab-btn <?= ($sem_key === 'sem1') ? 'active' : '' ?>" 
-                  id="tab-btn-<?= $sem_key ?>" 
-                  data-target="<?= $sem_key ?>" 
-                  role="tab" 
-                  aria-selected="<?= ($sem_key === 'sem1') ? 'true' : 'false' ?>" 
-                  aria-controls="panel-<?= $sem_key ?>">
-            <span class="sem-tab-label">Semester <?= $sem['roman'] ?></span>
-            <span class="sem-tab-credits"><?= $sem['total_credits'] ?> Credits</span>
-          </button>
-        <?php endforeach; ?>
+    <!-- Executive Semester Summary Table -->
+    <div class="fade-up" style="margin-top: 1rem;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: #1E6A4D; margin: 0 0 0.25rem;">
+            Semester-by-Semester Course Outline
+          </h4>
+          <span style="font-size: 0.9rem; color: #4A5568;">
+            Choice Based Credit System (CBCS) • 193 Total Prescribed Credits
+          </span>
+        </div>
+        <a href="assets/docs/B.Pharm_Syllabus_2026_NEP2020.pdf" download="B.Pharm_Syllabus_2026_NEP2020.pdf" class="btn btn-primary" style="padding: 0.55rem 1.15rem; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download Detailed Syllabus (PDF)</span>
+        </a>
+      </div>
 
-        <!-- Credit Matrix Tab -->
-        <button class="sem-tab-btn gold-tab" id="tab-btn-matrix" data-target="matrix" role="tab" aria-selected="false" aria-controls="panel-matrix">
-          <span class="sem-tab-label">Credit Matrix</span>
-          <span class="sem-tab-credits">193 Total</span>
-        </button>
+      <div class="curriculum-summary-table-wrap">
+        <table class="curriculum-summary-table">
+          <thead>
+            <tr>
+              <th style="width: 14%;">Semester</th>
+              <th style="width: 16%;">Credits</th>
+              <th style="width: 42%;">Core Course Modules</th>
+              <th style="width: 28%;">Practical &amp; Specialized Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Semester I</strong></td>
+              <td><span class="badge-tag badge-tag-primary">27 Credits</span></td>
+              <td>Human Anatomy &amp; Physiology I, Pharmaceutical Analysis I, Pharmaceutics I, Pharmaceutical Inorganic Chemistry</td>
+              <td>Python for Healthcare, Remedial Biology / Mathematics</td>
+            </tr>
+            <tr>
+              <td><strong>Semester II</strong></td>
+              <td><span class="badge-tag badge-tag-primary">27 Credits</span></td>
+              <td>Human Anatomy &amp; Physiology II, Pharmaceutical Organic Chemistry I, Biochemistry, Pathophysiology</td>
+              <td>Computer Applications in Pharmacy, Environmental Sciences</td>
+            </tr>
+            <tr>
+              <td><strong>Semester III</strong></td>
+              <td><span class="badge-tag badge-tag-primary">24 Credits</span></td>
+              <td>Pharmaceutical Organic Chemistry II, Physical Pharmaceutics I, Pharmaceutical Microbiology, Pharmaceutical Engineering</td>
+              <td>Machine Learning in Pharmacy, AI Health Analytics</td>
+            </tr>
+            <tr>
+              <td><strong>Semester IV</strong></td>
+              <td><span class="badge-tag badge-tag-primary">28 Credits</span></td>
+              <td>Pharmaceutical Organic Chemistry III, Medicinal Chemistry I, Physical Pharmaceutics II, Pharmacology I, Pharmacognosy I</td>
+              <td><strong>Practice Internship I (120 Hours)</strong> in GMP Pharmaceutical Manufacturing</td>
+            </tr>
+            <tr>
+              <td><strong>Semester V</strong></td>
+              <td><span class="badge-tag badge-tag-primary">26 Credits</span></td>
+              <td>Medicinal Chemistry II, Industrial Pharmacy I, Pharmacology II, Pharmacognosy II, Pharmaceutical Jurisprudence</td>
+              <td>Regulatory Affairs &amp; IPR, Drug Formulation Technology</td>
+            </tr>
+            <tr>
+              <td><strong>Semester VI</strong></td>
+              <td><span class="badge-tag badge-tag-primary">28 Credits</span></td>
+              <td>Medicinal Chemistry III, Pharmacology III, Herbal Drug Technology, Biopharmaceutics &amp; Pharmacokinetics, Pharmaceutical Biotechnology</td>
+              <td>Clinical AI Diagnostics, <strong>Hospital Internship II (120 Hours)</strong> at VMCH Hospital</td>
+            </tr>
+            <tr>
+              <td><strong>Semester VII</strong></td>
+              <td><span class="badge-tag badge-tag-primary">22 Credits</span></td>
+              <td>Instrumental Methods of Analysis (HPLC, UV-Vis), Industrial Pharmacy II, Pharmacy Practice, Novel Drug Delivery Systems</td>
+              <td>Instrumental Analysis Practicals &amp; <strong>Capstone Research Project Phase I</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Semester VIII</strong></td>
+              <td><span class="badge-tag badge-tag-primary">21 Credits</span></td>
+              <td>Biostatistics &amp; Research Methodology, Social &amp; Preventive Pharmacy, Pharmaceutical Marketing / Pharmacovigilance Electives</td>
+              <td><strong>12-Credit Capstone Project Dissertation Defense</strong> &amp; Viva Voce</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-        <!-- Electives Basket Tab -->
-        <button class="sem-tab-btn special-tab" id="tab-btn-electives" data-target="electives" role="tab" aria-selected="false" aria-controls="panel-electives">
-          <span class="sem-tab-label">Electives Pool</span>
-          <span class="sem-tab-credits">AEC / SEC / VAC</span>
-        </button>
-
-        <!-- Legacy CBCS Tab -->
-        <button class="sem-tab-btn" id="tab-btn-legacy" data-target="legacy" role="tab" aria-selected="false" aria-controls="panel-legacy" style="border-style: dashed;">
-          <span class="sem-tab-label">2017 CBCS Archive</span>
-          <span class="sem-tab-credits">Senior Batches</span>
-        </button>
+      <div style="margin-top: 1.5rem; background: #F5F7F4; border-left: 4px solid #1E6A4D; padding: 1rem 1.25rem; border-radius: 8px; font-size: 0.92rem; color: #2D3748; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <strong>Need the complete day-by-day lesson plan and recommended textbooks?</strong>
+          <div style="font-size: 0.86rem; color: #718096; margin-top: 0.2rem;">
+            The official PCI 193-credit curriculum booklet contains individual subject units, reference bibliography, and internal exam rubrics.
+          </div>
+        </div>
+        <a href="assets/docs/B.Pharm_Syllabus_2026_NEP2020.pdf" download="B.Pharm_Syllabus_2026_NEP2020.pdf" class="btn btn-download-gold" style="padding: 0.6rem 1.25rem; font-size: 0.88rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download Complete Syllabus PDF</span>
+        </a>
       </div>
     </div>
-
-    <!-- Active Tab Content Area -->
-    <div class="sem-content-card fade-up" id="syllabusContentArea">
-      
-      <!-- Loop through Semesters 1 to 8 -->
-      <?php foreach ($nep_syllabus_data['semesters'] as $sem_key => $sem): ?>
-        <div class="sem-panel-block" id="panel-<?= $sem_key ?>" role="tabpanel" aria-labelledby="tab-btn-<?= $sem_key ?>" style="<?= ($sem_key !== 'sem1') ? 'display: none;' : '' ?>">
-          
-          <!-- Semester Header Banner -->
-          <div class="sem-header-banner">
-            <div class="sem-title-group">
-              <h3>
-                <?= htmlspecialchars($sem['title']) ?>
-                <span style="font-size: 0.85rem; font-weight: 700; background: var(--color-primary-subtle); color: var(--color-primary); padding: 0.25rem 0.65rem; border-radius: var(--radius-sm);">
-                  Semester <?= $sem['roman'] ?>
-                </span>
-              </h3>
-              <p>Choice Based Credit System (CBCS) • Prescribed by Pharmacy Council of India under NEP 2020</p>
-            </div>
-
-            <div class="sem-stat-badges">
-              <div class="sem-stat-badge">
-                <strong><?= $sem['total_credits'] ?></strong>
-                <span>Credits</span>
-              </div>
-              <div class="sem-stat-badge maroon">
-                <strong><?= $sem['total_hours'] ?></strong>
-                <span>Hours / Wk</span>
-              </div>
-              <div class="sem-stat-badge gold">
-                <strong><?= count($sem['courses']) ?></strong>
-                <span>Courses</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Semester Table -->
-          <div class="syllabus-table-wrapper">
-            <table class="syllabus-table" aria-label="Curriculum table for <?= $sem['title'] ?>">
-              <thead>
-                <tr>
-                  <th style="width: 130px;">Course Code</th>
-                  <th>Course Title &amp; Category</th>
-                  <th style="text-align: center; width: 110px;">Type</th>
-                  <th style="text-align: center; width: 120px;">Hours / Wk</th>
-                  <th style="text-align: center; width: 110px;">Credit Points</th>
-                  <th style="text-align: center; width: 120px;">Total Marks</th>
-                  <th style="text-align: right; width: 140px;">Syllabus</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php foreach ($sem['courses'] as $course): ?>
-                  <tr class="course-row" 
-                      data-code="<?= htmlspecialchars($course['code']) ?>" 
-                      data-title="<?= htmlspecialchars($course['title']) ?>" 
-                      data-type="<?= htmlspecialchars($course['type']) ?>" 
-                      data-category="<?= htmlspecialchars($course['category']) ?>">
-                    
-                    <td class="course-code-cell">
-                      <?= htmlspecialchars($course['code']) ?>
-                    </td>
-
-                    <td class="course-name-cell">
-                      <div><?= htmlspecialchars($course['title']) ?></div>
-                      <div class="course-tags-row">
-                        <?php if ($course['type'] === 'Theory'): ?>
-                          <span class="course-tag tag-theory">Theory</span>
-                        <?php elseif ($course['type'] === 'Practical'): ?>
-                          <span class="course-tag tag-practical">Practical Lab</span>
-                        <?php elseif ($course['type'] === 'Internship'): ?>
-                          <span class="course-tag tag-internship">Mandatory Internship</span>
-                        <?php elseif ($course['type'] === 'Project'): ?>
-                          <span class="course-tag tag-project">Research Project</span>
-                        <?php endif; ?>
-
-                        <?php if (strpos($course['category'], 'AI') !== false || strpos($course['title'], 'Python') !== false || strpos($course['title'], 'Machine Learning') !== false): ?>
-                          <span class="course-tag tag-ai">AI &amp; Computing</span>
-                        <?php endif; ?>
-
-                        <?php if (strpos($course['category'], 'Elective') !== false): ?>
-                          <span class="course-tag tag-elective">Elective</span>
-                        <?php endif; ?>
-                      </div>
-                    </td>
-
-                    <td class="course-num-cell">
-                      <?= htmlspecialchars($course['type']) ?>
-                    </td>
-
-                    <td class="course-num-cell">
-                      <?= ($course['hours'] > 0) ? $course['hours'] . ' h' : 'As per scheme' ?>
-                    </td>
-
-                    <td class="course-credit-cell">
-                      <?= htmlspecialchars($course['credits']) ?>
-                    </td>
-
-                    <td class="course-num-cell">
-                      <strong><?= $course['marks']['total'] ?></strong>
-                      <span style="font-size: 0.75rem; color: var(--color-text-light); display: block;">
-                        (Int: <?= $course['marks']['internal'] ?> | ESE: <?= $course['marks']['end_sem'] ?>)
-                      </span>
-                    </td>
-
-                    <td class="course-btn-cell">
-                      <?php if (!empty($course['has_detail'])): ?>
-                        <button class="btn-view-detail" data-course-code="<?= htmlspecialchars($course['code']) ?>">
-                          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                          <span>View Units</span>
-                        </button>
-                      <?php else: ?>
-                        <span style="font-size: 0.8rem; color: var(--color-text-light); font-style: italic;">Prescribed in scheme</span>
-                      <?php endif; ?>
-                    </td>
-                  </tr>
-                <?php endforeach; ?>
-              </tbody>
-            </table>
-          </div>
-
-          <!-- Semester Table Footer Summary -->
-          <div class="sem-footer-bar">
-            <div class="sem-footer-note">
-              <strong>PCI Regulation Note:</strong> Courses are calculated at 1 credit per lecture hour (Theory) and 1 credit per 2 laboratory hours (Practical). End semester examinations are conducted with external university moderation.
-            </div>
-            <div class="sem-footer-totals">
-              <span>Total Workload: <strong><?= $sem['total_hours'] ?> Hours/Wk</strong></span>
-              <span>Semester Credits: <strong><?= $sem['total_credits'] ?> Credits</strong></span>
-            </div>
-          </div>
-
-        </div>
-      <?php endforeach; ?>
-
-      <!-- PANEL: CREDIT MATRIX (Table-IX) -->
-      <div class="sem-panel-block" id="panel-matrix" role="tabpanel" aria-labelledby="tab-btn-matrix" style="display: none;">
-        <div class="sem-header-banner">
-          <div class="sem-title-group">
-            <h3>Table-IX: Semester-Wise Total Credit Distribution</h3>
-            <p>Mandatory minimum credits for the award of Bachelor of Pharmacy (B.Pharm) Degree as per PCI NEP 2020</p>
-          </div>
-          <div class="sem-stat-badges">
-            <div class="sem-stat-badge gold">
-              <strong>193</strong>
-              <span>Total Credits</span>
-            </div>
-            <div class="sem-stat-badge">
-              <strong>8</strong>
-              <span>Semesters</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="matrix-container">
-          <div style="background: #F5F7F4; border-radius: var(--radius-lg); border: 1px solid var(--color-border); overflow-x: auto; box-shadow: var(--shadow-sm); margin-bottom: 2rem;">
-            <table class="matrix-table" aria-label="Semester wise credits distribution">
-              <thead>
-                <tr>
-                  <th>Semester</th>
-                  <th>Weekly Hours</th>
-                  <th>Theory Courses</th>
-                  <th>Practical Labs</th>
-                  <th>Special Experiential Components</th>
-                  <th>Credit Points</th>
-                </tr>
-              </thead>
-              <tbody>
-                <?php foreach ($nep_syllabus_data['credit_distribution'] as $cd): ?>
-                  <tr>
-                    <td style="font-weight: 700; color: var(--color-primary-dark);">Semester <?= $cd['sem'] ?></td>
-                    <td><?= $cd['hours'] ?> Hours</td>
-                    <td><?= $cd['theory_count'] ?> Courses</td>
-                    <td><?= $cd['practical_count'] ?> Labs</td>
-                    <td style="text-align: left; font-size: 0.88rem; color: var(--color-text-main);">
-                      <?= htmlspecialchars($cd['special']) ?>
-                    </td>
-                    <td style="font-weight: 800; color: var(--color-primary); font-size: 1.1rem;"><?= $cd['credits'] ?></td>
-                  </tr>
-                <?php endforeach; ?>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td colspan="5" style="text-align: right; text-transform: uppercase; letter-spacing: 0.5px;">
-                    Total Mandatory Credits for B.Pharm Degree:
-                  </td>
-                  <td style="font-size: 1.25rem; font-weight: 900; color: var(--color-secondary);">
-                    193 Credits
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
-
-          <!-- Lateral Entry Rules Card -->
-          <div style="background: var(--color-primary-subtle); border: 1.5px solid rgba(41, 46, 130, 0.2); border-radius: var(--radius-lg); padding: 1.75rem;">
-            <h4 style="font-size: 1.15rem; color: var(--color-primary-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
-              Lateral Entry Credit Regulations (Section 7.1.2)
-            </h4>
-            <p style="font-size: 0.92rem; color: var(--color-text-main); line-height: 1.65; margin-bottom: 0.75rem;">
-              Students admitted directly to the 3rd Semester with a recognized D.Pharm qualification are awarded <strong>47 Credit Points</strong> upon passing bridge courses (Healthcare Psychology, Basics of Python, and Applied Biostatistics &amp; Data Analytics).
-            </p>
-            <div style="font-size: 0.88rem; color: var(--color-text-muted);">
-              • <strong>41 Credits:</strong> Accounted from the Diploma in Pharmacy (D.Pharm) program.<br>
-              • <strong>6 Credits:</strong> Awarded for successfully completing the mandatory bridge courses.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- PANEL: ELECTIVES POOL (Appendix I) -->
-      <div class="sem-panel-block" id="panel-electives" role="tabpanel" aria-labelledby="tab-btn-electives" style="display: none;">
-        <div class="sem-header-banner">
-          <div class="sem-title-group">
-            <h3>Appendix I: Recommended Electives Directory</h3>
-            <p>Comprehensive pool of Ability Enhancement (AEC), Skill Enhancement (SEC), and Value Addition (VAC) courses</p>
-          </div>
-          <div class="sem-stat-badges">
-            <div class="sem-stat-badge">
-              <strong>3</strong>
-              <span>Categories</span>
-            </div>
-            <div class="sem-stat-badge gold">
-              <strong>30+</strong>
-              <span>Elective Options</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="electives-grid">
-          
-          <!-- Category 1: AEC -->
-          <div class="elective-cat-card">
-            <div class="cat-header">
-              <span class="cat-badge aec">AEC</span>
-              <h4 class="cat-title">Ability Enhancement Courses</h4>
-            </div>
-            <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1.25rem;">
-              Enriching multidisciplinary knowledge across nutraceuticals, green synthesis, advanced cellular tools, and medical devices.
-            </p>
-            <ul class="elective-courses-list">
-              <?php foreach ($nep_syllabus_data['electives']['AEC']['list'] as $el): ?>
-                <li class="elective-course-item">
-                  <div>
-                    <strong><?= htmlspecialchars($el['code']) ?></strong>
-                    <div class="course-title"><?= htmlspecialchars($el['title']) ?></div>
-                  </div>
-                  <span class="course-sem"><?= htmlspecialchars($el['sem']) ?> • <?= htmlspecialchars($el['credits']) ?></span>
-                </li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
-
-          <!-- Category 2: SEC -->
-          <div class="elective-cat-card">
-            <div class="cat-header">
-              <span class="cat-badge sec">SEC</span>
-              <h4 class="cat-title">Skill Enhancement Courses</h4>
-            </div>
-            <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1.25rem;">
-              Hands-on practical training in high-demand technical specializations such as CADD, method validation, and computer operations.
-            </p>
-            <ul class="elective-courses-list">
-              <?php foreach ($nep_syllabus_data['electives']['SEC']['list'] as $el): ?>
-                <li class="elective-course-item">
-                  <div>
-                    <strong><?= htmlspecialchars($el['code']) ?></strong>
-                    <div class="course-title"><?= htmlspecialchars($el['title']) ?></div>
-                  </div>
-                  <span class="course-sem"><?= htmlspecialchars($el['sem']) ?> • <?= htmlspecialchars($el['credits']) ?></span>
-                </li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
-
-          <!-- Category 3: VAC -->
-          <div class="elective-cat-card">
-            <div class="cat-header">
-              <span class="cat-badge vac">VAC</span>
-              <h4 class="cat-title">Value Addition Courses</h4>
-            </div>
-            <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1.25rem;">
-              Industrial compliance, PAT, QbD in formulation, cleaning validation, and aseptic cleanroom handling techniques.
-            </p>
-            <ul class="elective-courses-list">
-              <?php foreach ($nep_syllabus_data['electives']['VAC']['list'] as $el): ?>
-                <li class="elective-course-item">
-                  <div>
-                    <strong><?= htmlspecialchars($el['code']) ?></strong>
-                    <div class="course-title"><?= htmlspecialchars($el['title']) ?></div>
-                  </div>
-                  <span class="course-sem"><?= htmlspecialchars($el['sem']) ?> • <?= htmlspecialchars($el['credits']) ?></span>
-                </li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- PANEL: LEGACY 2017 CBCS SCHEME (Archived for senior batches) -->
-      <div class="sem-panel-block" id="panel-legacy" role="tabpanel" aria-labelledby="tab-btn-legacy" style="display: none;">
-        <div class="sem-header-banner">
-          <div class="sem-title-group">
-            <h3>Archived 2017 CBCS Regulations (For Senior Batches)</h3>
-            <p>Reference curriculum for batches enrolled under the earlier 2017 PCI syllabus</p>
-          </div>
-          <div class="sem-stat-badge">
-            <strong>2017</strong>
-            <span>Regulation</span>
-          </div>
-        </div>
-
-        <div style="padding: 1.5rem 2rem;">
-          <div style="background: #F5F7F4; border-left: 4px solid #D6B56D; padding: 1.15rem 1.25rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem; font-size: 0.9rem; color: #1E6A4D; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-            <div>
-              <strong>Notice for Continuing Students:</strong> Students admitted in earlier academic years continue under the 2017 PCI CBCS framework. All new admissions follow the updated 2026 NEP 2020 framework displayed in Semesters I through VIII.
-            </div>
-            <a href="assets/docs/B.Pharm_Syllabus_2017_CBCS.pdf" download="B.Pharm_Syllabus_2017_CBCS.pdf" class="btn" style="font-size: 0.82rem; padding: 0.4rem 0.85rem; border: 1px solid #1E6A4D; color: #1E6A4D; font-weight: 700; display: inline-flex; align-items: center; gap: 0.4rem; white-space: nowrap; background: #D6B56D;">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              <span>Download 2017 CBCS Syllabus (PDF)</span>
-            </a>
-          </div>
-
-          <div class="syllabus-table-wrapper">
-            <table class="syllabus-table">
-              <thead>
-                <tr>
-                  <th>Course Code</th>
-                  <th>Name of the Course</th>
-                  <th style="text-align: center;">Hours</th>
-                  <th style="text-align: center;">Tutorial</th>
-                  <th style="text-align: center;">Credits</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td colspan="5" style="background: #F5F7F4; font-weight: 700; color: var(--color-primary);">Semester I Theory Courses (2017 Scheme)</td></tr>
-                <tr><td class="course-code-cell">17BP101T</td><td>Human Anatomy and Physiology I – Theory</td><td class="course-num-cell">3</td><td class="course-num-cell">1</td><td class="course-credit-cell">4</td></tr>
-                <tr><td class="course-code-cell">17BP102T</td><td>Pharmaceutical Analysis I – Theory</td><td class="course-num-cell">3</td><td class="course-num-cell">1</td><td class="course-credit-cell">4</td></tr>
-                <tr><td class="course-code-cell">17BP103T</td><td>Pharmaceutics I – Theory</td><td class="course-num-cell">3</td><td class="course-num-cell">1</td><td class="course-credit-cell">4</td></tr>
-                <tr><td class="course-code-cell">17BP104T</td><td>Pharmaceutical Inorganic Chemistry – Theory</td><td class="course-num-cell">3</td><td class="course-num-cell">1</td><td class="course-credit-cell">4</td></tr>
-                <tr><td class="course-code-cell">17BP105T</td><td>Communication skills – Theory *</td><td class="course-num-cell">2</td><td class="course-num-cell">-</td><td class="course-credit-cell">2</td></tr>
-                <tr><td class="course-code-cell">17BP106RBT/MT</td><td>Remedial Biology / Remedial Mathematics – Theory *</td><td class="course-num-cell">2</td><td class="course-num-cell">-</td><td class="course-credit-cell">2</td></tr>
-                <tr><td colspan="5" style="background: #F5F7F4; font-weight: 700; color: var(--color-secondary);">Semester I Practical Courses (2017 Scheme)</td></tr>
-                <tr><td class="course-code-cell">17BP107P</td><td>Human Anatomy and Physiology – Practical</td><td class="course-num-cell">4</td><td class="course-num-cell">-</td><td class="course-credit-cell">2</td></tr>
-                <tr><td class="course-code-cell">17BP108P</td><td>Pharmaceutical Analysis I – Practical</td><td class="course-num-cell">4</td><td class="course-num-cell">-</td><td class="course-credit-cell">2</td></tr>
-                <tr><td class="course-code-cell">17BP109P</td><td>Pharmaceutics I – Practical</td><td class="course-num-cell">4</td><td class="course-num-cell">-</td><td class="course-credit-cell">2</td></tr>
-                <tr><td class="course-code-cell">17BP110P</td><td>Pharmaceutical Inorganic Chemistry – Practical</td><td class="course-num-cell">4</td><td class="course-num-cell">-</td><td class="course-credit-cell">2</td></tr>
-                <tr><td class="course-code-cell">17BP111P</td><td>Communication skills – Practical *</td><td class="course-num-cell">2</td><td class="course-num-cell">-</td><td class="course-credit-cell">1</td></tr>
-                <tr><td class="course-code-cell">17BP112RBP</td><td>Remedial Biology – Practical *</td><td class="course-num-cell">2</td><td class="course-num-cell">-</td><td class="course-credit-cell">1</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
   </div>
 </section>
-
-<!-- SYLLABUS DETAIL MODAL (Populated dynamically) -->
-<div class="syllabus-modal-overlay" id="syllabusModal" role="dialog" aria-modal="true" aria-labelledby="modalSubjectTitle">
-  <div class="syllabus-modal-dialog">
-    <div class="syllabus-modal-header">
-      <div class="modal-header-info">
-        <span class="modal-code-badge" id="modalCourseCode">BP101T</span>
-        <h3 class="modal-subject-title" id="modalSubjectTitle">Subject Name</h3>
-        <div class="modal-meta-pills" id="modalMetaPills">
-          <span class="modal-meta-pill" id="modalCredits">2 Credits</span>
-          <span class="modal-meta-pill" id="modalHours">2 Hours/Wk</span>
-          <span class="modal-meta-pill" id="modalMarks">Max: 50 Marks</span>
-        </div>
-      </div>
-      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-      </button>
-    </div>
-
-    <div class="syllabus-modal-body" id="modalBody">
-      <!-- Populated via JS -->
-    </div>
-
-    <div class="syllabus-modal-footer">
-      <span style="font-size: 0.85rem; color: var(--color-text-light);">
-        Official Syllabus • Pharmacy Council of India (PCI NEP 2020)
-      </span>
-      <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
-        <a href="assets/docs/B.Pharm_Syllabus_2026_NEP2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 0.45rem 1rem; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.4rem;" title="View official syllabus PDF in a new tab">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-          <span>View Syllabus PDF</span>
-        </a>
-        <a href="assets/docs/B.Pharm_Syllabus_2026_NEP2020.pdf" download="B.Pharm_Syllabus_2026_NEP2020.pdf" class="btn btn-primary" style="padding: 0.45rem 1rem; font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.4rem;" title="Download complete syllabus PDF">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          <span>Download Syllabus</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- SECTION 5: PROGRAM OUTCOMES & CAREER OPPORTUNITIES -->
 <section class="section" aria-labelledby="outcomesTitle">

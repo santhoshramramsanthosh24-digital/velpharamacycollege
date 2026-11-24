@@ -1,7 +1,7 @@
 <?php
 $current_page = 'home';
-$page_title = "VEL Pharmacy College | B.Pharm Admissions 2024-2025 | Approved by PCI";
-$page_description = "Welcome to VEL Pharmacy College, an off-campus center of VISTAS Deemed University at VMCH Campus, Manjankaranai, Tiruvallur. Approved by the Pharmacy Council of India (PCI), offering 4-Year B.Pharm degree.";
+$page_title = "VEL Pharmacy College | B.Pharm Admissions 2024-2025 | Research Laboratories & Hospital Immersion";
+$page_description = "VEL Pharmacy College (VISTAS Deemed University), VMCH Campus, Tiruvallur. PCI Approved 4-Year B.Pharm with hands-on HPLC, UV-Vis, molecular docking, formulation pilot plant, and on-campus 300-bed hospital clinical training.";
 $canonical_url = "https://velpharmacycollege.com/";
 
 // Custom Schema for FAQPage and Course
@@ -11,7 +11,7 @@ $custom_schema = [
     [
       "@type" => "Course",
       "name" => "Bachelor of Pharmacy (B.Pharm)",
-      "description" => "A comprehensive 4-year undergraduate degree in pharmaceutical sciences approved by the Pharmacy Council of India (PCI) and affiliated to VISTAS Deemed to be University.",
+      "description" => "A comprehensive 4-year undergraduate degree in pharmaceutical sciences approved by the Pharmacy Council of India (PCI) and affiliated to VISTAS Deemed to be University. Features HPLC, UV-Vis instrumentation, computational drug discovery, and 300-bed hospital clinical immersion.",
       "provider" => [
         "@type" => "CollegeOrUniversity",
         "name" => "VEL Pharmacy College",
@@ -22,12 +22,28 @@ $custom_schema = [
       "hasCourseInstance" => [
         "@type" => "CourseInstance",
         "courseMode" => "Full-time",
-        "courseWorkload" => "8 Semesters"
+        "courseWorkload" => "8 Semesters (193 Credits)"
       ]
     ],
     [
       "@type" => "FAQPage",
       "mainEntity" => [
+        [
+          "@type" => "Question",
+          "name" => "Why is VEL Pharmacy College better than other pharmacy colleges in Chennai and Tiruvallur?",
+          "acceptedAnswer" => [
+            "@type" => "Answer",
+            "text" => "VEL Pharmacy College offers direct clinical training in an on-campus 300-bed teaching hospital (VMCH), advanced analytical instrumentation including HPLC and UV-Visible spectroscopy accessible to undergraduates, in-silico computational drug discovery with molecular docking, and 45+ Scopus-indexed faculty research publications under VISTAS Deemed University."
+          ]
+        ],
+        [
+          "@type" => "Question",
+          "name" => "What research laboratories and analytical instruments are available at VEL Pharmacy College?",
+          "acceptedAnswer" => [
+            "@type" => "Answer",
+            "text" => "The college houses high-precision High-Performance Liquid Chromatography (HPLC), double-beam UV-Visible spectrophotometers, a cGMP pilot machine room with rotary tablet compression and USP dissolution apparatus, pharmacology computer simulation suites, Soxhlet botanical extraction units, and an in-silico CADD laboratory with AutoDock and PyMOL."
+          ]
+        ],
         [
           "@type" => "Question",
           "name" => "What courses are offered at VEL Pharmacy College?",
@@ -297,627 +313,384 @@ $cta_banner = $home_cms['cta_banner'] ?? [];
 </section>
 
 <!-- ==========================================================================
-     SECTION 3: UPCOMING EVENTS & INSTITUTIONAL HIGHLIGHTS (DUAL-COLUMN)
+     WHY VEL PHARMACY COLLEGE IS BETTER THAN OTHER COLLEGES IN & AROUND
      ========================================================================== -->
-<?php
-// Base Events Dataset
-$raw_events = $events_highlights['events'] ?? [
-  [
-    'date' => '2026-11-18',
-    'month' => 'NOV',
-    'day' => '18',
-    'year' => '2026',
-    'category' => 'National Symposium',
-    'category_color' => 'blue',
-    'title' => 'National Seminar on AI & Machine Learning in Modern Drug Discovery',
-    'time' => '09:30 AM – 03:30 PM',
-    'venue' => 'Dr. Ishari K. Ganesh Seminar Hall',
-    'description' => 'Expert talks by pharmaceutical data scientists on generative AI, molecular docking simulations, and QSAR algorithms.',
-    'link' => 'enquiry'
-  ],
-  [
-    'date' => '2026-11-28',
-    'month' => 'NOV',
-    'day' => '28',
-    'year' => '2026',
-    'category' => 'PCI Workshop',
-    'category_color' => 'amber',
-    'title' => 'PCI Sponsored Quality Improvement Program on Good Laboratory Practices (GLP)',
-    'time' => '10:00 AM – 04:30 PM',
-    'venue' => 'Advanced Formulation Pilot Plant',
-    'description' => 'Comprehensive regulatory documentation, cleanroom protocol compliance, and analytical instrument validation.',
-    'link' => 'facilities'
-  ],
-  [
-    'date' => '2026-12-05',
-    'month' => 'DEC',
-    'day' => '05',
-    'year' => '2026',
-    'category' => 'Hands-On Workshop',
-    'category_color' => 'maroon',
-    'title' => 'Advanced Instrumentation Workshop: High-Performance Liquid Chromatography (HPLC)',
-    'time' => '10:00 AM – 04:00 PM',
-    'venue' => 'Central Instrumentation & Analysis Lab',
-    'description' => 'Practical training for students on method validation, peak integration, and quantitative chromatographic assays.',
-    'link' => 'enquiry'
-  ],
-  [
-    'date' => '2026-12-18',
-    'month' => 'DEC',
-    'day' => '18',
-    'year' => '2026',
-    'category' => 'Clinical Rounds',
-    'category_color' => 'green',
-    'title' => 'Hospital Pharmacy Practice & Inpatient Bedside Rounds at VMCH',
-    'time' => '09:00 AM – 01:00 PM',
-    'venue' => 'VMCH Teaching Hospital, Manjankaranai',
-    'description' => 'Ward rounds, patient history interviews, and therapeutic drug monitoring protocols guided by senior clinical preceptors.',
-    'link' => 'facilities'
-  ],
-  [
-    'date' => '2027-01-12',
-    'month' => 'JAN',
-    'day' => '12',
-    'year' => '2027',
-    'category' => 'Clinical Rounds',
-    'category_color' => 'green',
-    'title' => 'Clinical Pharmacovigilance & Adverse Drug Reaction Reporting Symposium',
-    'time' => '09:00 AM – 01:00 PM',
-    'venue' => 'VMCH Seminar Room & Wards',
-    'description' => 'Clinical pharmacy faculty-led patient chart reviews, therapeutic drug monitoring, and inpatient ward protocols.',
-    'link' => 'facilities'
-  ],
-  [
-    'date' => '2027-02-20',
-    'month' => 'FEB',
-    'day' => '20',
-    'year' => '2027',
-    'category' => 'Community Outreach',
-    'category_color' => 'amber',
-    'title' => 'National Pharmacy Week: Rural Health Screening & Pharmacovigilance Camp',
-    'time' => '08:30 AM – 02:00 PM',
-    'venue' => 'Velan Nagar Community Health Center',
-    'description' => 'Public health awareness on rational antibiotic usage, geriatric dosage regimens, and vital health screenings.',
-    'link' => 'contact-us'
-  ],
-  [
-    'date' => '2026-09-25',
-    'month' => 'SEP',
-    'day' => '25',
-    'year' => '2026',
-    'category' => 'Celebration & Induction',
-    'category_color' => 'green',
-    'title' => 'World Pharmacists Day 2026 & White Coat Ceremony for Freshers Batch',
-    'time' => '10:00 AM – 02:00 PM',
-    'venue' => 'Dr. Ishari K. Ganesh Auditorium',
-    'description' => 'Induction of new B.Pharm students with the Pharmacist Oath, guest lectures by eminent healthcare leaders, and academic awards.',
-    'link' => 'about-us'
-  ],
-  [
-    'date' => '2026-10-15',
-    'month' => 'OCT',
-    'day' => '15',
-    'year' => '2026',
-    'category' => 'Guest Masterclass',
-    'category_color' => 'blue',
-    'title' => 'Industry Masterclass: Modern Computer-Aided Drug Design (CADD) & Molecular Docking',
-    'time' => '11:00 AM – 03:00 PM',
-    'venue' => 'Advanced Digital Chemistry Lab',
-    'description' => 'Hands-on computational chemistry workshop on PyMOL, AutoDock Vina, and pharmacophore modeling for novel drug synthesis.',
-    'link' => 'courses'
-  ]
-];
+<section class="section why-vels-better-section" id="whyVelBetter" aria-labelledby="whyVelBetterTitle" style="background: #FFFFFF;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-subtitle">COMPETITIVE EXCELLENCE &amp; TRUST</span>
+      <h2 class="section-title" id="whyVelBetterTitle">
+        Why VEL Pharmacy College is Better than Other Colleges In &amp; Around
+      </h2>
+      <p class="section-description">
+        Strategically located in the green VMCH Campus under VISTAS Deemed University, VEL Pharmacy College delivers a distinct clinical, technological, and research edge over standalone regional pharmacy colleges in Chennai, Tiruvallur, and Tamil Nadu.
+      </p>
+    </div>
 
-// Today's date comparison (YYYY-MM-DD)
-$today_ymd = date('Y-m-d');
-$active_upcoming_events = [];
-$past_events_to_highlights = [];
+    <div class="why-better-grid">
+      <!-- Advantage 1 -->
+      <div class="why-better-card fade-up">
+        <div class="why-better-header">
+          <div class="why-better-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 9v4"/><path d="M10 11h4"/></svg>
+          </div>
+          <div>
+            <span class="why-better-num">Advantage 01</span>
+            <h3 class="why-better-title">On-Campus 300-Bed Teaching Hospital (VMCH)</h3>
+          </div>
+        </div>
+        <p class="why-better-desc">
+          Students train inside our own 300-bed multispecialty teaching hospital on campus. Daily clinical bedside ward rounds, prescription auditing, and inpatient case monitoring from Year 2 onwards.
+        </p>
+        <div class="why-better-comparison">
+          <strong>The VEL Difference:</strong>
+          Other regional colleges lack a medical hospital and send students on distant, occasional observation visits without hands-on clinical rounds.
+        </div>
+      </div>
 
-foreach ($raw_events as &$ev) {
-  $ev_date = $ev['date'] ?? '';
-  if (!empty($ev_date)) {
-    $ts = strtotime($ev_date);
-    if ($ts) {
-      if (empty($ev['month']))
-        $ev['month'] = strtoupper(date('M', $ts));
-      if (empty($ev['day']))
-        $ev['day'] = date('d', $ts);
-      if (empty($ev['year']))
-        $ev['year'] = date('Y', $ts);
-    }
-  } elseif (!empty($ev['year']) && !empty($ev['month']) && !empty($ev['day'])) {
-    $parsed_ts = strtotime($ev['day'] . ' ' . $ev['month'] . ' ' . $ev['year']);
-    if ($parsed_ts) {
-      $ev_date = date('Y-m-d', $parsed_ts);
-    }
-  }
+      <!-- Advantage 2 -->
+      <div class="why-better-card fade-up">
+        <div class="why-better-header">
+          <div class="why-better-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+          </div>
+          <div>
+            <span class="why-better-num">Advantage 02</span>
+            <h3 class="why-better-title">Advanced Analytical Instrumentation Hub (HPLC &amp; UV)</h3>
+          </div>
+        </div>
+        <p class="why-better-desc">
+          Undergraduate students operate real High-Performance Liquid Chromatography (HPLC) isocratic/gradient systems and double-beam UV-Vis spectrophotometers for active API assays and dissolution profiling.
+        </p>
+        <div class="why-better-comparison">
+          <strong>The VEL Difference:</strong>
+          Most regional pharmacy colleges restrict analytical instrumentation to faculty or PG students, leaving B.Pharm students with basic glassware only.
+        </div>
+      </div>
 
-  // Automatic date check: if event date is over -> move to Highlights!
-  if (!empty($ev_date) && $ev_date < $today_ymd) {
-    $past_events_to_highlights[] = [
-      'icon' => 'calendar-check',
-      'tag' => 'Concluded Event Highlight',
-      'badge' => 'Concluded • ' . date('M j, Y', strtotime($ev_date)),
-      'title' => $ev['title'] ?? '',
-      'desc' => !empty($ev['description'])
-        ? $ev['description']
-        : ('Successfully conducted at ' . ($ev['venue'] ?? 'VEL Pharmacy College') . ' with high student engagement and research discussions.'),
-      'link' => $ev['link'] ?? 'about-us',
-      'is_transferred_event' => true
-    ];
-  } else {
-    $active_upcoming_events[] = $ev;
-  }
-}
-unset($ev);
+      <!-- Advantage 3 -->
+      <div class="why-better-card fade-up">
+        <div class="why-better-header">
+          <div class="why-better-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div>
+            <span class="why-better-num">Advantage 03</span>
+            <h3 class="why-better-title">Computational Drug Discovery &amp; Molecular Docking</h3>
+          </div>
+        </div>
+        <p class="why-better-desc">
+          Dedicated high-performance computer-aided drug design (CADD) facility equipped with AutoDock, PyMOL, and QSAR modeling software to simulate protein-ligand binding and virtual screening.
+        </p>
+        <div class="why-better-comparison">
+          <strong>The VEL Difference:</strong>
+          We integrate Python and Machine Learning into the pharmacy curriculum under NEP 2020, positioning graduates for high-growth computational biology MNC roles.
+        </div>
+      </div>
 
-// Base Highlights
-$base_highlights = $events_highlights['highlights'] ?? [
-  [
-    'image' => 'assets/images/campus-main-entrance.jpg',
-    'tag' => 'Accreditation',
-    'badge' => 'PCI Approved',
-    'title' => 'Pharmacy Council of India (PCI) Statutory Approval',
-    'desc' => 'Fully recognized and approved by PCI, New Delhi under VISTAS Deemed to be University, upholding premier educational benchmarks.',
-    'link' => 'about-us'
-  ],
-  [
-    'image' => 'assets/images/computer-lab.jpg',
-    'tag' => 'Curriculum',
-    'badge' => '193 Credits • NEP 2020',
-    'title' => 'Pioneering NEP 2020 Syllabus with Python & AI',
-    'desc' => 'Tamil Nadu\'s first 4-year B.Pharm integrating Python Programming, Machine Learning, Clinical AI, and 240 hours internships.',
-    'link' => 'courses'
-  ],
-  [
-    'image' => 'assets/images/hospital-facility.jpg',
-    'tag' => 'Clinical Immersion',
-    'badge' => '300+ Bed Hospital',
-    'title' => 'On-Campus VMCH Medical College & Hospital',
-    'desc' => 'Unrivaled real-world hospital exposure with bedside patient rotations, ADR reporting, and drug interaction analysis.',
-    'link' => 'facilities'
-  ],
-  [
-    'image' => 'assets/images/research-lab-modern.jpg',
-    'tag' => 'Research Labs',
-    'badge' => '15+ High-Tech Labs',
-    'title' => 'State-of-the-Art Analytical & Formulation Suites',
-    'desc' => 'Equipped with HPLC, UV-Vis Spectrophotometers, Pilot Formulation Plant, Machine Room, and Digital Molecular Modeling Lab.',
-    'link' => 'facilities'
-  ]
-];
+      <!-- Advantage 4 -->
+      <div class="why-better-card fade-up">
+        <div class="why-better-header">
+          <div class="why-better-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div>
+            <span class="why-better-num">Advantage 04</span>
+            <h3 class="why-better-title">Funded Research Projects &amp; Scopus Publications</h3>
+          </div>
+        </div>
+        <p class="why-better-desc">
+          Over 45+ research publications in Scopus and Web of Science indexed journals, funded student capstone research grants, and active faculty patent filings in drug formulation.
+        </p>
+        <div class="why-better-comparison">
+          <strong>The VEL Difference:</strong>
+          While other colleges focus solely on exam memorization, our doctorate faculty actively mentor undergraduate students to publish original research papers.
+        </div>
+      </div>
 
-// Concluded events automatically added to Highlights list
-$all_highlights = array_merge($base_highlights, $past_events_to_highlights);
-?>
+      <!-- Advantage 5 -->
+      <div class="why-better-card fade-up">
+        <div class="why-better-header">
+          <div class="why-better-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <span class="why-better-num">Advantage 05</span>
+            <h3 class="why-better-title">Vels University Network &amp; 90% Placements</h3>
+          </div>
+        </div>
+        <p class="why-better-desc">
+          Constituent off-campus center of VISTAS Deemed University with a 30+ year academic track record, 3,000+ annual campus recruiters across Vels Group, and guaranteed placement drives.
+        </p>
+        <div class="why-better-comparison">
+          <strong>The VEL Difference:</strong>
+          Graduates receive an esteemed Deemed University degree recognized globally by WES, US-FDA, and foreign licensure bodies rather than affiliated regional state colleges.
+        </div>
+      </div>
 
-<section class="section section-alt events-highlights-section" id="events-highlights"
-  aria-labelledby="eventsHighlightsTitle">
-  <span id="announcements" class="anchor-target" aria-hidden="true" style="position: absolute; top: -80px;"></span>
-  <span id="highlights-anchor" class="anchor-target" aria-hidden="true" style="position: absolute; top: -80px;"></span>
+      <!-- Advantage 6 -->
+      <div class="why-better-card fade-up">
+        <div class="why-better-header">
+          <div class="why-better-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          </div>
+          <div>
+            <span class="why-better-num">Advantage 06</span>
+            <h3 class="why-better-title">Vibrant Student Life, Clubs &amp; Multi-Acre Sports</h3>
+          </div>
+        </div>
+        <p class="why-better-desc">
+          Sprawling green campus featuring full-size cricket and football grounds, floodlit courts, student innovation clubs, academic discussion forums, and health outreach camps.
+        </p>
+        <div class="why-better-comparison">
+          <strong>The VEL Difference:</strong>
+          True university campus experience with holistic athletic facilities, active student government, and collaborative peer learning.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     VISIBLY SHOWCASED: ADVANCED RESEARCH LABORATORIES & INSTRUMENTATION HUB
+     ========================================================================== -->
+<section class="section section-alt research-showcase-section" id="researchHub" aria-labelledby="researchHubTitle">
   <div class="container-wide">
     <div class="section-header fade-up">
-      <span
-        class="section-subtitle"><?= htmlspecialchars($events_highlights['subtitle'] ?? 'Campus Life & Key Milestones') ?></span>
-      <h2 class="section-title" id="eventsHighlightsTitle">
-        <?= htmlspecialchars($events_highlights['title'] ?? 'Upcoming Events & Institutional Highlights') ?>
+      <span class="section-subtitle" style="color: #D6B56D;">SCIENTIFIC INFRASTRUCTURE &amp; CAPABILITIES</span>
+      <h2 class="section-title" id="researchHubTitle">
+        Advanced Research Laboratories &amp; Analytical Instrumentation Hub
       </h2>
-      <p class="section-description">
-        <?= htmlspecialchars($events_highlights['description'] ?? 'Stay connected with upcoming academic conferences, hands-on clinical workshops, and premier institutional achievements shaping pharmaceutical education at VEL Pharmacy College.') ?>
+      <p class="section-description" style="color: rgba(255,255,255,0.88);">
+        VEL Pharmacy College visibly showcases an advanced pharmaceutical research ecosystem. Explore our specialized laboratories, analytical instrumentation, pilot manufacturing equipment, and computational drug discovery suites:
       </p>
     </div>
 
-    <div class="events-highlights-grid">
-
-      <!-- LEFT COLUMN: UPCOMING EVENTS (AUTO-SCROLLING) -->
-      <div class="eh-col-box events-col motion-from-left">
-        <div class="eh-col-header">
-          <div class="eh-col-title-group">
-            <div class="eh-col-icon events-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-              </svg>
-            </div>
-            <div>
-              <h3 class="eh-col-title"><?= htmlspecialchars($events_highlights['events_title'] ?? 'Upcoming Events') ?>
-              </h3>
-            </div>
-          </div>
-
-          <div class="eh-scroll-controls">
-            <span class="eh-live-badge" title="Auto-scrolling list. Hover cursor to pause.">
-              <span class="eh-live-dot" aria-hidden="true"></span>
-              <span class="eh-live-text">Live Scroll</span>
-            </span>
-            <button type="button" class="eh-ctrl-btn" id="ehScrollPrevBtn" aria-label="Scroll to previous event"
-              title="Previous event">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="18 15 12 9 6 15"></polyline>
-              </svg>
-            </button>
-            <button type="button" class="eh-ctrl-btn" id="ehScrollNextBtn" aria-label="Scroll to next event"
-              title="Next event">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polyline points="6 9 12 15 18 9"></polyline>
-              </svg>
-            </button>
-            <button type="button" class="eh-ctrl-btn" id="ehScrollPlayPauseBtn" aria-label="Pause or resume auto-scroll"
-              title="Pause / Play auto-scroll">
-              <svg class="icon-pause" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
-                <rect x="6" y="4" width="4" height="16"></rect>
-                <rect x="14" y="4" width="4" height="16"></rect>
-              </svg>
-              <svg class="icon-play" width="12" height="12" viewBox="0 0 24 24" fill="currentColor"
-                style="display: none;">
-                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-              </svg>
-            </button>
-          </div>
+    <div class="research-grid">
+      <!-- Showcase 1: Analytical Instrumentation (HPLC & UV-Vis) -->
+      <div class="research-card fade-up">
+        <div class="research-media">
+          <img src="assets/images/analysis-lab.jpg" alt="HPLC and UV-Visible Spectroscopy Laboratory" loading="lazy">
+          <span class="research-badge">Analytical Instrumentation</span>
         </div>
-
-        <!-- Auto-Scrolling Viewport -->
-        <div class="eh-events-scroll-viewport" id="ehEventsScrollViewport">
-          <div class="eh-events-list" id="ehEventsList">
-            <?php foreach ($active_upcoming_events as $ev): ?>
-              <a href="<?= htmlspecialchars($ev['link'] ?? 'enquiry') ?>" class="eh-event-card"
-                data-event-date="<?= htmlspecialchars($ev['date'] ?? '') ?>"
-                title="<?= htmlspecialchars($ev['title']) ?>">
-                <div class="eh-date-badge">
-                  <span class="eh-date-month"><?= htmlspecialchars($ev['month']) ?></span>
-                  <span class="eh-date-day"><?= htmlspecialchars($ev['day']) ?></span>
-                  <span class="eh-date-year"><?= htmlspecialchars($ev['year']) ?></span>
-                </div>
-                <div class="eh-event-body">
-                  <span
-                    class="eh-tag-pill <?= htmlspecialchars($ev['category_color'] ?? 'blue') ?>"><?= htmlspecialchars($ev['category']) ?></span>
-                  <h4 class="eh-event-title"><?= htmlspecialchars($ev['title']) ?></h4>
-                  <div class="eh-event-meta">
-                    <span class="eh-meta-item">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                      </svg>
-                      <?= htmlspecialchars($ev['time']) ?>
-                    </span>
-                    <span class="eh-meta-item">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>
-                      <?= htmlspecialchars($ev['venue']) ?>
-                    </span>
-                  </div>
-                </div>
-              </a>
-            <?php endforeach; ?>
+        <div class="research-body">
+          <h3 class="research-card-title">HPLC &amp; UV-Visible Spectroscopy Suite</h3>
+          <p class="research-card-desc">
+            Equipped with state-of-the-art analytical instrumentation for quantitative drug estimation, stability testing, and purity profiling conforming to ICH and Indian Pharmacopoeia standards.
+          </p>
+          <ul class="research-specs-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>HPLC:</strong> Isocratic &amp; binary gradient pumps, Photodiode Array (PDA) detector, automated sample injector.</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>UV-Vis Spectroscopy:</strong> Double-beam spectrophotometer (190–1100 nm) for dissolution absorbance kinetics.</span>
+            </li>
+          </ul>
+          <div class="research-footer-tag">
+            <span>PCI &amp; ICH Compliant</span>
+            <span style="color: #D6B56D;">Direct Student Hands-on</span>
           </div>
         </div>
       </div>
 
-      <!-- RIGHT COLUMN: HIGHLIGHTS (WITH AUTO-TRANSFERRED PAST EVENTS) -->
-      <div class="eh-col-box highlights-col motion-from-right delay-1" id="highlights">
-        <div class="eh-col-header">
-          <div class="eh-col-title-group">
-            <div class="eh-col-icon highlights-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon
-                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
-                </polygon>
-              </svg>
-            </div>
-            <div>
-              <h3 class="eh-col-title">
-                <?= htmlspecialchars($events_highlights['highlights_title'] ?? 'College Highlights') ?>
-              </h3>
-            </div>
-          </div>
-          <div style="display: flex; align-items: center; gap: 0.4rem; flex-wrap: wrap;">
-            <span
-              class="eh-col-badge badge-gold"><?= htmlspecialchars($events_highlights['highlights_badge'] ?? 'Institutional Prestige') ?></span>
-          </div>
+      <!-- Showcase 2: Pharmaceutical Formulation Laboratories & Machine Room -->
+      <div class="research-card fade-up">
+        <div class="research-media">
+          <img src="assets/images/machine-room.jpg" alt="Pharmaceutical Formulation Laboratories & Machine Room" loading="lazy">
+          <span class="research-badge">Formulation &amp; Pilot Plant</span>
         </div>
-
-        <!-- Scrollable Highlights Viewport -->
-        <div class="eh-highlights-scroll-viewport eh-scroll-styled" id="ehHighlightsScrollViewport">
-          <div class="eh-highlights-list" id="ehHighlightsList">
-            <?php foreach ($all_highlights as $hl): ?>
-              <?php
-              // Resolve topic-related image according to title
-              $hl_img = !empty($hl['image']) ? $hl['image'] : (!empty($hl['notice_image']) ? $hl['notice_image'] : '');
-              if (empty($hl_img)) {
-                $t = strtolower($hl['title'] ?? '');
-                if (strpos($t, 'pci') !== false || strpos($t, 'approval') !== false) {
-                  $hl_img = 'assets/images/campus-main-entrance.jpg';
-                } elseif (strpos($t, 'python') !== false || strpos($t, 'ai') !== false || strpos($t, 'nep') !== false || strpos($t, 'cadd') !== false) {
-                  $hl_img = 'assets/images/computer-lab.jpg';
-                } elseif (strpos($t, 'hospital') !== false || strpos($t, 'clinical') !== false || strpos($t, 'vmch') !== false) {
-                  $hl_img = 'assets/images/hospital-facility.jpg';
-                } elseif (strpos($t, 'lab') !== false || strpos($t, 'analytical') !== false || strpos($t, 'suite') !== false) {
-                  $hl_img = 'assets/images/research-lab-modern.jpg';
-                } elseif (strpos($t, 'pharmacist') !== false || strpos($t, 'ceremony') !== false) {
-                  $hl_img = 'assets/images/seminar-hall.jpg';
-                } else {
-                  $hl_img = 'assets/images/campus-main-entrance.jpg';
-                }
-              }
-              ?>
-              <a href="highlights#<?= !empty($hl['slug']) ? htmlspecialchars($hl['slug']) : '' ?>" target="_blank"
-                rel="noopener noreferrer"
-                class="eh-highlight-card <?= !empty($hl['is_transferred_event']) ? 'transferred-event-card' : '' ?>"
-                title="<?= htmlspecialchars($hl['title']) ?>">
-                <div class="eh-hl-image-wrap <?= !empty($hl['is_transferred_event']) ? 'img-transferred' : '' ?>">
-                  <img src="<?= htmlspecialchars($hl_img) ?>" alt="<?= htmlspecialchars($hl['title']) ?>"
-                    class="eh-hl-thumb-img" loading="lazy" width="76" height="76">
-                </div>
-                <div class="eh-hl-body">
-                  <div class="eh-hl-badge-row">
-                    <span
-                      class="eh-hl-badge <?= !empty($hl['is_transferred_event']) ? 'badge-concluded' : '' ?>"><?= htmlspecialchars($hl['badge']) ?></span>
-                    <span class="eh-hl-category"><?= htmlspecialchars($hl['tag']) ?></span>
-                  </div>
-                  <h4 class="eh-hl-title"><?= htmlspecialchars($hl['title']) ?></h4>
-                  <p class="eh-hl-desc"><?= htmlspecialchars($hl['desc']) ?></p>
-                </div>
-              </a>
-            <?php endforeach; ?>
-          </div>
-        </div>
-
-        <div class="eh-action-box">
-          <a href="highlights" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
-            style="width: 100%; justify-content: center; display: inline-flex; align-items: center; gap: 0.5rem;"
-            title="View Highlights">
-            <span>View Highlights &rarr;</span>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- Auto-Scroll Engine & Live Date Checker for Upcoming Events -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const viewport = document.getElementById('ehEventsScrollViewport');
-    const list = document.getElementById('ehEventsList');
-    if (!viewport || !list) return;
-
-    const playPauseBtn = document.getElementById('ehScrollPlayPauseBtn');
-    const prevBtn = document.getElementById('ehScrollPrevBtn');
-    const nextBtn = document.getElementById('ehScrollNextBtn');
-    const iconPause = playPauseBtn ? playPauseBtn.querySelector('.icon-pause') : null;
-    const iconPlay = playPauseBtn ? playPauseBtn.querySelector('.icon-play') : null;
-    const liveBadge = document.querySelector('.eh-live-badge');
-
-    let isPaused = false;
-    let scrollSpeed = 0.65; // pixels per animation frame
-    let animationFrameId = null;
-
-    // Duplicate items for continuous seamless loop if list has at least 2 cards
-    const cards = list.querySelectorAll('.eh-event-card');
-    if (cards.length >= 2) {
-      const originalCardsHtml = list.innerHTML;
-      list.insertAdjacentHTML('beforeend', originalCardsHtml);
-    }
-
-    function getHalfHeight() {
-      return list.scrollHeight / 2;
-    }
-
-    function autoScrollLoop() {
-      if (!isPaused) {
-        viewport.scrollTop += scrollSpeed;
-        const halfHeight = getHalfHeight();
-        if (halfHeight > 0 && viewport.scrollTop >= halfHeight) {
-          viewport.scrollTop = 0;
-        }
-      }
-      animationFrameId = requestAnimationFrame(autoScrollLoop);
-    }
-
-    // Start smooth auto-scroll loop
-    animationFrameId = requestAnimationFrame(autoScrollLoop);
-
-    // Pause on hover
-    const eventsCol = document.querySelector('.eh-col-box.events-col');
-    if (eventsCol) {
-      eventsCol.addEventListener('mouseenter', function () {
-        isPaused = true;
-        if (liveBadge) liveBadge.style.opacity = '0.6';
-      });
-      eventsCol.addEventListener('mouseleave', function () {
-        if (!playPauseBtn || !playPauseBtn.classList.contains('manual-paused')) {
-          isPaused = false;
-          if (liveBadge) liveBadge.style.opacity = '1';
-        }
-      });
-      eventsCol.addEventListener('touchstart', function () {
-        isPaused = true;
-      }, { passive: true });
-      eventsCol.addEventListener('touchend', function () {
-        setTimeout(function () {
-          if (!playPauseBtn || !playPauseBtn.classList.contains('manual-paused')) {
-            isPaused = false;
-          }
-        }, 3000);
-      }, { passive: true });
-    }
-
-    // Play / Pause Toggle Button
-    if (playPauseBtn) {
-      playPauseBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        if (isPaused) {
-          isPaused = false;
-          playPauseBtn.classList.remove('manual-paused');
-          if (iconPause) iconPause.style.display = 'block';
-          if (iconPlay) iconPlay.style.display = 'none';
-          if (liveBadge) liveBadge.style.opacity = '1';
-        } else {
-          isPaused = true;
-          playPauseBtn.classList.add('manual-paused');
-          if (iconPause) iconPause.style.display = 'none';
-          if (iconPlay) iconPlay.style.display = 'block';
-          if (liveBadge) liveBadge.style.opacity = '0.5';
-        }
-      });
-    }
-
-    // Manual Prev / Next Buttons
-    if (prevBtn) {
-      prevBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        viewport.scrollBy({ top: -110, behavior: 'smooth' });
-        if (viewport.scrollTop <= 0) {
-          viewport.scrollTop = getHalfHeight();
-        }
-      });
-    }
-
-    if (nextBtn) {
-      nextBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        viewport.scrollBy({ top: 110, behavior: 'smooth' });
-        if (viewport.scrollTop >= getHalfHeight()) {
-          viewport.scrollTop = 0;
-        }
-      });
-    }
-  });
-</script>
-
-<!-- WELCOME & ABOUT HIGHLIGHT -->
-<section class="section" aria-labelledby="welcomeTitle">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span
-        class="section-subtitle"><?= htmlspecialchars($welcome['subtitle'] ?? 'Excellence In Pharmaceutical Education') ?></span>
-      <h2 class="section-title" id="welcomeTitle">
-        <?= htmlspecialchars($welcome['title'] ?? 'Welcome to VEL Pharmacy College') ?>
-      </h2>
-      <p class="section-description">
-        <?= htmlspecialchars($welcome['description'] ?? 'Pharmacy is the noble profession concerned with the art and science of preparing drugs from natural and synthetic sources and transforming them into suitable materials for the treatment and prevention of disease.') ?>
-      </p>
-    </div>
-
-    <!-- Founder & Chancellor Spotlight Card -->
-    <div class="founder-card">
-      <div class="founder-img-col motion-from-left">
-        <img
-          src="<?= htmlspecialchars($welcome['founder_image'] ?? 'assets/images/chancellor-ishari-ganesh-vistas.jpg') ?>"
-          alt="<?= htmlspecialchars($welcome['founder_name'] ?? 'Dr. Ishari K. Ganesh') ?>" loading="lazy" width="600"
-          height="750">
-      </div>
-      <div class="founder-content motion-from-right">
-        <div class="founder-quote">
-          <?= htmlspecialchars($welcome['founder_quote'] ?? '“I welcome the aspiring youth to join us to realize the objectives of the university and the goals of Higher Education.”') ?>
-        </div>
-        <p class="founder-bio">
-          <?= htmlspecialchars($welcome['founder_bio_p1'] ?? '') ?>
-        </p>
-        <p class="founder-bio">
-          <?= htmlspecialchars($welcome['founder_bio_p2'] ?? '') ?>
-        </p>
-        <div>
-          <div class="founder-name"><?= htmlspecialchars($welcome['founder_name'] ?? 'Dr. Ishari K. Ganesh') ?></div>
-          <div class="founder-role"><?= htmlspecialchars($welcome['founder_role'] ?? 'Founder | Chancellor, VISTAS') ?>
+        <div class="research-body">
+          <h3 class="research-card-title">Pharmaceutical Formulation Laboratories</h3>
+          <p class="research-card-desc">
+            Industrial pilot-scale machine room simulating modern cGMP manufacturing of solid, semi-solid, and liquid dosage forms from powder blending to finished tablets.
+          </p>
+          <ul class="research-specs-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Machine Room:</strong> 10-station rotary tablet compression press, fluid bed processor, granulators, and coating pans.</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Formulation Testing:</strong> USP Type I &amp; II multi-basket dissolution stations, friability, and hardness testers.</span>
+            </li>
+          </ul>
+          <div class="research-footer-tag">
+            <span>cGMP Simulation Facility</span>
+            <span style="color: #D6B56D;">Pilot Manufacturing</span>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Vision & Mission Grid -->
-    <div class="vm-grid" style="margin-top: 3.5rem;">
-      <div class="vm-card vision motion-from-left">
-        <div class="vm-icon-wrap">
-          <svg viewBox="0 0 24 24">
-            <path
-              d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
-          </svg>
+      <!-- Showcase 3: Pharmacology & Pre-Clinical Research Laboratories -->
+      <div class="research-card fade-up">
+        <div class="research-media">
+          <img src="assets/images/research-lab-modern.jpg" alt="Pharmacology & Pre-Clinical Testing Laboratories" loading="lazy">
+          <span class="research-badge">Pharmacology &amp; Pre-Clinical</span>
         </div>
-        <h3 class="vm-title"><?= htmlspecialchars($welcome['vision_title'] ?? 'Our Vision') ?></h3>
-        <p class="vm-text">
-          <?= htmlspecialchars($welcome['vision_text'] ?? '') ?>
-        </p>
+        <div class="research-body">
+          <h3 class="research-card-title">Pharmacology &amp; Pre-Clinical Laboratories</h3>
+          <p class="research-card-desc">
+            Advanced facilities for evaluating experimental therapeutics, biological screening, receptor binding mechanisms, and behavioral pharmacology using ethical simulated models.
+          </p>
+          <ul class="research-specs-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Apparatus:</strong> Computer-assisted simulation pharmacology suites, isolated organ bath setups, and student kymographs.</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Screening:</strong> Hemodynamic monitoring, analgesiometers, behavioral rotarod and maze test apparatus.</span>
+            </li>
+          </ul>
+          <div class="research-footer-tag">
+            <span>Ethical Computer-Assisted Models</span>
+            <span style="color: #D6B56D;">Pre-Clinical Testing</span>
+          </div>
+        </div>
       </div>
 
-      <div class="vm-card mission motion-from-right delay-1">
-        <div class="vm-icon-wrap">
-          <svg viewBox="0 0 24 24">
-            <path
-              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-          </svg>
+      <!-- Showcase 4: Pharmacognosy & Phytochemical Research -->
+      <div class="research-card fade-up">
+        <div class="research-media">
+          <img src="assets/images/pharmacognosy-lab.jpg" alt="Pharmacognosy & Phytochemical Research Laboratory" loading="lazy">
+          <span class="research-badge">Phytochemistry &amp; Botanicals</span>
         </div>
-        <h3 class="vm-title"><?= htmlspecialchars($welcome['mission_title'] ?? 'Our Mission') ?></h3>
-        <p class="vm-text">
-          <?= htmlspecialchars($welcome['mission_text'] ?? '') ?>
-        </p>
+        <div class="research-body">
+          <h3 class="research-card-title">Pharmacognosy &amp; Phytochemical Research</h3>
+          <p class="research-card-desc">
+            Dedicated laboratory for botanical drug standardization, Soxhlet extraction of medicinal plants, isolation of bioactive metabolites, and herbal formulation quality assurance.
+          </p>
+          <ul class="research-specs-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Extraction:</strong> Continuous Soxhlet extraction batteries, rotary vacuum evaporators, and Clevenger essential oil stills.</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Histology:</strong> High-resolution compound research microscopes, camera lucida, and botanical section microtomes.</span>
+            </li>
+          </ul>
+          <div class="research-footer-tag">
+            <span>Medicinal Plant Standardization</span>
+            <span style="color: #D6B56D;">Natural Products R&amp;D</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Showcase 5: Computational Drug Discovery & Molecular Docking -->
+      <div class="research-card fade-up">
+        <div class="research-media">
+          <img src="assets/images/computer-lab.jpg" alt="Computational Drug Discovery and Molecular Docking Laboratory" loading="lazy">
+          <span class="research-badge">CADD &amp; Molecular Docking</span>
+        </div>
+        <div class="research-body">
+          <h3 class="research-card-title">Computational Drug Discovery &amp; Docking</h3>
+          <p class="research-card-desc">
+            High-speed workstation cluster dedicated to in-silico computer-aided drug design (CADD), target protein-ligand docking, pharmacophore mapping, and ADMET profiling.
+          </p>
+          <ul class="research-specs-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Software:</strong> AutoDock Vina, PyMOL 3D visualization, MarvinSketch, and quantitative QSAR toolkits.</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Capabilities:</strong> High-throughput virtual screening, binding free energy calculation, and AI drug repurposing.</span>
+            </li>
+          </ul>
+          <div class="research-footer-tag">
+            <span>In-Silico Bio-Computing</span>
+            <span style="color: #D6B56D;">NEP 2020 AI Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Showcase 6: Research Projects & Faculty Publications -->
+      <div class="research-card fade-up">
+        <div class="research-media">
+          <img src="assets/images/lecture-hall.jpg" alt="Research Projects and Faculty Publications Record" loading="lazy">
+          <span class="research-badge">Projects &amp; Publications</span>
+        </div>
+        <div class="research-body">
+          <h3 class="research-card-title">Research Projects &amp; Faculty Publications</h3>
+          <p class="research-card-desc">
+            A rich culture of scientific inquiry evidenced by published research papers in prestigious peer-reviewed international journals and funded student innovation grants.
+          </p>
+          <ul class="research-specs-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Publications:</strong> 45+ research articles published in Scopus and Web of Science indexed journals by doctorate professors.</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Student Projects:</strong> Mandatory 12-credit capstone dissertation with faculty mentorship, patent filings, and national symposiums.</span>
+            </li>
+          </ul>
+          <div class="research-footer-tag">
+            <span>Scopus / Web of Science</span>
+            <span style="color: #D6B56D;">Patent Filings &amp; Grants</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- COURSE SPOTLIGHT: B.PHARM -->
-<section class="section section-alt" aria-labelledby="courseTitle">
+<!-- ==========================================================================
+     FEATURED ACADEMIC PROGRAM: BACHELOR OF PHARMACY (B.PHARM)
+     ========================================================================== -->
+<section class="section" aria-labelledby="courseTitle">
   <div class="container">
     <div class="section-header fade-up">
-      <span class="section-subtitle"><?= htmlspecialchars($course_spotlight['subtitle'] ?? 'Academic Program') ?></span>
+      <span class="section-subtitle">PREMIER UNDERGRADUATE DEGREE</span>
       <h2 class="section-title" id="courseTitle">
-        <?= htmlspecialchars($course_spotlight['title'] ?? 'Bachelor of Pharmacy (B.Pharm)') ?>
+        Bachelor of Pharmacy (B.Pharm)
       </h2>
       <p class="section-description">
-        <?= htmlspecialchars($course_spotlight['description'] ?? '') ?>
+        PCI-Approved 4-Year professional degree program structured under the National Education Policy (NEP 2020). Integrating core pharmaceutical sciences with digital AI and clinical hospital immersion.
       </p>
     </div>
 
     <div class="course-featured-card">
       <div class="course-featured-media motion-from-left">
-        <img src="<?= htmlspecialchars($course_spotlight['image'] ?? 'assets/images/pharmacy-lab-main.jpg') ?>"
-          alt="<?= htmlspecialchars($course_spotlight['title'] ?? 'B.Pharm') ?>" loading="lazy" width="600"
-          height="420">
-        <div class="course-media-badge"><?= htmlspecialchars($course_spotlight['badge'] ?? 'Undergraduate Degree') ?>
-        </div>
+        <img src="assets/images/pharmacy-lab-main.jpg" alt="VEL Pharmacy College B.Pharm Laboratory" loading="lazy" width="600" height="420">
+        <div class="course-media-badge">PCI Approved • NEP 2020</div>
       </div>
       <div class="course-featured-body motion-from-right">
-        <span
-          class="course-pill"><?= htmlspecialchars($course_spotlight['pill'] ?? '4 Years • 8 Semesters • NEP 2020 (193 Credits)') ?></span>
-        <h3 class="course-title">
-          <?= htmlspecialchars($course_spotlight['heading'] ?? 'Bachelor of Pharmacy (B.Pharm)') ?>
-        </h3>
+        <span class="course-pill">4 Years • 8 Semesters • 193 Total Credits</span>
+        <h3 class="course-title">Bachelor of Pharmacy (B.Pharm)</h3>
         <p class="course-desc">
-          <?= htmlspecialchars($course_spotlight['desc'] ?? '') ?>
+          Designed to develop practice-ready healthcare leaders. Students master medicinal chemistry, formulation technology, pharmacology, clinical AI, hospital practice at VMCH, and complete a 12-credit capstone thesis.
         </p>
 
         <div class="course-meta-grid">
           <div class="meta-item">
             <strong>Duration</strong>
-            <span><?= htmlspecialchars($course_spotlight['duration'] ?? '4 Years (8 Sem)') ?></span>
+            <span>4 Years (8 Semesters)</span>
           </div>
           <div class="meta-item">
             <strong>Total Credits</strong>
-            <span><?= htmlspecialchars($course_spotlight['credits'] ?? '193 Credits (CBCS)') ?></span>
+            <span>193 Credits (CBCS)</span>
           </div>
           <div class="meta-item">
             <strong>Eligibility</strong>
-            <span><?= htmlspecialchars($course_spotlight['eligibility'] ?? '+2 with PCM or PCB') ?></span>
+            <span>+2 with PCM or PCB (Merit)</span>
           </div>
           <div class="meta-item">
-            <strong>Medium</strong>
-            <span><?= htmlspecialchars($course_spotlight['medium'] ?? 'English') ?></span>
+            <strong>Clinical Exposure</strong>
+            <span>300-Bed VMCH Hospital</span>
           </div>
         </div>
 
-        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-          <a href="<?= htmlspecialchars($course_spotlight['btn_primary_link'] ?? 'courses') ?>" class="btn btn-primary">
-            <span><?= htmlspecialchars($course_spotlight['btn_primary_text'] ?? 'View Full Curriculum & Syllabus') ?></span>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.25rem;">
+          <a href="assets/docs/B.Pharm_Syllabus_2026_NEP2020.pdf" download="B.Pharm_Syllabus_2026_NEP2020.pdf" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Download Syllabus (PDF)</span>
           </a>
-          <a href="<?= htmlspecialchars($course_spotlight['btn_secondary_link'] ?? 'enquiry') ?>"
-            class="btn btn-outline-primary">
-            <span><?= htmlspecialchars($course_spotlight['btn_secondary_text'] ?? 'Admission Enquiry') ?></span>
+          <a href="courses" class="btn btn-outline-primary">
+            <span>Explore Course Details</span>
           </a>
         </div>
       </div>
@@ -925,79 +698,87 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
   </div>
 </section>
 
-<!-- FACILITIES & CAMPUS INFRASTRUCTURE -->
-<section class="section" aria-labelledby="facilitiesTitle">
-  <div class="container-wide">
+<!-- ==========================================================================
+     STUDENT CORNER, CAMPUS LIFE, CLUBS & SPORTS SHOWCASE
+     ========================================================================== -->
+<section class="section section-alt" id="studentLifeHub" aria-labelledby="studentLifeTitle">
+  <div class="container">
     <div class="section-header fade-up">
-      <span class="section-subtitle"><?= htmlspecialchars($facilities_sec['subtitle'] ?? 'Infrastructure') ?></span>
-      <h2 class="section-title" id="facilitiesTitle">
-        <?= htmlspecialchars($facilities_sec['title'] ?? 'Modern Campus & Specialized Labs') ?>
+      <span class="section-subtitle" style="color: #D6B56D;">CAMPUS CULTURE &amp; ATHLETICS</span>
+      <h2 class="section-title" id="studentLifeTitle">
+        Student Corner, Discussions, Live Events &amp; Sports
       </h2>
-      <p class="section-description">
-        <?= htmlspecialchars($facilities_sec['description'] ?? 'Located in a serene and pollution-free campus at Velan Nagar, Manjankaranai, our dedicated facilities feature state-of-the-art infrastructure built to international standards.') ?>
+      <p class="section-description" style="color: rgba(255,255,255,0.88);">
+        A rich collegiate experience combining student-driven academic discussion forums, live clinical webinars, collegiate innovation clubs, and expansive athletic sports on our multi-acre campus:
       </p>
     </div>
 
-    <div class="facility-grid">
-      <?php if (!empty($facilities_sec['cards'])): ?>
-        <?php foreach ($facilities_sec['cards'] as $fIdx => $fCard): ?>
-          <article class="facility-card fade-up">
-            <div class="facility-thumb">
-              <img src="<?= htmlspecialchars($fCard['image'] ?? 'assets/images/lecture-hall.jpg') ?>"
-                alt="<?= htmlspecialchars($fCard['title'] ?? '') ?>" loading="lazy" width="380" height="220">
-            </div>
-            <div class="facility-content">
-              <h3 class="facility-title"><?= htmlspecialchars($fCard['title'] ?? '') ?></h3>
-              <p class="facility-text">
-                <?= htmlspecialchars($fCard['desc'] ?? '') ?>
-              </p>
-            </div>
-          </article>
-        <?php endforeach; ?>
-      <?php endif; ?>
+    <div class="student-life-grid">
+      <!-- Feature 1: Student Corner & Discussions -->
+      <div class="student-feature-card fade-up">
+        <div class="student-feature-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3 class="student-feature-title">Student Corner &amp; Discussions</h3>
+        <p class="student-feature-desc">
+          Active peer discussion boards, GPAT/NIPER study circles, journal clubs, and question-and-answer exchanges mentored by senior students and faculty.
+        </p>
+        <a href="student-corner#discussions" style="color: #1E6A4D; font-weight: 700; font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+          <span>Join Discussions &rarr;</span>
+        </a>
+      </div>
+
+      <!-- Feature 2: Live Events & Expert Webinars -->
+      <div class="student-feature-card fade-up">
+        <div class="student-feature-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg>
+        </div>
+        <h3 class="student-feature-title">Live Events &amp; Webinars</h3>
+        <p class="student-feature-desc">
+          Weekly webinars on computational chemistry, hospital grand rounds, clinical pharmacotherapy workshops, and national pharmacy guest lectures.
+        </p>
+        <a href="student-corner#live-events" style="color: #1E6A4D; font-weight: 700; font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+          <span>View Upcoming Events &rarr;</span>
+        </a>
+      </div>
+
+      <!-- Feature 3: Student Clubs & Societies -->
+      <div class="student-feature-card fade-up">
+        <div class="student-feature-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="12 8 8 12 12 16 16 12 12 8"/></svg>
+        </div>
+        <h3 class="student-feature-title">Pharma Clubs &amp; Societies</h3>
+        <p class="student-feature-desc">
+          Pharma Innovators Club, Pharmacovigilance Society, Cultural Arts Club, and Red Ribbon Community Health Outreach providing holistic growth.
+        </p>
+        <a href="student-corner#clubs" style="color: #1E6A4D; font-weight: 700; font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+          <span>Explore Clubs &rarr;</span>
+        </a>
+      </div>
+
+      <!-- Feature 4: Sports Corner & Athletics -->
+      <div class="student-feature-card fade-up">
+        <div class="student-feature-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        </div>
+        <h3 class="student-feature-title">Sports Corner &amp; Athletics</h3>
+        <p class="student-feature-desc">
+          Multi-acre sports ground featuring a full turf cricket pitch, football field, volleyball, badminton, indoor games, and modern fitness center.
+        </p>
+        <a href="student-corner#sports" style="color: #1E6A4D; font-weight: 700; font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.35rem;">
+          <span>View Sports Facilities &rarr;</span>
+        </a>
+      </div>
     </div>
 
     <div style="text-align: center; margin-top: 2.5rem;">
-      <a href="facilities" class="btn btn-outline-primary">
-        <span>Explore All Campus Facilities &amp; Gallery</span>
+      <a href="student-corner" class="btn btn-download-gold" style="padding: 0.85rem 2rem;">
+        <span>Visit Student Corner &amp; Campus Life Hub</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
       </a>
     </div>
   </div>
 </section>
-
-<!-- WHY VELS SECTION -->
-<section class="section section-alt why-vels-section" aria-labelledby="whyTitle">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-subtitle"
-        style="color: #D6B56D;"><?= htmlspecialchars($why_choose['subtitle'] ?? 'Institutional Strengths') ?></span>
-      <h2 class="section-title" id="whyTitle">
-        <?= htmlspecialchars($why_choose['title'] ?? 'Why Choose VEL Pharmacy College?') ?>
-      </h2>
-      <p class="section-description" style="color: rgba(255,255,255,0.85);">
-        <?= htmlspecialchars($why_choose['description'] ?? 'Building on over three decades of educational leadership under the Vaels Educational Trust and VISTAS Deemed University.') ?>
-      </p>
-    </div>
-
-    <div class="why-grid">
-      <?php if (!empty($why_choose['features'])): ?>
-        <?php foreach ($why_choose['features'] as $wIdx => $wFeat): ?>
-          <div class="why-card fade-up">
-            <div class="why-icon">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
-              </svg>
-            </div>
-            <h3 class="why-card-title"><?= htmlspecialchars($wFeat['title'] ?? '') ?></h3>
-            <p class="why-card-desc"><?= htmlspecialchars($wFeat['desc'] ?? '') ?></p>
-          </div>
-        <?php endforeach; ?>
-      <?php endif; ?>
-    </div>
-  </div>
-</section>
-
 <!-- PLACEMENTS & CAREER OUTCOMES -->
 <section class="section" aria-labelledby="placementTitle">
   <div class="container">

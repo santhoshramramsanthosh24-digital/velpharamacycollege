@@ -173,6 +173,10 @@ $f_tw = $foot_settings['social_twitter'] ?? 'https://twitter.com/vistas';
                   stroke-width="2.5">
                   <polyline points="9 18 15 12 9 6" />
                 </svg><span>Campus &amp; Laboratories</span></a></li>
+            <li><a href="student-corner"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg><span>Student Corner &amp; Campus Life</span></a></li>
             <li><a href="contact-us"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   stroke-width="2.5">
                   <polyline points="9 18 15 12 9 6" />
