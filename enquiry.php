@@ -1,7 +1,7 @@
 <?php
 $current_page = 'enquiry';
-$page_title = "Online Admission Enquiry Form 2024–2025 | VEL Pharmacy College";
-$page_description = "Apply online for the 4-year B.Pharm degree program at VEL Pharmacy College. Submit your admission enquiry for the 2024–2025 academic batch. PCI approved & VISTAS affiliated.";
+$page_title = "Online Admission Enquiry Form 2027–2028 | VEL Pharmacy College";
+$page_description = "Apply online for the 4-year B.Pharm degree program at VEL Pharmacy College. Submit your admission enquiry for the 2027–2028 academic batch. PCI approved & VISTAS affiliated.";
 $canonical_url = "https://velpharmacycollege.com/enquiry";
 
 // Breadcrumb Schema
@@ -57,7 +57,7 @@ include __DIR__ . '/includes/header.php';
           <span class="breadcrumb-separator">/</span>
           <span class="breadcrumb-current" aria-current="page">Enquiry Form</span>
         </nav>
-        <h1 class="page-title"><?= htmlspecialchars($enquiry_cms['banner']['title'] ?? 'Admission Enquiry Form 2024–2025') ?></h1>
+        <h1 class="page-title"><?= htmlspecialchars($enquiry_cms['banner']['title'] ?? 'Admission Enquiry Form 2027–2028') ?></h1>
         <p class="page-subtitle">
           <?= htmlspecialchars($enquiry_cms['banner']['subtitle'] ?? 'Take the first step toward a rewarding career in pharmaceutical science and healthcare. Submit your details below and our admissions counseling team will contact you.') ?>
         </p>
@@ -81,7 +81,7 @@ include __DIR__ . '/includes/header.php';
         <div class="enquiry-form-card">
           
           <div style="margin-bottom: 2rem;">
-            <span class="badge-pill badge-gold" style="margin-bottom: 0.75rem; display: inline-block;"><?= htmlspecialchars($enquiry_cms['intro']['badge_pill'] ?? 'Batch 2024–2025') ?></span>
+            <span class="badge-pill badge-gold" style="margin-bottom: 0.75rem; display: inline-block;"><?= htmlspecialchars($enquiry_cms['intro']['badge_pill'] ?? 'Batch 2027–2028') ?></span>
             <h2 id="formHeading" style="font-family: var(--font-heading); font-size: 1.85rem; color: var(--color-primary-dark); margin-bottom: 0.5rem;">
               <?= htmlspecialchars($enquiry_cms['intro']['title'] ?? 'B.Pharm Candidate Application & Enquiry') ?>
             </h2>
@@ -261,10 +261,10 @@ include __DIR__ . '/includes/header.php';
             </div>
           </div>
           <p style="font-size: 0.9rem; color: #F5F7F4; line-height: 1.6; margin-bottom: 1.25rem;">
-            <?= htmlspecialchars($eq_help['hours'] ?? 'Monday - Saturday: 8:30 AM - 5:00 PM') ?>. Speak directly with our senior admission counselors for immediate seat confirmation.
+            <?= htmlspecialchars($eq_help['hours'] ?? 'Monday - Sunday: 8:00 AM - 6:00 PM (Open All Days including Sunday)') ?>. Speak directly with our senior admission counselors for immediate seat confirmation.
           </p>
           <div style="font-size: 0.85rem; color: #D6B56D; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.2);">
-            ✉️ Email: <strong><?= htmlspecialchars($eq_help['email'] ?? 'vels@vistas.ac.in') ?></strong>
+            ✉️ Email: <strong><a href="mailto:principalvpc@vistas.ac.in" style="color: inherit; text-decoration: underline;">principalvpc@vistas.ac.in</a> / <a href="mailto:vels@vistas.ac.in" style="color: inherit; text-decoration: underline;">vels@vistas.ac.in</a></strong>
           </div>
         </div>
 

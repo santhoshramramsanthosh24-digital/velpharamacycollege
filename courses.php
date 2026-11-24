@@ -145,7 +145,7 @@ $c_el = $courses_cms['eligibility'] ?? [];
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
           </a>
           <a href="enquiry" class="btn btn-outline">
-            <span>Apply Online 2024-25</span>
+            <span>Apply Online 2027-28</span>
           </a>
         </div>
       </div>

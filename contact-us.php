@@ -1,7 +1,7 @@
 <?php
 $current_page = 'contact';
 $page_title = "Contact Us & Campus Location | VEL Pharmacy College, Manjankaranai";
-$page_description = "Get in touch with VEL Pharmacy College, VMCH Campus, Periyapalayam Road, Manjankaranai, Tiruvallur. Call +91 812 261 3300, email vels@vistas.ac.in, or visit our green campus.";
+$page_description = "Get in touch with VEL Pharmacy College, VMCH Campus, Periyapalayam Road, Manjankaranai, Tiruvallur. Call +91 812 261 3300, email principalvpc@vistas.ac.in / vels@vistas.ac.in, or visit our green campus.";
 $canonical_url = "https://velpharmacycollege.com/contact-us";
 
 // Contact & Breadcrumb Schema
@@ -33,7 +33,7 @@ $custom_schema = [
                 "@type" => "CollegeOrUniversity",
                 "name" => "VEL Pharmacy College",
                 "telephone" => "+918122613300",
-                "email" => "vels@vistas.ac.in",
+                "email" => "principalvpc@vistas.ac.in",
                 "address" => [
                     "@type" => "PostalAddress",
                     "streetAddress" => "VMCH Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk",
@@ -143,9 +143,13 @@ $c_commute = $contact_cms['commute'] ?? [];
         </div>
         <h3 class="contact-info-title"><?= htmlspecialchars($c_email['title'] ?? 'Email Correspondence') ?></h3>
         <p class="contact-info-text">
-          <?= htmlspecialchars($c_email['label'] ?? 'Official Admissions & Inquiries:') ?><br>
-          <a href="mailto:<?= htmlspecialchars($c_email['email'] ?? 'vels@vistas.ac.in') ?>" style="font-size: 1.05rem; font-weight: 700; color: var(--color-primary); display: block; margin: 0.5rem 0; text-decoration: none;">
-            <?= htmlspecialchars($c_email['email'] ?? 'vels@vistas.ac.in') ?>
+          <span style="font-weight: 700; color: #1E6A4D;">Official College &amp; Principal Email:</span><br>
+          <a href="mailto:principalvpc@vistas.ac.in" style="font-size: 1.05rem; font-weight: 750; color: var(--color-primary); display: block; margin: 0.35rem 0 0.65rem; text-decoration: none;">
+            principalvpc@vistas.ac.in
+          </a>
+          <span style="font-weight: 600; color: #4A5568;">Admissions &amp; University Inquiries:</span><br>
+          <a href="mailto:vels@vistas.ac.in" style="font-size: 0.95rem; font-weight: 650; color: var(--color-primary); display: block; margin: 0.25rem 0 0.65rem; text-decoration: none;">
+            vels@vistas.ac.in
           </a>
           Official Institution Website:<br>
           <strong><?= htmlspecialchars($c_email['website'] ?? 'velpharmacycollege.com') ?></strong>
@@ -162,12 +166,14 @@ $c_commute = $contact_cms['commute'] ?? [];
         </div>
         <h3 class="contact-info-title"><?= htmlspecialchars($c_hours['title'] ?? 'Visiting & Office Hours') ?></h3>
         <p class="contact-info-text">
-          <strong><?= htmlspecialchars($c_hours['weekday'] ?? 'Monday – Friday: 8:30 AM – 4:30 PM') ?></strong><br>
-          <strong><?= htmlspecialchars($c_hours['saturday'] ?? 'Saturday: 8:30 AM – 1:30 PM') ?></strong><br>
-          <strong><?= htmlspecialchars($c_hours['sunday'] ?? 'Sunday & Holidays: Closed') ?></strong>
+          <strong><?= htmlspecialchars($c_hours['weekday'] ?? 'Monday – Saturday: 8:00 AM – 6:00 PM') ?></strong><br>
+          <strong><?= htmlspecialchars($c_hours['saturday'] ?? 'Sunday: 8:00 AM – 6:00 PM (Open)') ?></strong><br>
+          <span style="color: #1E6A4D; font-weight: 650; display: inline-block; margin-top: 0.35rem;">
+            <?= htmlspecialchars($c_hours['sunday'] ?? 'Visiting Hours: Any time between 8:00 AM to 6:00 PM (All 7 Days Open)') ?>
+          </span>
         </p>
         <span class="contact-badge-pill" style="background: #1E6A4D; color: #F5F7F4;">
-          <?= htmlspecialchars($c_hours['badge'] ?? '🚶 Campus Tours Welcome') ?>
+          <?= htmlspecialchars($c_hours['badge'] ?? '🚶 Campus Tours Welcome • Open Daily 8:00 AM – 6:00 PM (Sundays Included)') ?>
         </span>
       </div>
 
@@ -216,7 +222,7 @@ $c_commute = $contact_cms['commute'] ?? [];
           <p>Our admissions counselors will review your inquiry and respond within 24 hours.</p>
         </div>
         
-        <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_message_submit'])): ?>
+        <?php if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST' && isset($_POST['contact_message_submit'])): ?>
           <div style="margin: 1.5rem 2.25rem 0; background: #F5F7F4; border: 1px solid #D6B56D; color: #1E6A4D; padding: 1rem 1.25rem; border-radius: var(--radius-md); font-size: 0.95rem;">
             <strong>Thank You!</strong> Your message has been received. Our admissions team will reach out to you shortly.
           </div>
@@ -268,7 +274,7 @@ $c_commute = $contact_cms['commute'] ?? [];
               Subject / Topic of Inquiry
             </label>
             <select id="contact_subject" name="contact_subject" class="form-control-custom no-icon">
-              <option value="admissions">B.Pharm Admission 2024-25</option>
+              <option value="admissions">B.Pharm Admission 2027-28</option>
               <option value="eligibility">Eligibility &amp; Merit Criteria</option>
               <option value="fee">Fee Structure &amp; Scholarships</option>
               <option value="hostel">Hostel &amp; Accommodation Inquiries</option>

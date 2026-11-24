@@ -269,8 +269,9 @@ $f_tw = $foot_settings['social_twitter'] ?? 'https://twitter.com/vistas';
                 </svg>
               </div>
               <div class="footer-contact-info">
-                <strong>Official Email</strong>
-                <a href="mailto:<?= htmlspecialchars($f_email) ?>"><?= htmlspecialchars($f_email) ?></a>
+                <strong>Official Email Correspondence</strong>
+                <a href="mailto:principalvpc@vistas.ac.in" style="font-weight: 700;">principalvpc@vistas.ac.in</a><br>
+                <a href="mailto:<?= htmlspecialchars($f_email) ?>" style="font-size: 0.85rem; opacity: 0.85;"><?= htmlspecialchars($f_email) ?></a>
               </div>
             </div>
 

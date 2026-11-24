@@ -225,7 +225,7 @@ $f_place = $facilities_cms['placements'] ?? [];
         </p>
 
         <a href="<?= htmlspecialchars($f_place['btn_link'] ?? 'enquiry') ?>" class="btn" style="background: #D6B56D; color: #1E6A4D; font-weight: 700; border: 1px solid #1E6A4D;">
-          <span><?= htmlspecialchars($f_place['btn_text'] ?? 'Apply Now for B.Pharm 2024-25') ?></span>
+          <span><?= htmlspecialchars($f_place['btn_text'] ?? 'Apply Now for B.Pharm 2027-28') ?></span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </a>
       </div>

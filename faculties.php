@@ -942,7 +942,7 @@ include __DIR__ . '/includes/header.php';
       <div class="modal-cta-group">
         <a href="enquiry" class="btn btn-primary"
           style="padding: 0.55rem 1.25rem; font-size: 0.875rem; border-radius: var(--radius-full);">
-          <span>Inquire for Admission &bull; 2024–2025</span>
+          <span>Inquire for Admission &bull; 2027–2028</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
@@ -980,7 +980,7 @@ include __DIR__ . '/includes/header.php';
         <a href="enquiry" class="btn"
           style="background: #D6B56D; color: #1E6A4D; font-weight: 700; padding: 0.85rem 2rem; border-radius:
           var(--radius-full); box-shadow: 0 4px 15px rgba(217, 119, 6, 0.4);">
-          <span>Apply for B.Pharm 2024–2025</span>
+          <span>Apply for B.Pharm 2027–2028</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>

@@ -5,12 +5,12 @@
     "logo_image": "assets/images/VPC NEW LOGO.png",
     "phone_primary": "+91 812 261 3300",
     "phone_secondary": "+91 44 2266 2500",
-    "email_primary": "vels@vistas.ac.in",
-    "email_admissions": "admission@velpharmacycollege.com",
+    "email_primary": "principalvpc@vistas.ac.in",
+    "email_admissions": "vels@vistas.ac.in",
     "anti_ragging_tollfree": "1800-180-5522",
     "campus_address": "VMCH Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk, Tiruvallur District – 601102, Tamil Nadu, India",
-    "working_hours": "Monday - Saturday: 8:30 AM - 4:30 PM",
-    "admission_status": "Admission Open for 2024–2025 Batch: 4-Year B.Pharm Degree Program (PCI Approved)",
+    "working_hours": "Monday - Sunday: 8:00 AM - 6:00 PM (Visiting hours anytime between 8 AM to 6 PM, Sunday also open)",
+    "admission_status": "Admission Open for 2027–2028 Batch: 4-Year B.Pharm Degree Program (PCI Approved)",
     "social_facebook": "https://www.facebook.com/velspharmacy",
     "social_instagram": "https://www.instagram.com/velspharmacy",
     "social_youtube": "https://www.youtube.com/@VelsUniversity",
@@ -34,19 +34,19 @@
     "parent_name": "Vels Institute of Science, Technology & Advanced Studies (VISTAS)",
     "phone_primary": "+91 812 261 3300",
     "phone_secondary": "+91 44 2266 2500",
-    "email_primary": "vels@vistas.ac.in",
-    "email_admissions": "admission@velpharmacycollege.com",
+    "email_primary": "principalvpc@vistas.ac.in",
+    "email_admissions": "vels@vistas.ac.in",
     "anti_ragging_tollfree": "1800-180-5522",
     "campus_address": "VMCH Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk, Tiruvallur District – 601102, Tamil Nadu, India",
-    "working_hours": "Monday - Saturday: 8:30 AM - 4:30 PM",
-    "admission_status": "Admission Open for 2024–2025 Batch: 4-Year B.Pharm Degree Program (PCI Approved)"
+    "working_hours": "Monday - Sunday: 8:00 AM - 6:00 PM (Visiting hours anytime between 8 AM to 6 PM, Sunday also open)",
+    "admission_status": "Admission Open for 2027–2028 Batch: 4-Year B.Pharm Degree Program (PCI Approved)"
   },
   "home": {
-    "pill_badge": "Admissions Open 2026–2027 • Approved by PCI New Delhi",
+    "pill_badge": "Admissions Open 2027–2028 • Approved by PCI New Delhi",
     "title_main": "Excellence in",
     "title_highlight": "Shaping The Future of Healthcare & Pharmaceutical Science",
     "description": "4-Year Bachelor of Pharmacy (B.Pharm) Degree Program at VMCH Medical Campus, Tiruvallur. World-class research laboratories with hands-on hospital clinical training.",
-    "cta_primary_text": "Apply for Admissions 2024–2025",
+    "cta_primary_text": "Apply for Admissions 2027–2028",
     "cta_primary_link": "enquiry",
     "cta_secondary_text": "Explore Curriculum",
     "cta_secondary_link": "courses",
@@ -54,7 +54,7 @@
     "helpline_number": "+91 812 261 3300",
     "hero_image": "assets/images/campus-front.jpg",
     "video_mp4": "assets/videos/vmch-campus-hero.mp4",
-    "announcement_text": "Admission Open for 2024–2025 Batch: 4-Year B.Pharm Degree Program (PCI Approved) • Merit-based entry for +2 PCM/PCB students",
+    "announcement_text": "Admission Open for 2027–2028 Batch: 4-Year B.Pharm Degree Program (PCI Approved) • Merit-based entry for +2 PCM/PCB students",
     "pillars_header": {
       "eyebrow": "Institutional Excellence & Trust",
       "title": "Pillars of Pharmaceutical Eminence",
@@ -399,8 +399,8 @@
     },
     "cta_banner": {
       "title": "Begin Your Journey in Pharmaceutical Excellence",
-      "subtitle": "Admissions Open for 2024–2025 Batch. Merit-based seats allocated on a rolling basis.",
-      "btn_text": "Apply for Admissions 2024–2025",
+      "subtitle": "Admissions Open for 2027–2028 Batch. Merit-based seats allocated on a rolling basis.",
+      "btn_text": "Apply for Admissions 2027–2028",
       "btn_link": "enquiry"
     },
     "principal_spotlight": {
@@ -564,7 +564,7 @@
     },
     "cta_banner": {
       "title": "Join an Institution of Proven Academic Excellence",
-      "subtitle": "Admissions are open for the B.Pharm 2024–2025 batch. Contact our counselors today or submit your enquiry online.",
+      "subtitle": "Admissions are open for the B.Pharm 2027–2028 batch. Contact our counselors today or submit your enquiry online.",
       "btn1_text": "Online Enquiry Form",
       "btn1_link": "enquiry",
       "btn2_text": "View B.Pharm Syllabus",
@@ -910,7 +910,7 @@
       "stat_4_val": "₹5.0 LPA",
       "stat_4_lbl": "Average Salary Standard",
       "description_2": "Being the top-ranked university in Chennai, VISTAS provides comprehensive placement coaching and essential soft-skills training to students. High-level product-based companies and prominent pharmaceutical leaders are our prime recruiters. Specially designed Employability Skill Development Programs ensure every graduate enters the industry career-ready.",
-      "btn_text": "Apply Now for B.Pharm 2024-25",
+      "btn_text": "Apply Now for B.Pharm 2027-28",
       "btn_link": "enquiry"
     }
   },
@@ -1005,22 +1005,23 @@
       "title": "Phone & Admissions",
       "label": "Direct Admissions Line:",
       "phone": "+91 812 261 3300",
-      "hours": "Available Mon–Sat from 8:30 AM to 5:00 PM for all admission queries.",
+      "hours": "Available All 7 Days (Mon–Sun) from 8:00 AM to 6:00 PM for all admission queries & campus visits.",
       "badge": "🛡️ Anti-Ragging: 1800-180-5522"
     },
     "email_card": {
       "title": "Email Correspondence",
-      "label": "Official Admissions & Inquiries:",
-      "email": "vels@vistas.ac.in",
+      "label": "Official College & Principal Email:",
+      "email": "principalvpc@vistas.ac.in",
+      "email_alt": "vels@vistas.ac.in",
       "website": "velpharmacycollege.com",
       "badge": "⚡ Reply Within 24 Business Hours"
     },
     "hours_card": {
       "title": "Visiting & Office Hours",
-      "weekday": "Monday – Friday: 8:30 AM – 4:30 PM",
-      "saturday": "Saturday: 8:30 AM – 1:30 PM",
-      "sunday": "Sunday & Holidays: Closed",
-      "badge": "🚶 Campus Tours Welcome"
+      "weekday": "Monday – Saturday: 8:00 AM – 6:00 PM",
+      "saturday": "Sunday: 8:00 AM – 6:00 PM (Open)",
+      "sunday": "Visiting Hours: Any time between 8:00 AM to 6:00 PM (All 7 Days Open)",
+      "badge": "🚶 Campus Tours Welcome • Open Daily 8:00 AM – 6:00 PM (Sundays Included)"
     },
     "map": {
       "title": "Interactive Campus Map",
@@ -1060,7 +1061,7 @@
       "badge": "Batch 2026–2027 Admissions Open"
     },
     "intro": {
-      "badge_pill": "Batch 2024–2025",
+      "badge_pill": "Batch 2027–2028",
       "title": "B.Pharm Candidate Application & Enquiry",
       "subtitle": "Admissions Desk Open",
       "description": "Please complete all required fields (*). Merit-based seats are allocated on a rolling basis per PCI norms."
@@ -1068,7 +1069,7 @@
     "helpdesk": {
       "phone": "+91 812 261 3300",
       "email": "admission@velpharmacycollege.com",
-      "hours": "Monday - Saturday: 8:30 AM - 5:00 PM"
+      "hours": "Monday - Sunday: 8:00 AM - 6:00 PM (Open All Days Including Sunday)"
     },
     "why_apply": {
       "title": "Why Choose VEL Pharmacy College?",

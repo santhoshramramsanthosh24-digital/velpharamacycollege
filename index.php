@@ -1,6 +1,6 @@
 <?php
 $current_page = 'home';
-$page_title = "VEL Pharmacy College | B.Pharm Admissions 2024-2025 | Research Laboratories & Hospital Immersion";
+$page_title = "VEL Pharmacy College | B.Pharm Admissions 2027-2028 | Research Laboratories & Hospital Immersion";
 $page_description = "VEL Pharmacy College (VISTAS Deemed University), VMCH Campus, Tiruvallur. PCI Approved 4-Year B.Pharm with hands-on HPLC, UV-Vis, molecular docking, formulation pilot plant, and on-campus 300-bed hospital clinical training.";
 $canonical_url = "https://velpharmacycollege.com/";
 
@@ -103,9 +103,9 @@ $contact_cfg = $cms_content['general_contact'] ?? [];
 include __DIR__ . '/includes/header.php';
 
 // Variables with comprehensive fallbacks
-$announcement = $home_cms['announcement_text'] ?? ($contact_cfg['admission_status'] ?? 'Admission Open for 2024–2025 Batch: 4-Year B.Pharm Degree Program (PCI Approved)');
+$announcement = $home_cms['announcement_text'] ?? ($contact_cfg['admission_status'] ?? 'Admission Open for 2027–2028 Batch: 4-Year B.Pharm Degree Program (PCI Approved)');
 $phone_primary = $contact_cfg['phone_primary'] ?? '+91 812 261 3300';
-$email_primary = $contact_cfg['email_primary'] ?? 'vels@vistas.ac.in';
+$email_primary = $contact_cfg['email_primary'] ?? 'principalvpc@vistas.ac.in';
 $phone_clean = preg_replace('/[^0-9+]/', '', $phone_primary);
 
 $floating_enq_txt = $gen_settings['floating_enquiry_text'] ?? 'Admission Enquiry';
@@ -113,11 +113,11 @@ $floating_enq_lnk = $gen_settings['floating_enquiry_link'] ?? 'enquiry';
 $floating_not_txt = $gen_settings['floating_notice_text'] ?? 'Announcements';
 $floating_not_lnk = $gen_settings['floating_notice_link'] ?? '#announcements';
 
-$hero_badge = $home_cms['pill_badge'] ?? 'ADMISSIONS OPEN 2024–2025 | PCI Approved | VISTAS University';
+$hero_badge = $home_cms['pill_badge'] ?? 'ADMISSIONS OPEN 2027–2028 | PCI Approved | VISTAS University';
 $hero_t1 = $home_cms['title_main'] ?? 'Excellence in';
 $hero_t2 = $home_cms['title_highlight'] ?? 'Pharmaceutical Sciences';
 $hero_desc = $home_cms['description'] ?? '4-Year Bachelor of Pharmacy (B.Pharm) Degree Program at VMCH Medical Campus, Tiruvallur. World-class research laboratories with hands-on hospital clinical training.';
-$hero_cta1_txt = $home_cms['cta_primary_text'] ?? 'Apply for Admissions 2024–2025';
+$hero_cta1_txt = $home_cms['cta_primary_text'] ?? 'Apply for Admissions 2027–2028';
 $hero_cta1_lnk = $home_cms['cta_primary_link'] ?? 'enquiry';
 $hero_cta2_txt = $home_cms['cta_secondary_text'] ?? 'Explore Curriculum';
 $hero_cta2_lnk = $home_cms['cta_secondary_link'] ?? 'courses';
@@ -147,7 +147,7 @@ $cta_banner = $home_cms['cta_banner'] ?? [];
 <!-- ==========================================================================
      CINEMATIC COLLEGE VIDEO HERO (SIMPLE, HIGH-IMPACT, VIDEO-FIRST)
      ========================================================================== -->
-<section class="cinema-hero" id="heroSection" aria-label="VEL Pharmacy College Admissions 2024–2025">
+<section class="cinema-hero" id="heroSection" aria-label="VEL Pharmacy College Admissions 2027–2028">
   <!-- Cinematic Full-Bleed College Video Background -->
   <div class="cinema-hero-media">
     <video class="cinema-video" id="collegeVideoPlayer" autoplay muted loop playsinline preload="metadata"
@@ -1288,7 +1288,7 @@ $faq_comparative_items = [
     <div class="cta-banner fade-up">
       <h2><?= htmlspecialchars($cta_banner['title'] ?? 'Begin Your Journey in Pharmacy at VEL Pharmacy College') ?></h2>
       <p>
-        <?= htmlspecialchars($cta_banner['subtitle'] ?? 'Admissions are open for the 2024–2025 academic batch. Connect with our admissions counselors today.') ?>
+        <?= htmlspecialchars($cta_banner['subtitle'] ?? 'Admissions are open for the 2027–2028 academic batch. Connect with our admissions counselors today.') ?>
       </p>
       <div class="cta-buttons">
         <a href="<?= htmlspecialchars($cta_banner['btn_link'] ?? 'enquiry') ?>" class="btn btn-primary"

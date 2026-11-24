@@ -576,11 +576,11 @@ require_once __DIR__ . '/includes/header.php';
       <div class="cta-banner fade-up">
         <h2>Experience Vibrant Campus Life at VEL Pharmacy College</h2>
         <p>
-          Admissions are open for the 2024–2025 academic batch. Connect with our admissions counselors and student mentors today.
+          Admissions are open for the 2027–2028 academic batch. Connect with our admissions counselors and student mentors today.
         </p>
         <div class="cta-actions">
           <a href="enquiry" class="btn btn-gold">
-            <span>Apply for B.Pharm 2024–25</span>
+            <span>Apply for B.Pharm 2027–28</span>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
           </a>
           <a href="contact-us" class="btn btn-outline-white">

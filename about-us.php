@@ -253,7 +253,7 @@ $cta = $about_cms['cta_banner'] ?? [];
     <div class="cta-banner fade-up">
       <h2><?= htmlspecialchars($cta['title'] ?? 'Join an Institution of Proven Academic Excellence') ?></h2>
       <p>
-        <?= htmlspecialchars($cta['subtitle'] ?? 'Admissions are open for the B.Pharm 2024–2025 batch. Contact our counselors today or submit your enquiry online.') ?>
+        <?= htmlspecialchars($cta['subtitle'] ?? 'Admissions are open for the B.Pharm 2027–2028 batch. Contact our counselors today or submit your enquiry online.') ?>
       </p>
       <div class="cta-buttons">
         <a href="<?= htmlspecialchars($cta['btn1_link'] ?? 'enquiry') ?>" class="btn btn-primary" style="background: #D6B56D; color: #1E6A4D; font-weight: 700;">
