@@ -187,7 +187,7 @@ $ar_rep = $antiragging_cms['report_section'] ?? [];
 </section>
 
 <!-- SECTION 3: CONFIDENTIAL GRIEVANCE SUBMISSION FORM -->
-<section class="section" id="report" aria-labelledby="reportHeading">
+<section class="section" id="report" aria-labelledby="reportHeading" style="background: #FFFFFF; padding-bottom: 5.5rem;">
   <div class="container" style="max-width: 860px;">
     <div class="text-center" style="margin-bottom: 3rem;">
       <span class="section-subtitle"><?= htmlspecialchars($ar_rep['subtitle'] ?? 'Confidential & Secure') ?></span>

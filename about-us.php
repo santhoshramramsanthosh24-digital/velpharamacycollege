@@ -236,7 +236,7 @@ $cta = $about_cms['cta_banner'] ?? [];
 </section>
 
 <!-- CALL TO ACTION BANNER -->
-<section class="section section-alt">
+<section class="section" style="padding-top: 0; padding-bottom: 5.5rem; background: #FFFFFF;">
   <div class="container">
     <div class="cta-banner fade-up">
       <h2><?= htmlspecialchars($cta['title'] ?? 'Join an Institution of Proven Academic Excellence') ?></h2>

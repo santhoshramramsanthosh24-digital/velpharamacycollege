@@ -175,7 +175,7 @@ $f_place = $facilities_cms['placements'] ?? [];
 </section>
 
 <!-- SECTION 4: PLACEMENTS @ VISTAS -->
-<section class="section section-alt" id="placements" aria-labelledby="placementsHeading">
+<section class="section" id="placements" aria-labelledby="placementsHeading" style="background: #FFFFFF; padding-bottom: 5.5rem;">
   <div class="container">
     <div class="facilities-placements-card">
       <div style="max-width: 900px; margin: 0 auto; text-align: center;">

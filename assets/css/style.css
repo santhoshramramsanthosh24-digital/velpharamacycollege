@@ -2197,6 +2197,31 @@ p:last-child { margin-bottom: 0; }
 /* ==========================================================================
    SECTION COMMON STYLES
    ========================================================================== */
+/* Clean vertical gap/margin separating each section from the next across website */
+section + section,
+.section + .section,
+main > section + section,
+#mainContent > section + section {
+  margin-top: clamp(2rem, 3.5vw, 2.5rem);
+}
+
+/* Ensure crisp white background and distinct buffer above site footer across all pages */
+#mainContent {
+  background-color: #FFFFFF;
+}
+
+#mainContent > section:last-child,
+#mainContent > section:last-of-type,
+#mainContent > .section:last-child,
+#mainContent > .section:last-of-type,
+main > section:last-child,
+main > section:last-of-type,
+main > .section:last-child,
+main > .section:last-of-type {
+  padding-bottom: clamp(3.5rem, 5.5vw, 5.5rem) !important;
+  background-color: #FFFFFF;
+}
+
 .section {
   padding: 5rem 0;
   background-color: #FFFFFF;
@@ -2869,42 +2894,43 @@ p:last-child { margin-bottom: 0; }
    ENQUIRY / CONTACT TEASER SECTION
    ========================================================================== */
 .cta-banner {
-  background-color: #D6B56D;
-  color: #1E6A4D;
-  border-radius: var(--radius-xl);
-  border: 2px solid #1E6A4D;
-  padding: 3.5rem;
+  background-color: #1E6A4D;
+  color: #F5F7F4;
+  border-radius: 24px;
+  border: 2px solid #D6B56D;
+  padding: 4rem 2.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.2);
 }
 
 .cta-banner h2 {
-  color: #1E6A4D !important;
+  color: #F5F7F4 !important;
   font-size: clamp(1.8rem, 3vw, 2.4rem);
   margin-bottom: 1rem;
 }
 
 .cta-banner p {
-  color: #1E6A4D !important;
-  max-width: 600px;
+  color: rgba(245, 247, 244, 0.92) !important;
+  max-width: 650px;
   margin: 0 auto 2rem;
   font-size: 1.05rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .cta-banner .btn-primary {
-  background: #1E6A4D !important;
-  color: #FFFFFF !important;
+  background: #D6B56D !important;
+  color: #1E6A4D !important;
   font-weight: 700;
 }
 
 .cta-banner .btn-outline,
 .cta-banner .btn-outline-white {
   background: transparent !important;
-  color: #1E6A4D !important;
-  border: 2px solid #1E6A4D !important;
-  font-weight: 700;
+  color: #F5F7F4 !important;
+  border: 2px solid rgba(255, 255, 255, 0.7) !important;
+  font-weight: 600;
 }
 
 .cta-buttons {
@@ -6205,10 +6231,11 @@ p:last-child { margin-bottom: 0; }
 
 .facilities-placements-card {
   background-color: var(--color-primary);
-  border-radius: var(--radius-xl);
-  padding: 3.5rem;
+  border-radius: 24px;
+  border: 2px solid #D6B56D;
+  padding: 4rem 2.5rem;
   color: #F5F7F4;
-  box-shadow: var(--shadow-xl);
+  box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.2);
   box-sizing: border-box;
   width: 100%;
 }

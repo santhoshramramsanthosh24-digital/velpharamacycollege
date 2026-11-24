@@ -7,7 +7,7 @@ $canonical_url = "https://velpharmacycollege.com/404";
 include __DIR__ . '/includes/header.php';
 ?>
 
-<section class="section" style="min-height: 65vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 5rem 1rem;">
+<section class="section" style="min-height: 65vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 5rem 1rem 5.5rem; background: #FFFFFF;">
   <div class="container" style="max-width: 680px;">
     
     <div style="font-size: 7rem; font-weight: 900; font-family: var(--font-heading); color: var(--color-primary); line-height: 1; margin-bottom: 1rem; text-shadow: 2px 4px 10px rgba(30, 58, 138, 0.15);">

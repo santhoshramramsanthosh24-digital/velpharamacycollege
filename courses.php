@@ -1019,73 +1019,77 @@ $ga_meta_map = [
 </section>
 
 <!-- SECTION 6: ADMISSIONS PROCESS CTA -->
-<section class="section cta-collage-banner" id="admissionsCta" aria-label="Admissions Banner">
-  <!-- Slowly Auto-Moving College Photo Collage (Light Dim Mode) -->
-  <div class="cta-bg-collage" aria-hidden="true">
-    <!-- Row 1: Leftward Pan -->
-    <div class="cta-collage-track cta-track-1">
-      <div class="cta-collage-strip">
-        <div class="cta-collage-item"><img src="assets/images/campus-main-entrance.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item item-wide"><img src="assets/images/pharmacy-lab-main.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item"><img src="assets/images/hospital-facility.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item item-wide"><img src="assets/images/research-lab-modern.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item item-compact"><img src="assets/images/computer-lab.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item"><img src="assets/images/library-main.jpg" alt="" loading="lazy"></div>
-      </div>
-      <div class="cta-collage-strip" aria-hidden="true">
-        <div class="cta-collage-item"><img src="assets/images/campus-main-entrance.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item item-wide"><img src="assets/images/pharmacy-lab-main.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item"><img src="assets/images/hospital-facility.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item item-wide"><img src="assets/images/research-lab-modern.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item item-compact"><img src="assets/images/computer-lab.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item"><img src="assets/images/library-main.jpg" alt="" loading="lazy"></div>
-      </div>
-    </div>
+<section class="section" style="padding-top: 1.5rem; padding-bottom: 5.5rem; background: #FFFFFF;" aria-label="Admissions Banner">
+  <div class="container">
+    <div class="cta-collage-banner fade-up" id="admissionsCta" style="border-radius: 24px; border: 2px solid #D6B56D; box-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.2); overflow: hidden; position: relative; padding: 4.5rem 1.5rem;">
+      <!-- Slowly Auto-Moving College Photo Collage (Light Dim Mode) -->
+      <div class="cta-bg-collage" aria-hidden="true">
+        <!-- Row 1: Leftward Pan -->
+        <div class="cta-collage-track cta-track-1">
+          <div class="cta-collage-strip">
+            <div class="cta-collage-item"><img src="assets/images/campus-main-entrance.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item item-wide"><img src="assets/images/pharmacy-lab-main.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item"><img src="assets/images/hospital-facility.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item item-wide"><img src="assets/images/research-lab-modern.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item item-compact"><img src="assets/images/computer-lab.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item"><img src="assets/images/library-main.jpg" alt="" loading="lazy"></div>
+          </div>
+          <div class="cta-collage-strip" aria-hidden="true">
+            <div class="cta-collage-item"><img src="assets/images/campus-main-entrance.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item item-wide"><img src="assets/images/pharmacy-lab-main.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item"><img src="assets/images/hospital-facility.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item item-wide"><img src="assets/images/research-lab-modern.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item item-compact"><img src="assets/images/computer-lab.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item"><img src="assets/images/library-main.jpg" alt="" loading="lazy"></div>
+          </div>
+        </div>
 
-    <!-- Row 2: Rightward Pan -->
-    <div class="cta-collage-track cta-track-2">
-      <div class="cta-collage-strip">
-        <div class="cta-collage-item item-wide"><img src="assets/images/lecture-hall.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item"><img src="assets/images/analysis-lab.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item item-compact"><img src="assets/images/machine-room.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item item-wide"><img src="assets/images/instrumentation-lab.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item"><img src="assets/images/pharmacognosy-lab.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item"><img src="assets/images/seminar-hall.jpg" alt="" loading="lazy"></div>
+        <!-- Row 2: Rightward Pan -->
+        <div class="cta-collage-track cta-track-2">
+          <div class="cta-collage-strip">
+            <div class="cta-collage-item item-wide"><img src="assets/images/lecture-hall.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item"><img src="assets/images/analysis-lab.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item item-compact"><img src="assets/images/machine-room.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item item-wide"><img src="assets/images/instrumentation-lab.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item"><img src="assets/images/pharmacognosy-lab.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item"><img src="assets/images/seminar-hall.jpg" alt="" loading="lazy"></div>
+          </div>
+          <div class="cta-collage-strip" aria-hidden="true">
+            <div class="cta-collage-item item-wide"><img src="assets/images/lecture-hall.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item"><img src="assets/images/analysis-lab.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item item-compact"><img src="assets/images/machine-room.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item item-wide"><img src="assets/images/instrumentation-lab.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item"><img src="assets/images/pharmacognosy-lab.jpg" alt="" loading="lazy"></div>
+            <div class="cta-collage-item"><img src="assets/images/seminar-hall.jpg" alt="" loading="lazy"></div>
+          </div>
+        </div>
       </div>
-      <div class="cta-collage-strip" aria-hidden="true">
-        <div class="cta-collage-item item-wide"><img src="assets/images/lecture-hall.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item"><img src="assets/images/analysis-lab.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item item-compact"><img src="assets/images/machine-room.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item item-wide"><img src="assets/images/instrumentation-lab.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item"><img src="assets/images/pharmacognosy-lab.jpg" alt="" loading="lazy"></div>
-        <div class="cta-collage-item"><img src="assets/images/seminar-hall.jpg" alt="" loading="lazy"></div>
+
+      <div class="cta-collage-overlay" aria-hidden="true"></div>
+
+      <?php
+      $c_cta = $courses_cms['cta_banner'] ?? [];
+      ?>
+      <div class="text-center" style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto;">
+        <span style="display: inline-block; background: rgba(255,255,255,0.15); color: #F5F7F4; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; padding: 0.35rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.25rem; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2);">
+          <?= htmlspecialchars($c_cta['badge'] ?? 'Admissions Open • B.Pharm Program') ?>
+        </span>
+        <h2 style="font-family: var(--font-heading); font-size: 2.25rem; color: #F5F7F4; margin-bottom: 1rem; text-shadow: 0 2px 10px rgba(0,0,0,0.35);">
+          <?= htmlspecialchars($c_cta['title'] ?? 'Join Vel Pharmacy College Under the Modern NEP 2020 Framework') ?>
+        </h2>
+        <p style="font-size: 1.1rem; color: #F5F7F4; line-height: 1.7; margin-bottom: 2rem; text-shadow: 0 1px 4px rgba(0,0,0,0.25);">
+          <?= htmlspecialchars($c_cta['subtitle'] ?? 'Merit-based admissions for +2 passed students (PCM/PCB) and lateral entry for D.Pharm holders. Connect with our admissions desk to secure your academic future today.') ?>
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="<?= htmlspecialchars($c_cta['btn1_link'] ?? 'enquiry') ?>" class="btn" style="background: #D6B56D; color: #1E6A4D; font-weight: 700; box-shadow: 0 4px 14px rgba(217,119,6,0.35);">
+            <span><?= htmlspecialchars($c_cta['btn1_text'] ?? 'Submit Online Admission Enquiry') ?></span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="<?= htmlspecialchars($c_cta['btn2_link'] ?? 'tel:+918122613300') ?>" class="btn" style="background: rgba(255,255,255,0.15); color: #F5F7F4; border: 1px solid rgba(255,255,255,0.3); backdrop-filter: blur(8px);">
+            <span><?= htmlspecialchars($c_cta['btn2_text'] ?? 'Call: +91 812 261 3300') ?></span>
+          </a>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <div class="cta-collage-overlay" aria-hidden="true"></div>
-
-  <?php
-  $c_cta = $courses_cms['cta_banner'] ?? [];
-  ?>
-  <div class="container text-center" style="position: relative; z-index: 2; max-width: 800px;">
-    <span style="display: inline-block; background: rgba(255,255,255,0.15); color: #F5F7F4; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; padding: 0.35rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.25rem; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2);">
-      <?= htmlspecialchars($c_cta['badge'] ?? 'Admissions Open • B.Pharm Program') ?>
-    </span>
-    <h2 style="font-family: var(--font-heading); font-size: 2.25rem; color: #F5F7F4; margin-bottom: 1rem; text-shadow: 0 2px 10px rgba(0,0,0,0.35);">
-      <?= htmlspecialchars($c_cta['title'] ?? 'Join Vel Pharmacy College Under the Modern NEP 2020 Framework') ?>
-    </h2>
-    <p style="font-size: 1.1rem; color: #F5F7F4; line-height: 1.7; margin-bottom: 2rem; text-shadow: 0 1px 4px rgba(0,0,0,0.25);">
-      <?= htmlspecialchars($c_cta['subtitle'] ?? 'Merit-based admissions for +2 passed students (PCM/PCB) and lateral entry for D.Pharm holders. Connect with our admissions desk to secure your academic future today.') ?>
-    </p>
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-      <a href="<?= htmlspecialchars($c_cta['btn1_link'] ?? 'enquiry') ?>" class="btn" style="background: #D6B56D; color: #1E6A4D; font-weight: 700; box-shadow: 0 4px 14px rgba(217,119,6,0.35);">
-        <span><?= htmlspecialchars($c_cta['btn1_text'] ?? 'Submit Online Admission Enquiry') ?></span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-      </a>
-      <a href="<?= htmlspecialchars($c_cta['btn2_link'] ?? 'tel:+918122613300') ?>" class="btn" style="background: rgba(255,255,255,0.15); color: #F5F7F4; border: 1px solid rgba(255,255,255,0.3); backdrop-filter: blur(8px);">
-        <span><?= htmlspecialchars($c_cta['btn2_text'] ?? 'Call: +91 812 261 3300') ?></span>
-      </a>
     </div>
   </div>
 </section>

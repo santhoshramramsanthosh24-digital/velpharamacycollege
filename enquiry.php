@@ -72,7 +72,7 @@ include __DIR__ . '/includes/header.php';
 </section>
 
 <!-- SECTION 1: ADMISSION FORM & BENEFITS -->
-<section class="section" aria-labelledby="formHeading">
+<section class="section" aria-labelledby="formHeading" style="background: #FFFFFF; padding-bottom: 5.5rem;">
   <div class="container">
     <div class="enquiry-grid">
       

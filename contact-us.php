@@ -302,7 +302,7 @@ $c_commute = $contact_cms['commute'] ?? [];
 </section>
 
 <!-- SECTION 3: HOW TO REACH THE CAMPUS -->
-<section class="section section-alt" aria-labelledby="howToReachHeading">
+<section class="section" aria-labelledby="howToReachHeading" style="background: #FFFFFF; padding-bottom: 5.5rem;">
   <div class="container">
     <div class="text-center" style="max-width: 760px; margin: 0 auto 3.5rem;">
       <span class="section-subtitle"><?= htmlspecialchars($c_commute['subtitle'] ?? 'Travel & Commute Guide') ?></span>

@@ -149,27 +149,26 @@ $cta = $lead_cms['cta_banner'] ?? [];
 </section>
 
 <!-- SECTION 3: CALL TO ACTION -->
-<section class="section" style="background: #FFFFFF; border-top: 1px solid #D6B56D;"
+<section class="section" style="background: #FFFFFF; padding-top: 1.5rem; padding-bottom: 5.5rem;"
   aria-label="Admissions Call to Action">
-  <div class="container text-center" style="max-width: 800px;">
-    <h2
-      style="font-family: var(--font-heading); font-size: 2rem; color: var(--color-primary-dark); margin-bottom: 1rem;">
-      <?= htmlspecialchars($cta['title'] ?? 'Begin Your Journey in Pharmaceutical Excellence') ?>
-    </h2>
-    <p style="font-size: 1.05rem; color: var(--color-text-muted); margin-bottom: 2rem;">
-      <?= htmlspecialchars($cta['subtitle'] ?? 'Enroll in the 4-year B.Pharm degree program at Vel Pharmacy College and learn under the guidance of visionary academic mentors.') ?>
-    </p>
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-      <a href="<?= htmlspecialchars($cta['btn1_link'] ?? 'enquiry') ?>" class="btn btn-primary">
-        <span><?= htmlspecialchars($cta['btn1_text'] ?? 'Apply for Admissions') ?></span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
-      </a>
-      <a href="<?= htmlspecialchars($cta['btn2_link'] ?? 'contact-us') ?>" class="btn btn-outline">
-        <span><?= htmlspecialchars($cta['btn2_text'] ?? 'Contact Admissions Office') ?></span>
-      </a>
+  <div class="container">
+    <div class="cta-banner fade-up">
+      <h2><?= htmlspecialchars($cta['title'] ?? 'Begin Your Journey in Pharmaceutical Excellence') ?></h2>
+      <p style="margin: 0 auto 2rem;">
+        <?= htmlspecialchars($cta['subtitle'] ?? 'Enroll in the 4-year B.Pharm degree program at Vel Pharmacy College and learn under the guidance of visionary academic mentors.') ?>
+      </p>
+      <div class="cta-buttons">
+        <a href="<?= htmlspecialchars($cta['btn1_link'] ?? 'enquiry') ?>" class="btn btn-primary" style="background: #D6B56D; color: #1E6A4D; font-weight: 700;">
+          <span><?= htmlspecialchars($cta['btn1_text'] ?? 'Apply for Admissions') ?></span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="<?= htmlspecialchars($cta['btn2_link'] ?? 'contact-us') ?>" class="btn btn-outline-white">
+          <span><?= htmlspecialchars($cta['btn2_text'] ?? 'Contact Admissions Office') ?></span>
+        </a>
+      </div>
     </div>
   </div>
 </section>

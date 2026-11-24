@@ -1124,7 +1124,7 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
 </section>
 
 <!-- CALL TO ACTION BANNER -->
-<section class="section" style="padding-top: 0;">
+<section class="section" style="padding-top: 0; padding-bottom: 5.5rem; background: #FFFFFF;">
   <div class="container">
     <div class="cta-banner fade-up">
       <h2><?= htmlspecialchars($cta_banner['title'] ?? 'Begin Your Journey in Pharmacy at Vel Pharmacy College') ?></h2>

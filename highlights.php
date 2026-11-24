@@ -683,7 +683,7 @@ foreach ($highlights_data as $h) {
 </section>
 
 <!-- MAIN HIGHLIGHTS & CIRCULARS REPOSITORY -->
-<main class="hl-page-wrap">
+<section class="section hl-page-wrap" style="padding-bottom: 5.5rem; background: #FFFFFF;">
   <div class="container">
 
     <!-- Overview Statistics Banner -->
@@ -780,7 +780,7 @@ foreach ($highlights_data as $h) {
     </div>
 
   </div>
-</main>
+</section>
 
 <!-- NOTICE & CIRCULAR IMAGE LIGHTBOX MODAL -->
 <div class="notice-lightbox-overlay" id="noticeModal" role="dialog" aria-modal="true" aria-labelledby="noticeModalTitle">
