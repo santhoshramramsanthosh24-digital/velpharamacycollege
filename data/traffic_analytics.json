@@ -113,7 +113,7 @@
     ],
     "top_keywords": [
         {
-            "keyword": "Vel Pharmacy College B.Pharm admission",
+            "keyword": "VEL Pharmacy College B.Pharm admission",
             "clicks": 2840,
             "position": 1.2,
             "ctr": "18.4%"
@@ -125,13 +125,13 @@
             "ctr": "15.1%"
         },
         {
-            "keyword": "Dr. G. Saravanan Principal Vel Pharmacy",
+            "keyword": "Dr. G. Saravanan Principal VEL Pharmacy",
             "clicks": 1420,
             "position": 1,
             "ctr": "24.6%"
         },
         {
-            "keyword": "Vel Pharmacy College Manjankaranai",
+            "keyword": "VEL Pharmacy College Manjankaranai",
             "clicks": 1180,
             "position": 1.1,
             "ctr": "19.8%"
@@ -152,7 +152,7 @@
         },
         {
             "engine": "ChatGPT Search",
-            "query": "Is Vel Pharmacy College approved by PCI New Delhi?",
+            "query": "Is VEL Pharmacy College approved by PCI New Delhi?",
             "status": "Direct Citation in Answer",
             "sentiment": "Positive"
         },
@@ -164,7 +164,7 @@
         },
         {
             "engine": "Claude AI",
-            "query": "Who is the principal of Vel Pharmacy College and his research background?",
+            "query": "Who is the principal of VEL Pharmacy College and his research background?",
             "status": "Accurate Knowledge Entity",
             "sentiment": "Verified"
         }

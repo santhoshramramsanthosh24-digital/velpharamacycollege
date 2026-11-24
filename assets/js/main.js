@@ -1,10 +1,10 @@
 /**
- * Vel Pharmacy College - Main JavaScript
+ * VEL Pharmacy College - Main JavaScript
  * Vanilla JS only - No external dependencies
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 0. Initial Page Loading Screen (Vel Pharmacy Logo Animation Video)
+  // 0. Initial Page Loading Screen (VEL Pharmacy Logo Animation Video)
   // Only runs on first visit to the website or when browser refresh is clicked
   const isPreloaderActive = document.documentElement.classList.contains('show-preloader');
   const preloader = document.getElementById('sitePreloader');

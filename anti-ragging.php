@@ -1,7 +1,7 @@
 <?php
 $current_page = 'anti-ragging';
-$page_title = "Anti-Ragging, Grievance & Student Safety | Vel Pharmacy College";
-$page_description = "Vel Pharmacy College maintains a zero-tolerance policy against ragging in accordance with PCI and UGC guidelines. 24x7 National Helpline: 1800-180-5522. View committee circulars.";
+$page_title = "Anti-Ragging, Grievance & Student Safety | VEL Pharmacy College";
+$page_description = "VEL Pharmacy College maintains a zero-tolerance policy against ragging in accordance with PCI and UGC guidelines. 24x7 National Helpline: 1800-180-5522. View committee circulars.";
 $canonical_url = "https://velpharmacycollege.com/anti-ragging";
 
 // Breadcrumb Schema
@@ -44,12 +44,12 @@ include __DIR__ . '/includes/header.php';
         </nav>
         <h1 class="page-title"><?= htmlspecialchars($antiragging_cms['banner']['title'] ?? 'Anti-Ragging & Student Safety') ?></h1>
         <p class="page-subtitle">
-          <?= htmlspecialchars($antiragging_cms['banner']['subtitle'] ?? 'Vel Pharmacy College enforces a strict Zero-Tolerance Policy toward ragging, harassment, and discrimination, ensuring a secure, supportive, and dignified academic sanctuary for all students.') ?>
+          <?= htmlspecialchars($antiragging_cms['banner']['subtitle'] ?? 'VEL Pharmacy College enforces a strict Zero-Tolerance Policy toward ragging, harassment, and discrimination, ensuring a secure, supportive, and dignified academic sanctuary for all students.') ?>
         </p>
       </div>
       <div class="page-banner-media">
         <div class="page-banner-img-frame">
-          <img src="<?= htmlspecialchars($antiragging_cms['banner']['image'] ?? 'assets/images/seminar-hall.jpg') ?>" alt="Vel Pharmacy College Student Safety & Ethics" class="page-banner-img" loading="eager" width="480" height="250">
+          <img src="<?= htmlspecialchars($antiragging_cms['banner']['image'] ?? 'assets/images/seminar-hall.jpg') ?>" alt="VEL Pharmacy College Student Safety & Ethics" class="page-banner-img" loading="eager" width="480" height="250">
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@ $ar_rep = $antiragging_cms['report_section'] ?? [];
         </h2>
         <div style="background: var(--color-bg-alt); border-left: 4px solid var(--color-secondary); padding: 1.5rem; border-radius: var(--radius-sm); margin-bottom: 1.5rem;">
           <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-main); font-weight: 500; font-style: italic;">
-            "<?= htmlspecialchars($ar_pol['quote'] ?? 'At Vel Pharmacy College, we unequivocally reject all forms of ragging as a violation of our core values and a threat to the well-being of our community.') ?>"
+            "<?= htmlspecialchars($ar_pol['quote'] ?? 'At VEL Pharmacy College, we unequivocally reject all forms of ragging as a violation of our core values and a threat to the well-being of our community.') ?>"
           </p>
         </div>
         <p style="line-height: 1.75; color: var(--color-text-muted); margin-bottom: 1.25rem;">
@@ -156,7 +156,7 @@ $ar_rep = $antiragging_cms['report_section'] ?? [];
       <span class="section-subtitle">Official Committee Circulars</span>
       <h2 class="section-title" id="committeesHeading">Statutory Protection Cells</h2>
       <p class="section-description">
-        Vel Pharmacy College has instituted dedicated oversight bodies to safeguard every student. View and download official circulars, member rosters, and complaint protocols below:
+        VEL Pharmacy College has instituted dedicated oversight bodies to safeguard every student. View and download official circulars, member rosters, and complaint protocols below:
       </p>
     </div>
 

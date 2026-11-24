@@ -1,6 +1,6 @@
 <?php
 /**
- * Vel Pharmacy College - Complete Enterprise Academic CMS
+ * VEL Pharmacy College - Complete Enterprise Academic CMS
  * Full Multi-Page Content Management, Faculty Directory, Media Library,
  * and Dedicated SEO / GEO / AEO Intelligence & Search Traffic Hub.
  */
@@ -78,7 +78,7 @@ if (!function_exists('cms_render_image_field')) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CMS Management Portal • Vel Pharmacy College</title>
+  <title>CMS Management Portal • VEL Pharmacy College</title>
   <meta name="robots" content="noindex, nofollow">
   <meta name="csrf-token" content="<?= htmlspecialchars($csrf_token) ?>">
 
@@ -104,8 +104,8 @@ if (!function_exists('cms_render_image_field')) {
     <aside class="cms-sidebar" id="cmsSidebar">
       <!-- Brand Header -->
       <div class="cms-brand">
-        <a href="/" class="login-logo-box" title="Return to Vel Pharmacy College Website">
-          <img src="/assets/images/VPC NEW LOGO.jpeg" alt="Vel Pharmacy College Logo" width="220" height="56" loading="eager">
+        <a href="/" class="login-logo-box" title="Return to VEL Pharmacy College Website">
+          <img src="/assets/images/VPC NEW LOGO.jpeg" alt="VEL Pharmacy College Logo" width="220" height="56" loading="eager">
         </a>
         <div class="cms-brand-meta">
           <span class="cms-brand-status">
@@ -730,7 +730,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">College Name</label>
                     <input type="text" id="gs_college_name" class="cms-form-control"
-                      value="<?= htmlspecialchars($gen_settings['college_name'] ?? 'Vel Pharmacy College') ?>">
+                      value="<?= htmlspecialchars($gen_settings['college_name'] ?? 'VEL Pharmacy College') ?>">
                   </div>
                   <?php cms_render_image_field('Header & Navigation Logo', 'gs_logo_img', $gen_settings['logo_img'] ?? 'assets/images/logo.png', 'Transparent PNG or SVG recommended'); ?>
                   <div class="cms-form-group">
@@ -843,7 +843,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">Footer Copyright Text</label>
                     <input type="text" id="gs_copyright_text" class="cms-form-control"
-                      value="<?= htmlspecialchars($gen_settings['copyright_text'] ?? '© 2024 Vel Pharmacy College. All Rights Reserved.') ?>">
+                      value="<?= htmlspecialchars($gen_settings['copyright_text'] ?? '© 2024 VEL Pharmacy College. All Rights Reserved.') ?>">
                   </div>
                 </div>
               </div>
@@ -890,7 +890,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">Description Subtitle</label>
                     <textarea id="h_description" class="cms-form-control"
-                      rows="3"><?= htmlspecialchars($home_data['description'] ?? 'Vel Pharmacy College at VMCH Campus, Manjankaranai blends academic rigor, state-of-the-art laboratory discovery, and hospital-integrated clinical rounds.') ?></textarea>
+                      rows="3"><?= htmlspecialchars($home_data['description'] ?? 'VEL Pharmacy College at VMCH Campus, Manjankaranai blends academic rigor, state-of-the-art laboratory discovery, and hospital-integrated clinical rounds.') ?></textarea>
                   </div>
                   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                     <div class="cms-form-group">
@@ -950,7 +950,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">Welcome Title</label>
                     <input type="text" id="h_welcome_title" class="cms-form-control"
-                      value="<?= htmlspecialchars($home_data['welcome']['title'] ?? 'Welcome to Vel Pharmacy College') ?>">
+                      value="<?= htmlspecialchars($home_data['welcome']['title'] ?? 'Welcome to VEL Pharmacy College') ?>">
                   </div>
                   <div class="cms-form-group">
                     <label class="cms-form-label">Welcome Paragraph 1</label>
@@ -978,7 +978,7 @@ if (!function_exists('cms_render_image_field')) {
                     <div class="cms-form-group">
                       <label class="cms-form-label">Chancellor Message / Quote</label>
                       <textarea id="h_quote_text" class="cms-form-control"
-                        rows="3"><?= htmlspecialchars($home_data['founder_quote']['quote_text'] ?? 'Our mission at Vel Pharmacy College is to foster ethical, industry-ready healthcare leaders empowered with scientific expertise, compassionate clinical perspective, and groundbreaking research capability.') ?></textarea>
+                        rows="3"><?= htmlspecialchars($home_data['founder_quote']['quote_text'] ?? 'Our mission at VEL Pharmacy College is to foster ethical, industry-ready healthcare leaders empowered with scientific expertise, compassionate clinical perspective, and groundbreaking research capability.') ?></textarea>
                     </div>
                   </div>
                 </div>
@@ -1049,7 +1049,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">Section Description</label>
                     <textarea id="h_eh_desc" class="cms-form-control"
-                      rows="2"><?= htmlspecialchars($eh['description'] ?? 'Stay connected with upcoming academic conferences, hands-on clinical workshops, and premier institutional achievements shaping pharmaceutical education at Vel Pharmacy College.') ?></textarea>
+                      rows="2"><?= htmlspecialchars($eh['description'] ?? 'Stay connected with upcoming academic conferences, hands-on clinical workshops, and premier institutional achievements shaping pharmaceutical education at VEL Pharmacy College.') ?></textarea>
                   </div>
 
                   <!-- Top Row Controls for Events -->
@@ -1410,7 +1410,7 @@ if (!function_exists('cms_render_image_field')) {
                 </div>
                 <div class="cms-panel-body">
                   <h4 style="font-size: 0.85rem; font-weight: 700; color: var(--cms-primary); margin-bottom: 0.75rem;">
-                    Why Choose Vel Pharmacy College (4 Cards)</h4>
+                    Why Choose VEL Pharmacy College (4 Cards)</h4>
                   <?php
                   $why_cards = $home_data['why_choose']['cards'] ?? [];
                   for ($i = 0; $i < 4; $i++):
@@ -1442,7 +1442,7 @@ if (!function_exists('cms_render_image_field')) {
                     <div class="cms-form-group">
                       <label class="cms-form-label">Description</label>
                       <textarea id="h_place_desc" class="cms-form-control"
-                        rows="2"><?= htmlspecialchars($home_data['placements']['desc'] ?? 'Vel Pharmacy College is supported by the comprehensive placement network of VISTAS Deemed University.') ?></textarea>
+                        rows="2"><?= htmlspecialchars($home_data['placements']['desc'] ?? 'VEL Pharmacy College is supported by the comprehensive placement network of VISTAS Deemed University.') ?></textarea>
                     </div>
                     <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem;">
                       <div class="cms-form-group">
@@ -1557,7 +1557,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">Banner Page Title</label>
                     <input type="text" id="ab_banner_title" class="cms-form-control"
-                      value="<?= htmlspecialchars($about_data['banner']['title'] ?? 'About Vel Pharmacy College') ?>">
+                      value="<?= htmlspecialchars($about_data['banner']['title'] ?? 'About VEL Pharmacy College') ?>">
                   </div>
                   <div class="cms-form-group">
                     <label class="cms-form-label">Banner Subtitle</label>
@@ -1578,7 +1578,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">Welcome Section Title</label>
                     <input type="text" id="ab_welcome_title" class="cms-form-control"
-                      value="<?= htmlspecialchars($about_data['welcome']['title'] ?? 'Welcome To Vel Pharmacy College') ?>">
+                      value="<?= htmlspecialchars($about_data['welcome']['title'] ?? 'Welcome To VEL Pharmacy College') ?>">
                   </div>
                   <div class="cms-form-group">
                     <label class="cms-form-label">Welcome Paragraph 1</label>
@@ -1627,7 +1627,7 @@ if (!function_exists('cms_render_image_field')) {
                     <div class="cms-form-group">
                       <label class="cms-form-label">Genesis &amp; Legacy Title</label>
                       <input type="text" id="ab_legacy_title" class="cms-form-control"
-                        value="<?= htmlspecialchars($about_data['genesis']['title'] ?? 'Genesis of Vel Pharmacy College') ?>">
+                        value="<?= htmlspecialchars($about_data['genesis']['title'] ?? 'Genesis of VEL Pharmacy College') ?>">
                     </div>
                     <div class="cms-form-group">
                       <label class="cms-form-label">Genesis Paragraph 1</label>
@@ -1662,7 +1662,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">Principal Designation</label>
                     <input type="text" id="ab_princ_desig" class="cms-form-control"
-                      value="<?= htmlspecialchars($about_data['principal_address']['designation'] ?? 'Principal & Professor, Vel Pharmacy College') ?>">
+                      value="<?= htmlspecialchars($about_data['principal_address']['designation'] ?? 'Principal & Professor, VEL Pharmacy College') ?>">
                   </div>
                   <?php cms_render_image_field('Principal Portrait Photo', 'ab_princ_img', $about_data['principal_address']['image'] ?? 'assets/images/Faculty/Dr. G. Saravanan.png'); ?>
                   <div class="cms-form-group">
@@ -1721,7 +1721,7 @@ if (!function_exists('cms_render_image_field')) {
                     <div class="cms-form-group">
                       <label class="cms-form-label">Bottom CTA Banner Title</label>
                       <input type="text" id="ab_cta_title" class="cms-form-control"
-                        value="<?= htmlspecialchars($about_data['bottom_cta']['title'] ?? 'Experience Educational Excellence at Vel Pharmacy College') ?>">
+                        value="<?= htmlspecialchars($about_data['bottom_cta']['title'] ?? 'Experience Educational Excellence at VEL Pharmacy College') ?>">
                     </div>
                     <div class="cms-form-group">
                       <label class="cms-form-label">CTA Description</label>
@@ -1879,7 +1879,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">Section Description</label>
                     <textarea id="lead_gov_desc" class="cms-form-control"
-                      rows="2"><?= htmlspecialchars($leadership_data['governance_philosophy']['description'] ?? 'Vel Pharmacy College operates under strict regulatory compliance with the Pharmacy Council of India (PCI) and UGC guidelines.') ?></textarea>
+                      rows="2"><?= htmlspecialchars($leadership_data['governance_philosophy']['description'] ?? 'VEL Pharmacy College operates under strict regulatory compliance with the Pharmacy Council of India (PCI) and UGC guidelines.') ?></textarea>
                   </div>
 
                   <h4 style="font-size: 0.85rem; font-weight: 700; color: var(--cms-primary); margin: 1rem 0 0.5rem;">3
@@ -1922,7 +1922,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">CTA Subtitle</label>
                     <textarea id="lead_cta_sub" class="cms-form-control"
-                      rows="3"><?= htmlspecialchars($leadership_data['cta_banner']['subtitle'] ?? 'Enroll in the 4-year B.Pharm degree program at Vel Pharmacy College and learn under the guidance of visionary academic mentors.') ?></textarea>
+                      rows="3"><?= htmlspecialchars($leadership_data['cta_banner']['subtitle'] ?? 'Enroll in the 4-year B.Pharm degree program at VEL Pharmacy College and learn under the guidance of visionary academic mentors.') ?></textarea>
                   </div>
                   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
                     <div class="cms-form-group">
@@ -2102,7 +2102,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">CTA Heading</label>
                     <input type="text" id="c_cta_title" class="cms-form-control"
-                      value="<?= htmlspecialchars($courses_data['cta_banner']['title'] ?? 'Join Vel Pharmacy College Under the Modern NEP 2020 Framework') ?>">
+                      value="<?= htmlspecialchars($courses_data['cta_banner']['title'] ?? 'Join VEL Pharmacy College Under the Modern NEP 2020 Framework') ?>">
                   </div>
                 </div>
                 <div class="cms-form-group">
@@ -2569,7 +2569,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">Subtitle</label>
                     <textarea id="hl_banner_sub" class="cms-form-control"
-                      rows="3"><?= htmlspecialchars($highlights_data['banner']['subtitle'] ?? 'Statutory PCI approvals, official academic circulars, advanced research laboratory suites, and proceedings of concluded healthcare symposiums at Vel Pharmacy College.') ?></textarea>
+                      rows="3"><?= htmlspecialchars($highlights_data['banner']['subtitle'] ?? 'Statutory PCI approvals, official academic circulars, advanced research laboratory suites, and proceedings of concluded healthcare symposiums at VEL Pharmacy College.') ?></textarea>
                   </div>
                   <?php cms_render_image_field('Hero Media Image', 'hl_banner_img', $highlights_data['banner']['image'] ?? 'assets/images/campus-front.jpg'); ?>
                 </div>
@@ -3113,11 +3113,11 @@ if (!function_exists('cms_render_image_field')) {
           </div>
 
           <h4 style="font-size: 0.85rem; font-weight: 700; color: var(--cms-primary); margin: 1rem 0 0.5rem;">Why Choose
-            Vel Pharmacy College (Sidebar)</h4>
+            VEL Pharmacy College (Sidebar)</h4>
           <div class="cms-form-group">
             <label class="cms-form-label">Why Choose Heading</label>
             <input type="text" id="enq_why_title" class="cms-form-control"
-              value="<?= htmlspecialchars($enquiry_data['why_apply']['title'] ?? 'Why Choose Vel Pharmacy College?') ?>">
+              value="<?= htmlspecialchars($enquiry_data['why_apply']['title'] ?? 'Why Choose VEL Pharmacy College?') ?>">
           </div>
           <?php
           $why_apply = $enquiry_data['why_apply']['items'] ?? [];
@@ -3264,7 +3264,7 @@ if (!function_exists('cms_render_image_field')) {
             SEO, GEO &amp; AEO Unified Command Center
           </h2>
           <p style="color: #CBD5E1; font-size: 0.925rem; max-width: 680px; line-height: 1.5;">
-            Optimize Vel Pharmacy College for traditional Google search (SEO), Generative AI search engines like ChatGPT
+            Optimize VEL Pharmacy College for traditional Google search (SEO), Generative AI search engines like ChatGPT
             &amp; Perplexity (GEO), and direct Voice Answer engines like Siri &amp; Google Assistant (AEO).
           </p>
         </div>
@@ -3395,7 +3395,7 @@ if (!function_exists('cms_render_image_field')) {
           <h4 style="font-size: 0.9rem; font-weight: 700; color: var(--cms-primary-dark); margin-bottom: 0.5rem;">AI
             Search Bots &amp; LLM Web Crawlers Access Control</h4>
           <p style="font-size: 0.825rem; color: var(--cms-text-muted); margin-bottom: 1.25rem;">
-            Enabling AI crawlers ensures ChatGPT Search, Perplexity AI, and Claude cite Vel Pharmacy College when
+            Enabling AI crawlers ensures ChatGPT Search, Perplexity AI, and Claude cite VEL Pharmacy College when
             students search queries like <em>"Best PCI pharmacy colleges in Tiruvallur"</em>.
           </p>
 
@@ -3415,12 +3415,12 @@ if (!function_exists('cms_render_image_field')) {
             <div class="cms-form-group">
               <label class="cms-form-label">Legal Name of Institution</label>
               <input type="text" id="kg_legal_name" class="cms-form-control"
-                value="<?= htmlspecialchars($seo_data['geo_engine']['knowledge_graph_entity']['legal_name'] ?? 'Vel Pharmacy College') ?>">
+                value="<?= htmlspecialchars($seo_data['geo_engine']['knowledge_graph_entity']['legal_name'] ?? 'VEL Pharmacy College') ?>">
             </div>
             <div class="cms-form-group">
               <label class="cms-form-label">Recognized Brand Name / Short Code</label>
               <input type="text" id="kg_brand_name" class="cms-form-control"
-                value="<?= htmlspecialchars($seo_data['geo_engine']['knowledge_graph_entity']['brand_name'] ?? 'Vel Pharmacy College (VPC)') ?>">
+                value="<?= htmlspecialchars($seo_data['geo_engine']['knowledge_graph_entity']['brand_name'] ?? 'VEL Pharmacy College (VPC)') ?>">
             </div>
             <div class="cms-form-group">
               <label class="cms-form-label">Parent Sponsoring Organization</label>

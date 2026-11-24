@@ -1,6 +1,6 @@
 <?php
 /**
- * Vel Pharmacy College CMS - Secure REST API Endpoint
+ * VEL Pharmacy College CMS - Secure REST API Endpoint
  * Handles AJAX requests for Faculty, Content, SEO/GEO/AEO, Media, and Security
  */
 

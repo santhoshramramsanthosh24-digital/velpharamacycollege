@@ -1,4 +1,4 @@
-# Apache configuration for Vel Pharmacy College
+# Apache configuration for VEL Pharmacy College
 RewriteEngine On
 RewriteBase /
 

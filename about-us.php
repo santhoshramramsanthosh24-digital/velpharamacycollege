@@ -1,7 +1,7 @@
 <?php
 $current_page = 'about';
-$page_title = "About Us | Vel Pharmacy College | History, Vision & Mission";
-$page_description = "Learn about Vel Pharmacy College, established in 2024–25 at the VMCH Medical Campus, Manjankaranai under VISTAS Deemed University. Discover our founding legacy, vision, mission, and principal's address.";
+$page_title = "About Us | VEL Pharmacy College | History, Vision & Mission";
+$page_description = "Learn about VEL Pharmacy College, established in 2024–25 at the VMCH Medical Campus, Manjankaranai under VISTAS Deemed University. Discover our founding legacy, vision, mission, and principal's address.";
 $canonical_url = "https://velpharmacycollege.com/about-us";
 
 // Breadcrumb Schema
@@ -52,14 +52,14 @@ $cta = $about_cms['cta_banner'] ?? [];
           <span class="breadcrumb-separator">/</span>
           <span class="breadcrumb-current" aria-current="page">About Us</span>
         </nav>
-        <h1 class="page-title"><?= htmlspecialchars($banner['title'] ?? 'About Vel Pharmacy College') ?></h1>
+        <h1 class="page-title"><?= htmlspecialchars($banner['title'] ?? 'About VEL Pharmacy College') ?></h1>
         <p class="page-subtitle">
           <?= htmlspecialchars($banner['subtitle'] ?? 'An off-campus center of VELS Institute of Science, Technology & Advanced Studies (VISTAS Deemed University), dedicated to excellence in pharmaceutical sciences, clinical training, and healthcare ethics.') ?>
         </p>
       </div>
       <div class="page-banner-media">
         <div class="page-banner-img-frame">
-          <img src="<?= htmlspecialchars($banner['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="<?= htmlspecialchars($banner['title'] ?? 'Vel Pharmacy College') ?>" class="page-banner-img" loading="eager" width="480" height="250">
+          <img src="<?= htmlspecialchars($banner['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="<?= htmlspecialchars($banner['title'] ?? 'VEL Pharmacy College') ?>" class="page-banner-img" loading="eager" width="480" height="250">
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@ $cta = $about_cms['cta_banner'] ?? [];
       <div class="about-welcome-content fade-up">
         <span class="section-subtitle"><?= htmlspecialchars($welcome['subtitle'] ?? 'A Noble Calling in Healthcare') ?></span>
         <h2 class="section-title" id="overviewTitle" style="text-align: left; margin-bottom: 1.25rem;">
-          <?= htmlspecialchars($welcome['title'] ?? 'Welcome To Vel Pharmacy College') ?>
+          <?= htmlspecialchars($welcome['title'] ?? 'Welcome To VEL Pharmacy College') ?>
         </h2>
         <p style="font-size: 1.05rem; line-height: 1.75; color: var(--color-text-main); margin-bottom: 1.25rem;">
           <?= htmlspecialchars($welcome['paragraph_1'] ?? '') ?>
@@ -122,7 +122,7 @@ $cta = $about_cms['cta_banner'] ?? [];
     <div class="about-legacy-grid fade-up">
       <!-- Left Side: College Image (Landscape Orientation) -->
       <div class="about-legacy-image-wrap">
-        <img src="<?= htmlspecialchars($legacy['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="Vel Pharmacy College Campus" loading="lazy" width="600" height="500">
+        <img src="<?= htmlspecialchars($legacy['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="VEL Pharmacy College Campus" loading="lazy" width="600" height="500">
         <div class="about-legacy-badge">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           <span>30+ Years Academic Legacy • VISTAS Campus</span>
@@ -224,7 +224,7 @@ $cta = $about_cms['cta_banner'] ?? [];
       <span class="section-subtitle"><?= htmlspecialchars($sisters['subtitle'] ?? 'Vels Group Network') ?></span>
       <h2 class="section-title" id="groupsTitle"><?= htmlspecialchars($sisters['title'] ?? 'Our Sister Institutions') ?></h2>
       <p class="section-description">
-        <?= htmlspecialchars($sisters['description'] ?? 'Vel Pharmacy College is proud to be part of the renowned Vels Group of Institutions.') ?>
+        <?= htmlspecialchars($sisters['description'] ?? 'VEL Pharmacy College is proud to be part of the renowned Vels Group of Institutions.') ?>
       </p>
     </div>
 

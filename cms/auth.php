@@ -1,6 +1,6 @@
 <?php
 /**
- * Vel Pharmacy College CMS - High-Security Authentication & Protection Module
+ * VEL Pharmacy College CMS - High-Security Authentication & Protection Module
  * Includes Session Security, Password Hashing, CSRF Defense, Brute-Force Throttling & Audit Logging
  */
 

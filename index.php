@@ -1,7 +1,7 @@
 <?php
 $current_page = 'home';
-$page_title = "Vel Pharmacy College | B.Pharm Admissions 2024-2025 | Approved by PCI";
-$page_description = "Welcome to Vel Pharmacy College, an off-campus center of VISTAS Deemed University at VMCH Campus, Manjankaranai, Tiruvallur. Approved by the Pharmacy Council of India (PCI), offering 4-Year B.Pharm degree.";
+$page_title = "VEL Pharmacy College | B.Pharm Admissions 2024-2025 | Approved by PCI";
+$page_description = "Welcome to VEL Pharmacy College, an off-campus center of VISTAS Deemed University at VMCH Campus, Manjankaranai, Tiruvallur. Approved by the Pharmacy Council of India (PCI), offering 4-Year B.Pharm degree.";
 $canonical_url = "https://velpharmacycollege.com/";
 
 // Custom Schema for FAQPage and Course
@@ -14,7 +14,7 @@ $custom_schema = [
       "description" => "A comprehensive 4-year undergraduate degree in pharmaceutical sciences approved by the Pharmacy Council of India (PCI) and affiliated to VISTAS Deemed to be University.",
       "provider" => [
         "@type" => "CollegeOrUniversity",
-        "name" => "Vel Pharmacy College",
+        "name" => "VEL Pharmacy College",
         "sameAs" => "https://velpharmacycollege.com"
       ],
       "timeRequired" => "P4Y",
@@ -30,15 +30,15 @@ $custom_schema = [
       "mainEntity" => [
         [
           "@type" => "Question",
-          "name" => "What courses are offered at Vel Pharmacy College?",
+          "name" => "What courses are offered at VEL Pharmacy College?",
           "acceptedAnswer" => [
             "@type" => "Answer",
-            "text" => "Vel Pharmacy College offers the 4-year Bachelor of Pharmacy (B.Pharm) undergraduate degree program across 8 semesters. The program is recognized and approved by the Pharmacy Council of India (PCI), New Delhi, and is affiliated to Vels Institute of Science, Technology & Advanced Studies (VISTAS)."
+            "text" => "VEL Pharmacy College offers the 4-year Bachelor of Pharmacy (B.Pharm) undergraduate degree program across 8 semesters. The program is recognized and approved by the Pharmacy Council of India (PCI), New Delhi, and is affiliated to Vels Institute of Science, Technology & Advanced Studies (VISTAS)."
           ]
         ],
         [
           "@type" => "Question",
-          "name" => "What is the admission eligibility for B.Pharm at Vel Pharmacy College?",
+          "name" => "What is the admission eligibility for B.Pharm at VEL Pharmacy College?",
           "acceptedAnswer" => [
             "@type" => "Answer",
             "text" => "As per Pharmacy Council of India (PCI) norms, candidates must have passed higher secondary (+2) examination with Physics, Chemistry, and Mathematics or Biology/Botany and Zoology. Admission is strictly merit-based on the percentage of marks secured in the qualifying examination."
@@ -46,23 +46,23 @@ $custom_schema = [
         ],
         [
           "@type" => "Question",
-          "name" => "Where is Vel Pharmacy College located?",
+          "name" => "Where is VEL Pharmacy College located?",
           "acceptedAnswer" => [
             "@type" => "Answer",
-            "text" => "Vel Pharmacy College is located in the VMCH Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk, Tiruvallur District – 601102, Tamil Nadu, India. The institution features a tranquil, pollution-free, green educational environment."
+            "text" => "VEL Pharmacy College is located in the VMCH Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk, Tiruvallur District – 601102, Tamil Nadu, India. The institution features a tranquil, pollution-free, green educational environment."
           ]
         ],
         [
           "@type" => "Question",
-          "name" => "Is Vel Pharmacy College approved by the Pharmacy Council of India (PCI)?",
+          "name" => "Is VEL Pharmacy College approved by the Pharmacy Council of India (PCI)?",
           "acceptedAnswer" => [
             "@type" => "Answer",
-            "text" => "Yes, Vel Pharmacy College is recognized and approved by the Pharmacy Council of India (PCI), New Delhi. It is an off-campus center of VISTAS (Vels Institute of Science, Technology & Advanced Studies, Deemed to be University estd. u/s 3 of UGC Act, 1956)."
+            "text" => "Yes, VEL Pharmacy College is recognized and approved by the Pharmacy Council of India (PCI), New Delhi. It is an off-campus center of VISTAS (Vels Institute of Science, Technology & Advanced Studies, Deemed to be University estd. u/s 3 of UGC Act, 1956)."
           ]
         ],
         [
           "@type" => "Question",
-          "name" => "What facilities are available for students at Vel Pharmacy College?",
+          "name" => "What facilities are available for students at VEL Pharmacy College?",
           "acceptedAnswer" => [
             "@type" => "Answer",
             "text" => "The campus features spacious lecture halls with LCD projectors, advanced pharmaceutical laboratories, an air-conditioned 50-seater computer lab, a library with 1,500+ books and e-journals, on-campus Vels Medical College Hospital (VMCH) training, separate hostels for boys and girls, and transport services across the city."
@@ -113,7 +113,7 @@ $hero_video = !empty($home_cms['video_mp4']) ? $home_cms['video_mp4'] : (!empty(
 $pillars_header = $home_cms['pillars_header'] ?? [
   'eyebrow' => 'Institutional Excellence & Trust',
   'title' => 'Pillars of Pharmaceutical Eminence',
-  'subtitle' => 'Four defining cornerstones establishing Vel Pharmacy College as Tamil Nadu\'s benchmark destination for modern pharmacy education, clinical hospital mastery, and world-class scientific research.'
+  'subtitle' => 'Four defining cornerstones establishing VEL Pharmacy College as Tamil Nadu\'s benchmark destination for modern pharmacy education, clinical hospital mastery, and world-class scientific research.'
 ];
 $pillars = $home_cms['pillars'] ?? [];
 
@@ -131,7 +131,7 @@ $cta_banner = $home_cms['cta_banner'] ?? [];
 <!-- ==========================================================================
      CINEMATIC COLLEGE VIDEO HERO (SIMPLE, HIGH-IMPACT, VIDEO-FIRST)
      ========================================================================== -->
-<section class="cinema-hero" id="heroSection" aria-label="Vel Pharmacy College Admissions 2024–2025">
+<section class="cinema-hero" id="heroSection" aria-label="VEL Pharmacy College Admissions 2024–2025">
   <!-- Cinematic Full-Bleed College Video Background -->
   <div class="cinema-hero-media">
     <video class="cinema-video" id="collegeVideoPlayer" autoplay muted loop playsinline preload="metadata"
@@ -148,8 +148,8 @@ $cta_banner = $home_cms['cta_banner'] ?? [];
     aria-label="Enter video full view mode" title="Hover within circle for full view">
     <div class="focus-circle-content">
       <div class="focus-ring-pulse" aria-hidden="true"></div>
-      <div class="focus-lens-circle" aria-label="Vel Pharmacy College Emblem">
-        <img src="assets/images/VPC NEW LOGO.jpeg" alt="Vel Pharmacy College Logo" class="focus-college-logo"
+      <div class="focus-lens-circle" aria-label="VEL Pharmacy College Emblem">
+        <img src="assets/images/VPC NEW LOGO.jpeg" alt="VEL Pharmacy College Logo" class="focus-college-logo"
           width="44" height="44">
       </div>
       <!--<div class="focus-label-wrap">
@@ -245,7 +245,7 @@ $cta_banner = $home_cms['cta_banner'] ?? [];
         <?= htmlspecialchars($pillars_header['title'] ?? 'Pillars of Pharmaceutical Eminence') ?>
       </h2>
       <p class="pillars-subtitle">
-        <?= htmlspecialchars($pillars_header['subtitle'] ?? 'Four defining cornerstones establishing Vel Pharmacy College as Tamil Nadu\'s benchmark destination for modern pharmacy education, clinical hospital mastery, and world-class scientific research.') ?>
+        <?= htmlspecialchars($pillars_header['subtitle'] ?? 'Four defining cornerstones establishing VEL Pharmacy College as Tamil Nadu\'s benchmark destination for modern pharmacy education, clinical hospital mastery, and world-class scientific research.') ?>
       </p>
     </div>
 
@@ -441,7 +441,7 @@ foreach ($raw_events as &$ev) {
       'title' => $ev['title'] ?? '',
       'desc' => !empty($ev['description'])
         ? $ev['description']
-        : ('Successfully conducted at ' . ($ev['venue'] ?? 'Vel Pharmacy College') . ' with high student engagement and research discussions.'),
+        : ('Successfully conducted at ' . ($ev['venue'] ?? 'VEL Pharmacy College') . ' with high student engagement and research discussions.'),
       'link' => $ev['link'] ?? 'about-us',
       'is_transferred_event' => true
     ];
@@ -503,7 +503,7 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
         <?= htmlspecialchars($events_highlights['title'] ?? 'Upcoming Events & Institutional Highlights') ?>
       </h2>
       <p class="section-description">
-        <?= htmlspecialchars($events_highlights['description'] ?? 'Stay connected with upcoming academic conferences, hands-on clinical workshops, and premier institutional achievements shaping pharmaceutical education at Vel Pharmacy College.') ?>
+        <?= htmlspecialchars($events_highlights['description'] ?? 'Stay connected with upcoming academic conferences, hands-on clinical workshops, and premier institutional achievements shaping pharmaceutical education at VEL Pharmacy College.') ?>
       </p>
     </div>
 
@@ -797,7 +797,7 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
       <span
         class="section-subtitle"><?= htmlspecialchars($welcome['subtitle'] ?? 'Excellence In Pharmaceutical Education') ?></span>
       <h2 class="section-title" id="welcomeTitle">
-        <?= htmlspecialchars($welcome['title'] ?? 'Welcome to Vel Pharmacy College') ?>
+        <?= htmlspecialchars($welcome['title'] ?? 'Welcome to VEL Pharmacy College') ?>
       </h2>
       <p class="section-description">
         <?= htmlspecialchars($welcome['description'] ?? 'Pharmacy is the noble profession concerned with the art and science of preparing drugs from natural and synthetic sources and transforming them into suitable materials for the treatment and prevention of disease.') ?>
@@ -972,7 +972,7 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
       <span class="section-subtitle"
         style="color: #D6B56D;"><?= htmlspecialchars($why_choose['subtitle'] ?? 'Institutional Strengths') ?></span>
       <h2 class="section-title" id="whyTitle">
-        <?= htmlspecialchars($why_choose['title'] ?? 'Why Choose Vel Pharmacy College?') ?>
+        <?= htmlspecialchars($why_choose['title'] ?? 'Why Choose VEL Pharmacy College?') ?>
       </h2>
       <p class="section-description" style="color: rgba(255,255,255,0.85);">
         <?= htmlspecialchars($why_choose['description'] ?? 'Building on over three decades of educational leadership under the Vaels Educational Trust and VISTAS Deemed University.') ?>
@@ -1049,7 +1049,7 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
       <h2 class="section-title" id="faqTitle"><?= htmlspecialchars($faqs['title'] ?? 'Frequently Asked Questions') ?>
       </h2>
       <p class="section-description">
-        <?= htmlspecialchars($faqs['description'] ?? 'Direct answers to common questions about admissions, approvals, courses, and facilities at Vel Pharmacy College.') ?>
+        <?= htmlspecialchars($faqs['description'] ?? 'Direct answers to common questions about admissions, approvals, courses, and facilities at VEL Pharmacy College.') ?>
       </p>
     </div>
 
@@ -1088,7 +1088,7 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
       <div class="quick-facts-grid">
         <div class="fact-item">
           <strong>Institution Name</strong>
-          <span><?= htmlspecialchars($gen_settings['college_name'] ?? 'Vel Pharmacy College') ?></span>
+          <span><?= htmlspecialchars($gen_settings['college_name'] ?? 'VEL Pharmacy College') ?></span>
         </div>
         <div class="fact-item">
           <strong>Established Year</strong>
@@ -1127,7 +1127,7 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
 <section class="section" style="padding-top: 0; padding-bottom: 5.5rem; background: #FFFFFF;">
   <div class="container">
     <div class="cta-banner fade-up">
-      <h2><?= htmlspecialchars($cta_banner['title'] ?? 'Begin Your Journey in Pharmacy at Vel Pharmacy College') ?></h2>
+      <h2><?= htmlspecialchars($cta_banner['title'] ?? 'Begin Your Journey in Pharmacy at VEL Pharmacy College') ?></h2>
       <p>
         <?= htmlspecialchars($cta_banner['subtitle'] ?? 'Admissions are open for the 2024–2025 academic batch. Connect with our admissions counselors today.') ?>
       </p>

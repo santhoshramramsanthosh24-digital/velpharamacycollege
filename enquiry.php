@@ -1,7 +1,7 @@
 <?php
 $current_page = 'enquiry';
-$page_title = "Online Admission Enquiry Form 2024–2025 | Vel Pharmacy College";
-$page_description = "Apply online for the 4-year B.Pharm degree program at Vel Pharmacy College. Submit your admission enquiry for the 2024–2025 academic batch. PCI approved & VISTAS affiliated.";
+$page_title = "Online Admission Enquiry Form 2024–2025 | VEL Pharmacy College";
+$page_description = "Apply online for the 4-year B.Pharm degree program at VEL Pharmacy College. Submit your admission enquiry for the 2024–2025 academic batch. PCI approved & VISTAS affiliated.";
 $canonical_url = "https://velpharmacycollege.com/enquiry";
 
 // Breadcrumb Schema
@@ -64,7 +64,7 @@ include __DIR__ . '/includes/header.php';
       </div>
       <div class="page-banner-media">
         <div class="page-banner-img-frame">
-          <img src="<?= htmlspecialchars($enquiry_cms['banner']['image'] ?? 'assets/images/hero-pharmacy-showcase.jpg') ?>" alt="Vel Pharmacy College Admissions Enquiry" class="page-banner-img" loading="eager" width="480" height="250">
+          <img src="<?= htmlspecialchars($enquiry_cms['banner']['image'] ?? 'assets/images/hero-pharmacy-showcase.jpg') ?>" alt="VEL Pharmacy College Admissions Enquiry" class="page-banner-img" loading="eager" width="480" height="250">
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@ include __DIR__ . '/includes/header.php';
                 Application Received Successfully!
               </h3>
               <p style="font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">
-                Thank you, <strong><?= htmlspecialchars($applicant_name) ?></strong>. Your admission enquiry has been registered with Vel Pharmacy College.
+                Thank you, <strong><?= htmlspecialchars($applicant_name) ?></strong>. Your admission enquiry has been registered with VEL Pharmacy College.
               </p>
               <div style="background: #F5F7F4; padding: 1rem; border-radius: var(--radius-md); font-size: 0.9rem; color: #1E6A4D; display: inline-block; text-align: left;">
                 <div><strong>Enquiry Ref:</strong> VPC-<?= rand(10000, 99999) ?></div>
@@ -271,7 +271,7 @@ include __DIR__ . '/includes/header.php';
         <!-- Why Choose VPC Card -->
         <div style="background: #F5F7F4; border-radius: var(--radius-xl); border: 1px solid var(--color-tertiary-light); padding: 2rem; box-shadow: var(--shadow-md);">
           <h3 style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-primary-dark); margin-bottom: 1.25rem;">
-            <?= htmlspecialchars($eq_why['title'] ?? 'Why Choose Vel Pharmacy College?') ?>
+            <?= htmlspecialchars($eq_why['title'] ?? 'Why Choose VEL Pharmacy College?') ?>
           </h3>
 
           <ul style="display: flex; flex-direction: column; gap: 1rem;">
@@ -296,7 +296,7 @@ include __DIR__ . '/includes/header.php';
 
         <!-- Campus Image Card -->
         <div style="border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-md);">
-          <img src="<?= htmlspecialchars($enquiry_cms['banner']['image'] ?? 'assets/images/campus-building.jpg') ?>" alt="Vel Pharmacy College Campus" style="width: 100%; height: 220px; object-fit: cover;">
+          <img src="<?= htmlspecialchars($enquiry_cms['banner']['image'] ?? 'assets/images/campus-building.jpg') ?>" alt="VEL Pharmacy College Campus" style="width: 100%; height: 220px; object-fit: cover;">
         </div>
 
       </div>

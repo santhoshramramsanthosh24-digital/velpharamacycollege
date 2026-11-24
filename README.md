@@ -1,4 +1,4 @@
-# Vel Pharmacy College (VPC)
+# VEL Pharmacy College (VPC)
 
 > **Official Institutional Portal & Academic Content Management System (CMS)**  
 > Affiliated to Vels Institute of Science, Technology & Advanced Studies (VISTAS Deemed to be University)  
@@ -8,7 +8,7 @@
 
 ## 🏛️ Overview
 
-Vel Pharmacy College is a premier pharmaceutical education institution offering state-of-the-art PCI-compliant B.Pharm degree programs under the modern NEP 2020 curriculum framework.
+VEL Pharmacy College is a premier pharmaceutical education institution offering state-of-the-art PCI-compliant B.Pharm degree programs under the modern NEP 2020 curriculum framework.
 
 This repository contains the complete web application, including the public-facing institutional website, real-time interactive portals, and a unified enterprise CMS for non-technical administrative content publishing, SEO/GEO/AEO search intelligence, faculty management, and media asset library.
 
@@ -86,5 +86,5 @@ vercel
 ---
 
 ## 📜 License
-&copy; 2026 Vel Pharmacy College / Vels Institute of Science, Technology & Advanced Studies (VISTAS). All rights reserved.
+&copy; 2026 VEL Pharmacy College / Vels Institute of Science, Technology & Advanced Studies (VISTAS). All rights reserved.
 

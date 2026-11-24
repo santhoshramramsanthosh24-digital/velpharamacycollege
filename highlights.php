@@ -1,8 +1,8 @@
 <?php
 $current_page = 'highlights';
 $disable_preloader = true;
-$page_title = "Institutional Highlights, Circulars & Concluded Events | Vel Pharmacy College";
-$page_description = "Official repository of PCI statutory approvals, university circulars, research laboratory suites, and proceedings of concluded symposiums at Vel Pharmacy College.";
+$page_title = "Institutional Highlights, Circulars & Concluded Events | VEL Pharmacy College";
+$page_description = "Official repository of PCI statutory approvals, university circulars, research laboratory suites, and proceedings of concluded symposiums at VEL Pharmacy College.";
 $canonical_url = "https://velpharmacycollege.com/highlights";
 
 // Breadcrumb Schema
@@ -670,12 +670,12 @@ foreach ($highlights_data as $h) {
         </nav>
         <h1 class="page-title"><?= htmlspecialchars($hl_banner['title'] ?? 'Institutional Highlights & Official Circulars') ?></h1>
         <p class="page-subtitle">
-          <?= htmlspecialchars($hl_banner['subtitle'] ?? 'Statutory PCI approvals, official academic circulars, advanced research laboratory suites, and proceedings of concluded healthcare symposiums at Vel Pharmacy College.') ?>
+          <?= htmlspecialchars($hl_banner['subtitle'] ?? 'Statutory PCI approvals, official academic circulars, advanced research laboratory suites, and proceedings of concluded healthcare symposiums at VEL Pharmacy College.') ?>
         </p>
       </div>
       <div class="page-banner-media motion-from-right">
         <div class="page-banner-img-frame">
-          <img src="<?= htmlspecialchars($hl_banner['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="Vel Pharmacy College Highlights &amp; Circulars" class="page-banner-img" loading="eager" width="480" height="250">
+          <img src="<?= htmlspecialchars($hl_banner['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="VEL Pharmacy College Highlights &amp; Circulars" class="page-banner-img" loading="eager" width="480" height="250">
         </div>
       </div>
     </div>

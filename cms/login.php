@@ -1,6 +1,6 @@
 <?php
 /**
- * Vel Pharmacy College CMS - High-Security Login Screen
+ * VEL Pharmacy College CMS - High-Security Login Screen
  */
 
 require_once __DIR__ . '/auth.php';
@@ -47,7 +47,7 @@ $csrf_token = cms_csrf_token();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CMS Portal Login | Vel Pharmacy College</title>
+  <title>CMS Portal Login | VEL Pharmacy College</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -165,11 +165,11 @@ $csrf_token = cms_csrf_token();
   <div class="login-card">
     <!-- Header -->
     <div class="login-header">
-      <a href="/" class="login-logo-box" title="Return to Vel Pharmacy College Website">
-        <img src="/assets/images/VPC NEW LOGO.jpeg" alt="Vel Pharmacy College Logo" width="220" height="56" loading="eager">
+      <a href="/" class="login-logo-box" title="Return to VEL Pharmacy College Website">
+        <img src="/assets/images/VPC NEW LOGO.jpeg" alt="VEL Pharmacy College Logo" width="220" height="56" loading="eager">
       </a>
       <h1 style="font-family: var(--cms-font-heading); font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;">
-        Vel Pharmacy College
+        VEL Pharmacy College
       </h1>
       <p style="font-size: 0.85rem; color: #CBD5E1; margin-top: 0.25rem;">
         Unified Academic CMS &bull; SEO/GEO/AEO Hub

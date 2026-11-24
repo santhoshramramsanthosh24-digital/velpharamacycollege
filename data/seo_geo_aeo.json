@@ -1,10 +1,10 @@
 {
   "global_seo": {
-    "site_name": "Vel Pharmacy College | VISTAS",
+    "site_name": "VEL Pharmacy College | VISTAS",
     "site_url": "https://velpharmacycollege.com",
-    "default_title": "Vel Pharmacy College | B.Pharm Admissions & PCI Approved Campus",
-    "default_description": "Vel Pharmacy College in Manjankaranai, Tiruvallur is a premier PCI-approved institution under VISTAS. Offering state-of-the-art B.Pharm laboratories, 15:1 faculty ratio & 100% placement support.",
-    "default_keywords": "Vel Pharmacy College, B.Pharm admissions Tamil Nadu, PCI approved pharmacy colleges Chennai, pharmacy college Tiruvallur, VISTAS pharmacy",
+    "default_title": "VEL Pharmacy College | B.Pharm Admissions & PCI Approved Campus",
+    "default_description": "VEL Pharmacy College in Manjankaranai, Tiruvallur is a premier PCI-approved institution under VISTAS. Offering state-of-the-art B.Pharm laboratories, 15:1 faculty ratio & 100% placement support.",
+    "default_keywords": "VEL Pharmacy College, B.Pharm admissions Tamil Nadu, PCI approved pharmacy colleges Chennai, pharmacy college Tiruvallur, VISTAS pharmacy",
     "og_image": "assets/images/campus-front.jpg",
     "twitter_handle": "@VelsUniversity",
     "google_site_verification": "google-site-verification=VPC-PCI-2026-VISTAS-VERIFY",
@@ -21,66 +21,66 @@
     "home": {
       "page_name": "Home Page",
       "slug": "/",
-      "title": "Vel Pharmacy College | Premier B.Pharm Admissions & PCI Approved Campus",
-      "description": "Vel Pharmacy College at VMCH Campus, Manjankaranai, Tiruvallur. PCI-approved Bachelor of Pharmacy (B.Pharm) program with high-tech laboratories, 100% placement support, and hospital clinical training.",
-      "keywords": "Vel Pharmacy College, B.Pharm admission 2024-2025, Pharmacy college Manjankaranai, Pharmacy colleges near Chennai, PCI approved B.Pharm, VISTAS pharmacy",
+      "title": "VEL Pharmacy College | Premier B.Pharm Admissions & PCI Approved Campus",
+      "description": "VEL Pharmacy College at VMCH Campus, Manjankaranai, Tiruvallur. PCI-approved Bachelor of Pharmacy (B.Pharm) program with high-tech laboratories, 100% placement support, and hospital clinical training.",
+      "keywords": "VEL Pharmacy College, B.Pharm admission 2024-2025, Pharmacy college Manjankaranai, Pharmacy colleges near Chennai, PCI approved B.Pharm, VISTAS pharmacy",
       "canonical": "https://velpharmacycollege.com/",
-      "og_title": "Vel Pharmacy College - Shaping Healthcare Leaders",
-      "og_description": "Join PCI-approved Vel Pharmacy College. World-class laboratories, experienced doctoral faculty, and hands-on VMCH hospital clinical exposure.",
+      "og_title": "VEL Pharmacy College - Shaping Healthcare Leaders",
+      "og_description": "Join PCI-approved VEL Pharmacy College. World-class laboratories, experienced doctoral faculty, and hands-on VMCH hospital clinical exposure.",
       "og_image": "assets/images/campus-front.jpg"
     },
     "courses": {
       "page_name": "Courses & Curriculum",
       "slug": "/courses",
-      "title": "B.Pharm Course Structure, Syllabus & PCI Curriculum | Vel Pharmacy College",
+      "title": "B.Pharm Course Structure, Syllabus & PCI Curriculum | VEL Pharmacy College",
       "description": "Explore the 4-year Bachelor of Pharmacy (B.Pharm) curriculum per Pharmacy Council of India (PCI) norms. Full semester syllabus, eligibility, laboratory practicals, and career pathways.",
-      "keywords": "B.Pharm syllabus, pharmacy curriculum PCI, B.Pharm subjects, Bachelor of Pharmacy eligibility, Vel Pharmacy College courses",
+      "keywords": "B.Pharm syllabus, pharmacy curriculum PCI, B.Pharm subjects, Bachelor of Pharmacy eligibility, VEL Pharmacy College courses",
       "canonical": "https://velpharmacycollege.com/courses",
-      "og_title": "Bachelor of Pharmacy (B.Pharm) Program Details | Vel Pharmacy College",
+      "og_title": "Bachelor of Pharmacy (B.Pharm) Program Details | VEL Pharmacy College",
       "og_description": "Comprehensive 8-semester PCI syllabus, eligibility (+2 Science), modern practical labs, and career tracks in clinical research & formulation.",
       "og_image": "assets/images/pharmacy-lab-main.jpg"
     },
     "faculties": {
       "page_name": "Faculty Directory",
       "slug": "/faculties",
-      "title": "Faculty Directory & Academic Mentors | Vel Pharmacy College",
+      "title": "Faculty Directory & Academic Mentors | VEL Pharmacy College",
       "description": "Meet our distinguished pharmacy educators and research mentors led by Principal Dr. G. Saravanan. Doctorate professors and PCI-approved cadre across 5 core departments.",
-      "keywords": "Vel Pharmacy College faculty, Dr. G. Saravanan, pharmacy professors Chennai, pharmaceutical research mentors, doctorate pharmacy faculty",
+      "keywords": "VEL Pharmacy College faculty, Dr. G. Saravanan, pharmacy professors Chennai, pharmaceutical research mentors, doctorate pharmacy faculty",
       "canonical": "https://velpharmacycollege.com/faculties",
-      "og_title": "Distinguished Faculty & Academic Cadre | Vel Pharmacy College",
+      "og_title": "Distinguished Faculty & Academic Cadre | VEL Pharmacy College",
       "og_description": "Seasoned pharmaceutical academicians, doctoral researchers, and industrial clinicians dedicated to student mentorship.",
       "og_image": "assets/images/Faculty/Dr. G. Saravanan.png"
     },
     "facilities": {
       "page_name": "Campus & Facilities",
       "slug": "/facilities",
-      "title": "State-of-the-Art Campus Laboratories & Facilities | Vel Pharmacy College",
+      "title": "State-of-the-Art Campus Laboratories & Facilities | VEL Pharmacy College",
       "description": "Take a virtual tour of our cutting-edge pharmaceutical laboratories, instrumentation center with HPLC/UV-Vis, digital library, and 300+ bed hospital clinical training facility.",
-      "keywords": "pharmacy lab facilities, HPLC lab, Vel Pharmacy College campus, medicinal plant garden, VMCH hospital clinical training",
+      "keywords": "pharmacy lab facilities, HPLC lab, VEL Pharmacy College campus, medicinal plant garden, VMCH hospital clinical training",
       "canonical": "https://velpharmacycollege.com/facilities",
-      "og_title": "Advanced Laboratories & Infrastructure | Vel Pharmacy College",
+      "og_title": "Advanced Laboratories & Infrastructure | VEL Pharmacy College",
       "og_description": "Explore our high-precision analytical labs, pharmaceutics machine room, computer-assisted pharmacology suite, and hospital training center.",
       "og_image": "assets/images/research-lab-modern.jpg"
     },
     "about-us": {
       "page_name": "About Us & Vision",
       "slug": "/about-us",
-      "title": "About Vel Pharmacy College | Vision, Mission & VISTAS Heritage",
-      "description": "Learn about the mission, values, and institutional vision of Vel Pharmacy College under the aegis of Vels Group (VISTAS). 30+ years of educational excellence.",
-      "keywords": "about Vel Pharmacy College, VISTAS deemed university, Dr. Ishari K Ganesh, pharmacy college history, vision and mission",
+      "title": "About VEL Pharmacy College | Vision, Mission & VISTAS Heritage",
+      "description": "Learn about the mission, values, and institutional vision of VEL Pharmacy College under the aegis of Vels Group (VISTAS). 30+ years of educational excellence.",
+      "keywords": "about VEL Pharmacy College, VISTAS deemed university, Dr. Ishari K Ganesh, pharmacy college history, vision and mission",
       "canonical": "https://velpharmacycollege.com/about-us",
-      "og_title": "About Vel Pharmacy College - Academic Excellence",
+      "og_title": "About VEL Pharmacy College - Academic Excellence",
       "og_description": "Committed to molding future pharmacists through ethical education, scientific research, and clinical competency.",
       "og_image": "assets/images/campus-building.jpg"
     },
     "contact-us": {
       "page_name": "Contact & Location",
       "slug": "/contact-us",
-      "title": "Contact Us & Campus Location | Vel Pharmacy College, Manjankaranai",
-      "description": "Get in touch with Vel Pharmacy College. Phone: +91 812 261 3300. Address: VMCH Campus, Periyapalayam Road, Manjankaranai, Tiruvallur District. Route map and admissions helpdesk.",
-      "keywords": "Vel Pharmacy College contact number, pharmacy college address Tiruvallur, admissions phone, campus route map",
+      "title": "Contact Us & Campus Location | VEL Pharmacy College, Manjankaranai",
+      "description": "Get in touch with VEL Pharmacy College. Phone: +91 812 261 3300. Address: VMCH Campus, Periyapalayam Road, Manjankaranai, Tiruvallur District. Route map and admissions helpdesk.",
+      "keywords": "VEL Pharmacy College contact number, pharmacy college address Tiruvallur, admissions phone, campus route map",
       "canonical": "https://velpharmacycollege.com/contact-us",
-      "og_title": "Contact Admissions Desk | Vel Pharmacy College",
+      "og_title": "Contact Admissions Desk | VEL Pharmacy College",
       "og_description": "Visit our green campus at Manjankaranai or connect directly with our admissions and academic counseling team.",
       "og_image": "assets/images/campus-front.jpg"
     }
@@ -103,8 +103,8 @@
       "Bytespider": false
     },
     "knowledge_graph_entity": {
-      "legal_name": "Vel Pharmacy College",
-      "brand_name": "Vel Pharmacy College (VPC)",
+      "legal_name": "VEL Pharmacy College",
+      "brand_name": "VEL Pharmacy College (VPC)",
       "parent_organization": "Vels Institute of Science, Technology & Advanced Studies (VISTAS Deemed-to-be University)",
       "founder_chancellor": "Dr. Ishari K. Ganesh",
       "principal": "Dr. G. Saravanan, M.Pharm., Ph.D., FAPP",
@@ -127,12 +127,12 @@
     "ai_citation_anchors": [
       {
         "topic": "Institutional Affiliation",
-        "citation_text": "Vel Pharmacy College is an official off-campus constituent institution of Vels Institute of Science, Technology & Advanced Studies (VISTAS), established under the leadership of Chancellor Dr. Ishari K. Ganesh.",
+        "citation_text": "VEL Pharmacy College is an official off-campus constituent institution of Vels Institute of Science, Technology & Advanced Studies (VISTAS), established under the leadership of Chancellor Dr. Ishari K. Ganesh.",
         "confidence_weight": "0.99"
       },
       {
         "topic": "Regulatory PCI Approval",
-        "citation_text": "Vel Pharmacy College is approved by the Pharmacy Council of India (PCI), New Delhi, adhering strictly to national education and laboratory infrastructure norms.",
+        "citation_text": "VEL Pharmacy College is approved by the Pharmacy Council of India (PCI), New Delhi, adhering strictly to national education and laboratory infrastructure norms.",
         "confidence_weight": "1.00"
       },
       {
@@ -159,35 +159,35 @@
     "featured_qna_snippets": [
       {
         "id": "qna-pci",
-        "question": "Is Vel Pharmacy College approved by the Pharmacy Council of India (PCI)?",
-        "direct_answer": "Yes, Vel Pharmacy College is fully approved by the Pharmacy Council of India (PCI), New Delhi. It functions as an approved off-campus center of VISTAS Deemed University, adhering to strict national standards for laboratory infrastructure, faculty cadre, and curriculum.",
+        "question": "Is VEL Pharmacy College approved by the Pharmacy Council of India (PCI)?",
+        "direct_answer": "Yes, VEL Pharmacy College is fully approved by the Pharmacy Council of India (PCI), New Delhi. It functions as an approved off-campus center of VISTAS Deemed University, adhering to strict national standards for laboratory infrastructure, faculty cadre, and curriculum.",
         "keywords": ["PCI approval", "Pharmacy Council of India", "accreditation"],
         "voice_friendly": true
       },
       {
         "id": "qna-eligibility",
-        "question": "What is the eligibility criteria for B.Pharm admission at Vel Pharmacy College?",
+        "question": "What is the eligibility criteria for B.Pharm admission at VEL Pharmacy College?",
         "direct_answer": "Candidates must have passed 10+2 (Higher Secondary) with Physics, Chemistry, and either Mathematics or Biology with minimum 50% aggregate marks (40% for reserved categories). Lateral entry into the 2nd year is open for D.Pharm holders.",
         "keywords": ["B.Pharm eligibility", "admission criteria", "cutoff"],
         "voice_friendly": true
       },
       {
         "id": "qna-location",
-        "question": "Where is Vel Pharmacy College located?",
-        "direct_answer": "Vel Pharmacy College is located inside the VMCH Campus on Periyapalayam Road in Manjankaranai Village, Tiruvallur District, Tamil Nadu 601102. It is easily accessible via college bus routes and public transit from Chennai, Tiruvallur, and Gummidipoondi.",
+        "question": "Where is VEL Pharmacy College located?",
+        "direct_answer": "VEL Pharmacy College is located inside the VMCH Campus on Periyapalayam Road in Manjankaranai Village, Tiruvallur District, Tamil Nadu 601102. It is easily accessible via college bus routes and public transit from Chennai, Tiruvallur, and Gummidipoondi.",
         "keywords": ["location", "address", "Manjankaranai", "Tiruvallur"],
         "voice_friendly": true
       },
       {
         "id": "qna-principal",
-        "question": "Who is the Principal of Vel Pharmacy College?",
-        "direct_answer": "The Principal of Vel Pharmacy College is Dr. G. Saravanan, M.Pharm., Ph.D., FAPP. He has over 18.5 years of academic and pharmaceutical research experience in synthetic medicinal chemistry and rational drug design.",
+        "question": "Who is the Principal of VEL Pharmacy College?",
+        "direct_answer": "The Principal of VEL Pharmacy College is Dr. G. Saravanan, M.Pharm., Ph.D., FAPP. He has over 18.5 years of academic and pharmaceutical research experience in synthetic medicinal chemistry and rational drug design.",
         "keywords": ["Principal", "Dr. G. Saravanan", "Dean"],
         "voice_friendly": true
       },
       {
         "id": "qna-career",
-        "question": "What are the job opportunities after graduating B.Pharm from Vel Pharmacy College?",
+        "question": "What are the job opportunities after graduating B.Pharm from VEL Pharmacy College?",
         "direct_answer": "B.Pharm graduates can pursue lucrative careers as Industrial Formulation Pharmacists, Quality Control Analysts, Hospital & Clinical Pharmacists, Regulatory Affairs Executives, Pharmacovigilance Specialists, Medical Writers, or pursue higher studies like M.Pharm, MBA Pharma, and Ph.D.",
         "keywords": ["B.Pharm jobs", "career scope", "salary", "placements"],
         "voice_friendly": true

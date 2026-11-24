@@ -1,7 +1,7 @@
 <?php
 $current_page = 'faculties';
-$page_title = "Faculty Directory & Academic Mentors | Vel Pharmacy College";
-$page_description = "Meet the esteemed pharmacy educators and research mentors at Vel Pharmacy College, led by Principal Dr. G. Saravanan. Doctorate professors, dedicated researchers, and PCI-approved cadre.";
+$page_title = "Faculty Directory & Academic Mentors | VEL Pharmacy College";
+$page_description = "Meet the esteemed pharmacy educators and research mentors at VEL Pharmacy College, led by Principal Dr. G. Saravanan. Doctorate professors, dedicated researchers, and PCI-approved cadre.";
 $canonical_url = "https://velpharmacycollege.com/faculties";
 
 // Breadcrumb Schema
@@ -53,7 +53,7 @@ if (!isset($faculties)) {
       'cadre' => 'Professor & Collegiate Head',
       'email' => 'principal@velpharmacycollege.com',
       'office' => 'Administrative Wing, Principal Office (Room 101)',
-      'description' => 'Dr. G. Saravanan is an accomplished pharmaceutical scientist and academic administrator with over 18.5 years of rich experience in pharmacy education, PCI statutory administration, and rational drug design. As Principal of Vel Pharmacy College, he spearheads modern pharmaceutical pedagogy, PCI compliance, and student research mentorship. His doctoral research is rooted in novel heterocyclic synthesis, molecular docking, and QSAR studies for antimycobacterial and anticancer therapeutics.',
+      'description' => 'Dr. G. Saravanan is an accomplished pharmaceutical scientist and academic administrator with over 18.5 years of rich experience in pharmacy education, PCI statutory administration, and rational drug design. As Principal of VEL Pharmacy College, he spearheads modern pharmaceutical pedagogy, PCI compliance, and student research mentorship. His doctoral research is rooted in novel heterocyclic synthesis, molecular docking, and QSAR studies for antimycobacterial and anticancer therapeutics.',
       'specializations' => [
         'Synthetic Medicinal Chemistry',
         'Computer-Aided Drug Design (CADD)',
@@ -513,7 +513,7 @@ include __DIR__ . '/includes/header.php';
     </h1>
 
     <p class="faculty-hero-desc">
-      <?= htmlspecialchars($fac_page_cms['banner']['subtitle'] ?? "Vel Pharmacy College is guided by seasoned pharmaceutical academicians, doctoral researchers, and industrial clinicians. Led by Principal Dr. G. Saravanan, our PCI-approved faculty blends theoretical mastery with individualized laboratory mentorship to shape tomorrow's healthcare innovators.") ?>
+      <?= htmlspecialchars($fac_page_cms['banner']['subtitle'] ?? "VEL Pharmacy College is guided by seasoned pharmaceutical academicians, doctoral researchers, and industrial clinicians. Led by Principal Dr. G. Saravanan, our PCI-approved faculty blends theoretical mastery with individualized laboratory mentorship to shape tomorrow's healthcare innovators.") ?>
     </p>
 
     <!-- Live Academic Stats Strip -->
@@ -775,7 +775,7 @@ include __DIR__ . '/includes/header.php';
           <path d="M2 17l10 5 10-5"></path>
           <path d="M2 12l10 5 10-5"></path>
         </svg>
-        <span>Vel Pharmacy College &bull; Faculty Dossier</span>
+        <span>VEL Pharmacy College &bull; Faculty Dossier</span>
       </div>
 
       <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close Profile Card (Esc)">
@@ -971,7 +971,7 @@ include __DIR__ . '/includes/header.php';
       </h2>
       <p
         style="font-size: 1.1rem; color: #F5F7F4; line-height: 1.7; margin-bottom: 2.25rem; max-width: 780px; margin-left: auto; margin-right: auto;">
-        At Vel Pharmacy College, academic mentors do not simply lecture—they guide clinical rounds, mentor research
+        At VEL Pharmacy College, academic mentors do not simply lecture—they guide clinical rounds, mentor research
         publications, train students in modern analytical instrumentation, and provide focused coaching for GPAT and
         international licensing examinations.
       </p>

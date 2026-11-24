@@ -2,8 +2,8 @@
 require_once __DIR__ . '/includes/syllabus_data.php';
 
 $current_page = 'courses';
-$page_title = "B.Pharm Curriculum & Syllabus (PCI NEP 2020) | Vel Pharmacy College";
-$page_description = "Explore the updated Pharmacy Council of India (PCI) NEP 2020 B.Pharm Syllabus at Vel Pharmacy College. 193 Credits across 8 Semesters featuring Python, AI, Data Analytics, 240 hrs Internship & Capstone Research.";
+$page_title = "B.Pharm Curriculum & Syllabus (PCI NEP 2020) | VEL Pharmacy College";
+$page_description = "Explore the updated Pharmacy Council of India (PCI) NEP 2020 B.Pharm Syllabus at VEL Pharmacy College. 193 Credits across 8 Semesters featuring Python, AI, Data Analytics, 240 hrs Internship & Capstone Research.";
 $canonical_url = "https://velpharmacycollege.com/courses";
 
 // Course & Breadcrumb Schema
@@ -33,7 +33,7 @@ $custom_schema = [
             "description" => "A comprehensive 4-year undergraduate degree in pharmaceutical sciences approved by the Pharmacy Council of India (PCI) and affiliated to VISTAS Deemed University, updated as per National Education Policy (NEP 2020) with 193 credits.",
             "provider" => [
                 "@type" => "CollegeOrUniversity",
-                "name" => "Vel Pharmacy College",
+                "name" => "VEL Pharmacy College",
                 "sameAs" => "https://velpharmacycollege.com"
             ],
             "timeRequired" => "P4Y",
@@ -133,7 +133,7 @@ $c_el = $courses_cms['eligibility'] ?? [];
           <?= htmlspecialchars($c_ov['title'] ?? 'Courses Offered - B.Pharm') ?>
         </h2>
         <p style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-main); margin-bottom: 1.25rem;">
-          <?= htmlspecialchars($c_ov['desc_p1'] ?? 'The Bachelor of Pharmacy (B.Pharm) program at Vel Pharmacy College is a four-year professional degree meticulously aligned with the Pharmacy Council of India (PCI) NEP 2020 framework.') ?>
+          <?= htmlspecialchars($c_ov['desc_p1'] ?? 'The Bachelor of Pharmacy (B.Pharm) program at VEL Pharmacy College is a four-year professional degree meticulously aligned with the Pharmacy Council of India (PCI) NEP 2020 framework.') ?>
         </p>
         <p style="line-height: 1.75; color: var(--color-text-muted); margin-bottom: 1.5rem;">
           <?= htmlspecialchars($c_ov['desc_p2'] ?? 'Our students undergo direct clinical rotations and bedside patient exposure at the on-campus 300+ bed Vels Medical College Hospital (VMCH), mastering therapeutic drug monitoring, patient counseling, pharmacovigilance, and modern hospital pharmacy logistics.') ?>
@@ -152,7 +152,7 @@ $c_el = $courses_cms['eligibility'] ?? [];
 
       <div class="course-overview-card fade-up delay-2">
         <div class="course-overview-img-wrap">
-          <img src="<?= htmlspecialchars($c_ov['image'] ?? 'assets/images/IMG_0098-1-scaled.jpg') ?>" alt="Vel Pharmacy College Advanced Laboratory" class="course-overview-img">
+          <img src="<?= htmlspecialchars($c_ov['image'] ?? 'assets/images/IMG_0098-1-scaled.jpg') ?>" alt="VEL Pharmacy College Advanced Laboratory" class="course-overview-img">
           <div class="course-overview-badge-tag">
             <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-primary); text-transform: uppercase; margin-bottom: 0.25rem;"><?= htmlspecialchars($c_ov['badge'] ?? 'Off-Campus Center & Hospital') ?></div>
             <div style="font-size: 0.95rem; font-weight: 600; color: var(--color-text-main);"><?= htmlspecialchars($c_ov['pill'] ?? 'VMCH Campus, Manjankaranai, Tiruvallur') ?></div>
@@ -401,7 +401,7 @@ $ga_meta_map = [
           <span class="ga-oath-pill">PCI Code of Ethics</span>
         </h4>
         <p>
-          &ldquo;<?= htmlspecialchars($nep_syllabus_data['pharmacist_oath']['text'] ?? 'I swear by the code of ethics of Pharmacy Council of India, in relation to the community and shall act as an integral part of health care team... I shall endeavour to discover and manufacture drugs of quality to alleviate sufferings of humanity.') ?>&rdquo; Every student at Vel Pharmacy College commits to upholding professional integrity, patient confidentiality, and lifelong healthcare service.
+          &ldquo;<?= htmlspecialchars($nep_syllabus_data['pharmacist_oath']['text'] ?? 'I swear by the code of ethics of Pharmacy Council of India, in relation to the community and shall act as an integral part of health care team... I shall endeavour to discover and manufacture drugs of quality to alleviate sufferings of humanity.') ?>&rdquo; Every student at VEL Pharmacy College commits to upholding professional integrity, patient confidentiality, and lifelong healthcare service.
         </p>
       </div>
     </div>
@@ -1075,7 +1075,7 @@ $ga_meta_map = [
           <?= htmlspecialchars($c_cta['badge'] ?? 'Admissions Open • B.Pharm Program') ?>
         </span>
         <h2 style="font-family: var(--font-heading); font-size: 2.25rem; color: #F5F7F4; margin-bottom: 1rem; text-shadow: 0 2px 10px rgba(0,0,0,0.35);">
-          <?= htmlspecialchars($c_cta['title'] ?? 'Join Vel Pharmacy College Under the Modern NEP 2020 Framework') ?>
+          <?= htmlspecialchars($c_cta['title'] ?? 'Join VEL Pharmacy College Under the Modern NEP 2020 Framework') ?>
         </h2>
         <p style="font-size: 1.1rem; color: #F5F7F4; line-height: 1.7; margin-bottom: 2rem; text-shadow: 0 1px 4px rgba(0,0,0,0.25);">
           <?= htmlspecialchars($c_cta['subtitle'] ?? 'Merit-based admissions for +2 passed students (PCM/PCB) and lateral entry for D.Pharm holders. Connect with our admissions desk to secure your academic future today.') ?>

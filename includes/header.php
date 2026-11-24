@@ -1,10 +1,10 @@
 <?php
 /**
- * Vel Pharmacy College - Reusable Header Component
+ * VEL Pharmacy College - Reusable Header Component
  * Full SEO, GEO, and AEO optimization
  */
 
-$site_name = "Vel Pharmacy College";
+$site_name = "VEL Pharmacy College";
 $base_url = "https://velpharmacycollege.com";
 
 // Dynamic CMS Hook: Load SEO, GEO & AEO Configuration
@@ -47,18 +47,18 @@ if ($cms_seo) {
       $og_image = $base_url . '/' . ($page_cfg['og_image'] ?? $global_cfg['og_image']);
   } else {
     if (!isset($page_title))
-      $page_title = $global_cfg['default_title'] ?? "Vel Pharmacy College | B.Pharm Admissions | Approved by PCI";
+      $page_title = $global_cfg['default_title'] ?? "VEL Pharmacy College | B.Pharm Admissions | Approved by PCI";
     if (!isset($page_description))
-      $page_description = $global_cfg['default_description'] ?? "Vel Pharmacy College, an off-campus center of VISTAS Deemed University located at VMCH Campus, Manjankaranai.";
-    $page_keywords = $global_cfg['default_keywords'] ?? "Vel Pharmacy College, B.Pharm, PCI approved";
+      $page_description = $global_cfg['default_description'] ?? "VEL Pharmacy College, an off-campus center of VISTAS Deemed University located at VMCH Campus, Manjankaranai.";
+    $page_keywords = $global_cfg['default_keywords'] ?? "VEL Pharmacy College, B.Pharm, PCI approved";
   }
 }
 
 if (!isset($page_title)) {
-  $page_title = "Vel Pharmacy College | B.Pharm Admissions 2024-2025 | Approved by PCI";
+  $page_title = "VEL Pharmacy College | B.Pharm Admissions 2024-2025 | Approved by PCI";
 }
 if (!isset($page_description)) {
-  $page_description = "Vel Pharmacy College, an off-campus center of VISTAS Deemed University located at VMCH Campus, Manjankaranai, Tiruvallur. Offering 4-year B.Pharm degree approved by Pharmacy Council of India.";
+  $page_description = "VEL Pharmacy College, an off-campus center of VISTAS Deemed University located at VMCH Campus, Manjankaranai, Tiruvallur. Offering 4-year B.Pharm degree approved by Pharmacy Council of India.";
 }
 if (!isset($canonical_url)) {
   $canonical_url = $base_url . "/";
@@ -67,7 +67,7 @@ if (!isset($og_image)) {
   $og_image = $base_url . "/assets/images/campus-front.jpg";
 }
 if (!isset($page_keywords)) {
-  $page_keywords = "Vel Pharmacy College, B.Pharm admission, PCI approved pharmacy college, VISTAS deemed university, Manjankaranai, Tiruvallur";
+  $page_keywords = "VEL Pharmacy College, B.Pharm admission, PCI approved pharmacy college, VISTAS deemed university, Manjankaranai, Tiruvallur";
 }
 ?>
 <!DOCTYPE html>
@@ -84,7 +84,7 @@ if (!isset($page_keywords)) {
   <meta name="keywords" content="<?= htmlspecialchars($page_keywords) ?>">
   <link rel="canonical" href="<?= htmlspecialchars($canonical_url) ?>">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta name="author" content="Vel Pharmacy College">
+  <meta name="author" content="VEL Pharmacy College">
 
   <!-- GEO Location Tags for Local SEO & Voice Search -->
   <meta name="geo.region" content="IN-TN">
@@ -102,7 +102,7 @@ if (!isset($page_keywords)) {
   <meta property="og:title" content="<?= htmlspecialchars($page_title) ?>">
   <meta property="og:description" content="<?= htmlspecialchars($page_description) ?>">
   <meta property="og:image" content="<?= htmlspecialchars($og_image) ?>">
-  <meta property="og:site_name" content="Vel Pharmacy College">
+  <meta property="og:site_name" content="VEL Pharmacy College">
   <meta property="og:locale" content="en_IN">
 
   <!-- Twitter Card -->
@@ -139,12 +139,12 @@ if (!isset($page_keywords)) {
   {
     "@context": "https://schema.org",
     "@type": "CollegeOrUniversity",
-    "name": "Vel Pharmacy College",
+    "name": "VEL Pharmacy College",
     "alternateName": ["Vels Pharmacy College", "VPC Manjankaranai"],
     "url": "https://velpharmacycollege.com",
     "logo": "https://velpharmacycollege.com/assets/images/VPC NEW LOGO.png",
     "image": "https://velpharmacycollege.com/assets/images/campus-front.jpg",
-    "description": "Vel Pharmacy College is an off-campus center of Vels Institute of Science, Technology & Advanced Studies (VISTAS) located at VMCH Campus, Manjankaranai, Tiruvallur, offering PCI-approved B.Pharm degree program.",
+    "description": "VEL Pharmacy College is an off-campus center of Vels Institute of Science, Technology & Advanced Studies (VISTAS) located at VMCH Campus, Manjankaranai, Tiruvallur, offering PCI-approved B.Pharm degree program.",
     "telephone": "+918122613300",
     "email": "vels@vistas.ac.in",
     "address": {
@@ -249,7 +249,7 @@ if (!isset($page_keywords)) {
   <?php if ($show_site_preloader): ?>
     <!-- Starting Page Loading Screen: Official Logo Animation Video -->
     <div id="sitePreloader" class="site-preloader" role="dialog" aria-modal="true"
-      aria-label="Loading Vel Pharmacy College">
+      aria-label="Loading VEL Pharmacy College">
       <div class="preloader-content">
         <div class="preloader-video-wrapper">
           <video id="preloaderVideo" class="preloader-video" playsinline muted autoplay preload="auto">

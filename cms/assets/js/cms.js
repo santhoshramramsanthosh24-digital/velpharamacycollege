@@ -1,5 +1,5 @@
 /**
- * Vel Pharmacy College CMS - Interactive Client Controller
+ * VEL Pharmacy College CMS - Interactive Client Controller
  * Manages Tab Routing, Dynamic Modals, AJAX CRUD, Multi-Page Content Saving,
  * Media Uploads, and Dedicated SEO / GEO / AEO & Traffic Intelligence Hub.
  */

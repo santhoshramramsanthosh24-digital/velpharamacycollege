@@ -1,7 +1,7 @@
 <?php
 $current_page = 'contact';
-$page_title = "Contact Us & Campus Location | Vel Pharmacy College, Manjankaranai";
-$page_description = "Get in touch with Vel Pharmacy College, VMCH Campus, Periyapalayam Road, Manjankaranai, Tiruvallur. Call +91 812 261 3300, email vels@vistas.ac.in, or visit our green campus.";
+$page_title = "Contact Us & Campus Location | VEL Pharmacy College, Manjankaranai";
+$page_description = "Get in touch with VEL Pharmacy College, VMCH Campus, Periyapalayam Road, Manjankaranai, Tiruvallur. Call +91 812 261 3300, email vels@vistas.ac.in, or visit our green campus.";
 $canonical_url = "https://velpharmacycollege.com/contact-us";
 
 // Contact & Breadcrumb Schema
@@ -27,11 +27,11 @@ $custom_schema = [
         ],
         [
             "@type" => "ContactPage",
-            "name" => "Contact Vel Pharmacy College",
+            "name" => "Contact VEL Pharmacy College",
             "url" => "https://velpharmacycollege.com/contact-us",
             "mainEntity" => [
                 "@type" => "CollegeOrUniversity",
-                "name" => "Vel Pharmacy College",
+                "name" => "VEL Pharmacy College",
                 "telephone" => "+918122613300",
                 "email" => "vels@vistas.ac.in",
                 "address" => [
@@ -72,7 +72,7 @@ include __DIR__ . '/includes/header.php';
       </div>
       <div class="page-banner-media">
         <div class="page-banner-img-frame">
-          <img src="<?= htmlspecialchars($contact_cms['banner']['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="Vel Pharmacy College Campus Location & Admissions Office" class="page-banner-img" loading="eager" width="480" height="250">
+          <img src="<?= htmlspecialchars($contact_cms['banner']['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="VEL Pharmacy College Campus Location & Admissions Office" class="page-banner-img" loading="eager" width="480" height="250">
         </div>
       </div>
     </div>
@@ -110,7 +110,7 @@ $c_commute = $contact_cms['commute'] ?? [];
         </div>
         <h3 class="contact-info-title"><?= htmlspecialchars($c_addr['title'] ?? 'Campus Location') ?></h3>
         <p class="contact-info-text">
-          <strong><?= htmlspecialchars($c_addr['institution'] ?? 'Vel Pharmacy College') ?></strong><br>
+          <strong><?= htmlspecialchars($c_addr['institution'] ?? 'VEL Pharmacy College') ?></strong><br>
           <?= htmlspecialchars($c_addr['address'] ?? 'VMCH Medical Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk, Tiruvallur District – 601102, Tamil Nadu.') ?>
         </p>
         <span class="contact-badge-pill" style="background: #1E6A4D; color: #F5F7F4;">
@@ -189,7 +189,7 @@ $c_commute = $contact_cms['commute'] ?? [];
         <div class="contact-map-wrapper">
           <iframe 
             src="<?= htmlspecialchars($c_map['embed_url'] ?? 'https://maps.google.com/maps?q=Vels%20Medical%20College%20and%20Hospital%2C%20Manjankaranai&t=m&z=13&output=embed&iwloc=near') ?>" 
-            title="Vel Pharmacy College Location at VMCH Campus Manjankaranai"
+            title="VEL Pharmacy College Location at VMCH Campus Manjankaranai"
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>

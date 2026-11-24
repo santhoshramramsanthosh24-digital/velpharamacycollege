@@ -1,7 +1,7 @@
 <?php
 $current_page = '404';
-$page_title = "404 - Page Not Found | Vel Pharmacy College";
-$page_description = "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable. Browse Vel Pharmacy College programs and facilities.";
+$page_title = "404 - Page Not Found | VEL Pharmacy College";
+$page_description = "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable. Browse VEL Pharmacy College programs and facilities.";
 $canonical_url = "https://velpharmacycollege.com/404";
 
 include __DIR__ . '/includes/header.php';

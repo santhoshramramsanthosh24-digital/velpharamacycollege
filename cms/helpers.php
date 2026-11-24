@@ -1,6 +1,6 @@
 <?php
 /**
- * Vel Pharmacy College CMS - Helper Functions & Data Storage Interfacing
+ * VEL Pharmacy College CMS - Helper Functions & Data Storage Interfacing
  */
 
 require_once __DIR__ . '/auth.php';

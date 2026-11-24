@@ -12,7 +12,7 @@ $f_email = $foot_settings['contact_email'] ?? ($foot_settings['email_primary'] ?
 $f_address = $foot_contact['address_full'] ?? ($foot_settings['campus_address'] ?? ($foot_contact['campus_address'] ?? 'VMCH Campus, No.12/123, Periyapalayam Road, Velan Nagar, Manjankaranai Village, Uthukottai Taluk, Tiruvallur District – 601102, Tamil Nadu, India'));
 $f_tollfree = $foot_settings['toll_free'] ?? ($foot_settings['anti_ragging_tollfree'] ?? ($foot_contact['anti_ragging_tollfree'] ?? '1800-180-5522'));
 $f_tollfree_clean = preg_replace('/[^0-9+]/', '', $f_tollfree);
-$f_copy = $foot_settings['copyright'] ?? ($foot_settings['footer_copyright'] ?? 'Vel Pharmacy College. All Rights Reserved. Member institution of VISTAS.');
+$f_copy = $foot_settings['copyright'] ?? ($foot_settings['footer_copyright'] ?? 'VEL Pharmacy College. All Rights Reserved. Member institution of VISTAS.');
 $f_fb = $foot_settings['social_facebook'] ?? 'https://www.facebook.com/velspharmacy';
 $f_ig = $foot_settings['social_instagram'] ?? 'https://www.instagram.com/velspharmacy';
 $f_yt = $foot_settings['social_youtube'] ?? 'https://www.youtube.com/@VelsUniversity';
@@ -69,10 +69,10 @@ $f_tw = $foot_settings['social_twitter'] ?? 'https://twitter.com/vistas';
       <div class="footer-grid">
         <!-- Col 1: Brand & Institution -->
         <div class="footer-widget footer-about">
-          <a href="/" class="footer-brand-badge" title="Vel Pharmacy College Home">
-            <img src="assets/images/VPC NEW LOGO.jpeg" alt="Vel Pharmacy College" height="52" loading="lazy">
+          <a href="/" class="footer-brand-badge" title="VEL Pharmacy College Home">
+            <img src="assets/images/VPC NEW LOGO.jpeg" alt="VEL Pharmacy College" height="52" loading="lazy">
           </a>
-          <h4 class="footer-brand-title">Vel Pharmacy College</h4>
+          <h4 class="footer-brand-title">VEL Pharmacy College</h4>
           <div class="footer-brand-sub">Under Vels Institute of Science, Technology &amp; Advanced Studies (VISTAS)
           </div>
           <p>
@@ -293,7 +293,7 @@ $f_tw = $foot_settings['social_twitter'] ?? 'https://twitter.com/vistas';
     <div class="container-wide">
       <div class="footer-bottom-inner">
         <div>
-          &copy; <?= date('Y'); ?> <strong>Vel Pharmacy College</strong>. All Rights Reserved. Member institution of
+          &copy; <?= date('Y'); ?> <strong>VEL Pharmacy College</strong>. All Rights Reserved. Member institution of
           VISTAS Deemed to be University.
         </div>
         <ul class="footer-bottom-links">

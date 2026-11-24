@@ -1,7 +1,7 @@
 <?php
 $current_page = 'leadership';
-$page_title = "Leadership & Governance | Vel Pharmacy College | VISTAS";
-$page_description = "Meet the esteemed leadership team of Vel Pharmacy College and VISTAS Deemed University, headed by Founder-Chancellor Dr. Ishari K. Ganesh and visionary academic leaders.";
+$page_title = "Leadership & Governance | VEL Pharmacy College | VISTAS";
+$page_description = "Meet the esteemed leadership team of VEL Pharmacy College and VISTAS Deemed University, headed by Founder-Chancellor Dr. Ishari K. Ganesh and visionary academic leaders.";
 $canonical_url = "https://velpharmacycollege.com/leadership";
 
 // Breadcrumb Schema
@@ -50,7 +50,7 @@ $cta = $lead_cms['cta_banner'] ?? [];
         </nav>
         <h1 class="page-title"><?= htmlspecialchars($banner['title'] ?? 'Leadership & Governance') ?></h1>
         <p class="page-subtitle">
-          <?= htmlspecialchars($banner['subtitle'] ?? 'Guided by visionary educational pioneers and dedicated administrators who steer Vel Pharmacy College toward global academic distinction and ethical healthcare leadership.') ?>
+          <?= htmlspecialchars($banner['subtitle'] ?? 'Guided by visionary educational pioneers and dedicated administrators who steer VEL Pharmacy College toward global academic distinction and ethical healthcare leadership.') ?>
         </p>
       </div>
       <div class="page-banner-media">
@@ -74,7 +74,7 @@ $cta = $lead_cms['cta_banner'] ?? [];
         <?= htmlspecialchars($header['title'] ?? 'Our Leadership Team') ?>
       </h2>
       <p class="section-description">
-        <?= htmlspecialchars($header['description'] ?? 'Meet the distinguished visionary leaders, university statutory officers, and collegiate administrators steering VISTAS and Vel Pharmacy College.') ?>
+        <?= htmlspecialchars($header['description'] ?? 'Meet the distinguished visionary leaders, university statutory officers, and collegiate administrators steering VISTAS and VEL Pharmacy College.') ?>
       </p>
     </div>
 
@@ -124,7 +124,7 @@ $cta = $lead_cms['cta_banner'] ?? [];
         <?= htmlspecialchars($gov['title'] ?? 'Our Governance Philosophy') ?>
       </h2>
       <p class="section-description">
-        <?= htmlspecialchars($gov['description'] ?? 'Vel Pharmacy College operates under strict regulatory compliance with the Pharmacy Council of India (PCI) and UGC guidelines.') ?>
+        <?= htmlspecialchars($gov['description'] ?? 'VEL Pharmacy College operates under strict regulatory compliance with the Pharmacy Council of India (PCI) and UGC guidelines.') ?>
       </p>
     </div>
 
@@ -155,7 +155,7 @@ $cta = $lead_cms['cta_banner'] ?? [];
     <div class="cta-banner fade-up">
       <h2><?= htmlspecialchars($cta['title'] ?? 'Begin Your Journey in Pharmaceutical Excellence') ?></h2>
       <p style="margin: 0 auto 2rem;">
-        <?= htmlspecialchars($cta['subtitle'] ?? 'Enroll in the 4-year B.Pharm degree program at Vel Pharmacy College and learn under the guidance of visionary academic mentors.') ?>
+        <?= htmlspecialchars($cta['subtitle'] ?? 'Enroll in the 4-year B.Pharm degree program at VEL Pharmacy College and learn under the guidance of visionary academic mentors.') ?>
       </p>
       <div class="cta-buttons">
         <a href="<?= htmlspecialchars($cta['btn1_link'] ?? 'enquiry') ?>" class="btn btn-primary" style="background: #D6B56D; color: #1E6A4D; font-weight: 700;">

@@ -1,7 +1,7 @@
 <?php
 $current_page = 'facilities';
-$page_title = "Campus & Infrastructure Facilities | Vel Pharmacy College";
-$page_description = "Explore the cutting-edge facilities at Vel Pharmacy College, Manjankaranai: advanced pharmaceutical laboratories, 1500+ books library, VMCH Hospital clinical exposure, hostels, and sports.";
+$page_title = "Campus & Infrastructure Facilities | VEL Pharmacy College";
+$page_description = "Explore the cutting-edge facilities at VEL Pharmacy College, Manjankaranai: advanced pharmaceutical laboratories, 1500+ books library, VMCH Hospital clinical exposure, hostels, and sports.";
 $canonical_url = "https://velpharmacycollege.com/facilities";
 
 // Breadcrumb Schema
@@ -49,7 +49,7 @@ include __DIR__ . '/includes/header.php';
       </div>
       <div class="page-banner-media">
         <div class="page-banner-img-frame">
-          <img src="<?= htmlspecialchars($facilities_cms['banner']['image'] ?? 'assets/images/library-main.jpg') ?>" alt="Vel Pharmacy College Campus Facilities & Laboratories" class="page-banner-img" loading="eager" width="480" height="250">
+          <img src="<?= htmlspecialchars($facilities_cms['banner']['image'] ?? 'assets/images/library-main.jpg') ?>" alt="VEL Pharmacy College Campus Facilities & Laboratories" class="page-banner-img" loading="eager" width="480" height="250">
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@ $f_amenities = $facilities_cms['amenities'] ?? [];
 
       <div class="facilities-hero-card fade-up delay-2">
         <div class="facilities-hero-img-wrap">
-          <img src="<?= htmlspecialchars($f_ov['campus_front_img'] ?? 'assets/images/campus-front.jpg') ?>" alt="Vel Pharmacy College Campus Front" class="facilities-hero-img">
+          <img src="<?= htmlspecialchars($f_ov['campus_front_img'] ?? 'assets/images/campus-front.jpg') ?>" alt="VEL Pharmacy College Campus Front" class="facilities-hero-img">
           <div class="facilities-hero-floating-badge">
             <div>
               <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-primary); text-transform: uppercase;"><?= htmlspecialchars($f_ov['location_tag'] ?? 'Campus Location') ?></div>
