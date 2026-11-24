@@ -431,7 +431,7 @@ $ga_meta_map = [
         Proposed and structured by the <strong>Pharmacy Council of India (PCI), New Delhi</strong> in accordance with the <strong>National Education Policy (NEP) 2020</strong>. This next-generation syllabus introduces cutting-edge disciplines — including <strong>Python Programming, Machine Learning, Clinical AI, and AR/VR Pharma 4.0</strong> — alongside deep foundational sciences, 240 hours of practical internships, and a 12-credit capstone research thesis.
       </p>
 
-      <div style="margin-top: 1.25rem; display: flex; gap: 0.85rem; flex-wrap: wrap;">
+      <div style="margin-top: 1.5rem; margin-bottom: 2.25rem; display: flex; gap: 1.25rem; flex-wrap: wrap; align-items: center;">
         <a href="assets/docs/B.Pharm_Syllabus_2026_NEP2020.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="background: rgba(255,255,255,0.15); color: #F5F7F4; border-color: rgba(255,255,255,0.4); font-size: 0.88rem; padding: 0.55rem 1.15rem; display: inline-flex; align-items: center; gap: 0.5rem;">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           <span>View Official Syllabus PDF</span>
