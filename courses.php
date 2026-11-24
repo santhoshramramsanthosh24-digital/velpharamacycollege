@@ -400,7 +400,7 @@ $ga_meta_map = [
           <span>The Pharmacist's Oath</span>
           <span class="ga-oath-pill">PCI Code of Ethics</span>
         </h4>
-        <p>
+        <p style="color: #F5F7F4; font-size: 1.05rem; line-height: 1.8; margin: 0;">
           &ldquo;<?= htmlspecialchars($nep_syllabus_data['pharmacist_oath']['text'] ?? 'I swear by the code of ethics of Pharmacy Council of India, in relation to the community and shall act as an integral part of health care team... I shall endeavour to discover and manufacture drugs of quality to alleviate sufferings of humanity.') ?>&rdquo; Every student at VEL Pharmacy College commits to upholding professional integrity, patient confidentiality, and lifelong healthcare service.
         </p>
       </div>
