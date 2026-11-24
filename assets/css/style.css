@@ -2262,7 +2262,6 @@ main > .section:last-of-type {
 .section-alt .course-featured-card,
 .section-alt .about-legacy-card,
 .section-alt .commute-card,
-.section-alt .faq-item,
 .section-alt .why-card,
 .section-alt .anti-ragging-legal-card,
 .section-alt .governance-card {
@@ -2273,7 +2272,6 @@ main > .section:last-of-type {
 }
 
 .section-alt .feature-title,
-.section-alt .faq-question,
 .section-alt .commute-title,
 .section-alt .course-title,
 .section-alt .why-card-title,
@@ -2283,7 +2281,6 @@ main > .section:last-of-type {
 }
 
 .section-alt .feature-text,
-.section-alt .faq-answer-inner,
 .section-alt .commute-text,
 .section-alt .course-desc,
 .section-alt .why-card-desc,
@@ -2292,22 +2289,113 @@ main > .section:last-of-type {
   color: #1E6A4D !important;
 }
 
+/* FAQ Accordion in Section Alt - No Box Design, Direct White Text */
+.section-alt .faq-wrap {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
 .section-alt .faq-item {
-  margin-bottom: 1rem;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  transition: border-color 0.25s ease;
+}
+
+.section-alt .faq-item:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.22) !important;
+}
+
+.section-alt .faq-item.active {
+  border-bottom-color: #D6B56D !important;
+  box-shadow: none !important;
 }
 
 .section-alt .faq-question {
-  color: #1E6A4D !important;
-  font-weight: 700;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #FFFFFF !important;
+  font-family: var(--font-heading);
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  font-weight: 600;
+  padding: 1.35rem 0.5rem;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 
-.section-alt .faq-answer-inner {
-  color: #1E6A4D !important;
+.section-alt .faq-question span:first-child {
+  color: #FFFFFF !important;
+  line-height: 1.45;
+  flex: 1;
+}
+
+.section-alt .faq-question:hover,
+.section-alt .faq-item.active .faq-question {
+  color: #D6B56D !important;
+}
+
+.section-alt .faq-question:hover span:first-child,
+.section-alt .faq-item.active .faq-question span:first-child {
+  color: #D6B56D !important;
 }
 
 .section-alt .faq-icon {
-  background: #1E6A4D !important;
+  background: rgba(255, 255, 255, 0.12) !important;
   color: #FFFFFF !important;
+  width: 36px;
+  height: 36px;
+  border-radius: 50% !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.25s ease;
+}
+
+.section-alt .faq-question:hover .faq-icon {
+  background: #D6B56D !important;
+  color: #1E6A4D !important;
+  border-color: #D6B56D !important;
+}
+
+.section-alt .faq-item.active .faq-icon {
+  background: #D6B56D !important;
+  color: #1E6A4D !important;
+  border-color: #D6B56D !important;
+  transform: rotate(180deg);
+}
+
+.section-alt .faq-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.section-alt .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out;
+}
+
+.section-alt .faq-answer-inner {
+  background: transparent !important;
+  color: rgba(245, 247, 244, 0.92) !important;
+  padding: 0 0.5rem 1.5rem;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  font-weight: 400;
 }
 
 .section-header {
