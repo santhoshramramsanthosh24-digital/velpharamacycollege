@@ -129,18 +129,20 @@ $cta = $about_cms['cta_banner'] ?? [];
         </div>
       </div>
 
-      <!-- Right Side: White Legacy Box (Landscape Presentation) -->
+      <!-- Right Side: White Legacy Box -->
       <div class="about-legacy-card">
         <div class="about-legacy-heading">
           <?= htmlspecialchars($legacy['card_heading'] ?? 'A Legacy Built on Educational Philanthropy & Academic Vision') ?>
         </div>
-        <p class="about-legacy-lead">
+        <p class="about-legacy-paragraph">
           <?= htmlspecialchars($legacy['p1'] ?? '') ?>
         </p>
-        <div class="about-legacy-columns">
-          <p><?= htmlspecialchars($legacy['p2'] ?? '') ?></p>
-          <p><?= htmlspecialchars($legacy['p3'] ?? '') ?></p>
-        </div>
+        <p class="about-legacy-paragraph">
+          <?= htmlspecialchars($legacy['p2'] ?? '') ?>
+        </p>
+        <p class="about-legacy-paragraph">
+          <?= htmlspecialchars($legacy['p3'] ?? '') ?>
+        </p>
       </div>
     </div>
   </div>

@@ -2286,7 +2286,8 @@ main > .section:last-of-type {
 .section-alt .course-desc,
 .section-alt .why-card-desc,
 .section-alt .principal-quote,
-.section-alt .about-legacy-card p {
+.section-alt .about-legacy-card p,
+.section-alt .about-legacy-paragraph {
   color: #1E6A4D !important;
 }
 
@@ -6209,27 +6210,18 @@ main > .section:last-of-type {
   font-family: var(--font-heading);
   font-size: 1.35rem;
   color: var(--color-primary-dark);
-  margin-bottom: 1.15rem;
+  margin-bottom: 1.25rem;
   line-height: 1.45;
 }
 
-.about-legacy-lead {
-  font-size: 1.02rem;
-  line-height: 1.75;
+.about-legacy-paragraph {
+  font-size: 1rem;
+  line-height: 1.8;
   color: var(--color-text-muted);
   margin-bottom: 1.25rem;
 }
 
-.about-legacy-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.75rem;
-}
-
-.about-legacy-columns p {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--color-text-muted);
+.about-legacy-paragraph:last-child {
   margin-bottom: 0;
 }
 
@@ -6243,16 +6235,9 @@ main > .section:last-of-type {
     min-height: 320px;
     max-height: 420px;
   }
-}
-
-@media (max-width: 640px) {
-  .about-legacy-columns {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
 
   .about-legacy-card {
-    padding: 1.75rem 1.25rem !important;
+    padding: 2.25rem 1.5rem !important;
   }
 }
 
