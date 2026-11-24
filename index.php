@@ -810,14 +810,14 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
 <!-- ==========================================================================
      VISIBLY SHOWCASED: ADVANCED RESEARCH LABORATORIES & INSTRUMENTATION HUB
      ========================================================================== -->
-<section class="section section-alt research-showcase-section" id="researchHub" aria-labelledby="researchHubTitle">
+<section class="section research-showcase-section" id="researchHub" aria-labelledby="researchHubTitle">
   <div class="container-wide">
     <div class="section-header fade-up">
-      <span class="section-subtitle" style="color: #D6B56D;">SCIENTIFIC INFRASTRUCTURE &amp; CAPABILITIES</span>
+      <span class="section-subtitle">SCIENTIFIC INFRASTRUCTURE &amp; CAPABILITIES</span>
       <h2 class="section-title" id="researchHubTitle">
         Advanced Research Laboratories &amp; Analytical Instrumentation Hub
       </h2>
-      <p class="section-description" style="color: rgba(255,255,255,0.88);">
+      <p class="section-description">
         VEL Pharmacy College visibly showcases an advanced pharmaceutical research ecosystem. Explore our specialized laboratories, analytical instrumentation, pilot manufacturing equipment, and computational drug discovery suites:
       </p>
     </div>
@@ -997,7 +997,7 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
 <!-- ==========================================================================
      FEATURED ACADEMIC PROGRAM: BACHELOR OF PHARMACY (B.PHARM)
      ========================================================================== -->
-<section class="section" aria-labelledby="courseTitle">
+<section class="section section-alt" aria-labelledby="courseTitle">
   <div class="container">
     <div class="section-header fade-up">
       <span class="section-subtitle">PREMIER UNDERGRADUATE DEGREE</span>
