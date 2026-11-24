@@ -79,179 +79,210 @@ $custom_schema = [
 ];
 
 require_once __DIR__ . '/includes/header.php';
-require_once __DIR__ . '/includes/nav.php';
 ?>
 
-<main id="mainContent">
-  <!-- PAGE HERO BANNER -->
-  <section class="page-banner" aria-label="Student Corner Banner">
-    <div class="page-banner-container">
+<!-- ==========================================================================
+     PAGE BANNER WITH BREADCRUMB & RELATED IMAGE BOX (STANDARDIZED DESIGN)
+     ========================================================================== -->
+<section class="page-banner" aria-label="Page Title Banner">
+  <div class="container-wide">
+    <div class="page-banner-box">
       <div class="page-banner-content">
-        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-          <a href="/" class="breadcrumb-link">Home</a>
+        <nav class="breadcrumb" aria-label="Breadcrumbs">
+          <a href="/">Home</a>
           <span class="breadcrumb-separator">/</span>
           <span class="breadcrumb-current" aria-current="page">Student Corner</span>
         </nav>
         <h1 class="page-title">Student Corner, Campus Life &amp; Sports</h1>
         <p class="page-subtitle">
-          A dynamic academic sanctuary blending peer scientific discussions, live webinars, student-led innovation clubs, and spirited athletics across our multi-acre VMCH Campus.
+          A dynamic collegiate sanctuary blending peer scientific discussions, live clinical webinars, student-led innovation clubs, and spirited athletics across our multi-acre VMCH Campus.
         </p>
       </div>
       <div class="page-banner-media">
         <div class="page-banner-img-frame">
-          <img src="assets/images/sports-ground.jpg" alt="VEL Pharmacy College Student Life & Sports Ground" class="page-banner-img" loading="eager" width="480" height="250">
+          <img src="assets/images/sports-ground.jpg" alt="VEL Pharmacy College Student Life &amp; Sports Ground" class="page-banner-img" loading="eager" width="480" height="250">
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- QUICK NAVIGATION STRIP -->
-  <div style="background: #1E6A4D; padding: 0.85rem 1rem; border-bottom: 2px solid #D6B56D;">
-    <div class="container" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-      <a href="#discussions" style="color: #F5F7F4; font-weight: 700; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; gap: 0.4rem;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D6B56D" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        <span>Student Discussions</span>
-      </a>
-      <a href="#live-events" style="color: #F5F7F4; font-weight: 700; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; gap: 0.4rem;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D6B56D" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg>
-        <span>Live Events &amp; Webinars</span>
-      </a>
-      <a href="#clubs" style="color: #F5F7F4; font-weight: 700; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; gap: 0.4rem;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D6B56D" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
-        <span>Student Clubs</span>
-      </a>
-      <a href="#sports" style="color: #F5F7F4; font-weight: 700; font-size: 0.9rem; text-decoration: none; display: flex; align-items: center; gap: 0.4rem;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D6B56D" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-        <span>Sports Corner</span>
-      </a>
     </div>
   </div>
+</section>
 
-  <!-- SECTION 1: STUDENT CORNER & ACADEMIC DISCUSSIONS -->
-  <section class="section" id="discussions" aria-labelledby="discussionsTitle">
-    <div class="container">
-      <div class="section-header fade-up">
-        <span class="section-subtitle">PEER DISCOURSE &amp; MENTORSHIP</span>
-        <h2 class="section-title" id="discussionsTitle">Student Academic Corner &amp; Discussions</h2>
-        <p class="section-description">
-          Ask questions, discuss pharmaceutical research, learn from senior peers, and connect directly with doctorate mentors in our collaborative student discussion forum.
-        </p>
+<!-- ==========================================================================
+     QUICK SECTION NAVIGATION & LIVE CAMPUS LIFE STATS STRIP
+     ========================================================================== -->
+<nav class="student-quick-nav-bar" aria-label="Student Corner Quick Navigation">
+  <div class="container-wide">
+    <div class="student-quick-nav-inner">
+      <div class="student-nav-pills">
+        <a href="#discussions" class="student-nav-pill">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>Peer Discussions</span>
+        </a>
+        <a href="#live-events" class="student-nav-pill">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg>
+          <span>Live Webinars</span>
+        </a>
+        <a href="#clubs" class="student-nav-pill">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+          <span>Student Clubs</span>
+        </a>
+        <a href="#sports" class="student-nav-pill">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+          <span>Sports &amp; Athletics</span>
+        </a>
+        <a href="#gallery" class="student-nav-pill">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>Campus Gallery</span>
+        </a>
       </div>
 
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
-        
-        <!-- Left: Discussion Threads Feed -->
-        <div>
-          <!-- Thread 1 -->
-          <div class="discussion-thread-card fade-up">
-            <div class="discussion-meta-row">
-              <span class="discussion-tag">Clinical Practice</span>
-              <span>Updated Today</span>
-              <span>&bull; 24 Answers</span>
-            </div>
-            <h3 class="discussion-title">
-              How does on-campus VMCH Hospital clinical exposure help in 3rd &amp; 4th Year B.Pharm?
-            </h3>
-            <p class="discussion-excerpt">
-              "Students at VEL Pharmacy College gain immediate daily ward rounds, prescription analysis, patient counseling, and therapeutic drug monitoring right next door at the 300-bed hospital, giving real-world clinical confidence before graduation."
-            </p>
-            <div style="margin-top: 0.85rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700;">
-              Answered by: Dr. G. Saravanan (Principal) &amp; Final Year Student Council
-            </div>
-          </div>
+      <div class="student-quick-stats">
+        <div class="sq-stat"><span class="sq-num">4+</span> <span class="sq-lbl">Active Clubs</span></div>
+        <div class="sq-stat"><span class="sq-num">300</span> <span class="sq-lbl">Bed Hospital</span></div>
+        <div class="sq-stat"><span class="sq-num">Multi-Acre</span> <span class="sq-lbl">Sports Grounds</span></div>
+        <div class="sq-stat"><span class="sq-num">100%</span> <span class="sq-lbl">Peer Mentorship</span></div>
+      </div>
+    </div>
+  </div>
+</nav>
 
-          <!-- Thread 2 -->
-          <div class="discussion-thread-card fade-up">
-            <div class="discussion-meta-row">
-              <span class="discussion-tag">Research Labs</span>
-              <span>Active Thread</span>
-              <span>&bull; 18 Answers</span>
-            </div>
-            <h3 class="discussion-title">
-              Hands-on HPLC &amp; UV-Vis spectroscopy access for undergraduate projects
-            </h3>
-            <p class="discussion-excerpt">
-              "Undergraduate students at VPC are trained to independently operate isocratic and gradient HPLC systems, prepare mobile phases, and record UV spectra for their final-year research thesis."
-            </p>
-            <div style="margin-top: 0.85rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700;">
-              Answered by: Dept. of Pharmaceutical Chemistry &amp; Analysis
-            </div>
-          </div>
+<!-- SECTION 1: STUDENT CORNER & ACADEMIC DISCUSSIONS -->
+<section class="section" id="discussions" aria-labelledby="discussionsTitle">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-subtitle">PEER DISCOURSE &amp; MENTORSHIP</span>
+      <h2 class="section-title" id="discussionsTitle">Student Academic Corner &amp; Discussions</h2>
+      <p class="section-description">
+        Ask questions, discuss pharmaceutical research, learn from senior peers, and connect directly with doctorate mentors in our collaborative student discussion forum.
+      </p>
+    </div>
 
-          <!-- Thread 3 -->
-          <div class="discussion-thread-card fade-up">
-            <div class="discussion-meta-row">
-              <span class="discussion-tag">NEP 2020 AI</span>
-              <span>Curriculum Insights</span>
-              <span>&bull; 31 Answers</span>
-            </div>
-            <h3 class="discussion-title">
-              Molecular docking, Python &amp; Machine Learning in Pharmacy: Career pathways
-            </h3>
-            <p class="discussion-excerpt">
-              "How the integration of computational drug discovery (AutoDock, PyMOL) and Python in NEP 2020 prepares VPC graduates for lucrative roles in clinical data analytics and computational biology MNCs."
-            </p>
-            <div style="margin-top: 0.85rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700;">
-              Answered by: Faculty Coordinator, Bioinformatics &amp; CADD Lab
-            </div>
+    <div class="student-discussion-layout">
+      
+      <!-- Left: Discussion Threads Feed -->
+      <div class="discussion-feed-col">
+        <!-- Thread 1 -->
+        <div class="discussion-thread-card fade-up">
+          <div class="discussion-meta-row">
+            <span class="discussion-tag">Clinical Practice</span>
+            <span>Updated Today</span>
+            <span>&bull; 24 Answers</span>
           </div>
-
-          <!-- Thread 4 -->
-          <div class="discussion-thread-card fade-up">
-            <div class="discussion-meta-row">
-              <span class="discussion-tag">Entrance Exam</span>
-              <span>GPAT / NIPER</span>
-              <span>&bull; 42 Answers</span>
-            </div>
-            <h3 class="discussion-title">
-              Free GPAT &amp; NIPER coaching circles organized by doctorate faculty
-            </h3>
-            <p class="discussion-excerpt">
-              "Weekly mock assessments, previous year question paper discussions, and high-yield pharmacology mnemonic workshops conducted on Saturdays for aspiring post-graduates."
-            </p>
-            <div style="margin-top: 0.85rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700;">
-              Answered by: Academic Development Cell
-            </div>
+          <h3 class="discussion-title">
+            How does on-campus VMCH Hospital clinical exposure help in 3rd &amp; 4th Year B.Pharm?
+          </h3>
+          <p class="discussion-excerpt">
+            "Students at VEL Pharmacy College gain immediate daily ward rounds, prescription analysis, patient counseling, and therapeutic drug monitoring right next door at the 300-bed hospital, giving real-world clinical confidence before graduation."
+          </p>
+          <div style="margin-top: 0.85rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700; display: flex; align-items: center; gap: 0.4rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1E6A4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Verified Response: Dr. G. Saravanan (Principal) &amp; Student Academic Council</span>
           </div>
         </div>
 
-        <!-- Right: Submit Query / Join Discussion Box -->
-        <div>
-          <div style="background: #FFFFFF; border: 2px solid #D6B56D; border-radius: 16px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.06); position: sticky; top: 100px;">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-              <div style="width: 44px; height: 44px; border-radius: 10px; background: #1E6A4D; color: #D6B56D; display: flex; align-items: center; justify-content: center;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-              </div>
-              <div>
-                <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: #1E6A4D; margin: 0;">Have a Question?</h3>
-                <span style="font-size: 0.85rem; color: #718096;">Ask students &amp; professors directly</span>
-              </div>
+        <!-- Thread 2 -->
+        <div class="discussion-thread-card fade-up">
+          <div class="discussion-meta-row">
+            <span class="discussion-tag">Research Labs</span>
+            <span>Active Thread</span>
+            <span>&bull; 18 Answers</span>
+          </div>
+          <h3 class="discussion-title">
+            Hands-on HPLC &amp; UV-Vis spectroscopy access for undergraduate projects
+          </h3>
+          <p class="discussion-excerpt">
+            "Undergraduate students at VPC are trained to independently operate isocratic and gradient HPLC systems, prepare mobile phases, and record UV spectra for their final-year research thesis."
+          </p>
+          <div style="margin-top: 0.85rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700; display: flex; align-items: center; gap: 0.4rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1E6A4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Verified Response: Dept. of Pharmaceutical Chemistry &amp; Analysis</span>
+          </div>
+        </div>
+
+        <!-- Thread 3 -->
+        <div class="discussion-thread-card fade-up">
+          <div class="discussion-meta-row">
+            <span class="discussion-tag">NEP 2020 AI</span>
+            <span>Curriculum Insights</span>
+            <span>&bull; 31 Answers</span>
+          </div>
+          <h3 class="discussion-title">
+            Molecular docking, Python &amp; Machine Learning in Pharmacy: Career pathways
+          </h3>
+          <p class="discussion-excerpt">
+            "How the integration of computational drug discovery (AutoDock, PyMOL) and Python in NEP 2020 prepares VPC graduates for lucrative roles in clinical data analytics and computational biology MNCs."
+          </p>
+          <div style="margin-top: 0.85rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700; display: flex; align-items: center; gap: 0.4rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1E6A4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Verified Response: Faculty Coordinator, Bioinformatics &amp; CADD Lab</span>
+          </div>
+        </div>
+
+        <!-- Thread 4 -->
+        <div class="discussion-thread-card fade-up">
+          <div class="discussion-meta-row">
+            <span class="discussion-tag">Entrance Exam</span>
+            <span>GPAT / NIPER</span>
+            <span>&bull; 42 Answers</span>
+          </div>
+          <h3 class="discussion-title">
+            Free GPAT &amp; NIPER coaching circles organized by doctorate faculty
+          </h3>
+          <p class="discussion-excerpt">
+            "Weekly mock assessments, previous year question paper discussions, and high-yield pharmacology mnemonic workshops conducted on Saturdays for aspiring post-graduates."
+          </p>
+          <div style="margin-top: 0.85rem; font-size: 0.85rem; color: #1E6A4D; font-weight: 700; display: flex; align-items: center; gap: 0.4rem;">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1E6A4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Verified Response: Academic Development Cell &amp; Senior Scholars</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Submit Query / Join Discussion Box -->
+      <div class="discussion-sidebar-col">
+        <div class="student-query-card">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.15rem;">
+            <div style="width: 44px; height: 44px; border-radius: 10px; background: #1E6A4D; color: #D6B56D; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </div>
+            <div>
+              <h3 style="font-family: var(--font-heading); font-size: 1.2rem; color: #1E6A4D; margin: 0; line-height: 1.2;">Have a Question?</h3>
+              <span style="font-size: 0.82rem; color: #64748B;">Ask students &amp; professors directly</span>
+            </div>
+          </div>
 
-            <p style="font-size: 0.92rem; color: #4A5568; line-height: 1.6; margin-bottom: 1.25rem;">
-              Whether you are a prospective student asking about B.Pharm eligibility or a current student seeking research guidance, submit your query here:
-            </p>
+          <p style="font-size: 0.92rem; color: #4A5568; line-height: 1.6; margin-bottom: 1.25rem;">
+            Whether you are a prospective student asking about B.Pharm eligibility or a current student seeking research guidance, submit your query here:
+          </p>
 
-            <form action="enquiry-form.php" method="POST" style="display: flex; flex-direction: column; gap: 0.85rem;">
-              <input type="text" name="name" required placeholder="Your Name" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #CBD5E0; border-radius: 8px; font-size: 0.92rem;">
-              <input type="email" name="email" required placeholder="Email Address" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #CBD5E0; border-radius: 8px; font-size: 0.92rem;">
-              <select name="topic" style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #CBD5E0; border-radius: 8px; font-size: 0.92rem;">
+          <form action="enquiry-form.php" method="POST" style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <div>
+              <input type="text" name="name" required placeholder="Your Name" style="width: 100%; padding: 0.75rem 1rem; border: 1.5px solid #CBD5E0; border-radius: 8px; font-size: 0.92rem; font-family: inherit;">
+            </div>
+            <div>
+              <input type="email" name="email" required placeholder="Email Address" style="width: 100%; padding: 0.75rem 1rem; border: 1.5px solid #CBD5E0; border-radius: 8px; font-size: 0.92rem; font-family: inherit;">
+            </div>
+            <div>
+              <select name="topic" style="width: 100%; padding: 0.75rem 1rem; border: 1.5px solid #CBD5E0; border-radius: 8px; font-size: 0.92rem; font-family: inherit; background: #FFFFFF;">
                 <option value="Admissions">Admissions &amp; Course Eligibility</option>
                 <option value="Research">Research Labs &amp; Instrumentation (HPLC/UV)</option>
                 <option value="Hospital">Hospital Immersion &amp; Internships</option>
                 <option value="Clubs">Student Clubs &amp; Campus Sports</option>
               </select>
-              <textarea name="question" rows="3" required placeholder="Type your question or topic here..." style="width: 100%; padding: 0.75rem 1rem; border: 1px solid #CBD5E0; border-radius: 8px; font-size: 0.92rem;"></textarea>
-              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.85rem;">
-                <span>Post Query to Student Academic Cell</span>
-              </button>
-            </form>
-          </div>
+            </div>
+            <div>
+              <textarea name="question" rows="3" required placeholder="Type your question or topic here..." style="width: 100%; padding: 0.75rem 1rem; border: 1.5px solid #CBD5E0; border-radius: 8px; font-size: 0.92rem; font-family: inherit;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 0.85rem; font-weight: 700;">
+              <span>Submit to Student Academic Cell</span>
+            </button>
+          </form>
         </div>
-
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- SECTION 2: LIVE EVENTS & WEBINARS -->
   <section class="section section-alt" id="live-events" aria-labelledby="liveEventsTitle">
@@ -493,7 +524,7 @@ require_once __DIR__ . '/includes/nav.php';
   </section>
 
   <!-- SECTION 5: CAMPUS LIFE PHOTO GALLERY -->
-  <section class="section" aria-labelledby="galleryTitle">
+  <section class="section" id="gallery" aria-labelledby="galleryTitle">
     <div class="container-wide">
       <div class="section-header fade-up">
         <span class="section-subtitle">VISUAL WALKTHROUGH</span>
@@ -504,17 +535,33 @@ require_once __DIR__ . '/includes/nav.php';
       </div>
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
-        <div style="border-radius: 14px; overflow: hidden; height: 240px; box-shadow: 0 4px 14px rgba(0,0,0,0.08);">
-          <img src="assets/images/research-lab-modern.jpg" alt="VEL Pharmacy College Research Laboratory" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+        <div class="student-gallery-card fade-up">
+          <img src="assets/images/research-lab-modern.jpg" alt="VEL Pharmacy College Research Laboratory" loading="lazy">
+          <div class="student-gallery-caption">
+            <span>High-Tech Research Laboratory</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D6B56D" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
         </div>
-        <div style="border-radius: 14px; overflow: hidden; height: 240px; box-shadow: 0 4px 14px rgba(0,0,0,0.08);">
-          <img src="assets/images/sports-ground.jpg" alt="VEL Pharmacy College Sports Ground" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+        <div class="student-gallery-card fade-up">
+          <img src="assets/images/sports-ground.jpg" alt="VEL Pharmacy College Sports Ground" loading="lazy">
+          <div class="student-gallery-caption">
+            <span>Sprawling Multi-Acre Sports Ground</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D6B56D" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
         </div>
-        <div style="border-radius: 14px; overflow: hidden; height: 240px; box-shadow: 0 4px 14px rgba(0,0,0,0.08);">
-          <img src="assets/images/seminar-hall.jpg" alt="VEL Pharmacy College Seminar Hall & Conferences" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+        <div class="student-gallery-card fade-up">
+          <img src="assets/images/seminar-hall.jpg" alt="VEL Pharmacy College Seminar Hall & Conferences" loading="lazy">
+          <div class="student-gallery-caption">
+            <span>Academic Seminar Hall &amp; Symposia</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D6B56D" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
         </div>
-        <div style="border-radius: 14px; overflow: hidden; height: 240px; box-shadow: 0 4px 14px rgba(0,0,0,0.08);">
-          <img src="assets/images/library-main.jpg" alt="VEL Pharmacy College Central Library" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+        <div class="student-gallery-card fade-up">
+          <img src="assets/images/library-main.jpg" alt="VEL Pharmacy College Central Library" loading="lazy">
+          <div class="student-gallery-caption">
+            <span>Central Digital Library &amp; Journal Hub</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D6B56D" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
         </div>
       </div>
     </div>
@@ -540,7 +587,6 @@ require_once __DIR__ . '/includes/nav.php';
       </div>
     </div>
   </section>
-</main>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
 
