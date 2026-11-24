@@ -4366,6 +4366,14 @@ main > .section:last-of-type {
   letter-spacing: 0.04em;
 }
 
+.principal-badges {
+  margin-top: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+}
+
 
 /* Groups of Institutions Grid */
 .groups-grid {

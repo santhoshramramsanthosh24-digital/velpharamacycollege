@@ -207,9 +207,9 @@ $cta = $about_cms['cta_banner'] ?? [];
         <div class="principal-info">
           <h3><?= htmlspecialchars($principal['name'] ?? 'Dr. G. Saravanan') ?></h3>
           <span><?= htmlspecialchars($principal['qualification'] ?? '') ?> &bull; <?= htmlspecialchars($principal['designation'] ?? 'Professor & Principal') ?></span>
-          <div style="margin-top: 0.5rem;">
+          <div class="principal-badges" style="margin-top: 0.85rem; display: flex; flex-wrap: wrap; gap: 0.65rem; align-items: center;">
             <span class="badge-tag badge-tag-primary"><?= htmlspecialchars($principal['department'] ?? 'Department of Pharmaceutical Chemistry') ?></span>
-            <span class="badge-tag" style="margin-left: 0.35rem;"><?= htmlspecialchars($principal['experience'] ?? '18.5 Years Experience') ?></span>
+            <span class="badge-tag"><?= htmlspecialchars($principal['experience'] ?? '18.5 Years Experience') ?></span>
           </div>
         </div>
       </div>
