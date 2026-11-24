@@ -808,145 +808,6 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
 
 
 <!-- ==========================================================================
-     WHY VEL PHARMACY COLLEGE IS BETTER THAN OTHER COLLEGES IN & AROUND
-     ========================================================================== -->
-<section class="section why-vels-better-section" id="whyVelBetter" aria-labelledby="whyVelBetterTitle" style="background: #FFFFFF;">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-subtitle">COMPETITIVE EXCELLENCE &amp; TRUST</span>
-      <h2 class="section-title" id="whyVelBetterTitle">
-        Why VEL Pharmacy College is Better than Other Colleges In &amp; Around
-      </h2>
-      <p class="section-description">
-        Strategically located in the green VMCH Campus under VISTAS Deemed University, VEL Pharmacy College delivers a distinct clinical, technological, and research edge over standalone regional pharmacy colleges in Chennai, Tiruvallur, and Tamil Nadu.
-      </p>
-    </div>
-
-    <div class="why-better-grid">
-      <!-- Advantage 1 -->
-      <div class="why-better-card fade-up">
-        <div class="why-better-header">
-          <div class="why-better-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 9v4"/><path d="M10 11h4"/></svg>
-          </div>
-          <div>
-            <span class="why-better-num">Advantage 01</span>
-            <h3 class="why-better-title">On-Campus 300-Bed Teaching Hospital (VMCH)</h3>
-          </div>
-        </div>
-        <p class="why-better-desc">
-          Students train inside our own 300-bed multispecialty teaching hospital on campus. Daily clinical bedside ward rounds, prescription auditing, and inpatient case monitoring from Year 2 onwards.
-        </p>
-        <div class="why-better-comparison">
-          <strong>The VEL Difference:</strong>
-          Other regional colleges lack a medical hospital and send students on distant, occasional observation visits without hands-on clinical rounds.
-        </div>
-      </div>
-
-      <!-- Advantage 2 -->
-      <div class="why-better-card fade-up">
-        <div class="why-better-header">
-          <div class="why-better-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
-          </div>
-          <div>
-            <span class="why-better-num">Advantage 02</span>
-            <h3 class="why-better-title">Advanced Analytical Instrumentation Hub (HPLC &amp; UV)</h3>
-          </div>
-        </div>
-        <p class="why-better-desc">
-          Undergraduate students operate real High-Performance Liquid Chromatography (HPLC) isocratic/gradient systems and double-beam UV-Vis spectrophotometers for active API assays and dissolution profiling.
-        </p>
-        <div class="why-better-comparison">
-          <strong>The VEL Difference:</strong>
-          Most regional pharmacy colleges restrict analytical instrumentation to faculty or PG students, leaving B.Pharm students with basic glassware only.
-        </div>
-      </div>
-
-      <!-- Advantage 3 -->
-      <div class="why-better-card fade-up">
-        <div class="why-better-header">
-          <div class="why-better-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-          </div>
-          <div>
-            <span class="why-better-num">Advantage 03</span>
-            <h3 class="why-better-title">Computational Drug Discovery &amp; Molecular Docking</h3>
-          </div>
-        </div>
-        <p class="why-better-desc">
-          Dedicated high-performance computer-aided drug design (CADD) facility equipped with AutoDock, PyMOL, and QSAR modeling software to simulate protein-ligand binding and virtual screening.
-        </p>
-        <div class="why-better-comparison">
-          <strong>The VEL Difference:</strong>
-          We integrate Python and Machine Learning into the pharmacy curriculum under NEP 2020, positioning graduates for high-growth computational biology MNC roles.
-        </div>
-      </div>
-
-      <!-- Advantage 4 -->
-      <div class="why-better-card fade-up">
-        <div class="why-better-header">
-          <div class="why-better-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          </div>
-          <div>
-            <span class="why-better-num">Advantage 04</span>
-            <h3 class="why-better-title">Funded Research Projects &amp; Scopus Publications</h3>
-          </div>
-        </div>
-        <p class="why-better-desc">
-          Over 45+ research publications in Scopus and Web of Science indexed journals, funded student capstone research grants, and active faculty patent filings in drug formulation.
-        </p>
-        <div class="why-better-comparison">
-          <strong>The VEL Difference:</strong>
-          While other colleges focus solely on exam memorization, our doctorate faculty actively mentor undergraduate students to publish original research papers.
-        </div>
-      </div>
-
-      <!-- Advantage 5 -->
-      <div class="why-better-card fade-up">
-        <div class="why-better-header">
-          <div class="why-better-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          </div>
-          <div>
-            <span class="why-better-num">Advantage 05</span>
-            <h3 class="why-better-title">Vels University Network &amp; 90% Placements</h3>
-          </div>
-        </div>
-        <p class="why-better-desc">
-          Constituent off-campus center of VISTAS Deemed University with a 30+ year academic track record, 3,000+ annual campus recruiters across Vels Group, and guaranteed placement drives.
-        </p>
-        <div class="why-better-comparison">
-          <strong>The VEL Difference:</strong>
-          Graduates receive an esteemed Deemed University degree recognized globally by WES, US-FDA, and foreign licensure bodies rather than affiliated regional state colleges.
-        </div>
-      </div>
-
-      <!-- Advantage 6 -->
-      <div class="why-better-card fade-up">
-        <div class="why-better-header">
-          <div class="why-better-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-          </div>
-          <div>
-            <span class="why-better-num">Advantage 06</span>
-            <h3 class="why-better-title">Vibrant Student Life, Clubs &amp; Multi-Acre Sports</h3>
-          </div>
-        </div>
-        <p class="why-better-desc">
-          Sprawling green campus featuring full-size cricket and football grounds, floodlit courts, student innovation clubs, academic discussion forums, and health outreach camps.
-        </p>
-        <div class="why-better-comparison">
-          <strong>The VEL Difference:</strong>
-          True university campus experience with holistic athletic facilities, active student government, and collaborative peer learning.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==========================================================================
      VISIBLY SHOWCASED: ADVANCED RESEARCH LABORATORIES & INSTRUMENTATION HUB
      ========================================================================== -->
 <section class="section section-alt research-showcase-section" id="researchHub" aria-labelledby="researchHubTitle">
@@ -1237,20 +1098,60 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
 </section>
 
 <!-- FREQUENTLY ASKED QUESTIONS (AEO FAQ SECTION) -->
+<?php
+$faq_base_items = $faqs['items'] ?? [];
+
+$faq_comparative_items = [
+  [
+    'category' => 'Competitive Edge',
+    'question' => 'Why is VEL Pharmacy College better than other pharmacy colleges in Chennai and Tiruvallur?',
+    'answer' => 'Strategically located in the green VMCH Campus under VISTAS Deemed University, VEL Pharmacy College delivers a distinct clinical, technological, and research edge over standalone regional pharmacy colleges. Our students benefit from an on-campus 300-bed multispecialty teaching hospital for real bedside clinical rounds, advanced analytical instrumentation (HPLC and double-beam UV-Vis spectroscopy) directly accessible to undergraduates, in-silico computational drug discovery with molecular docking, over 45+ Scopus-indexed faculty research publications, and assured placements across the Vels network of 3,000+ annual recruiters.'
+  ],
+  [
+    'category' => 'Hospital Immersion',
+    'question' => 'How does having an on-campus 300-bed teaching hospital (VMCH) benefit pharmacy students compared to other colleges?',
+    'answer' => 'Unlike standalone regional colleges that lack medical hospital infrastructure and only send students on distant, occasional observation visits, students at VEL Pharmacy College train inside our own on-campus 300-bed Velammal Medical College Hospital (VMCH). From Year 2 onwards, students participate in daily clinical bedside ward rounds, prescription auditing, inpatient case studies, adverse drug reaction (ADR) monitoring, and therapeutic drug management alongside medical specialists.'
+  ],
+  [
+    'category' => 'Analytical Instrumentation',
+    'question' => 'What analytical instrumentation (HPLC & UV-Vis) access do undergraduate students receive?',
+    'answer' => 'Undergraduate B.Pharm students at VEL Pharmacy College receive direct, hands-on operating experience with High-Performance Liquid Chromatography (HPLC) isocratic/gradient systems with Photodiode Array (PDA) detectors, as well as double-beam UV-Visible spectrophotometers for active API assays, impurity profiling, and dissolution release kinetics. While most other regional colleges restrict such instrumentation to postgraduate researchers, our B.Pharm students run practical analyses independently.'
+  ],
+  [
+    'category' => 'Computational Discovery',
+    'question' => 'How does the computational drug discovery and molecular docking lab give students an advantage?',
+    'answer' => 'VEL Pharmacy College houses a dedicated computer-aided drug design (CADD) facility equipped with AutoDock Vina, PyMOL 3D visualization, MarvinSketch, and quantitative QSAR toolkits. Under NEP 2020, we integrate Python programming and Machine Learning into the pharmacy syllabus, preparing graduates for high-growth careers in computational biology, clinical data science, and global pharmaceutical MNCs.'
+  ],
+  [
+    'category' => 'Research & Patents',
+    'question' => 'What is the research, publication, and patent record of VEL Pharmacy College?',
+    'answer' => 'Our doctorate faculty have published over 45+ research articles in Scopus and Web of Science indexed international journals, with active patents in drug formulation and sponsored research grants. Students complete a mandatory 12-credit capstone dissertation with doctorate faculty mentorship, preparing them for higher studies and R&D careers.'
+  ],
+  [
+    'category' => 'University Advantage',
+    'question' => 'How does being an off-campus center of VISTAS Deemed University benefit students over affiliated colleges?',
+    'answer' => 'Graduates receive an esteemed Deemed to be University degree from VISTAS (accredited with an \'A\' grade and recognized globally by WES, US-FDA, and foreign licensure bodies) rather than an affiliated regional college certificate. Additionally, students leverage Vels Group\'s centralized placement ecosystem, connecting with over 3,000 corporate campus recruiters annually with verified packages.'
+  ],
+  [
+    'category' => 'Campus Life & Sports',
+    'question' => 'What campus life, student clubs, and athletic sports facilities are available?',
+    'answer' => 'Our sprawling green campus features multi-acre athletic facilities including a full turf cricket pitch, FIFA-standard football field, floodlit volleyball and badminton courts, and a modern indoor gymnasium. Students actively lead professional and cultural societies including the Pharma Innovators Club, Pharmacovigilance Society, Cultural Arts Club, and Red Ribbon Community Health Outreach wing.'
+  ]
+];
+?>
 <section class="section section-alt" aria-labelledby="faqTitle">
   <div class="container">
     <div class="section-header fade-up">
       <span class="section-subtitle"><?= htmlspecialchars($faqs['subtitle'] ?? 'Got Questions?') ?></span>
-      <h2 class="section-title" id="faqTitle"><?= htmlspecialchars($faqs['title'] ?? 'Frequently Asked Questions') ?>
-      </h2>
+      <h2 class="section-title" id="faqTitle"><?= htmlspecialchars($faqs['title'] ?? 'Frequently Asked Questions') ?></h2>
       <p class="section-description">
-        <?= htmlspecialchars($faqs['description'] ?? 'Direct answers to common questions about admissions, approvals, courses, and facilities at VEL Pharmacy College.') ?>
+        <?= htmlspecialchars($faqs['description'] ?? 'Direct answers to common questions about admissions, approvals, courses, facilities, and why VEL Pharmacy College leads in education.') ?>
       </p>
     </div>
 
     <div class="faq-wrap fade-up">
-      <?php if (!empty($faqs['items'])): ?>
-        <?php foreach ($faqs['items'] as $qIdx => $faqItem): ?>
+      <?php if (!empty($faq_base_items)): ?>
+        <?php foreach ($faq_base_items as $qIdx => $faqItem): ?>
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
               <span><?= htmlspecialchars($faqItem['question'] ?? '') ?></span>
@@ -1268,9 +1169,72 @@ $all_highlights = array_merge($base_highlights, $past_events_to_highlights);
           </div>
         <?php endforeach; ?>
       <?php endif; ?>
+
+      <!-- Comparative & Detailed FAQs ("Why VEL is Better") revealed via More Questions button -->
+      <?php foreach ($faq_comparative_items as $cIdx => $cFaq): ?>
+        <div class="faq-item faq-item-more">
+          <button class="faq-question" aria-expanded="false">
+            <span>
+              <span class="badge-tag badge-tag-secondary" style="font-size: 0.72rem; padding: 0.18rem 0.55rem; margin-right: 0.6rem; vertical-align: middle;"><?= htmlspecialchars($cFaq['category']) ?></span>
+              <?= htmlspecialchars($cFaq['question']) ?>
+            </span>
+            <span class="faq-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              <?= htmlspecialchars($cFaq['answer']) ?>
+            </div>
+          </div>
+        </div>
+      <?php endforeach; ?>
     </div>
 
-    <!-- QUICK FACTS BLOCK (AEO/GEO Citable Data) -->
+    <!-- More Questions Toggle Button -->
+    <div class="faq-more-wrap text-center fade-up" style="margin-top: 2.25rem; text-align: center;">
+      <button type="button" class="btn btn-outline" id="btnToggleFaqMore" aria-expanded="false" style="border: 2px solid #D6B56D; color: #FFFFFF; font-weight: 700; padding: 0.85rem 2.25rem; border-radius: 30px; display: inline-flex; align-items: center; gap: 0.65rem; background: rgba(255,255,255,0.08); cursor: pointer; transition: all 0.3s ease;">
+        <span id="faqMoreBtnText">More Questions (Why VEL is Better)</span>
+        <svg id="faqMoreBtnIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="transition: transform 0.3s ease;"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </button>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var btnToggle = document.getElementById('btnToggleFaqMore');
+        if (btnToggle) {
+          btnToggle.addEventListener('click', function () {
+            var hiddenItems = document.querySelectorAll('.faq-item-more');
+            var isExpanded = btnToggle.getAttribute('aria-expanded') === 'true';
+            hiddenItems.forEach(function (item) {
+              if (isExpanded) {
+                item.classList.remove('is-visible');
+                item.classList.remove('active');
+                var ans = item.querySelector('.faq-answer');
+                if (ans) ans.style.maxHeight = null;
+              } else {
+                item.classList.add('is-visible');
+              }
+            });
+            btnToggle.setAttribute('aria-expanded', !isExpanded);
+            var btnText = document.getElementById('faqMoreBtnText');
+            var btnIcon = document.getElementById('faqMoreBtnIcon');
+            if (btnText) {
+              btnText.textContent = isExpanded ? 'More Questions (Why VEL is Better)' : 'Show Fewer Questions';
+            }
+            if (btnIcon) {
+              btnIcon.style.transform = isExpanded ? 'rotate(0deg)' : 'rotate(180deg)';
+            }
+          });
+        }
+      });
+    </script>
+  </div>
+</section>
+
+<!-- QUICK FACTS BLOCK (AEO/GEO Citable Data) -->
     <!--<div class="quick-facts-box fade-up">
       <h3 class="quick-facts-title">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

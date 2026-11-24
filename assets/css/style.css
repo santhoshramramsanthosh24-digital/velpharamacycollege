@@ -7242,6 +7242,34 @@ main > .section:last-of-type {
   }
 }
 
+/* FAQ Expandable Items & Toggle Button */
+.faq-item-more {
+  display: none;
+}
+
+.faq-item-more.is-visible {
+  display: block !important;
+  animation: fadeInFaq 0.35s ease;
+}
+
+#btnToggleFaqMore:hover {
+  background: #D6B56D !important;
+  color: #1E6A4D !important;
+  border-color: #D6B56D !important;
+}
+
+@keyframes fadeInFaq {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 
 
