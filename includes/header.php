@@ -142,7 +142,7 @@ if (!isset($page_keywords)) {
     "name": "Vel Pharmacy College",
     "alternateName": ["Vels Pharmacy College", "VPC Manjankaranai"],
     "url": "https://velpharmacycollege.com",
-    "logo": "https://velpharmacycollege.com/assets/images/VPC NEW LOGO.jpeg",
+    "logo": "https://velpharmacycollege.com/assets/images/VPC NEW LOGO.png",
     "image": "https://velpharmacycollege.com/assets/images/campus-front.jpg",
     "description": "Vel Pharmacy College is an off-campus center of Vels Institute of Science, Technology & Advanced Studies (VISTAS) located at VMCH Campus, Manjankaranai, Tiruvallur, offering PCI-approved B.Pharm degree program.",
     "telephone": "+918122613300",

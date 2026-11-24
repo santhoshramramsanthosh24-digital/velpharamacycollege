@@ -337,16 +337,16 @@ p:last-child { margin-bottom: 0; }
 }
 
 .brand-logo-large {
-  height: clamp(120px, 11vw, 155px);
+  height: clamp(165px, 15vw, 215px);
   width: auto;
-  max-width: min(700px, 92vw);
+  max-width: min(950px, 95vw);
   object-fit: contain;
   display: block;
   transition: all 0.3s ease;
 }
 
 .site-header.scrolled .brand-logo-large {
-  height: clamp(120px, 11vw, 155px); /* Stays big in that place itself */
+  height: clamp(165px, 15vw, 215px); /* Stays big in that place itself */
 }
 
 /* ==========================================================================
