@@ -52,14 +52,14 @@ $cta = $about_cms['cta_banner'] ?? [];
           <span class="breadcrumb-separator">/</span>
           <span class="breadcrumb-current" aria-current="page">About Us</span>
         </nav>
-        <h1 class="page-title"><?= htmlspecialchars($banner['title'] ?? 'About VEL Pharmacy College') ?></h1>
+        <h1 class="page-title"><?= htmlspecialchars($banner['title'] ?? 'About VEL Pharmacy College Manjankaranai') ?></h1>
         <p class="page-subtitle">
           <?= htmlspecialchars($banner['subtitle'] ?? 'An off-campus center of VELS Institute of Science, Technology & Advanced Studies (VISTAS Deemed University), dedicated to excellence in pharmaceutical sciences, clinical training, and healthcare ethics.') ?>
         </p>
       </div>
       <div class="page-banner-media">
         <div class="page-banner-img-frame">
-          <img src="<?= htmlspecialchars($banner['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="<?= htmlspecialchars($banner['title'] ?? 'VEL Pharmacy College') ?>" class="page-banner-img" loading="eager" width="480" height="250">
+          <img src="<?= htmlspecialchars($banner['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="<?= htmlspecialchars($banner['title'] ?? 'VEL Pharmacy College Manjankaranai') ?>" class="page-banner-img" loading="eager" width="480" height="250">
         </div>
       </div>
     </div>

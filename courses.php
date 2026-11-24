@@ -774,7 +774,7 @@ $ga_meta_map = [
       ?>
       <div class="text-center" style="position: relative; z-index: 2; max-width: 800px; margin: 0 auto;">
         <span style="display: inline-block; background: rgba(255,255,255,0.15); color: #F5F7F4; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; padding: 0.35rem 1rem; border-radius: var(--radius-full); margin-bottom: 1.25rem; backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.2);">
-          <?= htmlspecialchars($c_cta['badge'] ?? 'Admissions Open • B.Pharm Program') ?>
+          <?= htmlspecialchars($c_cta['badge'] ?? 'Admissions Open • B.Pharm 2027–2028') ?>
         </span>
         <h2 style="font-family: var(--font-heading); font-size: 2.25rem; color: #F5F7F4; margin-bottom: 1rem; text-shadow: 0 2px 10px rgba(0,0,0,0.35);">
           <?= htmlspecialchars($c_cta['title'] ?? 'Join VEL Pharmacy College Under the Modern NEP 2020 Framework') ?>
@@ -784,7 +784,7 @@ $ga_meta_map = [
         </p>
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
           <a href="<?= htmlspecialchars($c_cta['btn1_link'] ?? 'enquiry') ?>" class="btn" style="background: #D6B56D; color: #1E6A4D; font-weight: 700; box-shadow: 0 4px 14px rgba(217,119,6,0.35);">
-            <span><?= htmlspecialchars($c_cta['btn1_text'] ?? 'Submit Online Admission Enquiry') ?></span>
+            <span><?= htmlspecialchars($c_cta['btn1_text'] ?? 'Apply Online 2027-28') ?></span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
           <a href="<?= htmlspecialchars($c_cta['btn2_link'] ?? 'tel:+918122613300') ?>" class="btn" style="background: rgba(255,255,255,0.15); color: #F5F7F4; border: 1px solid rgba(255,255,255,0.3); backdrop-filter: blur(8px);">

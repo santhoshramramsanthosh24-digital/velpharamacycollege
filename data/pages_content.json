@@ -26,7 +26,7 @@
     "footer_badge_1": "30+ Yrs Legacy",
     "footer_badge_2": "11 Campuses",
     "footer_copyright": "VEL Pharmacy College. All Rights Reserved. Member institution of VISTAS.",
-    "admissions_cta_text": "Apply Online 2026",
+    "admissions_cta_text": "Apply Online 2027-28",
     "preloader_video": "assets/videos/vel-pharmacy-logo-animation.mp4"
   },
   "general_contact": {
@@ -424,7 +424,7 @@
   },
   "about_us": {
     "banner": {
-      "title": "About VEL Pharmacy College Chennai",
+      "title": "About VEL Pharmacy College Manjankaranai",
       "subtitle": "An off-campus center of VELS Institute of Science, Technology & Advanced Studies (VISTAS Deemed University), dedicated to excellence in pharmaceutical sciences, clinical training, and healthcare ethics.",
       "image": "assets/images/library-main.jpg",
       "badge": "30+ Years Educational Legacy"
@@ -776,10 +776,10 @@
       ]
     },
     "cta_banner": {
-      "badge": "Admissions Open • B.Pharm Program",
+      "badge": "Admissions Open • B.Pharm 2027–2028",
       "title": "Join VEL Pharmacy College Under the Modern NEP 2020 Framework",
       "subtitle": "Merit-based admissions for +2 passed students (PCM/PCB) and lateral entry for D.Pharm holders. Connect with our admissions desk to secure your academic future today.",
-      "btn1_text": "Submit Online Admission Enquiry",
+      "btn1_text": "Apply Online 2027-28",
       "btn1_link": "enquiry",
       "btn2_text": "Call: +91 812 261 3300",
       "btn2_link": "tel:+918122613300"
@@ -1055,10 +1055,10 @@
   },
   "enquiry": {
     "banner": {
-      "title": "Online Admissions & Counseling Enquiry",
+      "title": "Online Admissions & Counseling Enquiry 2027–2028",
       "subtitle": "Take the first step toward a rewarding career in pharmaceutical science and healthcare. Submit your details below and our admissions counseling team will contact you.",
       "image": "assets/images/hero-pharmacy-showcase.jpg",
-      "badge": "Batch 2026–2027 Admissions Open"
+      "badge": "Batch 2027–2028 Admissions Open"
     },
     "intro": {
       "badge_pill": "Batch 2027–2028",

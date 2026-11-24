@@ -22,7 +22,7 @@ $nav_tw = $gen_contact['social_links']['twitter'] ?? ($gen_settings['social_twit
 $nav_apply_txt = $gen_settings['admissions_cta_text'] ?? ($gen_settings['nav_apply_text'] ?? 'Apply Now');
 $nav_apply_lnk = $gen_settings['admissions_cta_url'] ?? ($gen_settings['nav_apply_link'] ?? 'enquiry');
 $home_cms_data = $cms_content['home_page'] ?? [];
-$nav_announcement = $home_cms_data['announcement_text'] ?? ($gen_contact['admission_status'] ?? 'Admission Open for 2024–2025 Batch: 4-Year B.Pharm Degree Program (PCI Approved) • Merit-based entry for +2 PCM/PCB students');
+$nav_announcement = $home_cms_data['announcement_text'] ?? ($gen_contact['admission_status'] ?? 'Admission Open for 2027–2028 Batch: 4-Year B.Pharm Degree Program (PCI Approved) • Merit-based entry for +2 PCM/PCB students');
 ?>
 <header class="site-header" id="siteHeader">
   <!-- Tier 1: Centered Big Official Logo with Contact Underneath & Social Icons in Top Right -->

@@ -55,7 +55,7 @@ if ($cms_seo) {
 }
 
 if (!isset($page_title)) {
-  $page_title = "VEL Pharmacy College | B.Pharm Admissions 2024-2025 | Approved by PCI";
+  $page_title = "VEL Pharmacy College | B.Pharm Admissions 2027-2028 | Approved by PCI";
 }
 if (!isset($page_description)) {
   $page_description = "VEL Pharmacy College, an off-campus center of VISTAS Deemed University located at VMCH Campus, Manjankaranai, Tiruvallur. Offering 4-year B.Pharm degree approved by Pharmacy Council of India.";

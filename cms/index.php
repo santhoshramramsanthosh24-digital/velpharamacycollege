@@ -896,7 +896,7 @@ if (!function_exists('cms_render_image_field')) {
                     <div class="cms-form-group">
                       <label class="cms-form-label">Primary CTA Label</label>
                       <input type="text" id="h_cta_primary_text" class="cms-form-control"
-                        value="<?= htmlspecialchars($home_data['cta_primary_text'] ?? 'Apply for B.Pharm 2024–2025') ?>">
+                        value="<?= htmlspecialchars($home_data['cta_primary_text'] ?? 'Apply for B.Pharm 2027–2028') ?>">
                     </div>
                     <div class="cms-form-group">
                       <label class="cms-form-label">Primary CTA Link</label>
@@ -929,7 +929,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">Notice Ticker Announcement Text</label>
                     <input type="text" id="h_announcement" class="cms-form-control"
-                      value="<?= htmlspecialchars($home_data['announcement_text'] ?? 'Admission Open for 2024–2025 Batch: 4-Year B.Pharm Degree Program (PCI Approved)') ?>">
+                      value="<?= htmlspecialchars($home_data['announcement_text'] ?? 'Admission Open for 2027–2028 Batch: 4-Year B.Pharm Degree Program (PCI Approved)') ?>">
                   </div>
                 </div>
               </div>
@@ -1517,13 +1517,13 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">CTA Banner Subtitle</label>
                     <textarea id="h_cta_desc" class="cms-form-control"
-                      rows="3"><?= htmlspecialchars($home_data['bottom_cta']['desc'] ?? 'Admissions are open for the 2024–2025 academic batch. Secure your seat in our PCI-approved B.Pharm program.') ?></textarea>
+                      rows="3"><?= htmlspecialchars($home_data['bottom_cta']['desc'] ?? 'Admissions are open for the 2027–2028 academic batch. Secure your seat in our PCI-approved B.Pharm program.') ?></textarea>
                   </div>
                   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                     <div class="cms-form-group">
                       <label class="cms-form-label">Button Text</label>
                       <input type="text" id="h_cta_btn_text" class="cms-form-control"
-                        value="<?= htmlspecialchars($home_data['bottom_cta']['btn_text'] ?? 'Apply for B.Pharm 2024–2025') ?>">
+                        value="<?= htmlspecialchars($home_data['bottom_cta']['btn_text'] ?? 'Apply for B.Pharm 2027–2028') ?>">
                     </div>
                     <div class="cms-form-group">
                       <label class="cms-form-label">Button Link</label>
@@ -1732,7 +1732,7 @@ if (!function_exists('cms_render_image_field')) {
                       <div class="cms-form-group">
                         <label class="cms-form-label">Button Text</label>
                         <input type="text" id="ab_cta_btn_text" class="cms-form-control"
-                          value="<?= htmlspecialchars($about_data['bottom_cta']['btn_text'] ?? 'Apply for B.Pharm 2024–2025') ?>">
+                          value="<?= htmlspecialchars($about_data['bottom_cta']['btn_text'] ?? 'Apply for B.Pharm 2027–2028') ?>">
                       </div>
                       <div class="cms-form-group">
                         <label class="cms-form-label">Button Link</label>
@@ -2532,7 +2532,7 @@ if (!function_exists('cms_render_image_field')) {
                   <div class="cms-form-group">
                     <label class="cms-form-label">Button Label</label>
                     <input type="text" id="fac_pl_btn_text" class="cms-form-control"
-                      value="<?= htmlspecialchars($pl['btn_text'] ?? 'Apply Now for B.Pharm 2024-25') ?>">
+                      value="<?= htmlspecialchars($pl['btn_text'] ?? 'Apply Now for B.Pharm 2027-28') ?>">
                   </div>
                   <div class="cms-form-group">
                     <label class="cms-form-label">Button Link</label>
@@ -3058,7 +3058,7 @@ if (!function_exists('cms_render_image_field')) {
           <div class="cms-form-group">
             <label class="cms-form-label">Banner Page Title</label>
             <input type="text" id="enq_banner_title" class="cms-form-control"
-              value="<?= htmlspecialchars($enquiry_data['banner']['title'] ?? 'Admission Enquiry Form 2024–2025') ?>">
+              value="<?= htmlspecialchars($enquiry_data['banner']['title'] ?? 'Admission Enquiry Form 2027–2028') ?>">
           </div>
           <div class="cms-form-group">
             <label class="cms-form-label">Banner Subtitle</label>
@@ -3068,13 +3068,13 @@ if (!function_exists('cms_render_image_field')) {
           <div class="cms-form-group">
             <label class="cms-form-label">Banner Badge Text</label>
             <input type="text" id="enq_banner_badge" class="cms-form-control"
-              value="<?= htmlspecialchars($enquiry_data['banner']['badge'] ?? 'Batch 2024–2025 Open') ?>">
+              value="<?= htmlspecialchars($enquiry_data['banner']['badge'] ?? 'Batch 2027–2028 Open') ?>">
           </div>
           <?php cms_render_image_field('Banner Image URL', 'enq_banner_image', $enquiry_data['banner']['image'] ?? 'assets/images/hero-pharmacy-showcase.jpg'); ?>
           <div class="cms-form-group">
             <label class="cms-form-label">Form Section Badge Pill</label>
             <input type="text" id="enq_intro_badge" class="cms-form-control"
-              value="<?= htmlspecialchars($enquiry_data['intro']['badge_pill'] ?? 'Batch 2024–2025') ?>">
+              value="<?= htmlspecialchars($enquiry_data['intro']['badge_pill'] ?? 'Batch 2027–2028') ?>">
           </div>
           <div class="cms-form-group">
             <label class="cms-form-label">Form Section Heading</label>
