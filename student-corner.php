@@ -111,7 +111,7 @@ require_once __DIR__ . '/includes/header.php';
      QUICK SECTION NAVIGATION & LIVE CAMPUS LIFE STATS STRIP
      ========================================================================== -->
 <nav class="student-quick-nav-bar" aria-label="Student Corner Quick Navigation">
-  <div class="container-wide">
+  <div class="container">
     <div class="student-quick-nav-inner">
       <div class="student-nav-pills">
         <a href="#discussions" class="student-nav-pill">
@@ -138,8 +138,11 @@ require_once __DIR__ . '/includes/header.php';
 
       <div class="student-quick-stats">
         <div class="sq-stat"><span class="sq-num">4+</span> <span class="sq-lbl">Active Clubs</span></div>
+        <span class="sq-divider" aria-hidden="true">•</span>
         <div class="sq-stat"><span class="sq-num">300</span> <span class="sq-lbl">Bed Hospital</span></div>
+        <span class="sq-divider" aria-hidden="true">•</span>
         <div class="sq-stat"><span class="sq-num">Multi-Acre</span> <span class="sq-lbl">Sports Grounds</span></div>
+        <span class="sq-divider" aria-hidden="true">•</span>
         <div class="sq-stat"><span class="sq-num">100%</span> <span class="sq-lbl">Peer Mentorship</span></div>
       </div>
     </div>
