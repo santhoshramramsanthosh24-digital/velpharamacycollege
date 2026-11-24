@@ -119,19 +119,31 @@ $cta = $about_cms['cta_banner'] ?? [];
       </p>
     </div>
 
-    <div class="about-legacy-card fade-up">
-      <div style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-primary-dark); margin-bottom: 1.5rem; line-height: 1.5;">
-        <?= htmlspecialchars($legacy['card_heading'] ?? 'A Legacy Built on Educational Philanthropy & Academic Vision') ?>
+    <div class="about-legacy-grid fade-up">
+      <!-- Left Side: College Image -->
+      <div class="about-legacy-image-wrap">
+        <img src="<?= htmlspecialchars($legacy['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="Vel Pharmacy College Campus" loading="lazy" width="600" height="500">
+        <div class="about-legacy-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>30+ Years Academic Legacy • VISTAS Campus</span>
+        </div>
       </div>
-      <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 1.5rem;">
-        <?= htmlspecialchars($legacy['p1'] ?? '') ?>
-      </p>
-      <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 1.5rem;">
-        <?= htmlspecialchars($legacy['p2'] ?? '') ?>
-      </p>
-      <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-muted);">
-        <?= htmlspecialchars($legacy['p3'] ?? '') ?>
-      </p>
+
+      <!-- Right Side: White Legacy Box -->
+      <div class="about-legacy-card">
+        <div style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-primary-dark); margin-bottom: 1.5rem; line-height: 1.5;">
+          <?= htmlspecialchars($legacy['card_heading'] ?? 'A Legacy Built on Educational Philanthropy & Academic Vision') ?>
+        </div>
+        <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+          <?= htmlspecialchars($legacy['p1'] ?? '') ?>
+        </p>
+        <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+          <?= htmlspecialchars($legacy['p2'] ?? '') ?>
+        </p>
+        <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-muted);">
+          <?= htmlspecialchars($legacy['p3'] ?? '') ?>
+        </p>
+      </div>
     </div>
   </div>
 </section>

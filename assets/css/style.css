@@ -6128,15 +6128,97 @@ main > .section:last-of-type {
   word-break: break-word;
 }
 
+/* Legacy 2-Column Showcase (Left: College Image, Right: White Legacy Box) */
+.about-legacy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2.5rem;
+  align-items: stretch;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.about-legacy-image-wrap {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1.5px solid #D6B56D;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+  min-height: 440px;
+  background-color: var(--color-primary-dark);
+}
+
+.about-legacy-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.about-legacy-image-wrap:hover img {
+  transform: scale(1.03);
+}
+
+.about-legacy-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  background: rgba(30, 106, 77, 0.94);
+  color: #F5F7F4;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  font-weight: 700;
+  border: 1px solid #D6B56D;
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-legacy-badge svg {
+  flex-shrink: 0;
+  color: #D6B56D;
+}
+
 .about-legacy-card {
   background: #FFFFFF;
   border-radius: var(--radius-xl);
   border: 1.5px solid #D6B56D;
   box-shadow: 0 10px 30px rgba(30, 106, 77, 0.08);
-  padding: 3.5rem;
+  padding: 3.25rem 3rem;
   max-width: 960px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.about-legacy-grid .about-legacy-card {
+  max-width: 100%;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 991px) {
+  .about-legacy-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .about-legacy-image-wrap {
+    min-height: 320px;
+    max-height: 420px;
+  }
+
+  .about-legacy-grid .about-legacy-card {
+    padding: 2.25rem 1.5rem;
+  }
 }
 
 /* Anti-Ragging Policy Section */
