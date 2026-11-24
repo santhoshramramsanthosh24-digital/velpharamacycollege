@@ -249,9 +249,9 @@ if (!isset($page_keywords)) {
   <?php if ($show_site_preloader): ?>
     <!-- Starting Page Loading Screen: Official Logo Animation Video -->
     <div id="sitePreloader" class="site-preloader" role="dialog" aria-modal="true"
-      aria-label="Loading VEL Pharmacy College">
+      aria-label="Loading VEL Pharmacy College" style="background-color: #FFFFFF;">
       <div class="preloader-content">
-        <div class="preloader-video-wrapper">
+        <div class="preloader-video-wrapper" style="background: #FFFFFF;">
           <video id="preloaderVideo" class="preloader-video" playsinline muted autoplay preload="auto">
             <source src="<?= htmlspecialchars($preloader_video) ?>" type="video/mp4">
           </video>
