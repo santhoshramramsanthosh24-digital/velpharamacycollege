@@ -110,7 +110,7 @@ $cta = $about_cms['cta_banner'] ?? [];
 
 <!-- SECTION 2: GENESIS & FOUNDING LEGACY -->
 <section class="section section-alt" aria-labelledby="historyTitle">
-  <div class="container">
+  <div class="container-wide" style="max-width: 1480px;">
     <div class="section-header fade-up">
       <span class="section-subtitle"><?= htmlspecialchars($legacy['subtitle'] ?? 'Heritage & Foundation') ?></span>
       <h2 class="section-title" id="historyTitle"><?= htmlspecialchars($legacy['title'] ?? 'Our Institutional Journey') ?></h2>
@@ -120,7 +120,7 @@ $cta = $about_cms['cta_banner'] ?? [];
     </div>
 
     <div class="about-legacy-grid fade-up">
-      <!-- Left Side: College Image -->
+      <!-- Left Side: College Image (Landscape Orientation) -->
       <div class="about-legacy-image-wrap">
         <img src="<?= htmlspecialchars($legacy['image'] ?? 'assets/images/campus-front.jpg') ?>" alt="Vel Pharmacy College Campus" loading="lazy" width="600" height="500">
         <div class="about-legacy-badge">
@@ -129,20 +129,18 @@ $cta = $about_cms['cta_banner'] ?? [];
         </div>
       </div>
 
-      <!-- Right Side: White Legacy Box -->
+      <!-- Right Side: White Legacy Box (Landscape Presentation) -->
       <div class="about-legacy-card">
-        <div style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--color-primary-dark); margin-bottom: 1.5rem; line-height: 1.5;">
+        <div class="about-legacy-heading">
           <?= htmlspecialchars($legacy['card_heading'] ?? 'A Legacy Built on Educational Philanthropy & Academic Vision') ?>
         </div>
-        <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 1.5rem;">
+        <p class="about-legacy-lead">
           <?= htmlspecialchars($legacy['p1'] ?? '') ?>
         </p>
-        <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 1.5rem;">
-          <?= htmlspecialchars($legacy['p2'] ?? '') ?>
-        </p>
-        <p style="font-size: 1rem; line-height: 1.8; color: var(--color-text-muted);">
-          <?= htmlspecialchars($legacy['p3'] ?? '') ?>
-        </p>
+        <div class="about-legacy-columns">
+          <p><?= htmlspecialchars($legacy['p2'] ?? '') ?></p>
+          <p><?= htmlspecialchars($legacy['p3'] ?? '') ?></p>
+        </div>
       </div>
     </div>
   </div>

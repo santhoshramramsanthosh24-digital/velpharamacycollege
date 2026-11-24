@@ -2276,7 +2276,8 @@ main > .section:last-of-type {
 .section-alt .course-title,
 .section-alt .why-card-title,
 .section-alt .principal-info h3,
-.section-alt .about-legacy-card h3 {
+.section-alt .about-legacy-card h3,
+.section-alt .about-legacy-heading {
   color: #1E6A4D !important;
 }
 
@@ -6128,13 +6129,13 @@ main > .section:last-of-type {
   word-break: break-word;
 }
 
-/* Legacy 2-Column Showcase (Left: College Image, Right: White Legacy Box) */
+/* Legacy 2-Column Showcase (Left: College Image, Right: White Legacy Box - Landscape Format) */
 .about-legacy-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 2.5rem;
+  grid-template-columns: 0.82fr 1.35fr;
+  gap: 2.25rem;
   align-items: stretch;
-  max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -6144,7 +6145,7 @@ main > .section:last-of-type {
   overflow: hidden;
   border: 1.5px solid #D6B56D;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
-  min-height: 440px;
+  min-height: 400px;
   background-color: var(--color-primary-dark);
 }
 
@@ -6163,9 +6164,9 @@ main > .section:last-of-type {
 
 .about-legacy-badge {
   position: absolute;
-  bottom: 1.5rem;
-  left: 1.5rem;
-  right: 1.5rem;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  right: 1.25rem;
   background: rgba(30, 106, 77, 0.94);
   color: #F5F7F4;
   padding: 0.75rem 1.25rem;
@@ -6190,10 +6191,9 @@ main > .section:last-of-type {
   border-radius: var(--radius-xl);
   border: 1.5px solid #D6B56D;
   box-shadow: 0 10px 30px rgba(30, 106, 77, 0.08);
-  padding: 3.25rem 3rem;
-  max-width: 960px;
-  margin: 0 auto;
+  padding: 2.75rem 2.75rem;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .about-legacy-grid .about-legacy-card {
@@ -6205,19 +6205,54 @@ main > .section:last-of-type {
   justify-content: center;
 }
 
-@media (max-width: 991px) {
+.about-legacy-heading {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.15rem;
+  line-height: 1.45;
+}
+
+.about-legacy-lead {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+}
+
+.about-legacy-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.75rem;
+}
+
+.about-legacy-columns p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+@media (max-width: 1100px) {
   .about-legacy-grid {
     grid-template-columns: 1fr;
-    gap: 1.75rem;
+    gap: 2rem;
   }
 
   .about-legacy-image-wrap {
     min-height: 320px;
     max-height: 420px;
   }
+}
 
-  .about-legacy-grid .about-legacy-card {
-    padding: 2.25rem 1.5rem;
+@media (max-width: 640px) {
+  .about-legacy-columns {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-legacy-card {
+    padding: 1.75rem 1.25rem !important;
   }
 }
 
