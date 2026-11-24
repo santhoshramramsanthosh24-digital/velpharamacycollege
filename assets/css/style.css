@@ -6740,9 +6740,9 @@ main > .section:last-of-type {
    ========================================================================== */
 .research-showcase-section {
   background-color: #FFFFFF !important;
-  padding: clamp(5rem, 6.5vw, 7rem) 0;
-  border-top: 1px solid rgba(30, 106, 77, 0.1);
-  border-bottom: 1px solid rgba(30, 106, 77, 0.1);
+  padding: clamp(4.5rem, 6vw, 6.5rem) 0;
+  border-top: 1px solid rgba(30, 106, 77, 0.08);
+  border-bottom: 1px solid rgba(30, 106, 77, 0.08);
   position: relative;
 }
 

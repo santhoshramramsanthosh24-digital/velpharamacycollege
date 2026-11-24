@@ -916,9 +916,9 @@
   },
   "faculties_page": {
     "banner": {
-      "title": "Distinguished Pharmacy Faculty Directory",
-      "subtitle": "Meet the esteemed pharmacy educators and research mentors at VEL Pharmacy College, led by Principal Dr. G. Saravanan. Doctorate professors, dedicated researchers, and PCI-approved cadre.",
-      "image": "assets/images/Faculty/Dr. G. Saravanan.png",
+      "title": "Faculty Directory & Academic Mentors",
+      "subtitle": "Guided by seasoned pharmaceutical academicians, doctoral researchers, and industrial clinicians committed to individualized laboratory mentorship and scholarly distinction.",
+      "image": "assets/images/Group_pic.jpg",
       "badge": "PCI Approved Cadre"
     },
     "intro": {

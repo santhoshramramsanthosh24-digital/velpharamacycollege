@@ -480,6 +480,7 @@ foreach ($faculties as $f) {
 $cms_content_file = __DIR__ . '/data/pages_content.json';
 $cms_content = file_exists($cms_content_file) ? (json_decode(file_get_contents($cms_content_file), true) ?: []) : [];
 $fac_page_cms = $cms_content['faculties_page'] ?? [];
+$banner = $fac_page_cms['banner'] ?? [];
 
 include __DIR__ . '/includes/header.php';
 ?>
@@ -488,60 +489,60 @@ include __DIR__ . '/includes/header.php';
 <link rel="stylesheet" href="assets/css/faculty-modern.css?v=<?= time() ?>">
 
 <!-- ==========================================================================
-     MODERN ACADEMIC HERO & STATS COUNTER BANNER
+     PAGE BANNER WITH BREADCRUMB & RELATED IMAGE BOX (MATCHING LEADERSHIP DESIGN)
      ========================================================================== -->
-<section class="faculty-hero-section" aria-label="Faculty Directory Hero Banner">
-  <div class="faculty-hero-bg-pattern"></div>
-  <div class="faculty-hero-container">
-
-    <!-- Breadcrumb -->
-    <nav class="breadcrumb" aria-label="Breadcrumbs" style="margin-bottom: 1.25rem;">
-      <a href="/" style="color: #F5F7F4;">Home</a>
-      <span class="breadcrumb-separator" style="color: #D6B56D;">/</span>
-      <span class="breadcrumb-current" aria-current="page" style="color: #D6B56D; font-weight: 600;">Faculty
-        Directory</span>
-    </nav>
-
-    <!-- Top Badge -->
-    <div class="faculty-badge-pill">
-      <span class="pulse-dot"></span>
-      <span><?= htmlspecialchars($fac_page_cms['banner']['badge'] ?? 'Esteemed Academic Cadre • 2024–2025') ?></span>
-    </div>
-
-    <h1 class="faculty-hero-title">
-      <?= htmlspecialchars($fac_page_cms['banner']['title'] ?? 'Distinguished Faculty & Research Mentors') ?>
-    </h1>
-
-    <p class="faculty-hero-desc">
-      <?= htmlspecialchars($fac_page_cms['banner']['subtitle'] ?? "VEL Pharmacy College is guided by seasoned pharmaceutical academicians, doctoral researchers, and industrial clinicians. Led by Principal Dr. G. Saravanan, our PCI-approved faculty blends theoretical mastery with individualized laboratory mentorship to shape tomorrow's healthcare innovators.") ?>
-    </p>
-
-    <!-- Live Academic Stats Strip -->
-    <div class="faculty-stats-strip">
-      <div class="faculty-stat-card">
-        <div class="faculty-stat-num"><?= count($faculties) ?></div>
-        <div class="faculty-stat-label">Full-Time Faculty</div>
+<section class="page-banner" aria-label="Page Title Banner">
+  <div class="container-wide">
+    <div class="page-banner-box">
+      <div class="page-banner-content">
+        <nav class="breadcrumb" aria-label="Breadcrumbs">
+          <a href="/">Home</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current" aria-current="page">Faculty Directory</span>
+        </nav>
+        <h1 class="page-title"><?= htmlspecialchars($banner['title'] ?? 'Faculty Directory & Academic Mentors') ?></h1>
+        <p class="page-subtitle">
+          <?= htmlspecialchars($banner['subtitle'] ?? 'Guided by seasoned pharmaceutical academicians, doctoral researchers, and industrial clinicians committed to individualized laboratory mentorship and scholarly distinction.') ?>
+        </p>
       </div>
-      <div class="faculty-stat-card">
-        <div class="faculty-stat-num">100%</div>
-        <div class="faculty-stat-label">PCI Approved Cadre</div>
-      </div>
-      <div class="faculty-stat-card">
-        <div class="faculty-stat-num"><?= $doc_count ?></div>
-        <div class="faculty-stat-label">Doctorate Scholars</div>
-      </div>
-      <div class="faculty-stat-card">
-        <div class="faculty-stat-num">15:1</div>
-        <div class="faculty-stat-label">Student-Faculty Ratio</div>
-      </div>
-      <div class="faculty-stat-card">
-        <div class="faculty-stat-num"><?= count($dept_counts) ?></div>
-        <div class="faculty-stat-label">Core Departments</div>
+      <div class="page-banner-media">
+        <div class="page-banner-img-frame">
+          <img src="<?= htmlspecialchars(!empty($banner['image']) ? $banner['image'] : 'assets/images/Group_pic.jpg') ?>"
+            alt="<?= htmlspecialchars($banner['title'] ?? 'Faculty Directory') ?>" class="page-banner-img" loading="eager"
+            width="480" height="250">
+        </div>
       </div>
     </div>
-
   </div>
 </section>
+
+<!-- LIVE ACADEMIC CADRE STATS STRIP -->
+<div class="faculty-quick-stats-bar" style="background: #FFFFFF; border-bottom: 1px solid #D6B56D; padding: 1.25rem 0;">
+  <div class="container-wide">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1.5rem; text-align: center;">
+      <div>
+        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #64748B; font-weight: 600;">Full-Time Faculty</span>
+        <div style="font-size: 1.25rem; font-weight: 750; color: #1E6A4D; margin-top: 0.2rem;"><?= count($faculties) ?> Members</div>
+      </div>
+      <div>
+        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #64748B; font-weight: 600;">PCI Approved Cadre</span>
+        <div style="font-size: 1.25rem; font-weight: 750; color: #1E6A4D; margin-top: 0.2rem;">100% Certified</div>
+      </div>
+      <div>
+        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #64748B; font-weight: 600;">Doctorate Scholars</span>
+        <div style="font-size: 1.25rem; font-weight: 750; color: #D6B56D; margin-top: 0.2rem;"><?= $doc_count ?> Ph.D. Mentors</div>
+      </div>
+      <div>
+        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #64748B; font-weight: 600;">Student-Faculty Ratio</span>
+        <div style="font-size: 1.25rem; font-weight: 750; color: #1E6A4D; margin-top: 0.2rem;">15:1 Ratio</div>
+      </div>
+      <div>
+        <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #64748B; font-weight: 600;">Core Departments</span>
+        <div style="font-size: 1.25rem; font-weight: 750; color: #1E6A4D; margin-top: 0.2rem;"><?= count($dept_counts) ?> Departments</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- ==========================================================================
      INTERACTIVE FACULTY CONTROL COMMAND BAR (Sticky Search & Department Filters)
