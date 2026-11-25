@@ -481,9 +481,9 @@ $ga_meta_map = [
     <!-- 4-Year Academic Progression Matrix (Clean High-Level Roadmap) -->
     <div style="margin-top: 3.5rem;">
       <div class="text-center" style="max-width: 760px; margin: 0 auto 2.5rem;">
-        <span class="section-subtitle">EXECUTIVE CURRICULUM ARCHITECTURE</span>
-        <h3 class="section-title" style="font-size: 1.85rem;">4-Year B.Pharm Academic Progression</h3>
-        <p class="section-description">
+        <span class="section-subtitle" style="color: #D6B56D;">EXECUTIVE CURRICULUM ARCHITECTURE</span>
+        <h3 class="section-title" style="font-size: 1.85rem; color: #FFFFFF; margin-bottom: 0.75rem;">4-Year B.Pharm Academic Progression</h3>
+        <p class="section-description" style="color: rgba(245, 247, 244, 0.9); font-size: 1.05rem;">
           A phased, high-impact curriculum moving from foundational sciences to advanced pharmacology, artificial intelligence, clinical hospital immersion, and capstone research dissertations:
         </p>
       </div>
@@ -539,10 +539,10 @@ $ga_meta_map = [
     <div class="fade-up" style="margin-top: 1rem;">
       <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 1rem;">
         <div>
-          <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: #1E6A4D; margin: 0 0 0.25rem;">
+          <h4 style="font-family: var(--font-heading); font-size: 1.35rem; color: #FFFFFF; margin: 0 0 0.25rem;">
             Semester-by-Semester Course Outline
           </h4>
-          <span style="font-size: 0.9rem; color: #4A5568;">
+          <span style="font-size: 0.9rem; color: #D6B56D;">
             Choice Based Credit System (CBCS) • 193 Total Prescribed Credits
           </span>
         </div>

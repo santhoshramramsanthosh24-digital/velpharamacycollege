@@ -11,6 +11,18 @@
   overflow: hidden;
 }
 
+.curriculum-section .section-title {
+  color: #FFFFFF !important;
+}
+
+.curriculum-section .section-description {
+  color: rgba(245, 247, 244, 0.9) !important;
+}
+
+.curriculum-section .section-subtitle {
+  color: #D6B56D !important;
+}
+
 .curriculum-section .container-wide {
   max-width: 1720px;
   width: 95%;

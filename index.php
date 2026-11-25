@@ -165,7 +165,7 @@ $cta_banner = $home_cms['cta_banner'] ?? [];
     <div class="focus-circle-content">
       <div class="focus-ring-pulse" aria-hidden="true"></div>
       <div class="focus-lens-circle" aria-label="VEL Pharmacy College Emblem">
-        <img src="assets/images/VPC NEW LOGO.jpeg" alt="VEL Pharmacy College Logo" class="focus-college-logo"
+        <img src="assets\images\college-logo-circle.png" alt="VEL Pharmacy College Logo" class="focus-college-logo"
           width="44" height="44">
       </div>
       <!--<div class="focus-label-wrap">
@@ -1175,7 +1175,7 @@ $faq_comparative_items = [
         <div class="faq-item faq-item-more">
           <button class="faq-question" aria-expanded="false">
             <span>
-              <span class="badge-tag badge-tag-secondary" style="font-size: 0.72rem; padding: 0.18rem 0.55rem; margin-right: 0.6rem; vertical-align: middle;"><?= htmlspecialchars($cFaq['category']) ?></span>
+              <span class="badge-tag badge-tag-secondary" style="font-size: 0.74rem; font-weight: 800; color: #0D2E21 !important; background-color: #D6B56D !important; padding: 0.22rem 0.65rem; margin-right: 0.65rem; vertical-align: middle; border-radius: 99px; display: inline-block; letter-spacing: 0.4px;"><?= htmlspecialchars($cFaq['category']) ?></span>
               <?= htmlspecialchars($cFaq['question']) ?>
             </span>
             <span class="faq-icon" aria-hidden="true">

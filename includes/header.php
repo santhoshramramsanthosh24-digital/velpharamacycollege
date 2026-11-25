@@ -256,9 +256,6 @@ if (!isset($page_keywords)) {
             <source src="<?= htmlspecialchars($preloader_video) ?>" type="video/mp4">
           </video>
         </div>
-        <div class="preloader-progress-bar">
-          <div class="preloader-progress-fill" id="preloaderProgress"></div>
-        </div>
       </div>
       <button type="button" class="preloader-skip-btn" id="preloaderSkip" aria-label="Skip intro animation">
         <span>Skip</span>
