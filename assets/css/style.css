@@ -368,16 +368,16 @@ p:last-child {
 }
 
 .brand-logo-large {
-  height: clamp(80px, 6.5vw, 105px);
+  height: clamp(95px, 7.8vw, 124px);
   width: auto;
-  max-width: min(680px, 90vw);
+  max-width: min(800px, 92vw);
   object-fit: contain;
   display: block;
   transition: all 0.3s ease;
 }
 
 .site-header.scrolled .brand-logo-large {
-  height: clamp(80px, 6.5vw, 105px);
+  height: clamp(95px, 7.8vw, 124px);
   /* Stays clean and proportional */
 }
 
@@ -3852,8 +3852,8 @@ main>.section:last-of-type {
 
 @media (max-width: 1280px) {
   .brand-logo-large {
-    height: 90px;
-    max-width: 520px;
+    height: 104px;
+    max-width: 620px;
   }
 
   .header-top-contact {
