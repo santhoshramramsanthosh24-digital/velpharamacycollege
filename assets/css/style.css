@@ -368,7 +368,7 @@ p:last-child {
 }
 
 .brand-logo-large {
-  height: clamp(165px, 15vw, 215px);
+  height: clamp(100px, 9.5vw, 140px);
   width: auto;
   max-width: min(950px, 95vw);
   object-fit: contain;
@@ -377,7 +377,7 @@ p:last-child {
 }
 
 .site-header.scrolled .brand-logo-large {
-  height: clamp(165px, 15vw, 215px);
+  height: clamp(100px, 9.5vw, 140px);
   /* Stays big in that place itself */
 }
 

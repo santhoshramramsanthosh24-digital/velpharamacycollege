@@ -32,7 +32,7 @@ $nav_announcement = $home_cms_data['announcement_text'] ?? ($gen_contact['admiss
       <!-- Center: Official Logo (Enlarged in that place itself) -->
       <div class="header-center-block">
         <a href="/" class="brand-link-centered" aria-label="VEL Pharmacy College Home">
-          <img src="<?= htmlspecialchars($nav_logo) ?>" alt="VEL Pharmacy College - VISTAS" class="brand-logo-large" width="620" height="148">
+          <img src="<?= htmlspecialchars($nav_logo) ?>?v=<?= filemtime(__DIR__ . '/../assets/images/VPC NEW LOGO.png') ?>" alt="VEL Pharmacy College - VISTAS" class="brand-logo-large" width="1584" height="230">
         </a>
       </div>
 
