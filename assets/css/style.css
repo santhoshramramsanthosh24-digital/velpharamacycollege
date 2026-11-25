@@ -489,7 +489,7 @@ p:last-child {
 .header-nav-row {
   background: #FFFFFF;
   border-bottom: 2px solid #D6B56D;
-  padding: 0.45rem 0 0.75rem 0;
+  padding: 0.55rem 0 1.15rem 0;
   position: relative;
   z-index: 15;
   max-height: 85px;
@@ -624,13 +624,13 @@ p:last-child {
 .announcement-bar {
   background-color: #1E6A4D;
   color: #F5F7F4;
-  padding: 0.25rem 0;
+  padding: 0.4rem 0;
   overflow: hidden;
   border-bottom: 2px solid #D6B56D;
   position: relative;
   z-index: 10;
   width: 100%;
-  max-height: 48px;
+  max-height: 52px;
   opacity: 1;
   transition: max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1),
     opacity 0.25s ease,
@@ -807,7 +807,7 @@ p:last-child {
   min-height: calc(100vh - 250px);
   display: flex;
   align-items: center;
-  padding: 1.75rem 0 1.25rem 0;
+  padding: 3.25rem 0 2rem 0;
   border-bottom: 2px solid #D6B56D;
 }
 
@@ -1285,7 +1285,7 @@ p:last-child {
   font-size: 0.82rem;
   font-weight: 700;
   color: #FFFFFF;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.15rem;
   letter-spacing: 0.03em;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
 }
@@ -1322,7 +1322,7 @@ p:last-child {
   font-weight: 800;
   line-height: 1.15;
   color: #FFFFFF;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   letter-spacing: -0.02em;
   text-shadow: 0 3px 20px rgba(0, 0, 0, 0.9), 0 1px 4px rgba(0, 0, 0, 0.95);
 }
