@@ -4645,19 +4645,20 @@ main>.section:last-of-type {
   border: 1px solid #D6B56D !important;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .principal-spotlight-card {
     grid-template-columns: 1fr;
     margin-bottom: 2rem;
   }
 
   .principal-media {
-    min-height: 320px;
-    max-height: 420px;
+    min-height: auto;
+    max-height: 400px;
+    height: 380px;
   }
 
   .principal-body {
-    padding: 2.25rem 1.5rem;
+    padding: 2.25rem 2rem;
   }
 }
 
@@ -6720,11 +6721,213 @@ main>.section:last-of-type {
 }
 
 /* ==========================================================================
-   PHONE VIEWPORT RESPONSIVE PERFECTION (max-width: 768px & max-width: 640px)
+   TABLET & PHONE RESPONSIVE PERFECTION ACROSS ALL PAGES
+   (Auto-applies to all current & future sections to prevent overflow & ensure ideal fit)
    ========================================================================== */
+
+/* Universal baseline safety: prevent any section from horizontally overflowing */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* TABLET VIEWPORT ADJUSTMENTS (max-width: 991px) */
+@media (max-width: 991px) {
+  .governance-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .why-better-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .research-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .student-life-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .groups-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .anti-ragging-cells-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .course-pathways-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .facilities-amenities-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+
+  .commute-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+
+/* PHONE VIEWPORT RESPONSIVE PERFECTION (max-width: 768px & max-width: 640px) */
 @media (max-width: 768px) {
+  /* Global image, media & table safeguards */
+  img, video, iframe, embed, object, svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .table-responsive,
+  .curriculum-summary-table-wrap,
+  .syllabus-table-wrapper,
+  .syllabus-table-wrap,
+  [class*="table-wrap"],
+  [class*="table-wrapper"] {
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: block !important;
+  }
+
+  /* Universal container safeguard */
+  .container,
+  .container-wide {
+    padding-left: clamp(1rem, 4vw, 1.5rem) !important;
+    padding-right: clamp(1rem, 4vw, 1.5rem) !important;
+    max-width: 100% !important;
+  }
+
+  /* Universal section heading & description auto-scaling */
+  .section-title {
+    font-size: clamp(1.65rem, 5.5vw, 2.2rem) !important;
+    line-height: 1.25 !important;
+  }
+
+  .section-subtitle {
+    font-size: 0.82rem !important;
+    letter-spacing: 0.05em !important;
+  }
+
+  .section-description {
+    font-size: 0.95rem !important;
+    line-height: 1.62 !important;
+  }
+
+  /* Universal Badge Tag wrapping: guarantees badges never overflow or force card blowout */
+  .badge,
+  .badge-tag,
+  [class*="badge-tag"] {
+    white-space: normal !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+    max-width: 100% !important;
+    line-height: 1.35 !important;
+  }
+
+  /* LEADERSHIP PAGE: Principal & Chancellor Spotlight Card */
+  .principal-spotlight-card {
+    grid-template-columns: 1fr !important;
+    border-radius: 18px !important;
+    margin-bottom: 1.75rem !important;
+    box-shadow: 0 6px 22px rgba(30, 106, 77, 0.08) !important;
+    overflow: hidden !important;
+  }
+
+  .principal-media {
+    min-height: unset !important;
+    max-height: none !important;
+    height: clamp(240px, 68vw, 340px) !important;
+    width: 100% !important;
+  }
+
+  .principal-media img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+  }
+
+  .principal-body {
+    padding: 1.6rem 1.25rem !important;
+  }
+
+  .principal-quote {
+    font-size: 0.96rem !important;
+    line-height: 1.65 !important;
+    padding-left: 1rem !important;
+    margin-bottom: 1.25rem !important;
+    border-left-width: 3px !important;
+  }
+
+  .principal-info h3 {
+    font-size: 1.28rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .principal-info span {
+    font-size: 0.88rem !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Leadership Governance Cards & Principles */
+  .governance-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .feature-card {
+    padding: 1.5rem 1.25rem !important;
+    border-radius: 16px !important;
+  }
+
+  /* Why VEL Better Grid */
+  .why-better-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .why-better-card {
+    padding: 1.6rem 1.25rem !important;
+    border-radius: 16px !important;
+  }
+
+  /* Research Laboratories & Centers Grid */
+  .research-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  /* Student Life & Campus Grid */
+  .student-life-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  /* Years Progression Grid (B.Pharm 4-Year Journey) */
+  .years-progression-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  /* About Page Cards */
   .about-legacy-card {
-    padding: 2rem 1.35rem !important;
+    padding: 1.75rem 1.25rem !important;
     border-radius: 16px !important;
   }
 
@@ -6746,6 +6949,7 @@ main>.section:last-of-type {
     padding: 1.25rem 1rem !important;
   }
 
+  /* Anti-Ragging Cards */
   .anti-ragging-cells-grid {
     grid-template-columns: 1fr !important;
     gap: 1.5rem !important;
@@ -6761,6 +6965,7 @@ main>.section:last-of-type {
     border-radius: 16px !important;
   }
 
+  /* Courses & Pathways */
   .course-pathways-grid {
     grid-template-columns: 1fr !important;
     gap: 1.25rem !important;
@@ -6770,11 +6975,13 @@ main>.section:last-of-type {
     height: 250px !important;
   }
 
+  /* Enquiry Page Form */
   .enquiry-form-card {
     padding: 1.75rem 1.25rem !important;
     border-radius: 16px !important;
   }
 
+  /* Facilities & Amenities */
   .facilities-amenities-grid {
     grid-template-columns: 1fr !important;
     gap: 1.5rem !important;
@@ -6793,23 +7000,86 @@ main>.section:last-of-type {
     font-size: clamp(1.6rem, 5vw, 2.1rem) !important;
   }
 
-  .governance-cards-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1.25rem !important;
-  }
-
   .facility-grid {
     grid-template-columns: 1fr !important;
     gap: 1.25rem !important;
   }
 
+  /* CTA Banners */
   .cta-banner {
     padding: 2.25rem 1.25rem !important;
     border-radius: 16px !important;
   }
 }
 
+/* EXTRA SMALL MOBILE VIEWPORT (max-width: 480px) */
 @media (max-width: 480px) {
+  .container,
+  .container-wide {
+    padding-left: 0.85rem !important;
+    padding-right: 0.85rem !important;
+  }
+
+  .section-title {
+    font-size: clamp(1.45rem, 6.2vw, 1.85rem) !important;
+  }
+
+  /* Leadership Card on extra small screens */
+  .principal-spotlight-card {
+    border-radius: 14px !important;
+    margin-bottom: 1.35rem !important;
+    border-width: 1.5px !important;
+  }
+
+  .principal-media {
+    height: clamp(210px, 58vw, 270px) !important;
+  }
+
+  .principal-body {
+    padding: 1.25rem 1rem !important;
+  }
+
+  .principal-quote {
+    font-size: 0.88rem !important;
+    line-height: 1.55 !important;
+    padding-left: 0.75rem !important;
+    margin-bottom: 0.95rem !important;
+  }
+
+  .principal-info h3 {
+    font-size: 1.15rem !important;
+  }
+
+  .principal-info span {
+    font-size: 0.82rem !important;
+  }
+
+  /* Governance feature card on extra small screens */
+  .feature-card {
+    padding: 1.25rem 1rem !important;
+    border-radius: 14px !important;
+  }
+
+  .feature-icon {
+    width: 44px !important;
+    height: 44px !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .feature-title {
+    font-size: 1.15rem !important;
+  }
+
+  .feature-text {
+    font-size: 0.88rem !important;
+    line-height: 1.58 !important;
+  }
+
+  .why-better-card {
+    padding: 1.35rem 1rem !important;
+    border-radius: 14px !important;
+  }
+
   .facilities-stats-dual {
     grid-template-columns: 1fr !important;
     gap: 0.75rem !important;
@@ -6825,6 +7095,20 @@ main>.section:last-of-type {
     position: static !important;
     margin-top: 0.75rem !important;
     border-radius: var(--radius-md) !important;
+  }
+
+  .placement-stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.85rem !important;
+  }
+
+  .badge-tag {
+    font-size: 0.72rem !important;
+    padding: 0.25rem 0.6rem !important;
+  }
+
+  .btn {
+    max-width: 100% !important;
   }
 }
 
