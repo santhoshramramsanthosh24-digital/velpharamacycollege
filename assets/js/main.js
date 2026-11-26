@@ -91,10 +91,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let isTransitioning = false;
     let transitionTimer = null;
 
-    const TOP_ZONE = 40;           // Near top: always keep logo, menus & notice fully visible
-    const MIN_SCROLL_TO_HIDE = 260;// Only hide after scrolling past the header itself
-    const DELTA_HIDE = 45;         // Accumulated downward scroll needed to hide
-    const DELTA_SHOW = -30;        // Accumulated upward scroll needed to reveal
+    const TOP_ZONE = 30;           // Near top: always keep logo, menus & notice fully visible
+    const MIN_SCROLL_TO_HIDE = 100;// Only hide after scrolling past initial header top zone
+    const DELTA_HIDE = 25;         // Accumulated downward scroll needed to hide
+    const DELTA_SHOW = -15;        // Accumulated upward scroll needed to reveal
 
     const setHeaderHidden = (hidden) => {
       const isCurrentlyHidden = header.classList.contains('menu-notice-hidden');
