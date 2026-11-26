@@ -331,14 +331,14 @@ p:last-child {
 .header-brand-row {
   background: #FFFFFF;
   border-bottom: 1px solid #F5F7F4;
-  padding: 0.85rem 0;
+  padding: 0.75rem 0 0.35rem 0;
   width: 100%;
   position: relative;
   z-index: 20;
 }
 
 .site-header.scrolled .header-brand-row {
-  padding: 0.85rem 0;
+  padding: 0.6rem 0 0.3rem 0;
   /* Keep big and stationary in place */
 }
 
@@ -368,17 +368,17 @@ p:last-child {
 }
 
 .brand-logo-large {
-  height: clamp(165px, 15vw, 215px);
+  height: clamp(95px, 7.8vw, 124px);
   width: auto;
-  max-width: min(950px, 95vw);
+  max-width: min(800px, 92vw);
   object-fit: contain;
   display: block;
   transition: all 0.3s ease;
 }
 
 .site-header.scrolled .brand-logo-large {
-  height: clamp(165px, 15vw, 215px);
-  /* Stays big in that place itself */
+  height: clamp(95px, 7.8vw, 124px);
+  /* Stays clean and proportional */
 }
 
 /* ==========================================================================
@@ -489,7 +489,7 @@ p:last-child {
 .header-nav-row {
   background: #FFFFFF;
   border-bottom: 2px solid #D6B56D;
-  padding: 0.35rem 0;
+  padding: 0.55rem 0 1.15rem 0;
   position: relative;
   z-index: 15;
   max-height: 85px;
@@ -624,13 +624,13 @@ p:last-child {
 .announcement-bar {
   background-color: #1E6A4D;
   color: #F5F7F4;
-  padding: 0.65rem 0;
+  padding: 0.4rem 0;
   overflow: hidden;
   border-bottom: 2px solid #D6B56D;
   position: relative;
   z-index: 10;
   width: 100%;
-  max-height: 60px;
+  max-height: 52px;
   opacity: 1;
   transition: max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1),
     opacity 0.25s ease,
@@ -804,10 +804,10 @@ p:last-child {
   /* Deep College Midnight Navy */
   color: #FFFFFF;
   overflow: hidden;
-  min-height: 84vh;
+  min-height: calc(100vh - 250px);
   display: flex;
   align-items: center;
-  padding: 5.5rem 0 4.5rem 0;
+  padding: 3.25rem 0 2rem 0;
   border-bottom: 2px solid #D6B56D;
 }
 
@@ -1285,7 +1285,7 @@ p:last-child {
   font-size: 0.82rem;
   font-weight: 700;
   color: #FFFFFF;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.15rem;
   letter-spacing: 0.03em;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
 }
@@ -1318,11 +1318,11 @@ p:last-child {
 /* Hero Title */
 .cinema-title {
   font-family: var(--font-heading);
-  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
   font-weight: 800;
   line-height: 1.15;
   color: #FFFFFF;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   letter-spacing: -0.02em;
   text-shadow: 0 3px 20px rgba(0, 0, 0, 0.9), 0 1px 4px rgba(0, 0, 0, 0.95);
 }
@@ -1352,10 +1352,10 @@ p:last-child {
 /* Simple 1-Sentence Narrative */
 .cinema-lead {
   font-size: 1.15rem;
-  line-height: 1.72;
+  line-height: 1.55;
   color: #F5F7F4;
   max-width: 580px;
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.25rem;
   font-weight: 500;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95);
 }
@@ -1366,7 +1366,7 @@ p:last-child {
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .cinema-btn-primary {
@@ -3852,8 +3852,8 @@ main>.section:last-of-type {
 
 @media (max-width: 1280px) {
   .brand-logo-large {
-    height: 122px;
-    max-width: 540px;
+    height: 104px;
+    max-width: 620px;
   }
 
   .header-top-contact {
